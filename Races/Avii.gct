@@ -1,0 +1,906 @@
+{
+	"version": 5,
+	"id": "Bql4gIe8opRtqWBmF",
+	"traits": [
+		{
+			"id": "TNUmLp2Skx7FBqXjd",
+			"name": "Avii",
+			"children": [
+				{
+					"id": "tn3ImAKhW5QF6n973",
+					"name": "Absolute Direction",
+					"reference": "B34",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mLh1fzEyeowR6SCRY",
+							"name": "Requires signal",
+							"reference": "B34",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "m4uC6IVHYRTi5ceOh",
+							"name": "3D Spatial Sense",
+							"reference": "B34",
+							"cost": 5,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "piloting"
+									},
+									"amount": 1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aerobatics"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "free fall"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "hyperspace"
+									},
+									"amount": 2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "space"
+									},
+									"amount": 2
+								}
+							],
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "body sense"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "air"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "land"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "sea"
+							},
+							"amount": 3
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tbkR2Tsgc8f6E2gRj",
+					"name": "Absolute Timing",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "m3FWOv4J9974Dk0jP",
+							"name": "Chronolocation",
+							"cost": 3,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"base_points": 2,
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "tdaXDW16drR8iru7K",
+					"name": "Acute Vision",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "vision",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 4
+					}
+				}
+			],
+			"calc": {
+				"points": 11
+			}
+		},
+		{
+			"id": "T2HDzP5-kEaJAFoS7",
+			"name": "Subraces",
+			"children": [
+				{
+					"id": "Tw43p0Fj90SVgPcsW",
+					"name": "Alis",
+					"children": [
+						{
+							"id": "tdKPQywgjTUWVCGNM",
+							"name": "Flight",
+							"reference": "B56,P50,PSI14",
+							"notes": "Air Move is Basic Speed x 2 (drop all fractions)",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mxVF3-YioEujkCA3G",
+									"name": "Newtonian Space Flight",
+									"reference": "B56",
+									"cost": 25,
+									"disabled": true
+								},
+								{
+									"id": "mV4N33B0pf9a1avT9",
+									"name": "Space Flight",
+									"reference": "B56",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mbsct5Vx2XgsZQGjJ",
+									"name": "Cannot Hover",
+									"reference": "B56",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "md73szX0luAzn4ugg",
+									"name": "Controlled Gliding",
+									"reference": "B56",
+									"cost": -45,
+									"disabled": true
+								},
+								{
+									"id": "m08tyG2Fv_w9I4SU8",
+									"name": "Gliding",
+									"reference": "B56",
+									"cost": -50
+								},
+								{
+									"id": "m5jZNNDTxY7ALu5tz",
+									"name": "Lighter Than Air",
+									"reference": "B56",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "muqssiQZ_DM_7wkht",
+									"name": "Low Ceiling",
+									"reference": "B56",
+									"notes": "30'",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mflyvHi0rZHuJyFtb",
+									"name": "Low Ceiling",
+									"reference": "B56",
+									"notes": "10'",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mrq5VraQey_y4rbNz",
+									"name": "Low Ceiling",
+									"reference": "B56",
+									"notes": "5'",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "m_oJ-Hw5mUZKpkttR",
+									"name": "Small Wings",
+									"reference": "B56",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "m1z4mxeBFhXycWjWs",
+									"name": "Space Flight Only",
+									"reference": "B56",
+									"cost": -75,
+									"disabled": true
+								},
+								{
+									"id": "mvWCRV72UPOpNzU9H",
+									"name": "Winged",
+									"reference": "B56",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "mJXRI1SCKf5WeUJD2",
+									"name": "Planetary",
+									"reference": "P50",
+									"cost": -5,
+									"disabled": true
+								},
+								{
+									"id": "mWJUV6nK0XLKwK_LJ",
+									"name": "Requires Surface",
+									"reference": "P50",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mwl1oYcRz6nxj3mYd",
+									"name": "Slow",
+									"reference": "PSI14",
+									"notes": "Basic Speed",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "m7FSlRo9gH-6oZbZd",
+									"name": "Slow, Move 1",
+									"reference": "PSI14",
+									"cost": -45,
+									"disabled": true
+								},
+								{
+									"id": "mY869kSrLm5Dw6uMC",
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"notes": "Has maintenance cost",
+									"cost": -10,
+									"levels": 1
+								}
+							],
+							"base_points": 40,
+							"calc": {
+								"points": 16
+							}
+						}
+					],
+					"calc": {
+						"points": 16
+					}
+				},
+				{
+					"id": "TFEBWW8j6i6AbAaLN",
+					"name": "Frigus",
+					"children": [
+						{
+							"id": "t-Z9Gdkmno0k3627O",
+							"name": "Amphibious",
+							"reference": "B40,P42",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tUi2P2rKrJK9NegrN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tPh0lR2im4mtyLaQl"
+							},
+							"name": "Breath-Holding",
+							"reference": "B41",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 2
+							}
+						}
+					],
+					"calc": {
+						"points": 12
+					}
+				}
+			],
+			"calc": {
+				"points": 28
+			}
+		},
+		{
+			"id": "TDpy0yX3VtsauLOFH",
+			"name": "Optional",
+			"children": [
+				{
+					"id": "tDObwZk6tnxO9TPwu",
+					"name": "Mimicry",
+					"reference": "B68,P60",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mFEaJnnsLTFhx1qVW",
+							"name": "Voice Library",
+							"reference": "P61",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "taNGzf_jXm6mxeH2x",
+					"name": "Night Vision",
+					"reference": "B71,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 4,
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "t_yw7Qa8jagGoCSXc",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tTBge18Cvign1H3tX"
+					},
+					"name": "Telescopic Vision",
+					"reference": "B92,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mVH1lUdJWnFJyJBus",
+							"name": "No Targeting",
+							"reference": "B92",
+							"cost": -60,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 24
+			}
+		},
+		{
+			"id": "TFPSTalsKlpeqUI70",
+			"name": "Scholar",
+			"children": [
+				{
+					"id": "tRIeSYixqTj2vXdOZ",
+					"name": "Magery",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mYFbD5uWl6IBH0hAk",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mit9tGXxBHgZFBfQK",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mJijMIk-AL-IX-sW1",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "ma61jB7iR1BdNqLXN",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mhEa9o4i_xbpvz1Sc",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m6cKkfFpk3eiiYFyj",
+							"name": "One College",
+							"notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mXzqFBeOahGtLnqo4",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mpuo9r0rKpVmIyPHX",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"calc": {
+				"points": 5
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "S0duax4-hDwE2EKYK",
+			"name": "Scholar",
+			"children": [
+				{
+					"id": "sWpkhI_JQFc1E9xTj",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "All important businesses, streets, citizens, leaders, etc.",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Nidum Academy District; Lived there",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "suyIYK5m6A12t5g55",
+					"name": "Occultism",
+					"reference": "B212",
+					"tags": [
+						"Magical",
+						"Occult"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sD8xsHsuQTM1kSDE4",
+					"name": "Research",
+					"reference": "B217",
+					"tags": [
+						"Scholarly",
+						"Spy"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Writing",
+							"modifier": -3
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 8
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Computer Operation"
+										}
+									}
+								]
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"when_tl": {
+									"compare": "at_most",
+									"qualifier": 4
+								},
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Native"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Accented)"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Broken)"
+										}
+									}
+								]
+							}
+						]
+					},
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "sJSFMk5M8ECNYP75q",
+					"name": "Thaumatology",
+					"reference": "B225",
+					"tags": [
+						"Magical",
+						"Occult"
+					],
+					"difficulty": "iq/vh",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -7
+						}
+					],
+					"points": 1
+				}
+			]
+		},
+		{
+			"id": "S8aunr6i_lSfv-I4w",
+			"name": "Scrapper",
+			"children": [
+				{
+					"id": "s0GAHHZx64tjDk3w0",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Coast of Nidum; Lived there",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "s9iN6MSIGfsN_kQST",
+					"name": "Biology",
+					"reference": "B180",
+					"tags": [
+						"Natural Science",
+						"Plant"
+					],
+					"specialization": "Marine Biology",
+					"difficulty": "iq/vh",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Naturalist",
+							"modifier": -6
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "shhj7p_sDOUdUE0r3",
+					"name": "Boating",
+					"reference": "B180",
+					"tags": [
+						"Vehicle"
+					],
+					"specialization": "Motorboat",
+					"difficulty": "dx/a",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Boating",
+							"specialization": "Large Powerboat",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Boating",
+							"specialization": "Sailboat",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Boating",
+							"specialization": "Unpowered",
+							"modifier": -3
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "sqZXH9vhPw8VSKd3G",
+					"name": "First Aid",
+					"reference": "B195",
+					"tags": [
+						"Everyman",
+						"Medical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Esoteric Medicine"
+						},
+						{
+							"type": "skill",
+							"name": "Physician"
+						},
+						{
+							"type": "skill",
+							"name": "Veterinary",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "sd7x68Z4EuRXvc9II",
+					"name": "Swimming",
+					"reference": "B224",
+					"tags": [
+						"Athletic",
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "ht/e",
+					"encumbrance_penalty_multiplier": 2,
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -4
+						}
+					],
+					"points": 1
+				}
+			]
+		},
+		{
+			"id": "SjGhkxMfA0sYS760w",
+			"name": "All Citizens",
+			"children": [
+				{
+					"id": "slMptfB_KVC_UPX9R",
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tags": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				}
+			]
+		}
+	]
+}

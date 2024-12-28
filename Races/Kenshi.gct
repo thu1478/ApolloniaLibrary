@@ -1,0 +1,1417 @@
+{
+	"version": 5,
+	"id": "BrGnA4A6EpZfCFyQt",
+	"traits": [
+		{
+			"id": "TyGYsD0zxmU0bEZQM",
+			"name": "Kenshi",
+			"children": [
+				{
+					"id": "tLvGvaJHqRj1Aho0f",
+					"name": "Acute Hearing",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hearing",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "tnaRZrGPIYWm21ueP",
+					"name": "Acute Taste \u0026 Smell",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "taste_smell",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "tpknkstxtt41kfYxA",
+					"name": "Ambidexterity",
+					"reference": "B39",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tAOaWa61tVNzd_pQY",
+					"name": "Discriminatory Smell",
+					"reference": "B49,P47",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m6DajvyNvhc_Y4Ute",
+							"name": "Emotion Sense",
+							"reference": "B49",
+							"cost": 50
+						},
+						{
+							"id": "m_ice2wnQt-SxB7oN",
+							"name": "Profiling",
+							"reference": "P47",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Tracking"
+							},
+							"amount": 4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "on any task that utilizes sense of smell",
+							"amount": 4
+						}
+					],
+					"calc": {
+						"points": 23
+					}
+				},
+				{
+					"id": "tz0q9qX_LgOindfl7",
+					"name": "Easy to Read",
+					"reference": "B134",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to others on all Empathy, Body Language, and Psychology rolls to discern your intentions or the truth of your words",
+							"amount": 4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to others on IQ, Detect Lies, and Gambling rolls in any Quick Contest with your Acting, Fast-Talk, or Gambling skill when you try to lie or bluff",
+							"amount": 4
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tFZFCtObz2Xov-z_D",
+					"name": "Temperature Tolerance",
+					"reference": "B93",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"calc": {
+				"points": 25
+			}
+		},
+		{
+			"id": "T4cJgZXYMjJw5d4ks",
+			"name": "Optional",
+			"children": [
+				{
+					"id": "tpCbqU9qFS93wHnm1",
+					"name": "Ignition",
+					"reference": "B61,P53,MA45",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "muiAk4SyFu4RRSNtT",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "1 sec",
+							"cost": 100,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mQ9A5cktH5kJVkgAL",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "10 sec",
+							"cost": 50,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mmHunpsAgggNxIulM",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "1 min",
+							"cost": 40,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mMzizkMf8sDSY0HqR",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "1 hr",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m8d1UWVB13PV2ZP7L",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "1 day",
+							"cost": 10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m58Aa8PNfAs4064ov",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "1 sec; Resistible",
+							"cost": 50,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mEcxp5wcoRu8yJDY1",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "10 sec; Resistible",
+							"cost": 25,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mV57eiXfmfhxtQkGQ",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "1 min; Resistible",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mQufqWAK1MuYxTjjD",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "1 hr; Resistible",
+							"cost": 10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mow3Ok_tsponccokU",
+							"name": "Cyclic",
+							"reference": "B103",
+							"notes": "1 day; Resistible",
+							"cost": 5,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mKq0U2ts1dpUwJJ7e",
+							"name": "Contagious",
+							"reference": "B103",
+							"notes": "Mildly",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "m-m4dbewBb3zFz76l",
+							"name": "Contagious",
+							"reference": "B103",
+							"notes": "Highly",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mRl8CYihgOYBDXVTF",
+							"name": "Double Blunt Trauma",
+							"reference": "B104",
+							"notes": "1HP per 10 dmg",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mR0dtSQDDDvhaTaN1",
+							"name": "Explosion",
+							"reference": "B104",
+							"cost": 50,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m_KFxmpU4ir9lM0_k",
+							"name": "Fragmentation",
+							"reference": "B104",
+							"cost": 15,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mIT17IQL71Ka_Q-9M",
+							"name": "Fragmentation",
+							"reference": "B104",
+							"notes": "Hot",
+							"cost": 15,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mFPqi-m9E8H9eedhq",
+							"name": "Radiation",
+							"reference": "B104",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "m5FO_5lmhG8T9L0yQ",
+							"name": "Surge",
+							"reference": "B104",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mv1JQ8P1M8MaDLKA8",
+							"name": "Armor Divisor",
+							"reference": "B102",
+							"notes": "2",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "m8yKWtOrVxStt9qzP",
+							"name": "Armor Divisor",
+							"reference": "B102",
+							"notes": "3",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mYz7mUN-OnDJ1Ozam",
+							"name": "Armor Divisor",
+							"reference": "B102",
+							"notes": "5",
+							"cost": 150,
+							"disabled": true
+						},
+						{
+							"id": "mX6B9stXD2VXPfH6m",
+							"name": "Armor Divisor",
+							"reference": "B102",
+							"notes": "10",
+							"cost": 200,
+							"disabled": true
+						},
+						{
+							"id": "mPOqc9-RoYBQWO7q0",
+							"name": "Side Effect",
+							"reference": "B109",
+							"notes": "@Effect@",
+							"disabled": true
+						},
+						{
+							"id": "mkmaiZIoAmpJwX_5_",
+							"name": "Symptoms",
+							"reference": "B109",
+							"notes": "@Effect@",
+							"disabled": true
+						},
+						{
+							"id": "mcTyju_8x2hdubw2h",
+							"name": "Armor Divisor",
+							"reference": "B110",
+							"notes": "0.5",
+							"cost": -30,
+							"disabled": true
+						},
+						{
+							"id": "mYLelM0mb0h_9M_EN",
+							"name": "Armor Divisor",
+							"reference": "B110",
+							"notes": "0.2",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mAYprRuGBF9hcqHnj",
+							"name": "Armor Divisor",
+							"reference": "B110",
+							"notes": "0.1",
+							"cost": -70,
+							"disabled": true
+						},
+						{
+							"id": "mHEnDwLX0SWU9nSAc",
+							"name": "No Wounding",
+							"reference": "B111",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "m1olTmDVHNJoUYGzU",
+							"name": "Surge, Arcing",
+							"reference": "PSI20",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mLCPFo31NeyXwkN3n",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+								"id": "mHAcnFAukyEISop_h"
+							},
+							"name": "Limited Use",
+							"reference": "B112,P103",
+							"notes": "3 uses per day",
+							"cost": -20
+						}
+					],
+					"points_per_level": 5,
+					"weapons": [
+						{
+							"id": "Wp0ksdtzuiFmyFeat",
+							"damage": {
+								"type": "burn",
+								"base": "1d"
+							},
+							"accuracy": "3",
+							"range": "2/10",
+							"rate_of_fire": "1",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Innate Attack"
+								},
+								{
+									"type": "skill",
+									"name": "Innate Attack",
+									"modifier": -2
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d burn"
+							}
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 8
+					}
+				},
+				{
+					"id": "tbHGCOG9SYG1gBBhj",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tBmSJ3pNE53c4IRUU"
+					},
+					"name": "Heatguard",
+					"reference": "B47,P45,MA43,PSI14",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mtUzR1IWAaxQoakoo",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mtyBLUXvQJ_3CaWHO",
+							"name": "Hardened",
+							"reference": "B47",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mbJxcXmTL9MhuJDwc",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "miLecMaeBQH0bIFE3",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "m_AQZTxZGrbozaaQF",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mBYb3HKtOj5Vi8HSv",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "m8P7sCjVxFyXLEa5s",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mSBJQEhk8VUnW3NAj",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "moud8KALfR7vd3Lkb",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "mFnIdm2z1ZYmUzXk2",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "m8lSKjEhdKk7uwo8e",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mS2wR2WVxM-jQLw4g",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "m-oe8Tnk5KBx5cuTM",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mKNBuE3XiiC6G2Fl7",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mRJK_E6Lm5yKUIQcF",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mDPqHx4JbVLnuw9v-",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mIS4Dj8s3wpxMT1jl",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "Burn damage",
+							"cost": -40
+						},
+						{
+							"id": "mKjxKQPfMBsjOpLVg",
+							"name": "Tough Skin",
+							"notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mjMZEaEVOw6T67Odk",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "m96izIpW479fWxPnA",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "m7gHqIWPVjMcLjlkm",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "m2AlAtG8dT_n79fu4",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "m6tDX3gEYL49R0t57",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mrUDRFrXgFNTneIha",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mKXu3j-0I0Ro8l3da",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"all"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "teebvovuYm2fbWiuq",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t9fwzDbdQy1S9CHUx"
+					},
+					"name": "Fortress Howl",
+					"reference": "B35,P39,PSI13",
+					"notes": "Grant all allies in area 3 Barrier",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "MuWjixTCtA9Jukl4Q",
+							"name": "Attribute Penalties",
+							"children": [
+								{
+									"id": "m5UKAzR5pEyLBQAiW",
+									"name": "DX Penalty",
+									"reference": "B36",
+									"notes": "Gives -1 to DX per level",
+									"cost": 10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "myc8KgU7_2lv8sF0m",
+									"name": "HT Penalty",
+									"reference": "B36",
+									"notes": "Gives -1 to HT per level",
+									"cost": 5,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "m3LMWGhSAOlQYKh5Z",
+									"name": "IQ Penalty",
+									"reference": "B36",
+									"notes": "Gives -1 to IQ per level",
+									"cost": 10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "m6QRF6fjcrUKChiQD",
+									"name": "ST Penalty",
+									"reference": "B36",
+									"notes": "Gives -1 to ST per level",
+									"cost": 5,
+									"levels": 1,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "mpALi-EBjgmUysc66",
+							"name": "Cancellation",
+							"reference": "PSI13",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mf_uEOIfrKFSM-rbA",
+							"name": "Cumulative",
+							"reference": "B36",
+							"cost": 400,
+							"disabled": true
+						},
+						{
+							"id": "MrBoWo-KG77I6wOAJ",
+							"name": "Incapacitation",
+							"reference": "B36",
+							"children": [
+								{
+									"id": "mfYEyF8by00EUX9DW",
+									"name": "Agony",
+									"reference": "B428",
+									"notes": "Lose 1 FP per minute",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mVj3dhRWInJz-OHml",
+									"name": "Choking",
+									"reference": "B428",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mD0e1lbFxTCE8htOL",
+									"name": "Daze",
+									"reference": "B428",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "m7fCcWjSYGOZ5-VXe",
+									"name": "Ecstasy",
+									"reference": "B428",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mUwXk5slBj8kwgY9M",
+									"name": "Hallucination",
+									"reference": "B429",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "m0mDI87CK7cuk0VkC",
+									"name": "Paralysis",
+									"reference": "B429",
+									"cost": 150,
+									"disabled": true
+								},
+								{
+									"id": "msBaD0twzfdBMxZuj",
+									"name": "Retching",
+									"reference": "B429",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mgJ_84iHdjgfVyIsl",
+									"name": "Seizure",
+									"reference": "B429",
+									"notes": "Lose 1d FP at the end of the seizure",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "m9HHAcdqzVO2YVe4M",
+									"name": "Sleep",
+									"cost": 150,
+									"disabled": true
+								},
+								{
+									"id": "mcp0rFshoDZRefNJ9",
+									"name": "Unconsciousness",
+									"reference": "B429",
+									"cost": 200,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "MFfrrzm-wxqdZw7a6",
+							"name": "Irritations",
+							"reference": "B36",
+							"children": [
+								{
+									"id": "mmfft-MHBNMFI9YkR",
+									"name": "Coughing",
+									"reference": "B428",
+									"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mJ94Ugz9_ujfMnJ_9",
+									"name": "Drunk",
+									"reference": "B428",
+									"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "meUW5OV3J-ZgjDNpb",
+									"name": "Euphoria",
+									"reference": "B428",
+									"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+									"cost": 30,
+									"disabled": true
+								},
+								{
+									"id": "mBgOuszHSkqlXFv3N",
+									"name": "Moderate Pain",
+									"reference": "B428",
+									"notes": "-2 to all DX, IQ, skill and self-control rolls",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mJwqG0ZAOCretBh-o",
+									"name": "Nauseated",
+									"reference": "B428",
+									"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+									"cost": 30,
+									"disabled": true
+								},
+								{
+									"id": "maWzadEVN-_2or48b",
+									"name": "Severe Pain",
+									"reference": "B428",
+									"notes": "-4 to all DX, IQ, skill and self-control rolls",
+									"cost": 40,
+									"disabled": true
+								},
+								{
+									"id": "mI--PHUbJ0o3Uh96m",
+									"name": "Terrible Pain",
+									"reference": "B428",
+									"notes": "-6 to all DX, IQ, skill and self-control rolls",
+									"cost": 60,
+									"disabled": true
+								},
+								{
+									"id": "mT4ovqAWn1YFKY_1j",
+									"name": "Tipsy",
+									"reference": "B428",
+									"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+									"cost": 10,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "M_yCfj06Yk9pskZti",
+							"name": "Mortal Conditions",
+							"children": [
+								{
+									"id": "m65-BAlV8DMULsW38",
+									"name": "Coma",
+									"reference": "B429",
+									"cost": 250,
+									"disabled": true
+								},
+								{
+									"id": "mpuuAbnd8PO1T3TyJ",
+									"name": "Heart Attack",
+									"reference": "B429",
+									"cost": 300,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "mYOM_KcF4B_BzMeP0",
+							"name": "Stunning",
+							"reference": "B36",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "MhePXoLBlPfRyj4yN",
+							"name": "Traits",
+							"children": [
+								{
+									"id": "mWrlnfn84iW8HN75Q",
+									"name": "Gives 3 Barrier",
+									"reference": "B36",
+									"notes": "1 point per level",
+									"cost": 10,
+									"levels": 6
+								},
+								{
+									"id": "m--Xay8o0WKEFRzP7",
+									"name": "Gives @Disadvantage@",
+									"reference": "B36",
+									"notes": "1 point per level",
+									"cost": 1,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "mHPXN7QO77MbNRuET",
+									"name": "Negates @Advantage@",
+									"reference": "B36",
+									"notes": "1 point per level",
+									"cost": 1,
+									"levels": 1,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"id": "mgqDhA_Jj_3jPXqWS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+								"id": "mbO8GjGu_NuPTLz6e"
+							},
+							"name": "Area Effect",
+							"reference": "B102,P100",
+							"notes": "4 yd radius",
+							"cost": 50,
+							"levels": 2
+						},
+						{
+							"id": "mYaCISd-htVPSvX6u",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+								"id": "mUCjV40yAeps5rjRS"
+							},
+							"name": "Selective Area",
+							"reference": "B108,P105",
+							"cost": 20
+						},
+						{
+							"id": "mcSoNIW9Qeeom7aWV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+								"id": "m8LxjxHIi55QbM1I0"
+							},
+							"name": "Limited Use",
+							"reference": "B112,P103",
+							"notes": "Once per day",
+							"cost": -40
+						},
+						{
+							"id": "m6Gm7GrT7JB_JQ8Yp",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+								"id": "mk76f3SlpNhhWuzRi"
+							},
+							"name": "Emanation",
+							"reference": "B112,P102",
+							"cost": -20
+						}
+					],
+					"points_per_level": 10,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 22
+					}
+				},
+				{
+					"id": "t967RsBpskqWNI__l",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tBmSJ3pNE53c4IRUU"
+					},
+					"name": "Barrier",
+					"reference": "B47,P45,MA43,PSI14",
+					"notes": "Don't add this to your character. This is to represent Fortress Howl's bonus,",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mb1VdT92sYIPsx_B5",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20
+						},
+						{
+							"id": "ml5-dvp60x7jSkuo0",
+							"name": "Hardened",
+							"reference": "B47",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m2x83bLH5zzdv37p5",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mg-yEJnLhC5vJyH8U",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mYb2zqqVKdDw8iZfA",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mUvvmNArbB9dpC0MP",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "m9IyIK77JaXSwZjXZ",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mfYpj3cqfC9AhfIGJ",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "m1O356y39txehDGdc",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "m4eXGOKoD0eaVUoys",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "mjRkCNb1NGqtGjQG3",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mzcptH8lCI1MJmEI7",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mL-ehrSI9Yig2LvRr",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mFJenIxZk10a5_Eop",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "m1us_pXUyH_NzB4fQ",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mh_vggjucyqnXLQTu",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "msWeDz6M8OP5-gt12",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Common Attack Form@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "m5T0W4QNoLEKWJRJ4",
+							"name": "Tough Skin",
+							"notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "m-SV47YixBxxHGpEz",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "mpDeJBNzxudVgPYgN",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80
+						},
+						{
+							"id": "mP4A1jdY2EHbZPJ6H",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "m-9MHrB8yy2jAbhC4",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mTUrU4Q2P5m8E_LCt",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mMhHbBYbFZkGSFqho",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mR2p9o4vNXPWYzNTk",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"all"
+							],
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 6
+					}
+				}
+			],
+			"calc": {
+				"points": 45
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "SLjZ9jyfxBUonGXAC",
+			"name": "Macreen Downtown",
+			"children": [
+				{
+					"id": "sTQ2nkakoIuWNoNdE",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Downtown; Lived there",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sEVb9ex20nF15If5T",
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tags": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "soskBp7vnw35EO6IZ",
+					"name": "Driving",
+					"reference": "B188",
+					"tags": [
+						"Vehicle"
+					],
+					"specialization": "Automobile",
+					"difficulty": "dx/a",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Driving",
+							"specialization": "Heavy Wheeled",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Driving",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "smcv7DI-4DHokw1H2",
+					"name": "Savoir-Faire",
+					"reference": "B218,MA59",
+					"tags": [
+						"Knowledge",
+						"Police",
+						"Social"
+					],
+					"specialization": "Police",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "SYguskcWy8EbOLIq5",
+					"name": "Choose one",
+					"children": [
+						{
+							"id": "so-fgms0LWdRCY9Os",
+							"name": "Judo",
+							"reference": "B203,MA57",
+							"notes": "Allows parrying two different attacks per turn, one with each hand.",
+							"tags": [
+								"Combat",
+								"Melee Combat",
+								"Weapon"
+							],
+							"difficulty": "dx/h",
+							"encumbrance_penalty_multiplier": 1,
+							"points": 1
+						},
+						{
+							"id": "sk3TgcovFhEX4XHXU",
+							"name": "Karate",
+							"reference": "B203,MA57",
+							"tags": [
+								"Combat",
+								"Melee Combat",
+								"Weapon"
+							],
+							"difficulty": "dx/h",
+							"encumbrance_penalty_multiplier": 1,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Karate"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1,
+									"per_die": true
+								},
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Karate"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 1
+									},
+									"amount": 1,
+									"per_die": true
+								}
+							],
+							"points": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}

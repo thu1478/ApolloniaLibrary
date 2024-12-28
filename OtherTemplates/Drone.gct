@@ -1,0 +1,1713 @@
+{
+	"version": 5,
+	"id": "BRg2RJfVtq-Opo_XZ",
+	"traits": [
+		{
+			"id": "Tm-AlD3ZbXP73wC5y",
+			"name": "Drone",
+			"children": [
+				{
+					"id": "TxADAMhZZVjjyEtyE",
+					"name": "Meta-Trait: Machine",
+					"reference": "B263",
+					"container_type": "meta_trait",
+					"children": [
+						{
+							"id": "t5D2xM1RpA6uQkg1h",
+							"name": "Eight-hour energy reserve, Refuel 3 times per day",
+							"reference": "B263",
+							"tags": [
+								"Physical"
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "ta4q52DszK-yjapwO",
+							"name": "Injury Tolerance",
+							"reference": "B60",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mJwEilgk9EdUdQWVF",
+									"name": "Diffuse",
+									"reference": "B60",
+									"notes": "Immune to crippling injuries. Brain, Vitals and Groin cannot be targeted. Most foes cannot slam or grapple you (GM's decision). Do not bleed. Unaffected by blood-borne toxins. Immune to attacks that rely on cutting off blood to part of your body. Impaling and piercing attacks of any size never do more than 1 HP of injury, regardless of penetrating damage. Other attacks never do more than 2 HP of injury. Exception: Area-effect, cone, and explosion attacks cause normal injury",
+									"cost": 100,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mZ4pWMur6SmxwhMHn",
+									"name": "Homogenous",
+									"reference": "B60",
+									"notes": "Altered wound modifiers: imp \u0026 pi++ are x1/2, pi+ is x1/3, pi is x1/5, pi- is x1/10",
+									"cost": 40,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mUR4KZ-nZb5KDJaVK",
+									"name": "No Blood",
+									"reference": "B61",
+									"notes": "Do not bleed, unaffected by blood-borne toxins, immune to attacks that rely on cutting off blood to part of your body",
+									"cost": 5,
+									"cost_type": "points"
+								},
+								{
+									"id": "mkhnZ04F5dDYiAFCS",
+									"name": "No Brain",
+									"reference": "B61",
+									"notes": "Brain cannot be targeted. Blows to the skull or eye are treated like blows to the face, except that eye injury can still cripple the eye",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mDdA_lBz4E5WVpwfL",
+									"name": "No Eyes",
+									"reference": "B61",
+									"notes": "Eyes may not be targeted. Immune to blinding attacks",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m_tZcRVtQBH917psv",
+									"name": "No Head",
+									"reference": "B61",
+									"notes": "Skull, Brain and Face cannot be targeted",
+									"cost": 7,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m3QGkVXE2wRRJerTk",
+									"name": "No Neck",
+									"reference": "B61",
+									"notes": "Neck may not be targeted and cannot be decapitated, choked or strangled",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mGRdBF3emrBx3avZu",
+									"name": "No Vitals",
+									"reference": "B61",
+									"notes": "Attacks to the Vitals or Groin are treated as attacks to the Torso",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mih2-hzyFdeWHw7HJ",
+									"name": "Unliving",
+									"reference": "B61",
+									"notes": "Altered wound modifiers: imp \u0026 pi++ are x1, pi+ is x1/2, pi is x1/3, pi- is x1/5",
+									"cost": 20,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "t89rAdAIEvoqtN8Pt",
+							"name": "No fatigue points, Don't spend fatigue points",
+							"reference": "B263",
+							"tags": [
+								"Physical"
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tG1B59DUm7OeGiEJ4",
+							"name": "Resistant",
+							"reference": "B81",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m1aoAugb0NL_LUEs2",
+									"name": "Metabolic Hazards",
+									"reference": "B80",
+									"cost": 30,
+									"cost_type": "points"
+								},
+								{
+									"id": "mrBjej5KLAGm2hoyv",
+									"name": "@Common: Poison, Sickness, etc.@",
+									"reference": "B81",
+									"cost": 15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mdZwvsYKdFccZSutE",
+									"name": "@Occasional: Disease, Ingested Poison, etc.@",
+									"reference": "B81",
+									"cost": 10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mPqDf7o7Gy0ZCPhko",
+									"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+									"reference": "B81",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mAU1FM6BRigkTG6cX",
+									"name": "Immunity",
+									"reference": "B81",
+									"cost": 1,
+									"cost_type": "multiplier"
+								},
+								{
+									"id": "mVq9oK4FooPhA9k2b",
+									"name": "+8 to all HT rolls to resist",
+									"reference": "B81",
+									"cost": 0.5,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "myrPkXrUIjF5iKdfH",
+									"name": "+3 to all HT rolls to resist",
+									"reference": "B81",
+									"cost": 0.33,
+									"cost_type": "multiplier",
+									"disabled": true
+								}
+							],
+							"round_down": true,
+							"calc": {
+								"points": 30
+							}
+						},
+						{
+							"id": "tZsxkT5oJbJGg-5Cg",
+							"name": "Unhealing (Total)",
+							"reference": "B160",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": -30,
+							"calc": {
+								"points": -30
+							}
+						},
+						{
+							"id": "tzK94wdKNS5zlGwNT",
+							"name": "Wears out instead of aging",
+							"reference": "B263",
+							"tags": [
+								"Physical"
+							],
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"calc": {
+						"points": 25
+					}
+				},
+				{
+					"id": "tLv1uLQXZMPAMUmiB",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "toRWQC_wqLurdUtig"
+					},
+					"name": "Electrical",
+					"reference": "B134",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": -20,
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "tbrv2fFN1zIkThBCQ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tLjJdINd7_EUwXEvg"
+					},
+					"name": "Numb",
+					"reference": "B146",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -20,
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "tZFv2HJ_-4ARGHRZE",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t50ZzyORV0rTiYwnb"
+					},
+					"name": "Decreased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Mental"
+					],
+					"points_per_level": -20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 10,
+					"calc": {
+						"points": -200
+					}
+				}
+			],
+			"calc": {
+				"points": -215
+			}
+		},
+		{
+			"id": "T71uK5mNuNFtElWAf",
+			"name": "Form Factor",
+			"children": [
+				{
+					"id": "T2-gyVjXs1U4MOih3",
+					"name": "Micro",
+					"notes": "Falcon size. Max mana 3",
+					"children": [
+						{
+							"id": "tY52gf4lRSgU3zxC6",
+							"name": "Attribute Modifiers",
+							"reference": "B14",
+							"tags": [
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mNMZ0aHG4XUeXOOJY",
+									"name": "SM -3",
+									"reference": "B19",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "sm",
+											"amount": -3
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "t6np76a7Tgfub6C-y",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "thI3hK3riuknUwkHF"
+							},
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 7,
+							"calc": {
+								"points": -70
+							}
+						}
+					],
+					"calc": {
+						"points": -70
+					}
+				},
+				{
+					"id": "T9KHjwkbShuMTYJNd",
+					"name": "Portable",
+					"notes": "Medium dog size. Max mana 5",
+					"children": [
+						{
+							"id": "tYIIMET3-bZrnJRMZ",
+							"name": "Attribute Modifiers",
+							"reference": "B14",
+							"tags": [
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mtiB2uqWI37qpysBM",
+									"name": "SM -2",
+									"reference": "B19",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "sm",
+											"amount": -2
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tL03mi3oeIB55MJ8x",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "thI3hK3riuknUwkHF"
+							},
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 7,
+							"calc": {
+								"points": -70
+							}
+						}
+					],
+					"calc": {
+						"points": -70
+					}
+				},
+				{
+					"id": "T3BzVPQFJyA-k2VHI",
+					"name": "Large",
+					"notes": "Comparable to people size. Max mana 10",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TcdxzGuoBIwD2flGc",
+					"name": "Extra Large",
+					"notes": "Roughly 15 ft. Max mana 15",
+					"children": [
+						{
+							"id": "tuIDUno3xCKBuow0S",
+							"name": "Attribute Modifiers",
+							"reference": "B14",
+							"tags": [
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mQUCkEKTc5q5t8sN6",
+									"name": "SM +2",
+									"reference": "B19",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "sm",
+											"amount": 2
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "ta9HYbukWx_UDzUXX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tu0KTB8faKoeTJiEi"
+							},
+							"name": "Decreased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": -60
+							}
+						}
+					],
+					"calc": {
+						"points": -60
+					}
+				}
+			],
+			"calc": {
+				"points": -200
+			}
+		},
+		{
+			"id": "TLcOdOM4yH1ZTCd-e",
+			"name": "Mobility",
+			"children": [
+				{
+					"id": "TRbbEq3_BFiJTaMo2",
+					"name": "Flying",
+					"children": [
+						{
+							"id": "tVKKR3_UL_ofAKXrl",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tBp8Q-gJeFHzopeuI"
+							},
+							"name": "Flight",
+							"reference": "B56,P50,PSI14",
+							"notes": "Air Move is Basic Speed x 2 (drop all fractions)",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mvnZgqNF474IAQrPm",
+									"name": "Newtonian Space Flight",
+									"reference": "B56",
+									"cost": 25,
+									"disabled": true
+								},
+								{
+									"id": "mOZKf73Mjtk-tbkPP",
+									"name": "Space Flight",
+									"reference": "B56",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mlY-KUX-5W9iMKieR",
+									"name": "Cannot Hover",
+									"reference": "B56",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "mgSs6u_3yl3NwxxFi",
+									"name": "Controlled Gliding",
+									"reference": "B56",
+									"cost": -45,
+									"disabled": true
+								},
+								{
+									"id": "m9YNV_Eb0OfaZZDIx",
+									"name": "Gliding",
+									"reference": "B56",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "mScrea-U0gUh77jk8",
+									"name": "Lighter Than Air",
+									"reference": "B56",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "m4JMdVSsBB71pyacY",
+									"name": "Low Ceiling",
+									"reference": "B56",
+									"notes": "30'",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "ml634DWWvII_p3BiY",
+									"name": "Low Ceiling",
+									"reference": "B56",
+									"notes": "10'",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mFZZ4kNjdto_Pxkfo",
+									"name": "Low Ceiling",
+									"reference": "B56",
+									"notes": "5'",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "mHJvV6K0Tmv9Dn2gK",
+									"name": "Small Wings",
+									"reference": "B56",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mmgPLf0Nv-qaah6XN",
+									"name": "Space Flight Only",
+									"reference": "B56",
+									"cost": -75,
+									"disabled": true
+								},
+								{
+									"id": "maYj39E8tarAhQ1_d",
+									"name": "Winged",
+									"reference": "B56",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "m1Ugu2D0N4KOa6SOh",
+									"name": "Planetary",
+									"reference": "P50",
+									"cost": -5,
+									"disabled": true
+								},
+								{
+									"id": "mHdk9w8OiNObqnwlc",
+									"name": "Requires Surface",
+									"reference": "P50",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mfPHrLOkHeNKZLEl_",
+									"name": "Slow",
+									"reference": "PSI14",
+									"notes": "Basic Speed",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "mmCngvIIrKujGQDZW",
+									"name": "Slow, Move 1",
+									"reference": "PSI14",
+									"cost": -45,
+									"disabled": true
+								},
+								{
+									"id": "mvjxVs2Q2q85OIIGY",
+									"name": "Encumbrance-Limited (No encumbrance)",
+									"reference": "FFWF12",
+									"reference_highlight": "Encumbrance-Limited",
+									"notes": "Can only glide at best when overburdened",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "mel1z_1pMJaMPVrsG",
+									"name": "Encumbrance-Limited (Light encumbrance)",
+									"reference": "FFWF12",
+									"reference_highlight": "Encumbrance-Limited",
+									"notes": "Can only glide at best when overburdened",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mTkCedvFlyyb-u-Nj",
+									"name": "Encumbrance-Limited (Medium encumbrance)",
+									"reference": "FFWF12",
+									"reference_highlight": "Encumbrance-Limited",
+									"notes": "Can only glide at best when overburdened",
+									"cost": -5,
+									"disabled": true
+								}
+							],
+							"base_points": 40,
+							"calc": {
+								"points": 40
+							}
+						},
+						{
+							"id": "t68T5rCGYMZiYfIaz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tL0zoF3YwIHqFBQGA"
+							},
+							"name": "No Legs (Aerial)",
+							"reference": "B145",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "flight"
+										}
+									}
+								]
+							},
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "t2yGTdUUrP-jlc5bW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tpGiLpDpY0JDjAIxw"
+							},
+							"name": "No Manipulators",
+							"reference": "B145",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -50,
+							"features": [
+								{
+									"type": "cost_reduction",
+									"attribute": "st",
+									"percentage": 40
+								},
+								{
+									"type": "cost_reduction",
+									"attribute": "dx",
+									"percentage": 40
+								}
+							],
+							"calc": {
+								"points": -50
+							}
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "TO6B5SE9m5eIOATjD",
+					"name": "Legs",
+					"children": [
+						{
+							"id": "tB2i5qDuRihaxAdmK",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tLFklg798TKhdKuDn"
+							},
+							"name": "Extra Legs",
+							"reference": "B54",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mPbP2437_Br39mxEb",
+									"name": "4",
+									"reference": "B54",
+									"cost": 5,
+									"cost_type": "points"
+								},
+								{
+									"id": "mRTgOBzwvbf4qwnZd",
+									"name": "@5 or 6@",
+									"reference": "B55",
+									"cost": 10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mqygGE2XfedYYQAOO",
+									"name": "@7+@",
+									"reference": "B55",
+									"cost": 15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mmpiK0xBRV8e3LxCP",
+									"name": "Long",
+									"reference": "B55",
+									"cost": 100,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "m7LYBISnfILZ5GYLf",
+									"name": "Cannot Kick",
+									"reference": "B55",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "mE5pC4uNYU5lmbjOp",
+									"name": "Extra Flexible",
+									"reference": "MATG27",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mdN8B3dmX6xgLTRvK",
+									"name": "Prehensile Feet",
+									"reference": "MATG28",
+									"cost": 20,
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tzf2zOlA4p0PAAQ0S",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tpGiLpDpY0JDjAIxw"
+							},
+							"name": "No Manipulators",
+							"reference": "B145",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -50,
+							"features": [
+								{
+									"type": "cost_reduction",
+									"attribute": "st",
+									"percentage": 40
+								},
+								{
+									"type": "cost_reduction",
+									"attribute": "dx",
+									"percentage": 40
+								}
+							],
+							"calc": {
+								"points": -50
+							}
+						}
+					],
+					"calc": {
+						"points": -45
+					}
+				},
+				{
+					"id": "TBft5mRR0DzxwEwSk",
+					"name": "Wheels",
+					"children": [
+						{
+							"id": "tAAC1oh3kDBDksanr",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tWWroHVx45X2oTQ6b"
+							},
+							"name": "No Legs (Wheeled)",
+							"reference": "B145",
+							"notes": "4 wheels",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": -20,
+							"calc": {
+								"points": -20
+							}
+						},
+						{
+							"id": "t4DtFciQWo9xBWP6a",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tpGiLpDpY0JDjAIxw"
+							},
+							"name": "No Manipulators",
+							"reference": "B145",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -50,
+							"features": [
+								{
+									"type": "cost_reduction",
+									"attribute": "st",
+									"percentage": 40
+								},
+								{
+									"type": "cost_reduction",
+									"attribute": "dx",
+									"percentage": 40
+								}
+							],
+							"calc": {
+								"points": -50
+							}
+						}
+					],
+					"calc": {
+						"points": -70
+					}
+				}
+			],
+			"calc": {
+				"points": -125
+			}
+		},
+		{
+			"id": "Ti0asrjgKcETMF5Ry",
+			"name": "Security",
+			"children": [
+				{
+					"id": "tSDUZqWLhK2W_eE3N",
+					"name": "Security Level",
+					"points_per_level": 5,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tOTC6WOd7SBPbx5id",
+					"name": "Firewall",
+					"points_per_level": 10,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 15
+			}
+		},
+		{
+			"id": "Twvgxvp_txc5qck93",
+			"name": "Optional",
+			"children": [
+				{
+					"id": "tCeNXiL9NDxcN6FxO",
+					"source": {
+						"library": "/gcs_user_library",
+						"path": "Apollonia\\Traits.adq",
+						"id": "t0qrwtNdy3DX5Y9En"
+					},
+					"name": "Mana",
+					"points_per_level": 2,
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "t9P8sUM_59wNxoqtj",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tBmSJ3pNE53c4IRUU"
+					},
+					"name": "Damage Resistance",
+					"reference": "B47,P45,MA43,PSI14",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mB5Iam_XVrytO8IDJ",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mPjtfVAFD7sjijv1a",
+							"name": "Hardened",
+							"reference": "B47",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mY3VYhRp04zWrWubF",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "m7Y_ctnEnro02WqZj",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mosYcmv1PtnDxnqWD",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mcpKvZeeFODXgqTAw",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "m5kkbgi116GjqJ62i",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mrvzLrHayly51KLho",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "mAAGaJSm5E8127vpG",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "m3fmlfJnWx_sZ8O1_",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "my9bqfI5eFIAQkfCH",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mlho3t5WPS2GUYqOs",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mOSsDnumyeeB7RhPM",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "m8VhcjBI7rjPyxBAR",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mhtxcWsy3QbH4bFhN",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mHNF2-L3n2jsFCRog",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mGDYLN6Xupegw3iM-",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Common Attack Form@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "m0oiWIK63QSfi_06-",
+							"name": "Tough Skin",
+							"notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mWr9vZyNlgtzdgbSD",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "mrf1JLqetCEJNLhUD",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mssm6LYZZ17JQhCN9",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mrd9JjkAmU5Dpl1Xg",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mAYu2B62OtRgPVU9_",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mOLhPzuRV0eV-cT19",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mfxlE8IIDUbSGMlzX",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"all"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tgz1jehXaWvzzL8Dv",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tG2tK0QWXPQqFk-rd"
+					},
+					"name": "Enhanced Move (Ground)",
+					"reference": "B52,P49",
+					"notes": "Double your normal Ground Move for each level. This is for top speed.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "maXEMIY92jgGqUt7Q",
+							"name": "Handling Bonus",
+							"reference": "B52",
+							"cost": 5,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m6rJmg9hH5sCbIJao",
+							"name": "Handling Penalty",
+							"reference": "B52",
+							"cost": -5,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mzkjFxFCsH2ztVMdg",
+							"name": "Newtonian",
+							"reference": "B52",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mLtISNmj0l-HyrFwj",
+							"name": "Road-Bound",
+							"reference": "B52",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "m1-D5TAzcg2dWGYF_",
+							"name": "All-Out",
+							"reference": "P49",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "m8eS7e4Hf9Z3YsQ9K",
+							"name": "Cosmic",
+							"reference": "SU26",
+							"notes": "Instantaneous Acceleration",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mXIhxHq-iPC0tZ67u",
+							"name": "Cosmic",
+							"reference": "SU27",
+							"notes": "Complete Maneuverability",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"points_per_level": 20,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "t-vBBjJvRWMzCLvPi",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tRew_hxLFtYOx0922"
+					},
+					"name": "Horizontal",
+					"reference": "B139",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": 21
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "sXvSdWq2BMcX5wy9G",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "svEm7OyeCu_9wJ8Kk"
+			},
+			"name": "Stealth",
+			"reference": "B222",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "sA1ezPCor9bHIGRYB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "sLnNphhHfVNqLyAsb"
+			},
+			"name": "Guns",
+			"reference": "B198",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Light Machine Gun",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"tech_level": "",
+			"points": 1
+		},
+		{
+			"id": "skrxyeYUBSZg15iSl",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "sfWUh9TJBpQuwZBVo"
+			},
+			"name": "Guns",
+			"reference": "B198",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Pistol",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Beam Weapons",
+					"specialization": "Pistol",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"tech_level": "",
+			"points": 1
+		},
+		{
+			"id": "sa1-ItCsmp8XRHhXn",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "s3hbw6Ngz9_5OFNcR"
+			},
+			"name": "Guns",
+			"reference": "B198",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Rifle",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Beam Weapons",
+					"specialization": "Rifle",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"tech_level": "",
+			"points": 1
+		},
+		{
+			"id": "smE66q6tGjRanupgv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "sFv-HqFH4QW3yQGAF"
+			},
+			"name": "Guns",
+			"reference": "B198",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Shotgun",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"tech_level": "",
+			"points": 1
+		},
+		{
+			"id": "sl2ElRv4m0CzV2_uK",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "sLe79aP8mpSWAoCLO"
+			},
+			"name": "Guns",
+			"reference": "B198",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Submachine Gun",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				}
+			],
+			"tech_level": "",
+			"points": 1
+		}
+	]
+}

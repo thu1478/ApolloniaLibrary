@@ -1,0 +1,1896 @@
+{
+	"version": 5,
+	"id": "BJD0aou7-lxRmqNwX",
+	"traits": [
+		{
+			"id": "T3YHQpcnKFO87fAjO",
+			"name": "Litus",
+			"children": [
+				{
+					"id": "tzGTfbAWkjYF20zaJ",
+					"name": "Acute Taste \u0026 Smell",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "taste_smell",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "tFRGeEeBu-iZsc7yv",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tdlCZw4YB4T7QkOnj"
+					},
+					"name": "Appearance",
+					"reference": "B21",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mL7bSVFVo9rcfNuG9",
+							"name": "Attractive",
+							"reference": "B21",
+							"cost": 4,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 1
+								}
+							]
+						},
+						{
+							"id": "m5QnwgZxCbvsCsARs",
+							"name": "Average",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mCIH8J_mHpKBGu1A7",
+							"name": "Beautiful",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mXtkbD3t7dOw5xDmy",
+							"name": "Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "moPOnDoyGfAm26FLq",
+							"name": "Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mvO9tFge4oFV0-LKv",
+							"name": "Handsome",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m845NWQLuF6ZqlJgY",
+							"name": "Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mORdLR65IxPzZX_3I",
+							"name": "Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mOVVf10OnKuSta96U",
+							"name": "Hideous",
+							"reference": "B21,B202",
+							"cost": -16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									},
+									"amount": 2
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "meRaXqwhXJrbO_7Yy",
+							"name": "Horrific",
+							"reference": "B21,B202",
+							"cost": -24,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									},
+									"amount": 4
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -6
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "maTnL1Ko7_aOeQEXI",
+							"name": "Impressive",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m1VCqcN7j8Weu8fU6",
+							"name": "Monstrous",
+							"reference": "B21,B202",
+							"cost": -20,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									},
+									"amount": 3
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -5
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mdiTnq2VFvgVwWJar",
+							"name": "Off-the-Shelf Looks",
+							"reference": "B21",
+							"notes": "Halves the usual reaction bonus - adjust manually",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mo0hwgLzk_kBoKbKV",
+							"name": "Transcendent",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 8
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mpsdisRtrsLV55BWa",
+							"name": "Transcendent (Androgynous)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mu1SI57lkxVqUIGVS",
+							"name": "Transcendent (Impressive)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mivN_14xdy96uUEQC",
+							"name": "Ugly",
+							"reference": "B21",
+							"cost": -8,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -2
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mCEcFV88VsoTdHDqN",
+							"name": "Unattractive",
+							"reference": "B21",
+							"cost": -4,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m74n_YAjN8wfyaOzB",
+							"name": "Universal",
+							"reference": "B21",
+							"cost": 25,
+							"disabled": true
+						},
+						{
+							"id": "mdPs_RcfMNbON1GaG",
+							"name": "Very Beautiful",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mT_X7CmhEz2FPOZJP",
+							"name": "Very Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "ml9Y6c0foFHjILNhS",
+							"name": "Very Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mN0u0AP6c3kx-G4RQ",
+							"name": "Very Handsome",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mx2xD83COrPLID83v",
+							"name": "Very Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mB3wYw4DPW8ME7PSJ",
+							"name": "Very Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "t8q6HhDz80ajsgeWO",
+					"name": "Social Stigma (Minority Group)",
+					"reference": "B155",
+					"notes": "You are a member of a minority that the dominant culture around you regards as “barbarians” or “inferior.”",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"disabled": true,
+					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others except your own kind",
+							"amount": -2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others of your own kind in an area, profession, or situation where your minority is especially rare",
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tzKvHCBug5kdpWTqw",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t7U0VbIzs6SqefwLr"
+					},
+					"name": "Social Stigma (Criminal Record)",
+					"reference": "B155",
+					"notes": "Just racism, not actual criminal record necessarily",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from non-criminals who learn of your Criminal Record. Police, judges, vigilantes, and other law-and-order types react at -2",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "T3Jf3d3D_uUTp53q6",
+			"name": "Subraces",
+			"children": [
+				{
+					"id": "T39SpblKY5DYEFw8B",
+					"name": "Devil",
+					"children": [
+						{
+							"id": "tEkUCYeW-ld4SKYly",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tW6G2uQN2_SbNutDC"
+							},
+							"name": "Protected Sense (Vision)",
+							"reference": "B78,P69",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tm1s1NnquQiUU9agb",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tW6G2uQN2_SbNutDC"
+							},
+							"name": "Protected Sense (Hearing)",
+							"reference": "B78,P69",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "T6x3dWNXQKsmYiZkv",
+							"name": "Archdevil Mode",
+							"notes": "Your hair becomes white and your eyes become red. Costs 1 FP and 2 HP to use and requires Concentrate maneuver to activate.",
+							"modifiers": [
+								{
+									"id": "mcBG9PpvBWFMeZxoW",
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"cost": -5,
+									"levels": 2
+								},
+								{
+									"id": "m7FX_z-SKaV8U2bEA",
+									"name": "Costs Hit Points",
+									"reference": "PU8:12",
+									"notes": "Per use",
+									"cost": -10,
+									"levels": 1
+								},
+								{
+									"id": "m_hmw7-KCKKXmrFv6",
+									"name": "Limited Use",
+									"reference": "B112,P103",
+									"notes": "Once per day",
+									"cost": -40
+								}
+							],
+							"children": [
+								{
+									"id": "tn-3yEl83Pkw1Knri",
+									"name": "Enhanced Dodge",
+									"reference": "B51,MA43",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"points_per_level": 15,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "Dodge in Archdevil Mode",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"levels": 2,
+									"calc": {
+										"points": 12
+									}
+								},
+								{
+									"id": "tl8nXWM7fVKXV0J-8",
+									"name": "Increased Basic Move",
+									"reference": "B17",
+									"tags": [
+										"Advantage",
+										"Attribute",
+										"Physical"
+									],
+									"points_per_level": 5,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "Basic Move in Archdevil Mode",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"levels": 2,
+									"calc": {
+										"points": 4
+									}
+								}
+							],
+							"calc": {
+								"points": 16
+							}
+						}
+					],
+					"calc": {
+						"points": 26
+					}
+				},
+				{
+					"id": "TGy6fM-aUjp0su3x5",
+					"name": "Vampire",
+					"children": [
+						{
+							"id": "td3FmhW8mKMCN8RtX",
+							"name": "Life Share",
+							"reference": "B59,P51,PSI14",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mG_X7vmTS8k_mxcx5",
+									"name": "Faith Healing",
+									"reference": "B59",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mMx1n3VANeQnfVsFG",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "All Mammals",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mY7yZ3SDmCoPSqdXh",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "All Earthly Life",
+									"cost": 40,
+									"disabled": true
+								},
+								{
+									"id": "mgS7rFIA2LkE3Voli",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "All Carbon-Based Life",
+									"cost": 60,
+									"disabled": true
+								},
+								{
+									"id": "mMLaUltYe40ckZscO",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "Anything Alive",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "mdGySOAguvqKJOQYO",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "Anything Animate",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mQoY4dr5bB-qLVtaY",
+									"name": "Disease Only",
+									"reference": "B59",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "m62QGIGp4x9CNGbE1",
+									"name": "Injuries Only",
+									"reference": "B59",
+									"cost": -20
+								},
+								{
+									"id": "mlnBRU53gq1x7bXnE",
+									"name": "Own Race Only",
+									"reference": "B59",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mXaPSEzT4apvcK1sB",
+									"name": "Psychic Healing",
+									"reference": "B59",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "m9l4X_9GL14K4miWB",
+									"name": "Affects Self",
+									"reference": "P51",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "m36vYXGcHmFDpyPOZ",
+									"name": "Cure Affliction",
+									"reference": "P51",
+									"cost": 60,
+									"disabled": true
+								},
+								{
+									"id": "mZNwre_EakbC_jD_3",
+									"name": "Affliction Only",
+									"reference": "P51",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "m7Wi-YI1nWcUdYK_u",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "2 FP",
+									"cost": -25
+								},
+								{
+									"id": "mraFUpZsle1hs7_oA",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "4 FP",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mlWZVVhGYIgZTMeWh",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "6 FP",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "mTUe2uaeKmmD0MQk5",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "8 FP",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mjsLt7zQNuOz2k66z",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "10 FP",
+									"cost": -5,
+									"disabled": true
+								},
+								{
+									"id": "mnAJj2VVXM0BI6Uip",
+									"name": "Empathic",
+									"reference": "P51",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "mtyl8sVs62rlbAWow",
+									"name": "Restore Limbs",
+									"reference": "PSI14",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "mddkRil4SImWFkJUe",
+									"name": "Costs Hit Points",
+									"reference": "PU8:12",
+									"notes": "Per use",
+									"cost": -10,
+									"levels": 2
+								}
+							],
+							"base_points": 30,
+							"calc": {
+								"points": 11
+							}
+						},
+						{
+							"id": "teD6AHNhEY6VlQyMl",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t4TqvzUkGTe4ipCZE"
+							},
+							"name": "Injury Tolerance",
+							"reference": "B60,P52,MA45",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m_NGR-z1tukzI9xfb",
+									"name": "Diffuse",
+									"reference": "B60",
+									"notes": "Immune to crippling injuries. Brain, Vitals and Groin cannot be targeted. Most foes cannot slam or grapple you (GM's decision). Do not bleed. Unaffected by blood-borne toxins. Immune to attacks that rely on cutting off blood to part of your body. Impaling and piercing attacks of any size never do more than 1 HP of injury, regardless of penetrating damage. Other attacks never do more than 2 HP of injury. Exception: Area-effect, cone, and explosion attacks cause normal injury",
+									"cost": 100,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "muMxjvo9dCrxBNHEc",
+									"name": "Homogenous",
+									"reference": "B60",
+									"notes": "Altered wound modifiers: imp \u0026 pi++ are x1/2, pi+ is x1/3, pi is x1/5, pi- is x1/10",
+									"cost": 40,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mXnWI-dfZ3_J4BhIA",
+									"name": "No Blood",
+									"reference": "B61",
+									"notes": "Do not bleed, unaffected by blood-borne toxins, immune to attacks that rely on cutting off blood to part of your body",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mn4Z6exNX3LD09INM",
+									"name": "No Brain",
+									"reference": "B61",
+									"notes": "Brain cannot be targeted. Blows to the skull or eye are treated like blows to the face, except that eye injury can still cripple the eye",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mQBQAcakzKBP0d9m8",
+									"name": "No Eyes",
+									"reference": "B61",
+									"notes": "Eyes may not be targeted. Immune to blinding attacks",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mR03G7lvrSv1cxrZu",
+									"name": "No Head",
+									"reference": "B61",
+									"notes": "Skull, Brain and Face cannot be targeted",
+									"cost": 7,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mI3xRBH1uPv6pOeIs",
+									"name": "No Neck",
+									"reference": "B61",
+									"notes": "Neck may not be targeted and cannot be decapitated, choked or strangled",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mEMPANJRFqR5Xn8Pt",
+									"name": "No Vitals",
+									"reference": "B61",
+									"notes": "Attacks to the Vitals or Groin are treated as attacks to the Torso",
+									"cost": 5,
+									"cost_type": "points"
+								},
+								{
+									"id": "mBR0M2gqfETyMTZmq",
+									"name": "Unliving",
+									"reference": "B61",
+									"notes": "Altered wound modifiers: imp \u0026 pi++ are x1, pi+ is x1/2, pi is x1/3, pi- is x1/5",
+									"cost": 20,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tDCqoprztM2oQfWPM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tzVv8jJIuoUiVT_80"
+							},
+							"name": "Blood Absorbing Hair",
+							"reference": "B134",
+							"notes": "You hair absorbs blood. Any injuries within 1 hex of you will have the blood reach your hair.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tghvHfGJ5TfCo-hm6",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tQ0o-fWDmw5VQUulz"
+							},
+							"name": "Frightful Presence",
+							"reference": "B93,P84",
+							"notes": "Requires eye contact within 10 yds",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "m6GWZ13SGD6BQ_LlN",
+									"name": "Always On",
+									"reference": "B93",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mwbgm26oQ2-Fml1t0",
+									"name": "Active",
+									"reference": "P84"
+								},
+								{
+									"id": "mTtJSLO-bPk2fnnzi",
+									"name": "Presence",
+									"reference": "P84",
+									"cost": 25,
+									"disabled": true
+								},
+								{
+									"id": "mvxwLmPOf6ArHwjzp",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "m8LxjxHIi55QbM1I0"
+									},
+									"name": "Limited Use",
+									"reference": "B112,P103",
+									"notes": "Once per day",
+									"cost": -40
+								},
+								{
+									"id": "mue0DBBdaDLHUVuFF",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "mb8dKIbPtFmqDLYaM"
+									},
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"cost": -5,
+									"levels": 2
+								}
+							],
+							"base_points": 30,
+							"points_per_level": 10,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 20
+							}
+						}
+					],
+					"calc": {
+						"points": 26
+					}
+				},
+				{
+					"id": "TOlstTYM234QQqG0t",
+					"name": "Gargoyle",
+					"children": [
+						{
+							"id": "tmEi6GmZsItMh5dy7",
+							"name": "Attribute Modifiers",
+							"reference": "B14",
+							"tags": [
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m_YdivnnJBaGVJEfd",
+									"name": "SM +1",
+									"reference": "B19",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "sm",
+											"amount": 1
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tv6hV69OdQI1comzI",
+							"name": "Warden of Stone",
+							"reference": "B47,P45,MA43,PSI14",
+							"notes": "Use instead of a Defence roll if you want",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mVEMBYfsp5nrdKZlM",
+									"name": "Force Field",
+									"reference": "B47",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "maBlXcPsHMkiAkJ4p",
+									"name": "Hardened",
+									"reference": "B47",
+									"cost": 20,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "mdr5VifMounO6dgcm",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Enhances @Trait@",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "mDuSiYbTtqteyiq30",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Healing only",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "mIOJeZ5i4eDzScL9t",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Enhances any trait",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mHHbbCa6_s7vNKcRV",
+									"name": "Reflection",
+									"reference": "B47",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mo-ESvOs14pFC1Prf",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Rare@",
+									"cost": -1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mLl1LhsoSXmCM_iam",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Occasional@",
+									"cost": -5,
+									"disabled": true
+								},
+								{
+									"id": "maXp10Dy9mwu5bkGU",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Common@",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "muS3Chmt7uR7rMMA4",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Very Common@",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "mpAaU_t5g9jybPD4V",
+									"name": "Directional",
+									"reference": "B47",
+									"notes": "Front",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mR3g1xq8Gw00taVRS",
+									"name": "Flexible",
+									"reference": "B47",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mLYkOppimJhASMYWR",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Very Common Attack Form@",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mFwxdVuQ8xo2RC9mj",
+									"name": "Semi-Ablative",
+									"reference": "B47",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mmHzpke_zIV7_Zpj1",
+									"name": "Can't wear armor",
+									"reference": "B47",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mV_HRf10omY1duuDJ",
+									"name": "Directional",
+									"reference": "B47",
+									"notes": "@Direction: Back, Right, Left, Top or Underside@",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mG4ecAZKSxHDJbF_I",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Common Attack Form@",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mwaq48yamvSIhRfti",
+									"name": "Tough Skin",
+									"notes": "Effects that just require skin contact or a scratch ignore this DR",
+									"cost": -40
+								},
+								{
+									"id": "mlabG8i_L1SgrHzl5",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Occasional Attack Form@",
+									"cost": -60,
+									"disabled": true
+								},
+								{
+									"id": "mZCjdLUun6M-H-I_U",
+									"name": "Ablative",
+									"reference": "B47",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "mWj3gja2uK2cR2-bt",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Rare Attack Form@",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "mkjOA0XI-h5xchdVj",
+									"name": "Laminate",
+									"reference": "RSWL18",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mrrPWQSGK3Qr2BQYF",
+									"name": "Malediction-Proof",
+									"reference": "PSI14",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "miJm2JL91ZIqFJiLe",
+									"name": "Maledictions Only",
+									"reference": "PSI14",
+									"disabled": true
+								},
+								{
+									"id": "m_vabWSfRxUoZYrNq",
+									"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+									"reference": "B47",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mx6JZAND1SpJ3VfHs",
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"cost": -5,
+									"levels": 2
+								}
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "DR when using Warden of Stone for 2 FP",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 5,
+							"calc": {
+								"points": 13
+							}
+						},
+						{
+							"id": "tLRIHHt0W2A9XfGUB",
+							"name": "High Pain Threshold",
+							"reference": "B59",
+							"notes": "Never suffer shock penalties when injured",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 10,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "on all HT rolls to avoid knockdown and stunning",
+									"amount": 3
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to resist torture",
+									"amount": 3
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tADUpU8roqPe-EVlP",
+							"name": "Magic Resistance",
+							"reference": "B67",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mAs2enamfrT5JwH-i",
+									"name": "Improved",
+									"reference": "B67",
+									"cost": 150,
+									"disabled": true
+								}
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to resist spells",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to skill for others to cast a spell on you",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 4
+							}
+						}
+					],
+					"calc": {
+						"points": 27
+					}
+				}
+			],
+			"calc": {
+				"points": 79
+			}
+		},
+		{
+			"id": "ToSJb2aw1TKBhgGe7",
+			"name": "Cultural Lenses",
+			"children": [
+				{
+					"id": "TBG5WGQRvFUCw1XiZ",
+					"name": "Valerianovich",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TrscelZXtEWGAtGgQ",
+					"name": "Ilyich",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TizCMuiowbSmw5rRf",
+					"name": "Stanislavovna",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TjOLBl9VZPCaWQFQP",
+			"name": "Optional",
+			"children": [
+				{
+					"id": "tnVblqiEDvVLUEH0q",
+					"name": "Dark Vision",
+					"reference": "B47,P46",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m4_kGvcxcuodvBVNR",
+							"name": "Can see colors in the dark",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mUSzjaJ1RD28KD2QT",
+							"name": "Hypersensory",
+							"reference": "P46",
+							"cost": 40,
+							"disabled": true
+						}
+					],
+					"base_points": 25,
+					"calc": {
+						"points": 25
+					}
+				},
+				{
+					"id": "t0Bj3IKAMvQEZgwcP",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "t5LlXpm2lmMK5KcVN"
+					},
+					"name": "Blunt Claws",
+					"reference": "B42,MA42",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 3,
+					"weapons": [
+						{
+							"id": "w2QBDM8u7bRl5vW2Y",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1",
+								"modifier_per_die": 1
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 (+1 per die) cr"
+							}
+						},
+						{
+							"id": "w4asgw2bDkM6w68wg",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"modifier_per_die": 1
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr (+1 per die) cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 3
+					}
+				},
+				{
+					"id": "twYzei9UvD37O2iPv",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "touwUIFalnae02BUl"
+					},
+					"name": "Temperature Tolerance (Cold)",
+					"reference": "B93",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 3
+					}
+				}
+			],
+			"calc": {
+				"points": 31
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "SGEODHXEJVdxAuwJv",
+			"name": "Valerianovich",
+			"children": [
+				{
+					"id": "skE1uaiYzB8cLg-nA",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Valerianovich Territory; Lived there",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "s7EWbxnKRkNhRrb_i",
+					"name": "Chemistry",
+					"reference": "B183",
+					"tags": [
+						"Natural Science"
+					],
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Alchemy",
+							"modifier": -3
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "sp59_ZYbkucA2JLC3",
+					"name": "Pharmacy",
+					"reference": "B213",
+					"tags": [
+						"Design",
+						"Invention",
+						"Medical",
+						"Plant"
+					],
+					"specialization": "Herbal",
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Biology",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Herb Lore",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Naturalist",
+							"modifier": -5
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "naturalist"
+								}
+							}
+						]
+					},
+					"tech_level": "",
+					"points": 1
+				}
+			]
+		},
+		{
+			"id": "SAtY56m5DEPQ0Yjw9",
+			"name": "Ilyich",
+			"children": [
+				{
+					"id": "sIdua_6El9NcE0Vmv",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Ilyich Territory; Lived there",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sQXR3xuqO7vmF-awA",
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tags": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "SJd820_H_OsmAi_-k",
+					"name": "Choose one",
+					"children": [
+						{
+							"id": "sfYwgdtAsfDoi8IFC",
+							"name": "Counterfeiting",
+							"reference": "B185",
+							"tags": [
+								"Criminal",
+								"Street"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Forgery",
+									"modifier": -2
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "skj0oB6w6VVqG5RTV",
+							"name": "Forgery",
+							"reference": "B196",
+							"tags": [
+								"Criminal",
+								"Spy",
+								"Street"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Counterfeiting",
+									"modifier": -2
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						}
+					]
+				},
+				{
+					"id": "SavHuxgVxyC2rSqZP",
+					"name": "Choose one",
+					"children": [
+						{
+							"id": "sVanQUL48ntjteqKU",
+							"name": "Accounting",
+							"reference": "B174",
+							"tags": [
+								"Business"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Finance",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Mathematics",
+									"specialization": "Statistics",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Merchant",
+									"modifier": -5
+								}
+							],
+							"points": 1
+						},
+						{
+							"id": "sszI8-3h35JsrQC5a",
+							"name": "Finance",
+							"reference": "B195",
+							"tags": [
+								"Business"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Accounting",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Economics",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Merchant",
+									"modifier": -6
+								}
+							],
+							"points": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "Si8zn6ZfrK31moZSj",
+			"name": "Stanislavovna",
+			"children": [
+				{
+					"id": "sVkAiYis2WYZ7qFwA",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Stanislavovna Territory; Lived there",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sz_YgE-3hy-UwVAJp",
+					"name": "First Aid",
+					"reference": "B195",
+					"tags": [
+						"Everyman",
+						"Medical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Esoteric Medicine"
+						},
+						{
+							"type": "skill",
+							"name": "Physician"
+						},
+						{
+							"type": "skill",
+							"name": "Veterinary",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "sLFTx8Y19YxH_IkpU",
+					"name": "Forced Entry",
+					"reference": "B196",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "dx/e",
+					"points": 1
+				},
+				{
+					"id": "sJyL3s2i0jrgAE9hb",
+					"name": "Intimidation",
+					"reference": "B202",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Social",
+						"Street"
+					],
+					"difficulty": "will/a",
+					"defaults": [
+						{
+							"type": "will",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Acting",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				}
+			]
+		},
+		{
+			"id": "StWdWTj9uun3ePV9p",
+			"name": "All Citizens",
+			"children": [
+				{
+					"id": "swAcKS9-SmBNCS96M",
+					"name": "Savoir-Faire",
+					"reference": "B218,MA59",
+					"tags": [
+						"Criminal",
+						"Knowledge",
+						"Social",
+						"Street"
+					],
+					"specialization": "Mafia",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Streetwise",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "smvFZGuTxevKZxrKU",
+					"name": "Streetwise",
+					"reference": "B223",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Social",
+						"Street"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						}
+					],
+					"points": 1
+				}
+			]
+		}
+	]
+}

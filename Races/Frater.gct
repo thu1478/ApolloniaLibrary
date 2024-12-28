@@ -1,0 +1,1118 @@
+{
+	"version": 5,
+	"id": "Bj3I5ywVUbKjUxF9h",
+	"traits": [
+		{
+			"id": "T7x8c2H7V4dj_bAw2",
+			"name": "Frater",
+			"children": [
+				{
+					"id": "tf0y6qAkwnEh2D95Y",
+					"name": "Attribute Modifiers",
+					"reference": "B14",
+					"tags": [
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mK4YvE9gBKZu3a5XS",
+							"name": "SM -1",
+							"reference": "B19",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "sm",
+									"amount": -1
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t1CcKXHYjyXFL1tkw",
+					"name": "Acute Taste \u0026 Smell",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"disabled": true,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "taste_smell",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tsdonSXRrDfIEm9_A",
+					"name": "Acute Vision",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"disabled": true,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "vision",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tXqS7CRt4EaCkX7qu",
+					"name": "Danger Sense",
+					"reference": "B47,P46",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "tEPNoCQ1edEjHzRj3",
+					"name": "Honest Face",
+					"reference": "B101",
+					"tags": [
+						"Perk",
+						"Physical"
+					],
+					"disabled": true,
+					"base_points": 1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to trained Acting skill for the sole purpose of \"acting innocent\"",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tWGbjLBrQdhtNSHU0",
+					"name": "Low Pain Threshold",
+					"reference": "B142",
+					"notes": "Double the shock from any injury. Whenever you take a wound that does more than 1 HP of damage, you must make a Will roll to avoid crying out.",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "high pain threshold"
+								}
+							}
+						]
+					},
+					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from \"macho\" individuals",
+							"amount": -1
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to resist knockdown, stunning, and physical torture",
+							"amount": -4
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "Tt300y5lIswMjOsT1",
+			"name": "Subraces",
+			"children": [
+				{
+					"id": "TzE7LHMT1uujnRmiY",
+					"name": "Shamac",
+					"children": [
+						{
+							"id": "trYDY83jaJSq5uJOl",
+							"name": "Acute Hearing",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "hearing",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 2
+							}
+						},
+						{
+							"id": "tv0sUOsKIW5-FR8NY",
+							"name": "Enhanced Dodge",
+							"reference": "B51,MA43",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"points_per_level": 15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dodge",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 15
+							}
+						}
+					],
+					"calc": {
+						"points": 17
+					}
+				},
+				{
+					"id": "T_HtnELG6lg__-g5f",
+					"name": "Ori",
+					"children": [
+						{
+							"id": "tp_wxBZnADhdD19Wz",
+							"name": "Acute Hearing",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "hearing",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "tVpYswhuWDgoQtxoP",
+							"name": "Luck",
+							"reference": "B66,P59",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mnyL9csIm-QLOcgAu",
+									"name": "Active",
+									"reference": "B66",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "murk-pQjiFuMj6Pol",
+									"name": "Aspected",
+									"reference": "B66",
+									"notes": "@Aspect@",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "m1uxSv2i_7_QfVjsF",
+									"name": "Defensive",
+									"reference": "B66",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "m97zY_vwYtSTi0P-g",
+									"name": "Wishing",
+									"reference": "P59",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mCXVI-jQPgeD788Nw",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "mSAFsJswgoMiiLLNm"
+									},
+									"name": "Limited Use",
+									"reference": "B112,P103",
+									"notes": "2 uses per day",
+									"cost": -30
+								}
+							],
+							"base_points": 15,
+							"calc": {
+								"points": 11
+							}
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				}
+			],
+			"calc": {
+				"points": 32
+			}
+		},
+		{
+			"id": "TZdylp3QHUNm5a5SN",
+			"name": "Macreen Citizen",
+			"children": [
+				{
+					"id": "t_E5UbLieWFOtNKh_",
+					"name": "Fearfulness",
+					"reference": "B136",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "fearlessness"
+								}
+							}
+						]
+					},
+					"points_per_level": -2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "fright_check",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": -2
+					}
+				},
+				{
+					"id": "thfdDcMLe5A-hFgYD",
+					"name": "Gluttony",
+					"reference": "B137",
+					"notes": "Make a self-control roll when presented with a tempting morsel or good wine that, for some reason, you should resist. If you fail, you partake – regardless of the consequences.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tj7P4nMHM4UZMiV7B",
+					"name": "Sense of Duty",
+					"reference": "B153",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mNMco41ExehGFmerM",
+							"name": "Friends and Companions",
+							"reference": "B153",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mUjuarJUdzMlo8_e0",
+							"name": "@Small Group@",
+							"reference": "B153",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mkOwxnkM-ECOulmcI",
+							"name": "@Individual@",
+							"reference": "B153",
+							"cost": -2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m20kVzrZBUX9RaSV3",
+							"name": "Church of Sistio",
+							"reference": "B153",
+							"cost": -10,
+							"cost_type": "points"
+						},
+						{
+							"id": "mel-BYPtAAYOrvdTl",
+							"name": "@Entire Race@",
+							"reference": "B153",
+							"cost": -15,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m9Uds2J3KWJiinLYI",
+							"name": "Every Living Being",
+							"reference": "B153",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": -17
+			}
+		},
+		{
+			"id": "TCi9oWal9rFOetcYW",
+			"name": "Optional",
+			"children": [
+				{
+					"id": "t__EMiWrdYjfHIxHr",
+					"name": "Obscure (Hearing)",
+					"reference": "B72,P64,PSI16",
+					"notes": "Zone of silence",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mgleh1QcpCvxNvHEZ",
+							"name": "Defensive",
+							"reference": "B72",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mSCpaUaxvCB0saeh-",
+							"name": "Extended",
+							"reference": "B72",
+							"notes": "@Sense@",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mCpvV_uG-uG12Tos4",
+							"name": "Ranged",
+							"reference": "B72",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "m0CkUoQU_FpyU5lgJ",
+							"name": "Stealthy",
+							"reference": "B72",
+							"cost": 100
+						},
+						{
+							"id": "m3fkvBhp-SHaW2Yhh",
+							"name": "Always On",
+							"reference": "B72",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mGHjXC68OKZU0X2ix",
+							"name": "Limited",
+							"reference": "P65",
+							"notes": "@Source@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mw-fsexRZZFZ7DUgf",
+							"name": "Limited",
+							"reference": "P65",
+							"notes": "@Power@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mY6BI_dsDtA1o2PGJ",
+							"name": "Anti-Targeting",
+							"reference": "PSI16",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mmR3sisMKBs--alYC",
+							"name": "Area Effect",
+							"reference": "B102,P100",
+							"notes": "2^level radius",
+							"cost": 50,
+							"levels": 1
+						},
+						{
+							"id": "mxTC_cCtDX3AR1AB7",
+							"name": "Limited Use",
+							"reference": "B112,P103",
+							"notes": "2 uses per day",
+							"cost": -30
+						}
+					],
+					"points_per_level": 2,
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "tsVnBqWdeI42qPkun",
+					"name": "Silence",
+					"reference": "B85,P76",
+					"notes": "Bonuses help only when hearing is the only sense that can be used to detect you.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mC1ob9ssymHTqOwzr",
+							"name": "Dynamic",
+							"reference": "P76",
+							"cost": 40,
+							"disabled": true
+						}
+					],
+					"disabled": true,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to Stealth when you are perfectly motionless",
+							"amount": 2,
+							"per_level": true
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to Stealth if moving (even in armor, etc.)",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "ttZau_emYV4Z_Kw9h",
+					"name": "Invisibility",
+					"reference": "B63,P56",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Mental",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mgTzGPPMvUcwAEdoZ",
+							"name": "Affects Machines",
+							"reference": "B63",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "muxcsjY9NZbBdeGBn",
+							"name": "Can Carry Objects",
+							"reference": "B63",
+							"notes": "Up to No Encumbrance",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mMiYKkOhCFYgivMNh",
+							"name": "Can Carry Objects",
+							"reference": "B63",
+							"notes": "Up to Light Encumbrance",
+							"cost": 20
+						},
+						{
+							"id": "msODP_iQZ_UuLsW0K",
+							"name": "Can Carry Objects",
+							"reference": "B63",
+							"notes": "Up to Medium Encumbrance",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mZ7gZAs5J4hv4UGMt",
+							"name": "Can Carry Objects",
+							"reference": "B63",
+							"notes": "Up to Heavy Encumbrance",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mBdmm0en2gByw5oIZ",
+							"name": "Extended",
+							"reference": "B63",
+							"notes": "@Type@",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "m7KOlWSUBmt56mn3K",
+							"name": "Switchable",
+							"reference": "B63",
+							"cost": 10
+						},
+						{
+							"id": "m9wLs_-UrAtVxPoxW",
+							"name": "Usually On",
+							"reference": "B63",
+							"notes": "Turning visible costs 1 FP per second",
+							"cost": 5,
+							"disabled": true
+						},
+						{
+							"id": "mdDJZH-98v3bLfclF",
+							"name": "Machines Only",
+							"reference": "B63",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mLTLOhoVV7LwadRBA",
+							"name": "Substantial Only",
+							"reference": "B63",
+							"cost": -10
+						},
+						{
+							"id": "m_RmTDeFLPaBFhff2",
+							"name": "Visible Reflection",
+							"reference": "B63",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "mU5mMtdzvxOmTPk5l",
+							"name": "Visible Shadow",
+							"reference": "B63",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "ms68PRkMj8wUFthsO",
+							"name": "Fringe",
+							"reference": "P56",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "mW_g_2Fb_D_V3lDmC",
+							"name": "Costs Fatigue",
+							"reference": "B111,P101",
+							"cost": -5,
+							"levels": 4
+						},
+						{
+							"id": "mODYmlo_FDKEk7BZa",
+							"name": "Limited Use",
+							"reference": "B112,P103",
+							"notes": "Once per day",
+							"cost": -40
+						}
+					],
+					"base_points": 40,
+					"calc": {
+						"points": 24
+					}
+				},
+				{
+					"id": "tBfgEyNx6KbMzHmGB",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tOfcYZVTdsyq7yOkP"
+					},
+					"name": "Subsonic Speech",
+					"reference": "B89,P78",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mSR7QjoXXIFLGtbUX",
+							"name": "No normal speech",
+							"reference": "B89",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "t7D00xhC6aeoZ72xF",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tWF1J_Z0Ziz-qJ6pn"
+					},
+					"name": "Increased Basic Speed",
+					"reference": "B17",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "basic_speed",
+							"amount": 0.25,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"calc": {
+				"points": 48
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "SQN3H3Issy5s0dYkp",
+			"name": "All Citizens",
+			"children": [
+				{
+					"id": "s2fy91KfTOuKLsfhM",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 6+; and a general understanding of the economic and political situation",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Macreen",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "s0IDU1VGdy1N_5uCd",
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tags": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				}
+			]
+		},
+		{
+			"id": "SLxagZrVC-V4yeIHw",
+			"name": "Industriousness",
+			"children": [
+				{
+					"id": "SEhkEuiUCGRdfojUp",
+					"name": "Choose one",
+					"children": [
+						{
+							"id": "sK9NPw2bJOz79fV9F",
+							"name": "Engineer",
+							"reference": "B190",
+							"tags": [
+								"Design",
+								"Engineer",
+								"Invention"
+							],
+							"specialization": "Electrical",
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Electrician",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 5
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "mathematics"
+										},
+										"specialization": {
+											"compare": "is",
+											"qualifier": "applied"
+										}
+									}
+								]
+							},
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "sqyRu-HSVZKp1Uv8P",
+							"name": "Engineer",
+							"reference": "B190",
+							"tags": [
+								"Design",
+								"Engineer",
+								"Invention"
+							],
+							"specialization": "Electronics",
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Electronics Repair",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 5
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "mathematics"
+										},
+										"specialization": {
+											"compare": "is",
+											"qualifier": "applied"
+										}
+									}
+								]
+							},
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "s1HWB7QkduJURKPey",
+							"name": "Engineer",
+							"reference": "B190",
+							"tags": [
+								"Design",
+								"Engineer",
+								"Invention"
+							],
+							"specialization": "Mining",
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Explosives",
+									"specialization": "Demolition",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Geology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 5
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "mathematics"
+										},
+										"specialization": {
+											"compare": "is",
+											"qualifier": "applied"
+										}
+									}
+								]
+							},
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "s39NbnsPpoeQYpG5g",
+							"name": "Engineer",
+							"reference": "B190",
+							"tags": [
+								"Design",
+								"Engineer",
+								"Invention"
+							],
+							"specialization": "Small Arms",
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Armoury",
+									"specialization": "Small Arms",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 5
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "mathematics"
+										},
+										"specialization": {
+											"compare": "is",
+											"qualifier": "applied"
+										}
+									}
+								]
+							},
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "sgg3m0rJ1pCrw-6PJ",
+							"name": "Jeweler",
+							"reference": "B203",
+							"tags": [
+								"Craft"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Smith",
+									"specialization": "Copper",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smith",
+									"specialization": "Lead \u0026 Tin",
+									"modifier": -4
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "sUkTrrqdBabt3EPm_",
+							"name": "Metallurgy",
+							"reference": "B209",
+							"tags": [
+								"Natural Science"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Chemistry",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Jeweler",
+									"modifier": -8
+								},
+								{
+									"type": "skill",
+									"name": "Smith",
+									"modifier": -8
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "Sfngyv-ZYod5UiZTa",
+			"name": "Nature Preservationist",
+			"children": [
+				{
+					"id": "sgM9hvt0mcWR6v2bx",
+					"name": "Geology",
+					"reference": "B198",
+					"tags": [
+						"Natural Science"
+					],
+					"specialization": "Earthlike",
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "Physical, Earthlike",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Prospecting",
+							"modifier": -5
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "s-skWGqBv9wjzVeFu",
+					"name": "Naturalist",
+					"reference": "B211",
+					"tags": [
+						"Animal",
+						"Exploration",
+						"Natural Science",
+						"Outdoor",
+						"Plant"
+					],
+					"specialization": "Earthlike",
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Biology",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				}
+			]
+		}
+	]
+}

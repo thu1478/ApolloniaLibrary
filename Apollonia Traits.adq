@@ -1,0 +1,1050 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "t0qrwtNdy3DX5Y9En",
+			"name": "Mana",
+			"points_per_level": 2,
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 2
+			}
+		},
+		{
+			"id": "TygEGy8-aGfb4BvqV",
+			"name": "Languages",
+			"children": [
+				{
+					"id": "tbkUkqtMqA8bONJku",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Aviian",
+					"reference": "B24",
+					"notes": "The language of the Avii",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "mF-Y799vARtztT5Sd",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "msv-KoWWCO4w9K_R9",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m9ClQUfBOYcQwD5a7",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "misiB5MqjN-XXyxMs",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m6aDiST0STdfx3BQY",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "mKVxl0C1rz5YQxioH",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mQBjr5KFzQO8YIp0s",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mCZB9k9J15vptVPU0",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mSE3GjBaSCRMsKIME",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "tqesmGTM-z8gAVl4v",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Caelic",
+					"reference": "B24",
+					"notes": "The language of the Caeles",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "mIkSE1OXCy5-5rdbr",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mihv6boJLhBHj7m1B",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mcdRq3bM3fBPz_I1R",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m5U3Ln2cIN2xgvl01",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "md4E7U1L_yucAqIHq",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "mdUHlWiLTDoV5amOE",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mBXklzg-OvTLWN9GA",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mDnuagJIjs6LpZJX0",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m-eJI6bKSx2IiqP_9",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "tU3OWspnml5w4U4E_",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Demergian",
+					"reference": "B24",
+					"notes": "The language of the Demergi",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "mwA5Vi7_YvfIh56nI",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m3MPz2ey-phoGI6zC",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mLnePgRiLTFnLlncn",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mdCZLJA_XhFYMAh9I",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mitagMJJ8V7j5kc_u",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "m0_aEzXrQmkHwAdU6",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mwyGCMOeIpnnMpifC",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "miQBytKD8aAPwM2Gp",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mNQmpZ560pBH-ilM0",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "tkHhisybmsLl6uOW1",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Draconic",
+					"reference": "B24",
+					"notes": "The language of the Draco. This is the most common language used by all.",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "mC22lUcDf7Qydpx8b",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mfiSA2ipWtGVN9Cci",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mJJ4xmDWx2FadQPcI",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m_pnrmfKr9trvuw3j",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mlSLI-nOhTuhqPnh7",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "mPLMnNqOeAvJDfcXB",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mPNFRb8Gag3DuH9cF",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m6zZfL5OL6RPqe_XQ",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mFDVhteDDGjL72gEr",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "tPbJod1ZxyAnFXOpU",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Ducalian",
+					"reference": "B24",
+					"notes": "The language of the Ducalis",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "m8fRpAy9u-HA1i0iZ",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mfAcT061VKu5p-GD_",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mbsbroXpW7YxhQTwL",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mcbmJhl0P1YHBS6Ab",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mN7rMQhcraEg71gwS",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "mxtuQb0hI_IQBrnF5",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m7vKezi7flToPWH1D",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m7dF53foXt7t8Tdmj",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "msI3cRNH3YnatGwxb",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "thhQ_Yng8Ca35qUaj",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Fraterran",
+					"reference": "B24",
+					"notes": "The language of the Frater",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "mI2ty48l1pvLwy4FC",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mTa85MXHRbQm_9oc7",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "meIAPc2um-6u0vcu6",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mOLoG8kQ3WEqF2DVl",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mccbZkV8ybFmgoHih",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "murdYLPLzv_zQweMu",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m-l192HJMdEVuregK",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mN_0X3sNbFRE47Ti1",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m3W1mCXsIuJu3RjmR",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "tLCkC928hWVbLxYud",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Kenshiki",
+					"reference": "B24",
+					"notes": "The language of the Kenshi",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "m8sHjB3MucOABY3_-",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mB06anGG9oleC-nOx",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mTe7UkYN0Fr1vVC6C",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mZ5wwX_cAV2MUagut",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "moJU6vgB18IVqz1XW",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "mU6wpgDi8gKd3KmOA",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mrstRAj_B_0Zn5oh7",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mb8LUOwZSmg9qsYde",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m4ilnH1yFE2IyfI5q",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "tO-D0uARW3EGdjGo9",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Litorian",
+					"reference": "B24",
+					"notes": "The language of the Litus",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "m-XLXnDaO3sBiXfbZ",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m2YPumq1cQOzaEQtA",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mseB7eWN7lvIe8LnV",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mk7Jh8X3AXoO9JSXX",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mSIPV_v7XO28ulcw_",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "mbjhNqHOHWIzPKQAS",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mLn4OTsFjyNFkYsOc",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mbezEzuc039nHhv-M",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mNhuvisVPjsN650wU",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "t0fMA7K4DqNcrEgsO",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tw1Ad0oSMw2ATM4X1"
+					},
+					"name": "Language: Primoran",
+					"reference": "B24",
+					"notes": "The language of the Primo",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "m1i8d9POnEfXQx5PS",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mC2cM5TgxlmmjXQQa",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mEgGZKq213rY_iUui",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m-u2IGUERgShX9sGo",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mcSzEWs7so6rkmv9K",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "m6Ht36MKQB2YODGXv",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mVHIura-rs-sOjgvT",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mkldc0_TMWB6nJrtg",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mlZmwl8qfYYyZFyRG",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				}
+			],
+			"calc": {
+				"points": 54
+			}
+		}
+	]
+}

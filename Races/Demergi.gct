@@ -1,0 +1,2224 @@
+{
+	"version": 5,
+	"id": "BbmPFrK3RTT_LIaDS",
+	"traits": [
+		{
+			"id": "TRLg4wlcr2SJdljjn",
+			"name": "Demergi",
+			"children": [
+				{
+					"id": "tpz7f0kWvTlLJVv0d",
+					"name": "Acute Taste \u0026 Smell",
+					"reference": "B35",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"disabled": true,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "taste_smell",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tqs9KEsEC8IUpR_l4",
+					"name": "Amphibious",
+					"reference": "B40,P42",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tG-X-2DA2ZgfD7So4",
+					"name": "Night Vision",
+					"reference": "B71,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 3
+					}
+				},
+				{
+					"id": "tX7y-b-tFwrxjTTPq",
+					"name": "Speak Underwater",
+					"reference": "B87,P78",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "moSTyohdG-D4bTo2R",
+							"name": "Interface Crossing",
+							"reference": "B87",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"disabled": true,
+					"base_points": 5,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tB9BIuVkOqOMptPN3",
+					"name": "Cold-Blooded",
+					"reference": "B127",
+					"notes": "Under 50-degrees",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"disabled": true,
+					"base_points": -5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to HT to resist the effects of temperature",
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 13
+			}
+		},
+		{
+			"id": "TRGQkcuQlAsK8VonS",
+			"name": "Subraces",
+			"children": [
+				{
+					"id": "TCyGlWipKwu5jx9eB",
+					"name": "Squamae",
+					"children": [
+						{
+							"id": "t3OuAW9VQBQUH5L03",
+							"name": "Breath-Holding",
+							"reference": "B41",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 2
+							}
+						},
+						{
+							"id": "tEoRpC7RQB57-2a4V",
+							"name": "Fit",
+							"reference": "B55",
+							"notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"disabled": true,
+							"base_points": 5,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "t5xRUKjIbWIv1pmfn",
+							"name": "Hard to Subdue",
+							"reference": "B59",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to any HT roll to avoid unconsciousness",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "tRQ84K9ucgwOWEGAZ",
+							"name": "Hard to Kill",
+							"reference": "B58",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "t5w2przW4dCpzt2QL",
+							"name": "Tail",
+							"reference": "B88,MA47",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mCSyRcgLx6Aofz-G7",
+									"name": "Cannot Parry",
+									"reference": "B88",
+									"cost": -40
+								},
+								{
+									"id": "m5Ac-TSIEfrwMuQWH",
+									"name": "Clumsy",
+									"reference": "B88",
+									"cost": -20,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "mTL4mQtCLi34bgax_",
+									"name": "Limited Arc (Behind)",
+									"reference": "B88",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mX2DrGOGNyeTCV4e2",
+									"name": "Limited Arc (Behind and Side)",
+									"reference": "B88",
+									"cost": -20
+								},
+								{
+									"id": "mokvJh89gbKM4AWLv",
+									"name": "Weak",
+									"cost": -50,
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": -1,
+											"per_die": true
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mf_uefzwhqzGrh201",
+									"name": "Long",
+									"cost": 100,
+									"features": [
+										{
+											"type": "weapon_max_range_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1
+										}
+									]
+								}
+							],
+							"base_points": 5,
+							"weapons": [
+								{
+									"id": "wF5GbuPZQMjzROWpD",
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"modifier_per_die": 1
+									},
+									"reach": "C,1",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										}
+									],
+									"calc": {
+										"damage": "thr (+1 per die) cr"
+									}
+								}
+							],
+							"calc": {
+								"points": 7
+							}
+						}
+					],
+					"calc": {
+						"points": 17
+					}
+				},
+				{
+					"id": "TiN1FF37cPTwDcrw3",
+					"name": "Verta",
+					"children": [
+						{
+							"id": "tRtvJ2sRj3AoMgKq2",
+							"name": "Verta Blood",
+							"reference": "B35,P39,PSI13",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "MFUFRgfzHUl9-6t6j",
+									"name": "Attribute Penalties",
+									"children": [
+										{
+											"id": "moEJcz1yUXBvBJBvW",
+											"name": "DX Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to DX per level",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mektemblbJqvkmWR5",
+											"name": "HT Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to HT per level",
+											"cost": 5,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mCAZwD99bzWQv-EuP",
+											"name": "IQ Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to IQ per level",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mMybh_s9Dd5LbhRSE",
+											"name": "ST Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to ST per level",
+											"cost": 5,
+											"levels": 1,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "m_KEUPd-yM4KFsScW",
+									"name": "Cancellation",
+									"reference": "PSI13",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mWwY40O5poMb73KUL",
+									"name": "Cumulative",
+									"reference": "B36",
+									"cost": 400,
+									"disabled": true
+								},
+								{
+									"id": "Mve_BT38oKvfWRrCp",
+									"name": "Incapacitation",
+									"reference": "B36",
+									"children": [
+										{
+											"id": "mFGS7IqyILQFRh0sH",
+											"name": "Agony",
+											"reference": "B428",
+											"notes": "Lose 1 FP per minute",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "msgkxC41xXVuoBBz9",
+											"name": "Choking",
+											"reference": "B428",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mDwCheo857Z6hgKo4",
+											"name": "Daze",
+											"reference": "B428",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "msAgfUJfM97WviRo3",
+											"name": "Ecstasy",
+											"reference": "B428",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "m9W6rmSTGfz7v78cv",
+											"name": "Hallucination",
+											"reference": "B429",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "mJSAWw-3DpXt9w8Be",
+											"name": "Paralysis",
+											"reference": "B429",
+											"cost": 150,
+											"disabled": true
+										},
+										{
+											"id": "mlB246Sde1wlF9JFD",
+											"name": "Retching",
+											"reference": "B429",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "mRFieC3aW_93tSIMC",
+											"name": "Seizure",
+											"reference": "B429",
+											"notes": "Lose 1d FP at the end of the seizure",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mwv7u_OH7s8U4DcKC",
+											"name": "Sleep",
+											"cost": 150,
+											"disabled": true
+										},
+										{
+											"id": "md7sGgxkf-ozKzt7H",
+											"name": "Unconsciousness",
+											"reference": "B429",
+											"cost": 200,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "MPX3lTYGcwoxIp7x2",
+									"name": "Irritations",
+									"reference": "B36",
+									"children": [
+										{
+											"id": "mOE5LvkWH0f7VoCor",
+											"name": "Coughing",
+											"reference": "B428",
+											"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "mnrlL6yJhlhs8BnH8",
+											"name": "Drunk",
+											"reference": "B428",
+											"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "mny2VwXJzktxX-KHx",
+											"name": "Euphoria",
+											"reference": "B428",
+											"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+											"cost": 30,
+											"disabled": true
+										},
+										{
+											"id": "mUEJdP3bWBgPyPxhd",
+											"name": "Moderate Pain",
+											"reference": "B428",
+											"notes": "-2 to all DX, IQ, skill and self-control rolls",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "mISZ8vk7Mb2V7qiJ8",
+											"name": "Nauseated",
+											"reference": "B428",
+											"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+											"cost": 30,
+											"disabled": true
+										},
+										{
+											"id": "mDwkz0OKWEhapnQ9l",
+											"name": "Severe Pain",
+											"reference": "B428",
+											"notes": "-4 to all DX, IQ, skill and self-control rolls",
+											"cost": 40,
+											"disabled": true
+										},
+										{
+											"id": "mJSZaJafEtH4_cqjc",
+											"name": "Terrible Pain",
+											"reference": "B428",
+											"notes": "-6 to all DX, IQ, skill and self-control rolls",
+											"cost": 60,
+											"disabled": true
+										},
+										{
+											"id": "mEAAplR6nFx-hU2mc",
+											"name": "Tipsy",
+											"reference": "B428",
+											"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+											"cost": 10,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "MUv1XJy268NNUyD3Y",
+									"name": "Mortal Conditions",
+									"children": [
+										{
+											"id": "m9flouaUz9huQmVWE",
+											"name": "Coma",
+											"reference": "B429",
+											"cost": 250,
+											"disabled": true
+										},
+										{
+											"id": "mjRlQZ9y7g-SPdBS7",
+											"name": "Heart Attack",
+											"reference": "B429",
+											"cost": 300,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "mqCkpbIbDWrraprFf",
+									"name": "Stunning",
+									"reference": "B36",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "MD0j0hGfLoAo33896",
+									"name": "Traits",
+									"children": [
+										{
+											"id": "mDsoaEM4AbGuNU0YZ",
+											"name": "Gives @Advantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mCG-_zMB1jF66C9j9",
+											"name": "Gives @Disadvantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mbsgelnx6QPEeQc2t",
+											"name": "Negates @Advantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"cost": 1,
+											"levels": 1,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "mbKw7CRkFLqbEfV6X",
+									"name": "Blood Agent",
+									"reference": "B110,P100",
+									"cost": -40
+								},
+								{
+									"id": "m2wcwU9J543IbbYn5",
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"cost": -5,
+									"levels": 1
+								},
+								{
+									"id": "mr4Di-dSd0St_hvwC",
+									"name": "Costs Hit Points",
+									"reference": "PU8:12",
+									"notes": "Per use",
+									"cost": -10,
+									"levels": 1
+								},
+								{
+									"id": "mChLnTm9FpBpeiCuo",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "muEHnnBcFvKfMCDHp"
+									},
+									"name": "Reduced Range",
+									"reference": "B115,P105",
+									"notes": "2 Range Divisor",
+									"cost": -10
+								}
+							],
+							"points_per_level": 10,
+							"weapons": [
+								{
+									"id": "WFc-JOg-23380K7HX",
+									"damage": {
+										"type": "aff"
+									},
+									"accuracy": "3",
+									"range": "1/5",
+									"rate_of_fire": "1",
+									"recoil": "1",
+									"calc": {
+										"damage": "aff"
+									}
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "tdGadTlYcZam9HOvw",
+							"name": "Breath-Holding",
+							"reference": "B41",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 6
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 27
+			}
+		},
+		{
+			"id": "TSUSBsKch6W203cjv",
+			"name": "Limus Citizen",
+			"children": [
+				{
+					"id": "tZJ4Eg0hi55mHNxOw",
+					"name": "Animal Empathy",
+					"reference": "B40,P48",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "m4ZyhUDwH9laLBot_",
+							"name": "Remote",
+							"reference": "P48",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "maGK9m6M8rxsvndC0",
+							"name": "Specialized",
+							"reference": "B87",
+							"notes": "All aquatic animals",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "m8gOLx2conrhtBFf5",
+							"name": "Specialized",
+							"reference": "B87",
+							"notes": "All land animals",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "m9DRP_GM5pksFcSh-",
+							"name": "Specialized",
+							"reference": "B87",
+							"notes": "@One class: Mammals, Birds, etc.@",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "m8TK2Tm5CME2lEOIh",
+							"name": "Specialized",
+							"reference": "B87",
+							"notes": "@One family: Felines, Parrots, etc.@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "m9L2P8jvLUErdE3iv",
+							"name": "Specialized",
+							"reference": "B87",
+							"notes": "@One species: House Cats, Macaws, etc.@",
+							"cost": -80,
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tH3Aqw3sgOKcC3cIS",
+					"name": "Fearlessness",
+					"reference": "B55,MA44",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Fearfulness"
+								}
+							}
+						]
+					},
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "fright_check",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 4
+					}
+				}
+			],
+			"calc": {
+				"points": 9
+			}
+		},
+		{
+			"id": "TX1mRTTu43jguoH1i",
+			"name": "Optional",
+			"children": [
+				{
+					"id": "tm2dSmWLhxV8sTiiU",
+					"name": "Damage Resistance",
+					"reference": "B47,P45,MA43,PSI14",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mAqCa0zA7dYCwaVNp",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mNM13soZ4hDVdLc0u",
+							"name": "Hardened",
+							"reference": "B47",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "m5nsIy1yEs9kMBYi8",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mrkH9fg3uEBpq7-Ns",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "m49vjP_tLEJ9lwfs-",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mpObKkrNXc1Cd3mct",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mNvMD-o9VrzS86Kir",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mQ1oC0HZty23hJRlN",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "mUD1ixGWFa-ASFqfK",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "mQMuTVvlF2jxkY6Ef",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "mX6ZhLOwKqENrFNYz",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "m_NZ96MVdglW453K3",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20
+						},
+						{
+							"id": "murWPgmgoAfcJyApE",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mTGFjsQJitv5H-wp4",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mh_tET5pvdT8k5OUm",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mEa2Ut--J3-27u-Ol",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mbjjf-vwkRpZl38Uc",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Common Attack Form@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mHVnEN9eE3Ef9_Cm2",
+							"name": "Tough Skin",
+							"notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40
+						},
+						{
+							"id": "mj_ybmj-5KOhe-wYC",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "mQGQIZjOTo46OYQXg",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mVIusyQqqqa65fvpG",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mAvx8_sn3-MjVShbB",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mYDoOWioeFuqZpA91",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mSyiNjdaXm2k4hSxN",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "m9bBuGE8CLAxf1A9d",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"skull"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"face"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"neck"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"torso"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"vitals"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"groin"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"arm"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"hand"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"leg"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"tail"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"wing"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"fin"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"brain"
+							],
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "tO25n7VyvgIRa4aZY",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tQrNIZ1kbn0I6UAZf"
+					},
+					"name": "Regeneration",
+					"reference": "B80,P70,MA47",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mDmpQ-5_zv1kvHe3k",
+							"name": "Slow",
+							"reference": "B80",
+							"notes": "You recover 1 HP per 12 hours",
+							"cost": 10,
+							"cost_type": "points"
+						},
+						{
+							"id": "mFT3GTq-b0BTdUiGh",
+							"name": "Regular",
+							"reference": "B80",
+							"notes": "You recover 1 HP per hour",
+							"cost": 25,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mCKtaJEarSrn9VzK5",
+							"name": "Fast",
+							"reference": "B80",
+							"notes": "You recover 1 HP per minute",
+							"cost": 50,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mMX3dH2TCL_Li4qpk",
+							"name": "Very Fast",
+							"reference": "B80",
+							"notes": "You recover 1 HP per second",
+							"cost": 100,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mKmXOBoAzBhTjWkX4",
+							"name": "Extreme",
+							"reference": "B80",
+							"notes": "You recover 10 HP per second",
+							"cost": 150,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m4XFBCx1VDmcK2MJQ",
+							"name": "Heals Radiation",
+							"reference": "B80",
+							"cost": 40,
+							"disabled": true
+						},
+						{
+							"id": "mP-B3ZHi_1HkmiciF",
+							"name": "Radiation Only",
+							"reference": "B80",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "mQ-JhgYxvOf3zIuaJ",
+							"name": "Fatigue Recovery",
+							"reference": "P70",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "m0jHJEFMIJwrhreM2",
+							"name": "Fatigue Only",
+							"reference": "P70",
+							"disabled": true
+						},
+						{
+							"id": "mDqtfSDA_kJEmBYIj",
+							"name": "Limited: @Advantage@ Only",
+							"reference": "P70",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mVsJ7c54ECCzQEGwo",
+							"name": "Bane",
+							"reference": "H18",
+							"notes": "@Common or Very Common@",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "m0iitf97-e-_HxKmR",
+							"name": "Bane",
+							"reference": "H18",
+							"notes": "@Occasional@",
+							"cost": -30,
+							"disabled": true
+						},
+						{
+							"id": "msxG5MoufIfbUsLDh",
+							"name": "Bane",
+							"reference": "H18",
+							"notes": "@Rare@",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tWvjsooH7WWU3Zvtl",
+					"name": "Resistant",
+					"reference": "B81,P71,MA47",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m3TFYtrWaOjjRW3Bz",
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost": 30,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "muyIjgb8YU5pLTluN",
+							"name": "Poison",
+							"reference": "B81",
+							"cost": 15,
+							"cost_type": "points"
+						},
+						{
+							"id": "mFtCL3H67DDZyss5h",
+							"name": "@Occasional: Disease, Ingested Poison, etc.@",
+							"reference": "B81",
+							"cost": 10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mqwxT-tNO0An5GXCc",
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost": 5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mCfwBqTzTp-L6OF73",
+							"name": "Immunity",
+							"reference": "B81",
+							"cost": 1,
+							"cost_type": "multiplier"
+						},
+						{
+							"id": "mK_uf5Wg-rP11xVT-",
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost": 0.5,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "mVSGkwsBZMOss-u6C",
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost": 0.33,
+							"cost_type": "multiplier",
+							"disabled": true
+						}
+					],
+					"round_down": true,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "tGlAYgx8VeuJWztxB",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tkCi-pV0exqSyPhyv"
+					},
+					"name": "Prehensile Tail",
+					"reference": "B53",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m1O3MDjS-d0ZZkLT6",
+							"name": "Extra-Flexible",
+							"reference": "B53",
+							"cost": 50
+						},
+						{
+							"id": "mEfi5Cw1iof0wNOSm",
+							"name": "Long",
+							"reference": "B53",
+							"cost": 100,
+							"levels": 1
+						},
+						{
+							"id": "mSSlisrA7ikj6UWbu",
+							"name": "Foot Manipulators",
+							"reference": "B53",
+							"cost": -30,
+							"disabled": true
+						},
+						{
+							"id": "mrL4VMLnj54bWbXIO",
+							"name": "No Physical Attack",
+							"reference": "B53",
+							"cost": -50
+						},
+						{
+							"id": "mltxpb6azmbPaPPnz",
+							"name": "Short",
+							"reference": "B53",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mrRUQU4hjngNlffPw",
+							"name": "Weak",
+							"reference": "B53",
+							"notes": "Half body ST",
+							"cost": -25,
+							"disabled": true
+						},
+						{
+							"id": "mYX-r89Pq0YxCbu3c",
+							"name": "Weak",
+							"reference": "B53",
+							"notes": "Quarter body ST",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "mcmgjST-LKyVLOaKu",
+							"name": "Weapon Mount",
+							"reference": "B53",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mO8NxKi0pHqzzXYFW",
+							"name": "No Grasping Hand",
+							"reference": "MATG28",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"points_per_level": 10,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "tTgf0OVB_-yPkJP3f",
+					"name": "Clinging",
+					"reference": "B43,P45",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m85aPUmiyfwL7XKgN",
+							"name": "Specific",
+							"reference": "B43",
+							"notes": "@Common Material@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "m28T4-qqv1JE7KziP",
+							"name": "Specific",
+							"reference": "B43",
+							"notes": "@Uncommon Material@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "mxQKP7Snlo_txnNbs",
+							"name": "Specific",
+							"reference": "B43",
+							"notes": "@Absurd Material@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mMuY0R2UhiQfbTp5z",
+							"name": "Attraction",
+							"reference": "P45",
+							"cost": 25,
+							"disabled": true
+						},
+						{
+							"id": "mp8pZXwSndeVvEa-I",
+							"name": "Requires Low Gravity",
+							"reference": "P45",
+							"cost": -5,
+							"levels": 1,
+							"disabled": true
+						}
+					],
+					"disabled": true,
+					"base_points": 20,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tEmoyz-xhOm3TJMbb",
+					"name": "Constriction Attack",
+					"reference": "B43,P45",
+					"notes": "If you succeed on a grapple against an opponent no larger than your own SM, on your next turn, and each successive turn, roll a Quick Contest of your ST vs. your victim’s ST or HT, whichever is higher. If you win, your victim takes damage equal to your margin of victory; otherwise, no damage is inflicted",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mqkOf0N6TMYIrUnEA",
+							"name": "Engulfing",
+							"reference": "P45",
+							"cost": 60,
+							"disabled": true
+						}
+					],
+					"disabled": true,
+					"base_points": 15,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tCotpQyBVEsbIrlTF",
+					"name": "Daredevil",
+					"reference": "B47",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"disabled": true,
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to skill rolls any time you take an unnecessary risk (in the GM’s opinion)",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 49
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "SUuZGgnuQT3YzkZNt",
+			"name": "Squamae",
+			"children": [
+				{
+					"id": "sZaknCL5vVu-BjANW",
+					"name": "Brawling",
+					"reference": "B182,MA55",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/e",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					],
+					"points": 1
+				}
+			]
+		},
+		{
+			"id": "SIY6Zz3pzNw-X7eZ_",
+			"name": "Vir Lab",
+			"children": [
+				{
+					"id": "s2rN4PIk3Z-4DnB0Z",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "All important businesses, streets, citizens, leaders, etc.",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Healing District; Lived there",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sS3ap9hZDz4Uj2eOE",
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tags": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "sWmJqyUFB-3LngrBe",
+					"name": "Research",
+					"reference": "B217",
+					"tags": [
+						"Scholarly",
+						"Spy"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Writing",
+							"modifier": -3
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 8
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Computer Operation"
+										}
+									}
+								]
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"when_tl": {
+									"compare": "at_most",
+									"qualifier": 4
+								},
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Native"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Accented)"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Broken)"
+										}
+									}
+								]
+							}
+						]
+					},
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "Se6Pp5nZrj8ge6ZVN",
+					"name": "Choose one",
+					"children": [
+						{
+							"id": "s3jW36dYiJ9YuKq-r",
+							"name": "Biology",
+							"reference": "B180",
+							"tags": [
+								"Natural Science",
+								"Plant"
+							],
+							"specialization": "Biochemistry",
+							"difficulty": "iq/vh",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "suAGyPnY_M5ugzVRA",
+							"name": "Biology",
+							"reference": "B180",
+							"tags": [
+								"Natural Science",
+								"Plant"
+							],
+							"specialization": "Botany",
+							"difficulty": "iq/vh",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "s6g6ZRN-jteCbHptZ",
+							"name": "Biology",
+							"reference": "B180",
+							"tags": [
+								"Natural Science",
+								"Plant"
+							],
+							"specialization": "Ecology",
+							"difficulty": "iq/vh",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "s1OC7WAb7aOCjzblp",
+							"name": "Biology",
+							"reference": "B180",
+							"tags": [
+								"Natural Science",
+								"Plant"
+							],
+							"specialization": "Genetics",
+							"difficulty": "iq/vh",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "sFqaCBq9qoCI-bO_y",
+							"name": "Biology",
+							"reference": "B180",
+							"tags": [
+								"Natural Science",
+								"Plant"
+							],
+							"specialization": "Marine Biology",
+							"difficulty": "iq/vh",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "sdCMaXuM4GsRzVYU5",
+							"name": "Biology",
+							"reference": "B180",
+							"tags": [
+								"Natural Science",
+								"Plant"
+							],
+							"specialization": "Microbiology",
+							"difficulty": "iq/vh",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "scm7vpW6GVmdkyHGq",
+							"name": "Biology",
+							"reference": "B180",
+							"tags": [
+								"Natural Science"
+							],
+							"specialization": "Zoology",
+							"difficulty": "iq/vh",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "s63SRXvv1r6dLNymu",
+							"name": "Chemistry",
+							"reference": "B183",
+							"tags": [
+								"Natural Science"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Alchemy",
+									"modifier": -3
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "saCvzndevU9xUcHnJ",
+							"name": "Forensics",
+							"reference": "B196",
+							"tags": [
+								"Police"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Criminology",
+									"modifier": -4
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "sRiwREI0qMQS5QTJY",
+							"name": "Pharmacy",
+							"reference": "B213",
+							"tags": [
+								"Design",
+								"Invention",
+								"Medical"
+							],
+							"specialization": "Synthetic",
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Chemistry",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -5
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "shLwJfdDZp-GV5CRs",
+							"name": "Physician",
+							"reference": "B213",
+							"tags": [
+								"Medical"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -7
+								},
+								{
+									"type": "skill",
+									"name": "First Aid",
+									"modifier": -11
+								},
+								{
+									"type": "skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "sD4IPpv6FdXoKQnDS",
+							"name": "Physiology",
+							"reference": "B213",
+							"tags": [
+								"Medical",
+								"Natural Science"
+							],
+							"specialization": "@Race@",
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Diagnosis",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Surgery",
+									"modifier": -5
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						},
+						{
+							"id": "s9bZZYiK6jV6rVi-8",
+							"name": "Veterinary",
+							"reference": "B228",
+							"tags": [
+								"Animal",
+								"Medical"
+							],
+							"difficulty": "iq/h",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Animal Handling",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Surgery",
+									"modifier": -5
+								}
+							],
+							"tech_level": "",
+							"points": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "S5OjK71MlJFWUHxNs",
+			"name": "Boonies",
+			"children": [
+				{
+					"id": "sQAL1TggtvkA4Th5B",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Boonies of Limus; Lived there",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "s5jqVHli4NE7QffTX",
+					"name": "Camouflage",
+					"reference": "B183",
+					"tags": [
+						"Exploration",
+						"Military",
+						"Outdoor"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"modifier": -2
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sJCZbVIIqQ4LvVbuq",
+					"name": "Farming",
+					"reference": "B194",
+					"tags": [
+						"Plant"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Biology",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Gardening",
+							"modifier": -3
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "secmDpmYi0iQRZ0-G",
+					"name": "First Aid",
+					"reference": "B195",
+					"tags": [
+						"Everyman",
+						"Medical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Esoteric Medicine"
+						},
+						{
+							"type": "skill",
+							"name": "Physician"
+						},
+						{
+							"type": "skill",
+							"name": "Veterinary",
+							"modifier": -4
+						}
+					],
+					"tech_level": "",
+					"points": 1
+				},
+				{
+					"id": "scDAdBLjOm0vFiiaz",
+					"name": "Intimidation",
+					"reference": "B202",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Social",
+						"Street"
+					],
+					"difficulty": "will/a",
+					"defaults": [
+						{
+							"type": "will",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Acting",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sxvlUDShXCTgs-wBN",
+					"name": "Naturalist",
+					"reference": "B211",
+					"tags": [
+						"Animal",
+						"Exploration",
+						"Natural Science",
+						"Outdoor",
+						"Plant"
+					],
+					"specialization": "Earthlike",
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Biology",
+							"modifier": -3
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sDEAwC3Q9MH_omJzJ",
+					"name": "Pharmacy",
+					"reference": "B213",
+					"tags": [
+						"Design",
+						"Invention",
+						"Medical",
+						"Plant"
+					],
+					"specialization": "Herbal",
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Biology",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Herb Lore",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Naturalist",
+							"modifier": -5
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "naturalist"
+								}
+							}
+						]
+					},
+					"tech_level": "",
+					"points": 1
+				}
+			]
+		}
+	]
+}
