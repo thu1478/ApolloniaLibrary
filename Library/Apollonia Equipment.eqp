@@ -2,223 +2,1538 @@
 	"version": 5,
 	"rows": [
 		{
-			"id": "EHfoC8xqCYz3fOHsH",
-			"description": "Cases",
+			"id": "EGo1uq3J3hywHDgGW",
+			"description": "Armor",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"children": [
 				{
-					"id": "E5W9WjBrwiQVrFt6I",
-					"description": "Gun Case",
-					"notes": "4' long, large enough to hold a sniper rifle or two SMGs + 20 ammo, DR 2, waterproof",
-					"tech_level": "8",
+					"id": "E0xYclzSTdfqzh1sl",
+					"description": "Body Armor",
 					"legality_class": "4",
-					"tags": [
-						"Storage"
-					],
-					"value": 1000,
-					"weight": "25 lb",
 					"quantity": 1,
 					"equipped": true,
-					"calc": {
-						"extended_value": 1000,
-						"extended_weight": "25 lb"
-					}
-				},
-				{
-					"id": "E7rfW2gaTwEOk9QCd",
-					"description": "Instrument Case",
-					"notes": "Guitar size, large enough to hold a rifle or two SMGs + 10 ammo",
-					"tech_level": "6",
-					"legality_class": "4",
-					"tags": [
-						"Storage"
-					],
-					"value": 100,
-					"weight": "10 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 100,
-						"extended_weight": "10 lb"
-					}
-				},
-				{
-					"id": "EieMtvndBu8wmDB1U",
-					"description": "Small suitcase",
-					"notes": "Fits an oboe, large enough to hold an SMG and 5 ammo",
-					"tech_level": "6",
-					"legality_class": "4",
-					"tags": [
-						"Storage"
-					],
-					"value": 50,
-					"weight": "2.5 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 50,
-						"extended_weight": "2.5 lb"
-					}
-				}
-			],
-			"calc": {
-				"extended_value": 1150,
-				"extended_weight": "37.5 lb"
-			}
-		},
-		{
-			"id": "EHr3J5pYEO5pEjbM_",
-			"description": "Expanded Magazine",
-			"legality_class": "4",
-			"quantity": 1,
-			"equipped": true,
-			"children": [
-				{
-					"id": "eaWVHYhGI0vtYh05a",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "Drum Magazine",
-					"reference": "B278",
-					"tech_level": "6",
-					"legality_class": "3",
-					"tags": [
-						"Attachment"
-					],
-					"value": 100,
-					"modifiers": [
+					"children": [
 						{
-							"id": "fGTm8Jn7D5XIpRuE2",
-							"name": "Drum Magazine",
-							"weight": "+50%",
+							"id": "etDg4EOBBZDU1o5NG",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Assault Vest",
+							"reference": "B283",
+							"tech_level": "8",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 6000,
+							"weight": "16 lb",
 							"features": [
 								{
-									"type": "weapon_bulk_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": -1
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 2
 								},
 								{
-									"type": "weapon_non_chamber_shots_bonus",
-									"percent": true,
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": 50
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"amount": 5
 								}
-							]
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 6000,
+								"extended_weight": "16 lb"
+							}
+						},
+						{
+							"id": "e7sAobsZN8xNM-w7d",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Bulletproof Vest",
+							"reference": "B283",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 500,
+							"weight": "8 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 1
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"torso",
+										"vitals"
+									],
+									"amount": 3
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 500,
+								"extended_weight": "8 lb"
+							}
+						},
+						{
+							"id": "eq7HBrh9zG0mnnRTC",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Combat Hardsuit",
+							"reference": "B283",
+							"tech_level": "9",
+							"legality_class": "2",
+							"tags": [
+								"Armor"
+							],
+							"value": 40000,
+							"weight": "30 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm",
+										"foot",
+										"groin",
+										"hand",
+										"leg",
+										"neck",
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 3
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm",
+										"foot",
+										"groin",
+										"hand",
+										"leg",
+										"neck",
+										"torso",
+										"vitals"
+									],
+									"amount": 7
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 40000,
+								"extended_weight": "30 lb"
+							}
+						},
+						{
+							"id": "ex3q6lEfimHq33r-W",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Concealed Vest",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 750,
+							"weight": "2 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"torso",
+										"vitals"
+									],
+									"amount": 3
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 750,
+								"extended_weight": "2 lb"
+							}
+						},
+						{
+							"id": "eVc66xNxjUUz_z02k",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Deathstare Vest",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "9",
+							"legality_class": "2",
+							"tags": [
+								"Armor"
+							],
+							"value": 36000,
+							"weight": "4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 5
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 36000,
+								"extended_weight": "4 lb"
+							}
+						},
+						{
+							"id": "eW0oZoT_ot8qq3V1O",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Formal Outfit",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 450,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 450,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "ea7_U14b0bAYeW02-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Leather Jacket",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 85,
+							"weight": "4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm",
+										"torso",
+										"vitals"
+									],
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 85,
+								"extended_weight": "4 lb"
+							}
+						},
+						{
+							"id": "e_jzORPEqATRkCzBN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Ordinary Outfit",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 50,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 50,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "e-S49za0csjBQ7kHN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Reinforced Coat",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 170,
+							"weight": "6 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm",
+										"torso",
+										"vitals"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 170,
+								"extended_weight": "6 lb"
+							}
+						},
+						{
+							"id": "eutcN7HeCiyu_pWCS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Riot Vest",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 1500,
+							"weight": "9 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 2
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"torso",
+										"vitals"
+									],
+									"amount": 3
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 1500,
+								"extended_weight": "9 lb"
+							}
+						},
+						{
+							"id": "evNARaHJNtpB__a6z",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Seductive Outfit",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 200,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 200,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "e3ojE3XuhCtvji6XX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Steel Chestplate",
+							"reference": "B283",
+							"tech_level": "3",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 650,
+							"weight": "18 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"amount": 5
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 650,
+								"extended_weight": "18 lb"
+							}
 						}
 					],
-					"quantity": 1,
-					"equipped": true,
 					"calc": {
-						"extended_value": 100,
-						"extended_weight": "0 lb"
+						"extended_value": 86355,
+						"extended_weight": "97.3 lb"
 					}
 				},
 				{
-					"id": "eA7Bj8VEFH3yPG11r",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "Extended Magazine",
-					"reference": "B278",
-					"tech_level": "6",
+					"id": "EMJlGZ7niqWcrvqpH",
+					"description": "Footwear",
 					"legality_class": "4",
-					"tags": [
-						"Attachment"
-					],
-					"value": 50,
-					"modifiers": [
+					"quantity": 1,
+					"equipped": true,
+					"children": [
 						{
-							"id": "fNpidOU0BPKO8Ji9g",
-							"name": "Extended Magazine",
-							"weight": "+20%",
+							"id": "eOqphupbtRc4pHGll",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Boots",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "2",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 80,
+							"weight": "2 lb",
 							"features": [
 								{
-									"type": "weapon_non_chamber_shots_bonus",
-									"percent": true,
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Kick"
 									},
 									"level": {
 										"compare": "at_least"
 									},
-									"amount": 25
+									"amount": 1
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"foot"
+									],
+									"amount": 2
 								}
-							]
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 50,
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "ePSrQ3KovsG96j2Ci",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "High-Density Extended Magazine",
-					"reference": "B278",
-					"tech_level": "7",
-					"legality_class": "2",
-					"tags": [
-						"Attachment"
-					],
-					"value": 300,
-					"modifiers": [
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 80,
+								"extended_weight": "2 lb"
+							}
+						},
 						{
-							"id": "fti_uMIusIpRR1ck7",
-							"name": "High-Density Extended Magazine",
-							"weight": "+30%",
+							"id": "eBNSO_vZ_lUrCPjLj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "High Heels",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 80,
+							"weight": "1 lb",
 							"features": [
 								{
-									"type": "weapon_non_chamber_shots_bonus",
-									"percent": true,
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Kick"
 									},
 									"level": {
 										"compare": "at_least"
 									},
-									"amount": 40
+									"amount": 1
 								}
-							]
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 80,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "eS-QD4QzTszPTHmT-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Shoes",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 40,
+							"weight": "1 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"foot"
+									],
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 40,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "eGBxHtQC4X8dongiT",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Steel-Toed Boots",
+							"reference": "B283",
+							"notes": "Concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 100,
+							"weight": "4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"foot"
+									],
+									"specialization": "pi and cut",
+									"amount": 3
+								},
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Kick"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"foot"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 100,
+								"extended_weight": "4 lb"
+							}
 						}
 					],
-					"quantity": 1,
-					"equipped": true,
 					"calc": {
 						"extended_value": 300,
-						"extended_weight": "0 lb"
+						"extended_weight": "8 lb"
+					}
+				},
+				{
+					"id": "E6DDE4v8fLkYUXTPY",
+					"description": "Gloves",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "elBqBmR-oqDt4Vkof",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Leather Gloves",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 30,
+							"weight": "0.25 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"hand"
+									],
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 30,
+								"extended_weight": "0.25 lb"
+							}
+						},
+						{
+							"id": "el2zjaMtXNzR9axbW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Work Gloves",
+							"reference": "B283",
+							"tech_level": "8",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 120,
+							"weight": "1 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"torso"
+									],
+									"specialization": "pi and cut",
+									"amount": 2
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"hand"
+									],
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 120,
+								"extended_weight": "1 lb"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 150,
+						"extended_weight": "1.25 lb"
+					}
+				},
+				{
+					"id": "EtmH2aM36XaH1rtBK",
+					"description": "Headgear",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eudWeE-tBgzpyoMVi",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Ballistic Helmet",
+							"reference": "B283",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Armor"
+							],
+							"value": 1800,
+							"weight": "4.4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"skull"
+									],
+									"specialization": "pi and cut",
+									"amount": 2
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"skull"
+									],
+									"amount": 5
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 1800,
+								"extended_weight": "4.4 lb"
+							}
+						},
+						{
+							"id": "eGmqzSC8H9uCYvuJU",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Baseball cap",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 15,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 15,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "eaS5opar-qrRh_6pO",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Cowboy hat",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 30,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 30,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "eXRrtwluys27eQ5_i",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Hard Hat",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 100,
+							"weight": "1 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"skull"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 100,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "edvs1q90-KiqnArE1",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Hardsuit Helmet",
+							"reference": "B283",
+							"tech_level": "9",
+							"legality_class": "2",
+							"tags": [
+								"Armor"
+							],
+							"value": 8000,
+							"weight": "4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"skull"
+									],
+									"amount": 7
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 8000,
+								"extended_weight": "4 lb"
+							}
+						},
+						{
+							"id": "ebTmRBKK1Ng_XdA0D",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Motorcycle Helmet",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 200,
+							"weight": "3 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"face",
+										"skull"
+									],
+									"specialization": "pi and cut",
+									"amount": 1
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"face",
+										"skull"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 200,
+								"extended_weight": "3 lb"
+							}
+						},
+						{
+							"id": "eI-RKaIP9dSTAL3f_",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Motorcycle Helmet with visor",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 250,
+							"weight": "3.5 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"skull"
+									],
+									"specialization": "pi and cut",
+									"amount": 1
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"skull"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 250,
+								"extended_weight": "3.5 lb"
+							}
+						},
+						{
+							"id": "e4s3dtgjOvoNyNmyK",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Riot Helmet",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 500,
+							"weight": "3.5 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"skull"
+									],
+									"amount": 5
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 500,
+								"extended_weight": "3.5 lb"
+							}
+						},
+						{
+							"id": "eTJCSbqRbcJIK127I",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Riot Helmet with neck guard",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 550,
+							"weight": "4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"neck",
+										"skull"
+									],
+									"amount": 5
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 550,
+								"extended_weight": "4 lb"
+							}
+						},
+						{
+							"id": "eqCSqkz0HiL5ibybu",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Top hat",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 50,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 50,
+								"extended_weight": "0.1 lb"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 11495,
+						"extended_weight": "23.7 lb"
+					}
+				},
+				{
+					"id": "ENVfoCW4Gfg8kOYXq",
+					"description": "Limb Armor",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eeuDqvAjVyBWMnQC_",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Arm Guards",
+							"reference": "B283",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 100,
+							"weight": "1 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 100,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "eoP-aA8ayRvVPpQMd",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Leather Pants",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 40,
+							"weight": "2 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"leg"
+									],
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 40,
+								"extended_weight": "2 lb"
+							}
+						},
+						{
+							"id": "ezKbNguv6R_7zrWo8",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Leg Guards",
+							"reference": "B283",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 125,
+							"weight": "2 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"leg"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 125,
+								"extended_weight": "2 lb"
+							}
+						},
+						{
+							"id": "eC-h_-x0SpKlKBgEA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Plate Arms",
+							"reference": "B283",
+							"tech_level": "3",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 500,
+							"weight": "9 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm"
+									],
+									"amount": 4
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 500,
+								"extended_weight": "9 lb"
+							}
+						},
+						{
+							"id": "etCwQu9ARehoaeuTP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Plate Legs",
+							"reference": "B283",
+							"tech_level": "3",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 550,
+							"weight": "15 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"leg"
+									],
+									"amount": 4
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 550,
+								"extended_weight": "15 lb"
+							}
+						},
+						{
+							"id": "eV9mdtZrJLGhFCJgL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Reinforced Bracers",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 400,
+							"weight": "2 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm"
+									],
+									"specialization": "pi and cut",
+									"amount": 1
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 400,
+								"extended_weight": "2 lb"
+							}
+						},
+						{
+							"id": "euAiUyEOIDFtztYDs",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Riot Pants",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 500,
+							"weight": "4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"leg"
+									],
+									"specialization": "pi and cut",
+									"amount": 1
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"leg"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 500,
+								"extended_weight": "4 lb"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 2215,
+						"extended_weight": "35 lb"
+					}
+				},
+				{
+					"id": "ENZ_NiwO44CZ55whr",
+					"description": "Shields",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "edgNhVMVuoY6UqMhe",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "e8R7Aeyi-XLcBxRRR"
+							},
+							"description": "Ballistic Shield",
+							"reference": "B287",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Shield"
+							],
+							"value": 5600,
+							"weight": "22 lb",
+							"weapons": [
+								{
+									"id": "wHGSYIlYQGtDpT9u7",
+									"damage": {
+										"type": "cr",
+										"st": "thr"
+									},
+									"reach": "1",
+									"block": "0",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Shield",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Force Shield",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Buckler"
+										}
+									],
+									"calc": {
+										"level": 6,
+										"damage": "1d-2 cr",
+										"block": "6"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to Dodge, Parry \u0026 Block against attacks from the front or shield side",
+									"amount": 3
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 5600,
+								"extended_weight": "22 lb"
+							}
+						},
+						{
+							"id": "e46bWtsFdvu9cYWGt",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "e8R7Aeyi-XLcBxRRR"
+							},
+							"description": "Buckler",
+							"reference": "B287",
+							"tech_level": "0",
+							"legality_class": "4",
+							"tags": [
+								"Shield"
+							],
+							"value": 40,
+							"weight": "2 lb",
+							"weapons": [
+								{
+									"id": "wtNKtNoXnk7bYezdQ",
+									"damage": {
+										"type": "cr",
+										"st": "thr"
+									},
+									"reach": "1",
+									"block": "0",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Shield",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Force Shield",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Buckler"
+										}
+									],
+									"calc": {
+										"level": 6,
+										"damage": "1d-2 cr",
+										"block": "6"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to Dodge, Parry \u0026 Block against attacks from the front or shield side",
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 40,
+								"extended_weight": "2 lb"
+							}
+						},
+						{
+							"id": "ekDzVVAF39QTvitjO",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "e8R7Aeyi-XLcBxRRR"
+							},
+							"description": "Riot Shield",
+							"reference": "B287",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Shield"
+							],
+							"value": 120,
+							"weight": "7.5 lb",
+							"weapons": [
+								{
+									"id": "w1OwL-wkLPPiD9Ent",
+									"damage": {
+										"type": "cr",
+										"st": "thr"
+									},
+									"reach": "1",
+									"block": "0",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Shield",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Force Shield",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Buckler"
+										}
+									],
+									"calc": {
+										"level": 6,
+										"damage": "1d-2 cr",
+										"block": "6"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to Dodge, Parry \u0026 Block against attacks from the front or shield side",
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 120,
+								"extended_weight": "7.5 lb"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 5760,
+						"extended_weight": "31.5 lb"
 					}
 				}
 			],
 			"calc": {
-				"extended_value": 450,
-				"extended_weight": "0 lb"
+				"extended_value": 106275,
+				"extended_weight": "196.75 lb"
 			}
 		},
 		{
@@ -228,6 +1543,231 @@
 			"quantity": 1,
 			"equipped": true,
 			"children": [
+				{
+					"id": "EVn_AB5f5XqRLsJeo",
+					"description": "Heavy",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "ePQViRyYej2upcHuW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "edNQJgpJJz1GYkdmy"
+							},
+							"description": "Gravehound 3BG",
+							"reference": "B281",
+							"notes": "SAW: SE-F-3BG",
+							"tech_level": "7",
+							"legality_class": "1",
+							"tags": [
+								"Firearm"
+							],
+							"value": 9600,
+							"weight": "24 lb",
+							"weapons": [
+								{
+									"id": "WZLAU1_aY3sSpSb7D",
+									"damage": {
+										"type": "pi",
+										"base": "3d+1"
+									},
+									"strength": "12B†",
+									"accuracy": "5",
+									"range": "35/70",
+									"rate_of_fire": "15!",
+									"shots": "200(5)",
+									"bulk": "-6",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "3d+1 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 9600,
+								"extended_weight": "24 lb"
+							}
+						},
+						{
+							"id": "enHD-_RtbdK-vA-MW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "edNQJgpJJz1GYkdmy"
+							},
+							"description": "Judicator",
+							"reference": "B281",
+							"notes": "LMG: Septimus 546",
+							"tech_level": "6",
+							"legality_class": "1",
+							"tags": [
+								"Firearm"
+							],
+							"value": 6600,
+							"weight": "30 lb",
+							"weapons": [
+								{
+									"id": "WFKMGENz5uJJhxUWD",
+									"damage": {
+										"type": "pi",
+										"base": "4d"
+									},
+									"strength": "13B†",
+									"accuracy": "5",
+									"range": "40/80",
+									"rate_of_fire": "12!",
+									"shots": "100(5)",
+									"bulk": "-6",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "4d pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 6600,
+								"extended_weight": "30 lb"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 16200,
+						"extended_weight": "54 lb"
+					}
+				},
 				{
 					"id": "E6xQSW2xjwiqun8tQ",
 					"description": "Pistol",
@@ -342,34 +1882,246 @@
 							}
 						},
 						{
-							"id": "e64MOK0xFEmicbrPj",
+							"id": "e07eNQcwclOJW5X0R",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
 								"id": "enYweeQwtSBvAmkXg"
 							},
-							"description": "Radiant Mercy",
+							"description": "Faithkeeper",
 							"reference": "B278",
-							"notes": "Revolver: Zachary-162",
-							"tech_level": "6",
-							"legality_class": "4",
+							"notes": "Revolver: Zachary-265",
+							"tech_level": "7",
+							"legality_class": "3",
 							"tags": [
 								"Firearm"
 							],
-							"value": 400,
+							"value": 1800,
+							"weight": "3.25 lb",
+							"weapons": [
+								{
+									"id": "WHk-I0Fi_lPVeF1Zd",
+									"damage": {
+										"type": "pi+",
+										"base": "3d"
+									},
+									"strength": "10",
+									"accuracy": "2",
+									"range": "12/24",
+									"rate_of_fire": "3",
+									"shots": "6(3i)",
+									"bulk": "-2",
+									"recoil": "4",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "3d pi+"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 1800,
+								"extended_weight": "3.25 lb"
+							}
+						},
+						{
+							"id": "e322HRPB3lp8PtpOG",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Heaven's Roar",
+							"reference": "B278",
+							"notes": "Revolver: Zachary-432",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Firearm"
+							],
+							"value": 6000,
+							"weight": "3.6 lb",
+							"weapons": [
+								{
+									"id": "WSXOUPsnklQtp6L96",
+									"damage": {
+										"type": "pi+",
+										"base": "4d"
+									},
+									"strength": "11",
+									"accuracy": "2",
+									"range": "16/32",
+									"rate_of_fire": "3",
+									"shots": "6(3i)",
+									"bulk": "-3",
+									"recoil": "5",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "4d pi+"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 6000,
+								"extended_weight": "3.6 lb"
+							}
+						},
+						{
+							"id": "edhZPc7GFQ0fJbhsQ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Ironclad 52",
+							"reference": "B278",
+							"notes": "Handgun: Pi152",
+							"tech_level": "8",
+							"legality_class": "3",
+							"tags": [
+								"Firearm"
+							],
+							"value": 3200,
 							"weight": "2 lb",
 							"weapons": [
 								{
-									"id": "WLtOUMhzhqMuOZPhw",
+									"id": "Wxo2KWZ5hiQJns4PU",
 									"damage": {
 										"type": "pi",
-										"base": "2d-1"
+										"base": "2d+2"
 									},
-									"strength": "7",
+									"strength": "8",
 									"accuracy": "2",
-									"range": "8/16",
+									"range": "10/20",
 									"rate_of_fire": "3",
-									"shots": "6(3i)",
+									"shots": "9+1(3)",
 									"bulk": "-2",
 									"recoil": "2",
 									"defaults": [
@@ -436,14 +2188,14 @@
 										}
 									],
 									"calc": {
-										"damage": "2d-1 pi"
+										"damage": "2d+2 pi"
 									}
 								}
 							],
 							"quantity": 1,
 							"equipped": true,
 							"calc": {
-								"extended_value": 400,
+								"extended_value": 3200,
 								"extended_weight": "2 lb"
 							}
 						},
@@ -554,140 +2306,34 @@
 							}
 						},
 						{
-							"id": "e07eNQcwclOJW5X0R",
+							"id": "e64MOK0xFEmicbrPj",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
 								"id": "enYweeQwtSBvAmkXg"
 							},
-							"description": "Faithkeeper",
+							"description": "Radiant Mercy",
 							"reference": "B278",
-							"notes": "Revolver: Zachary-265",
-							"tech_level": "7",
-							"legality_class": "3",
+							"notes": "Revolver: Zachary-162",
+							"tech_level": "6",
+							"legality_class": "4",
 							"tags": [
 								"Firearm"
 							],
-							"value": 1800,
-							"weight": "3.25 lb",
-							"weapons": [
-								{
-									"id": "WHk-I0Fi_lPVeF1Zd",
-									"damage": {
-										"type": "pi+",
-										"base": "3d"
-									},
-									"strength": "10",
-									"accuracy": "2",
-									"range": "12/24",
-									"rate_of_fire": "3",
-									"shots": "6(3i)",
-									"bulk": "-2",
-									"recoil": "4",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Pistol"
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Rifle",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Shotgun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Machine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Submachine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Musket",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Grenade Launcher",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Gyroc",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Anti-Armor Weapon",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Gun!"
-										}
-									],
-									"calc": {
-										"damage": "3d pi+"
-									}
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"extended_value": 1800,
-								"extended_weight": "3.25 lb"
-							}
-						},
-						{
-							"id": "edhZPc7GFQ0fJbhsQ",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "enYweeQwtSBvAmkXg"
-							},
-							"description": "Ironclad 52",
-							"reference": "B278",
-							"notes": "Handgun: Pi152",
-							"tech_level": "8",
-							"legality_class": "3",
-							"tags": [
-								"Firearm"
-							],
-							"value": 3200,
+							"value": 400,
 							"weight": "2 lb",
 							"weapons": [
 								{
-									"id": "Wxo2KWZ5hiQJns4PU",
+									"id": "WLtOUMhzhqMuOZPhw",
 									"damage": {
 										"type": "pi",
-										"base": "2d+2"
+										"base": "2d-1"
 									},
-									"strength": "8",
+									"strength": "7",
 									"accuracy": "2",
-									"range": "10/20",
+									"range": "8/16",
 									"rate_of_fire": "3",
-									"shots": "9+1(3)",
+									"shots": "6(3i)",
 									"bulk": "-2",
 									"recoil": "2",
 									"defaults": [
@@ -754,48 +2400,61 @@
 										}
 									],
 									"calc": {
-										"damage": "2d+2 pi"
+										"damage": "2d-1 pi"
 									}
 								}
 							],
 							"quantity": 1,
 							"equipped": true,
 							"calc": {
-								"extended_value": 3200,
+								"extended_value": 400,
 								"extended_weight": "2 lb"
 							}
-						},
+						}
+					],
+					"calc": {
+						"extended_value": 12050,
+						"extended_weight": "12.65 lb"
+					}
+				},
+				{
+					"id": "Eceuy-y7kzgF4nszp",
+					"description": "Rifle",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
 						{
-							"id": "e322HRPB3lp8PtpOG",
+							"id": "eZXkkgIqLlx2Y_vpm",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "enYweeQwtSBvAmkXg"
+								"id": "ez3A4rmpoQF1oPUSS"
 							},
-							"description": "Heaven's Roar",
-							"reference": "B278",
-							"notes": "Revolver: Zachary-432",
+							"description": "Divine Eye",
+							"reference": "B279",
+							"notes": "Sniper Rifle: Julius 954",
 							"tech_level": "8",
 							"legality_class": "2",
 							"tags": [
 								"Firearm"
 							],
-							"value": 6000,
-							"weight": "3.6 lb",
+							"value": 18800,
+							"weight": "15 lb",
 							"weapons": [
 								{
-									"id": "WSXOUPsnklQtp6L96",
+									"id": "WFColGkrJfGM6razr",
 									"damage": {
-										"type": "pi+",
-										"base": "4d"
+										"type": "pi",
+										"base": "5d"
 									},
-									"strength": "11",
-									"accuracy": "2",
-									"range": "16/32",
-									"rate_of_fire": "3",
-									"shots": "6(3i)",
-									"bulk": "-3",
-									"recoil": "5",
+									"strength": "11B†",
+									"accuracy": "6+3",
+									"range": "50/100",
+									"rate_of_fire": "1",
+									"shots": "5+1(3)",
+									"bulk": "-6",
+									"recoil": "3",
 									"defaults": [
 										{
 											"type": "dx",
@@ -804,13 +2463,13 @@
 										{
 											"type": "skill",
 											"name": "Guns",
-											"specialization": "Pistol"
+											"specialization": "Pistol",
+											"modifier": -2
 										},
 										{
 											"type": "skill",
 											"name": "Guns",
-											"specialization": "Rifle",
-											"modifier": -2
+											"specialization": "Rifle"
 										},
 										{
 											"type": "skill",
@@ -860,27 +2519,1319 @@
 										}
 									],
 									"calc": {
-										"damage": "4d pi+"
+										"damage": "5d pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 18800,
+								"extended_weight": "15 lb"
+							}
+						},
+						{
+							"id": "eO1IBgJrpdwotoe10",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ez3A4rmpoQF1oPUSS"
+							},
+							"description": "Grimbarrel 3R",
+							"reference": "B279",
+							"notes": "Repeating Lever-Action Rifle: SE-F-3R",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Firearm"
+							],
+							"value": 600,
+							"weight": "10 lb",
+							"weapons": [
+								{
+									"id": "WHb6yS4qxMARk6EcZ",
+									"damage": {
+										"type": "pi",
+										"base": "4d-2"
+									},
+									"strength": "10†",
+									"accuracy": "5",
+									"range": "35/70",
+									"rate_of_fire": "3",
+									"shots": "8(3)",
+									"bulk": "-5",
+									"recoil": "3",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "4d-2 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 600,
+								"extended_weight": "10 lb"
+							}
+						},
+						{
+							"id": "eCVcVa4iBzvNFHkC7",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ez3A4rmpoQF1oPUSS"
+							},
+							"description": "Ironstorm 74",
+							"reference": "B279",
+							"notes": "Battle Rifle: R274",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Firearm"
+							],
+							"value": 3600,
+							"weight": "11 lb",
+							"weapons": [
+								{
+									"id": "W7N2VtOhdBZt0pcuR",
+									"damage": {
+										"type": "pi",
+										"base": "3d+1"
+									},
+									"strength": "11†",
+									"accuracy": "5",
+									"range": "35/70",
+									"rate_of_fire": "8",
+									"shots": "20+1(3)",
+									"bulk": "-5",
+									"recoil": "3",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "3d+1 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 3600,
+								"extended_weight": "11 lb"
+							}
+						},
+						{
+							"id": "ejrYEcmRyWH4I3ojy",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ez3A4rmpoQF1oPUSS"
+							},
+							"description": "Pioneer 2R",
+							"reference": "B279",
+							"notes": "Semi-Auto Rifle: SE-F-2R",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Firearm"
+							],
+							"value": 1600,
+							"weight": "9 lb",
+							"weapons": [
+								{
+									"id": "WeaKz4wLm9swCZRXu",
+									"damage": {
+										"type": "pi",
+										"base": "3d"
+									},
+									"strength": "9†",
+									"accuracy": "5",
+									"range": "20/40",
+									"rate_of_fire": "3",
+									"shots": "30+1(3)",
+									"bulk": "-4",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "3d pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 1600,
+								"extended_weight": "9 lb"
+							}
+						},
+						{
+							"id": "eBY7AnVVCEuTXBFao",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ez3A4rmpoQF1oPUSS"
+							},
+							"description": "Revenant 89",
+							"reference": "B279",
+							"notes": "Bolt-Action Rifle: R189",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Firearm"
+							],
+							"value": 350,
+							"weight": "8.9 lb",
+							"weapons": [
+								{
+									"id": "WwgfHlp06Qhxgz-Uu",
+									"damage": {
+										"type": "pi",
+										"base": "4d"
+									},
+									"strength": "10†",
+									"accuracy": "5",
+									"range": "35/70",
+									"rate_of_fire": "1",
+									"shots": "5+1(3)",
+									"bulk": "-5",
+									"recoil": "4",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "4d pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 350,
+								"extended_weight": "8.9 lb"
+							}
+						},
+						{
+							"id": "e14On34Z3SZ0lhOMY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ez3A4rmpoQF1oPUSS"
+							},
+							"description": "Vigilance",
+							"reference": "B279",
+							"notes": "Assault Rifle: Julius 688",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Firearm"
+							],
+							"value": 3800,
+							"weight": "7.3 lb",
+							"weapons": [
+								{
+									"id": "WUw49YYN4Sos7Jiiy",
+									"damage": {
+										"type": "pi",
+										"base": "3d-2"
+									},
+									"strength": "9†",
+									"accuracy": "4",
+									"range": "25/50",
+									"rate_of_fire": "15",
+									"shots": "30+1(3)",
+									"bulk": "-4",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "3d-2 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 3800,
+								"extended_weight": "7.3 lb"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 28750,
+						"extended_weight": "61.2 lb"
+					}
+				},
+				{
+					"id": "EuZd6nzXUpxET5tJX",
+					"description": "Shotgun",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eWp1wWJS2bshlu8QH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "eYZW7qkvflXuL60CW"
+							},
+							"description": "Brimstone 75",
+							"reference": "B279",
+							"notes": "Pump Shotgun: SG175",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Firearm"
+							],
+							"value": 240,
+							"weight": "8 lb",
+							"weapons": [
+								{
+									"id": "W7iOEdhR2ehqkeJij",
+									"damage": {
+										"type": "pi",
+										"base": "1d+1"
+									},
+									"strength": "10†",
+									"accuracy": "3",
+									"range": "6/12",
+									"rate_of_fire": "2x9",
+									"shots": "5(3i)",
+									"bulk": "-5",
+									"recoil": "1/5",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "1d+1 pi"
 									}
 								}
 							],
 							"quantity": 1,
 							"equipped": true,
 							"calc": {
-								"extended_value": 6000,
-								"extended_weight": "3.6 lb"
+								"extended_value": 240,
+								"extended_weight": "8 lb"
+							}
+						},
+						{
+							"id": "etw3Wf_sDR29eSanz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "eYZW7qkvflXuL60CW"
+							},
+							"description": "Purge",
+							"reference": "B279",
+							"notes": "Semi-Auto Shotgun: Nicholas 327",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Firearm"
+							],
+							"value": 1900,
+							"weight": "8.4 lb",
+							"weapons": [
+								{
+									"id": "Ws2BuQ02AA_1TSkgT",
+									"damage": {
+										"type": "pi",
+										"base": "1d"
+									},
+									"strength": "10†",
+									"accuracy": "3",
+									"range": "6/12",
+									"rate_of_fire": "3x9",
+									"shots": "6+1(3i)",
+									"bulk": "-5",
+									"recoil": "1/4",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "1d pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 1900,
+								"extended_weight": "8.4 lb"
+							}
+						},
+						{
+							"id": "e60PrlrdVvNxQKMzq",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "eYZW7qkvflXuL60CW"
+							},
+							"description": "Twin Havoc 3SG",
+							"reference": "B279",
+							"notes": "Double Barrel Shotgun: SE-F-3SG",
+							"tech_level": "5",
+							"legality_class": "4",
+							"tags": [
+								"Firearm"
+							],
+							"value": 225,
+							"weight": "10 lb",
+							"weapons": [
+								{
+									"id": "WU_ZbNdDhzT9lHRVs",
+									"damage": {
+										"type": "pi",
+										"base": "1d+2"
+									},
+									"strength": "11†",
+									"accuracy": "3",
+									"range": "6/12",
+									"rate_of_fire": "2x9",
+									"shots": "2(3i)",
+									"bulk": "-5",
+									"recoil": "1/5",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "1d+2 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 225,
+								"extended_weight": "10 lb"
 							}
 						}
 					],
 					"calc": {
-						"extended_value": 12050,
-						"extended_weight": "12.65 lb"
+						"extended_value": 2365,
+						"extended_weight": "26.4 lb"
+					}
+				},
+				{
+					"id": "E0EuLOJGfr5GHQGou",
+					"description": "SMG",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "ecB4x_bo761yBgPOZ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "eqdZg32_b5Bs7EAza"
+							},
+							"description": "Dominion",
+							"reference": "B278",
+							"notes": "SMG: Sylvester 466",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Firearm"
+							],
+							"value": 3200,
+							"weight": "3.9 lb",
+							"weapons": [
+								{
+									"id": "WT3tpvEwtR4iGCLs2",
+									"damage": {
+										"type": "pi-",
+										"base": "4d+1"
+									},
+									"strength": "7†",
+									"accuracy": "3",
+									"range": "12/24",
+									"rate_of_fire": "15",
+									"shots": "20+1(3)",
+									"bulk": "-4",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "4d+1 pi-"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 3200,
+								"extended_weight": "3.9 lb"
+							}
+						},
+						{
+							"id": "eWkupk1WUBwGPldMa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "eqdZg32_b5Bs7EAza"
+							},
+							"description": "Viper 09",
+							"reference": "B278",
+							"notes": "SMG: MP209",
+							"tech_level": "8",
+							"legality_class": "3",
+							"tags": [
+								"Firearm"
+							],
+							"value": 4800,
+							"weight": "7.5 lb",
+							"weapons": [
+								{
+									"id": "WkSG4mshsH6gUGSdz",
+									"damage": {
+										"type": "pi",
+										"base": "3d-1"
+									},
+									"strength": "8†",
+									"accuracy": "4",
+									"range": "10/20",
+									"rate_of_fire": "10",
+									"shots": "25+1(3)",
+									"bulk": "-4",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "3d-1 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 4800,
+								"extended_weight": "7.5 lb"
+							}
+						},
+						{
+							"id": "ePYCztC0_OuI886EP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "eqdZg32_b5Bs7EAza"
+							},
+							"description": "Viper 32",
+							"reference": "B278",
+							"notes": "SMG: MP132",
+							"tech_level": "8",
+							"legality_class": "3",
+							"tags": [
+								"Firearm"
+							],
+							"value": 3600,
+							"weight": "6.5 lb",
+							"weapons": [
+								{
+									"id": "W0TofU9lLuosucQjb",
+									"damage": {
+										"type": "pi+",
+										"base": "2d+1"
+									},
+									"strength": "10†",
+									"accuracy": "3",
+									"range": "8/16",
+									"rate_of_fire": "13",
+									"shots": "30+1(3)",
+									"bulk": "-4",
+									"recoil": "3",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "2d+1 pi+"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 3600,
+								"extended_weight": "6.5 lb"
+							}
+						},
+						{
+							"id": "eD7lT0dZhiw8TbTws",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "eqdZg32_b5Bs7EAza"
+							},
+							"description": "Wildfire 2MP",
+							"reference": "B278",
+							"notes": "Machine Pistol: SE-F-2MP",
+							"tech_level": "7",
+							"legality_class": "2",
+							"tags": [
+								"Firearm"
+							],
+							"value": 1800,
+							"weight": "5.5 lb",
+							"weapons": [
+								{
+									"id": "WCVbUkfTz1-hUHo3g",
+									"damage": {
+										"type": "pi",
+										"base": "2d-1"
+									},
+									"strength": "12",
+									"accuracy": "2",
+									"range": "8/16",
+									"rate_of_fire": "20",
+									"shots": "25+1(3)",
+									"bulk": "-3",
+									"recoil": "4",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "2d-1 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 1800,
+								"extended_weight": "5.5 lb"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 13400,
+						"extended_weight": "23.4 lb"
 					}
 				}
 			],
 			"calc": {
-				"extended_value": 12050,
-				"extended_weight": "12.65 lb"
+				"extended_value": 72765,
+				"extended_weight": "177.65 lb"
 			}
 		},
 		{
@@ -3006,391 +5957,694 @@
 			}
 		},
 		{
-			"id": "EZH45N3dGka_htDrG",
-			"description": "Sights",
+			"id": "EHfoC8xqCYz3fOHsH",
+			"description": "Storage",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"children": [
 				{
-					"id": "e-ZIb-u__pgCzlySl",
+					"id": "EBW7F99H-gt0qpor-",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
+						"id": "EwSOT_Sl-CS9v-TgB"
 					},
-					"description": "2x Scope",
-					"reference": "B278",
-					"tech_level": "6",
+					"description": "Backpack, Frame",
+					"reference": "B288",
+					"tech_level": "1",
+					"tags": [
+						"Storage"
+					],
+					"value": 100,
+					"weight": "10 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "100 lb"
+								}
+							}
+						]
+					},
+					"quantity": 1,
+					"calc": {
+						"extended_value": 100,
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"id": "Ej1ou9iQCWB1I49AU",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ESjtIfyzScVP49ity"
+					},
+					"description": "Backpack, Small",
+					"reference": "B288",
+					"tech_level": "1",
+					"tags": [
+						"Storage"
+					],
+					"value": 60,
+					"weight": "3 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "40 lb"
+								}
+							}
+						]
+					},
+					"quantity": 1,
+					"calc": {
+						"extended_value": 60,
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "E5W9WjBrwiQVrFt6I",
+					"description": "Gun Case",
+					"notes": "4' long, large enough to hold a sniper rifle or two SMGs + 20 ammo, DR 2, waterproof",
+					"tech_level": "8",
 					"legality_class": "4",
 					"tags": [
-						"Attachment"
-					],
-					"value": 75,
-					"weight": "1 lb",
-					"modifiers": [
-						{
-							"id": "fIouEzT7M9YCr_ubF",
-							"name": "2x Scope",
-							"features": [
-								{
-									"type": "weapon_scope_acc_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": 1
-								}
-							]
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 75,
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "eSnwJxdBWu-ryEhUu",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "4x Scope",
-					"reference": "B278",
-					"tech_level": "6",
-					"legality_class": "4",
-					"tags": [
-						"Attachment"
-					],
-					"value": 150,
-					"weight": "1 lb",
-					"modifiers": [
-						{
-							"id": "fJNtXGrbZXDPRaRte",
-							"name": "4x Scope",
-							"features": [
-								{
-									"type": "weapon_scope_acc_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": 2
-								}
-							]
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 150,
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "e0R4MerEd3l4Yz4Lg",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "4x Scope, Thermal Imaging",
-					"reference": "B278",
-					"tech_level": "8",
-					"legality_class": "2",
-					"tags": [
-						"Attachment"
-					],
-					"value": 4000,
-					"weight": "1 lb",
-					"modifiers": [
-						{
-							"id": "fw5D_2IqqSsl3yFBD",
-							"name": "4x Scope, Thermal Imaging",
-							"notes": "Infravision while aiming",
-							"features": [
-								{
-									"type": "weapon_scope_acc_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": 2
-								}
-							]
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 4000,
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "erYJp2f33URLL33b1",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "8x Scope",
-					"reference": "B278",
-					"tech_level": "8",
-					"legality_class": "3",
-					"tags": [
-						"Attachment"
+						"Storage"
 					],
 					"value": 1000,
-					"weight": "1 lb",
-					"modifiers": [
-						{
-							"id": "fXlovm6tVTa115pEp",
-							"name": "8x Scope",
-							"features": [
-								{
-									"type": "weapon_scope_acc_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": 3
-								}
-							]
-						}
-					],
+					"weight": "25 lb",
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
 						"extended_value": 1000,
-						"extended_weight": "1 lb"
+						"extended_weight": "25 lb"
 					}
 				},
 				{
-					"id": "eA2yvfl5nNlF8b5n5",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "Laser Sight",
-					"reference": "B278",
-					"tech_level": "8",
-					"legality_class": "3",
+					"id": "E7rfW2gaTwEOk9QCd",
+					"description": "Instrument Case",
+					"notes": "Guitar size, large enough to hold a rifle or two SMGs + 10 ammo",
+					"tech_level": "6",
+					"legality_class": "4",
 					"tags": [
-						"Attachment"
+						"Storage"
 					],
-					"value": 400,
-					"weight": "0.5 lb",
-					"modifiers": [
-						{
-							"id": "ftVssJT1jw96a3t4S",
-							"name": "Laser Sight",
-							"notes": "+1 to Skill, but target gets +1 to Dodge if he sees it ",
-							"features": [
-								{
-									"type": "skill_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"amount": 1
-								}
-							]
-						},
-						{
-							"id": "fcrQtF8lfVTZ6QovM",
-							"name": "8x Scope",
-							"features": [
-								{
-									"type": "weapon_scope_acc_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": 3
-								}
-							]
-						}
-					],
+					"value": 100,
+					"weight": "10 lb",
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"extended_value": 400,
-						"extended_weight": "0.5 lb"
+						"extended_value": 100,
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"id": "EieMtvndBu8wmDB1U",
+					"description": "Small suitcase",
+					"notes": "Fits an oboe, large enough to hold an SMG and 5 ammo",
+					"tech_level": "6",
+					"legality_class": "4",
+					"tags": [
+						"Storage"
+					],
+					"value": 50,
+					"weight": "2.5 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "2.5 lb"
 					}
 				}
 			],
 			"calc": {
-				"extended_value": 5625,
-				"extended_weight": "4.5 lb"
+				"extended_value": 1310,
+				"extended_weight": "50.5 lb"
 			}
 		},
 		{
-			"id": "EQPxKwCO_pT6Q2Dxu",
-			"description": "Stocks",
+			"id": "EqZBgMYUcRQJiT3mC",
+			"description": "Weapon Attachments",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"children": [
 				{
-					"id": "enhYjpGdLhmrGYZTY",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "Bipod",
-					"reference": "B278",
-					"tech_level": "8",
-					"legality_class": "3",
-					"tags": [
-						"Attachment"
-					],
-					"value": 400,
-					"weight": "0.5 lb",
-					"modifiers": [
-						{
-							"id": "fwN82ZdNM2DbVr41E",
-							"name": "Bipod",
-							"notes": "Considered braced if prone and bipod out"
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 400,
-						"extended_weight": "0.5 lb"
-					}
-				},
-				{
-					"id": "er4dpZL4RUiO9eXjD",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "Pistol Stock",
-					"reference": "B278",
-					"tech_level": "5",
+					"id": "EHr3J5pYEO5pEjbM_",
+					"description": "Expanded Magazine",
 					"legality_class": "4",
-					"tags": [
-						"Attachment"
-					],
-					"value": 50,
-					"weight": "0.5 lb",
-					"modifiers": [
-						{
-							"id": "fzldE9xNC6OBajzZ-",
-							"name": "Pistol Stock",
-							"features": [
-								{
-									"type": "weapon_bulk_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": -1
-								},
-								{
-									"type": "weapon_acc_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": 1
-								}
-							]
-						}
-					],
 					"quantity": 1,
 					"equipped": true,
+					"children": [
+						{
+							"id": "eaWVHYhGI0vtYh05a",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Drum Magazine",
+							"reference": "B278",
+							"tech_level": "6",
+							"legality_class": "3",
+							"tags": [
+								"Attachment"
+							],
+							"value": 100,
+							"modifiers": [
+								{
+									"id": "fGTm8Jn7D5XIpRuE2",
+									"name": "Drum Magazine",
+									"weight": "+50%",
+									"features": [
+										{
+											"type": "weapon_bulk_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": -1
+										},
+										{
+											"type": "weapon_non_chamber_shots_bonus",
+											"percent": true,
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 50
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 100,
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eA7Bj8VEFH3yPG11r",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Extended Magazine",
+							"reference": "B278",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Attachment"
+							],
+							"value": 50,
+							"modifiers": [
+								{
+									"id": "fNpidOU0BPKO8Ji9g",
+									"name": "Extended Magazine",
+									"weight": "+20%",
+									"features": [
+										{
+											"type": "weapon_non_chamber_shots_bonus",
+											"percent": true,
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 25
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 50,
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ePSrQ3KovsG96j2Ci",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "High-Density Extended Magazine",
+							"reference": "B278",
+							"tech_level": "7",
+							"legality_class": "2",
+							"tags": [
+								"Attachment"
+							],
+							"value": 300,
+							"modifiers": [
+								{
+									"id": "fti_uMIusIpRR1ck7",
+									"name": "High-Density Extended Magazine",
+									"weight": "+30%",
+									"features": [
+										{
+											"type": "weapon_non_chamber_shots_bonus",
+											"percent": true,
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 40
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 300,
+								"extended_weight": "0 lb"
+							}
+						}
+					],
 					"calc": {
-						"extended_value": 50,
-						"extended_weight": "0.5 lb"
+						"extended_value": 450,
+						"extended_weight": "0 lb"
 					}
 				},
 				{
-					"id": "eyE7JwYw1d-GU-nHR",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "enYweeQwtSBvAmkXg"
-					},
-					"description": "SMG Stock",
-					"reference": "B278",
-					"tech_level": "6",
-					"legality_class": "3",
-					"tags": [
-						"Attachment"
-					],
-					"value": 150,
-					"weight": "1 lb",
-					"modifiers": [
-						{
-							"id": "f9gld4lbR8wzjvYg5",
-							"name": "SMG Stock",
-							"features": [
-								{
-									"type": "weapon_bulk_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": -1
-								},
-								{
-									"type": "weapon_acc_bonus",
-									"selection_type": "this_weapon",
-									"name": {
-										"compare": "is"
-									},
-									"level": {
-										"compare": "at_least"
-									},
-									"amount": 1
-								}
-							]
-						}
-					],
+					"id": "EZH45N3dGka_htDrG",
+					"description": "Sights",
+					"legality_class": "4",
 					"quantity": 1,
 					"equipped": true,
+					"children": [
+						{
+							"id": "e-ZIb-u__pgCzlySl",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "2x Scope",
+							"reference": "B278",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Attachment"
+							],
+							"value": 75,
+							"weight": "1 lb",
+							"modifiers": [
+								{
+									"id": "fIouEzT7M9YCr_ubF",
+									"name": "2x Scope",
+									"features": [
+										{
+											"type": "weapon_scope_acc_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 75,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "eSnwJxdBWu-ryEhUu",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "4x Scope",
+							"reference": "B278",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Attachment"
+							],
+							"value": 150,
+							"weight": "1 lb",
+							"modifiers": [
+								{
+									"id": "fJNtXGrbZXDPRaRte",
+									"name": "4x Scope",
+									"features": [
+										{
+											"type": "weapon_scope_acc_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 2
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 150,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "e0R4MerEd3l4Yz4Lg",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "4x Scope, Thermal Imaging",
+							"reference": "B278",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Attachment"
+							],
+							"value": 4000,
+							"weight": "1 lb",
+							"modifiers": [
+								{
+									"id": "fw5D_2IqqSsl3yFBD",
+									"name": "4x Scope, Thermal Imaging",
+									"notes": "Infravision while aiming",
+									"features": [
+										{
+											"type": "weapon_scope_acc_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 2
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 4000,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "erYJp2f33URLL33b1",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "8x Scope",
+							"reference": "B278",
+							"tech_level": "8",
+							"legality_class": "3",
+							"tags": [
+								"Attachment"
+							],
+							"value": 1000,
+							"weight": "1 lb",
+							"modifiers": [
+								{
+									"id": "fXlovm6tVTa115pEp",
+									"name": "8x Scope",
+									"features": [
+										{
+											"type": "weapon_scope_acc_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 3
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 1000,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "eA2yvfl5nNlF8b5n5",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Laser Sight",
+							"reference": "B278",
+							"tech_level": "8",
+							"legality_class": "3",
+							"tags": [
+								"Attachment"
+							],
+							"value": 400,
+							"weight": "0.5 lb",
+							"modifiers": [
+								{
+									"id": "ftVssJT1jw96a3t4S",
+									"name": "Laser Sight",
+									"notes": "+1 to Skill, but target gets +1 to Dodge if he sees it ",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"amount": 1
+										}
+									]
+								},
+								{
+									"id": "fcrQtF8lfVTZ6QovM",
+									"name": "8x Scope",
+									"features": [
+										{
+											"type": "weapon_scope_acc_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 3
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 400,
+								"extended_weight": "0.5 lb"
+							}
+						}
+					],
 					"calc": {
-						"extended_value": 150,
-						"extended_weight": "1 lb"
+						"extended_value": 5625,
+						"extended_weight": "4.5 lb"
+					}
+				},
+				{
+					"id": "EQPxKwCO_pT6Q2Dxu",
+					"description": "Stocks",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "enhYjpGdLhmrGYZTY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Bipod",
+							"reference": "B278",
+							"tech_level": "8",
+							"legality_class": "3",
+							"tags": [
+								"Attachment"
+							],
+							"value": 400,
+							"weight": "0.5 lb",
+							"modifiers": [
+								{
+									"id": "fwN82ZdNM2DbVr41E",
+									"name": "Bipod",
+									"notes": "Considered braced if prone and bipod out"
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 400,
+								"extended_weight": "0.5 lb"
+							}
+						},
+						{
+							"id": "er4dpZL4RUiO9eXjD",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Pistol Stock",
+							"reference": "B278",
+							"tech_level": "5",
+							"legality_class": "4",
+							"tags": [
+								"Attachment"
+							],
+							"value": 50,
+							"weight": "0.5 lb",
+							"modifiers": [
+								{
+									"id": "fzldE9xNC6OBajzZ-",
+									"name": "Pistol Stock",
+									"features": [
+										{
+											"type": "weapon_bulk_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": -1
+										},
+										{
+											"type": "weapon_acc_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 50,
+								"extended_weight": "0.5 lb"
+							}
+						},
+						{
+							"id": "eyE7JwYw1d-GU-nHR",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "SMG Stock",
+							"reference": "B278",
+							"tech_level": "6",
+							"legality_class": "3",
+							"tags": [
+								"Attachment"
+							],
+							"value": 150,
+							"weight": "1 lb",
+							"modifiers": [
+								{
+									"id": "f9gld4lbR8wzjvYg5",
+									"name": "SMG Stock",
+									"features": [
+										{
+											"type": "weapon_bulk_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": -1
+										},
+										{
+											"type": "weapon_acc_bonus",
+											"selection_type": "this_weapon",
+											"name": {
+												"compare": "is"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1
+										}
+									]
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 150,
+								"extended_weight": "1 lb"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 600,
+						"extended_weight": "2 lb"
 					}
 				}
 			],
 			"calc": {
-				"extended_value": 600,
-				"extended_weight": "2 lb"
+				"extended_value": 6675,
+				"extended_weight": "6.5 lb"
 			}
 		},
 		{
