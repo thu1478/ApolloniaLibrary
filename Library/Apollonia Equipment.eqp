@@ -16,32 +16,129 @@
 					"equipped": true,
 					"children": [
 						{
-							"id": "etDg4EOBBZDU1o5NG",
+							"id": "eW0oZoT_ot8qq3V1O",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
 								"id": "ehIxhuv_8_PA8EnPd"
 							},
-							"description": "Assault Vest",
+							"description": "Formal Outfit",
 							"reference": "B283",
-							"tech_level": "8",
-							"legality_class": "3",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
 							"tags": [
-								"Armor"
+								"Armor",
+								"Clothing"
 							],
-							"value": 6000,
-							"weight": "16 lb",
+							"value": 450,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 450,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "evNARaHJNtpB__a6z",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Seductive Outfit",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 200,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 200,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "e_jzORPEqATRkCzBN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Ordinary Outfit",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 50,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 50,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "ea7_U14b0bAYeW02-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Leather Jacket",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 85,
+							"weight": "4 lb",
 							"features": [
 								{
 									"type": "dr_bonus",
 									"locations": [
-										"groin",
+										"arm",
 										"torso",
 										"vitals"
 									],
-									"specialization": "pi and cut",
-									"amount": 2
-								},
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 85,
+								"extended_weight": "4 lb"
+							}
+						},
+						{
+							"id": "e3ojE3XuhCtvji6XX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Steel Chestplate",
+							"reference": "B283",
+							"tech_level": "3",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 650,
+							"weight": "18 lb",
+							"features": [
 								{
 									"type": "dr_bonus",
 									"locations": [
@@ -54,8 +151,74 @@
 							],
 							"quantity": 1,
 							"calc": {
-								"extended_value": 6000,
-								"extended_weight": "16 lb"
+								"extended_value": 650,
+								"extended_weight": "18 lb"
+							}
+						},
+						{
+							"id": "ex3q6lEfimHq33r-W",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Concealed Vest",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 750,
+							"weight": "2 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"torso",
+										"vitals"
+									],
+									"amount": 3
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 750,
+								"extended_weight": "2 lb"
+							}
+						},
+						{
+							"id": "ezZDsy1x8_4ezpdfq",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Manaflow Vest",
+							"reference": "B283",
+							"notes": "Grants +1 to spell casting",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 500,
+							"weight": "1 lb",
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 500,
+								"extended_weight": "1 lb"
 							}
 						},
 						{
@@ -98,219 +261,6 @@
 							"calc": {
 								"extended_value": 500,
 								"extended_weight": "8 lb"
-							}
-						},
-						{
-							"id": "eq7HBrh9zG0mnnRTC",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Combat Hardsuit",
-							"reference": "B283",
-							"tech_level": "9",
-							"legality_class": "2",
-							"tags": [
-								"Armor"
-							],
-							"value": 40000,
-							"weight": "30 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"arm",
-										"foot",
-										"groin",
-										"hand",
-										"leg",
-										"neck",
-										"torso",
-										"vitals"
-									],
-									"specialization": "pi and cut",
-									"amount": 3
-								},
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"arm",
-										"foot",
-										"groin",
-										"hand",
-										"leg",
-										"neck",
-										"torso",
-										"vitals"
-									],
-									"amount": 7
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 40000,
-								"extended_weight": "30 lb"
-							}
-						},
-						{
-							"id": "ex3q6lEfimHq33r-W",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Concealed Vest",
-							"reference": "B283",
-							"notes": "Flexible, concealable",
-							"tech_level": "6",
-							"legality_class": "4",
-							"tags": [
-								"Armor"
-							],
-							"value": 750,
-							"weight": "2 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"torso",
-										"vitals"
-									],
-									"amount": 3
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 750,
-								"extended_weight": "2 lb"
-							}
-						},
-						{
-							"id": "eVc66xNxjUUz_z02k",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Deathstare Vest",
-							"reference": "B283",
-							"notes": "Flexible, concealable",
-							"tech_level": "9",
-							"legality_class": "2",
-							"tags": [
-								"Armor"
-							],
-							"value": 36000,
-							"weight": "4 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"groin",
-										"torso",
-										"vitals"
-									],
-									"specialization": "pi and cut",
-									"amount": 5
-								},
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"groin",
-										"torso",
-										"vitals"
-									],
-									"amount": 2
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 36000,
-								"extended_weight": "4 lb"
-							}
-						},
-						{
-							"id": "eW0oZoT_ot8qq3V1O",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Formal Outfit",
-							"reference": "B283",
-							"notes": "Flexible, concealable",
-							"tech_level": "1",
-							"legality_class": "4",
-							"tags": [
-								"Armor",
-								"Clothing"
-							],
-							"value": 450,
-							"weight": "0.1 lb",
-							"quantity": 1,
-							"calc": {
-								"extended_value": 450,
-								"extended_weight": "0.1 lb"
-							}
-						},
-						{
-							"id": "ea7_U14b0bAYeW02-",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Leather Jacket",
-							"reference": "B283",
-							"notes": "Flexible, concealable",
-							"tech_level": "1",
-							"legality_class": "4",
-							"tags": [
-								"Armor",
-								"Clothing"
-							],
-							"value": 85,
-							"weight": "4 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"arm",
-										"torso",
-										"vitals"
-									],
-									"amount": 1
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 85,
-								"extended_weight": "4 lb"
-							}
-						},
-						{
-							"id": "e_jzORPEqATRkCzBN",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Ordinary Outfit",
-							"reference": "B283",
-							"notes": "Flexible, concealable",
-							"tech_level": "1",
-							"legality_class": "4",
-							"tags": [
-								"Armor",
-								"Clothing"
-							],
-							"value": 50,
-							"weight": "0.1 lb",
-							"quantity": 1,
-							"calc": {
-								"extended_value": 50,
-								"extended_weight": "0.1 lb"
 							}
 						},
 						{
@@ -390,46 +340,32 @@
 							}
 						},
 						{
-							"id": "evNARaHJNtpB__a6z",
+							"id": "etDg4EOBBZDU1o5NG",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
 								"id": "ehIxhuv_8_PA8EnPd"
 							},
-							"description": "Seductive Outfit",
+							"description": "Assault Vest",
 							"reference": "B283",
-							"notes": "Flexible, concealable",
-							"tech_level": "1",
-							"legality_class": "4",
-							"tags": [
-								"Armor",
-								"Clothing"
-							],
-							"value": 200,
-							"weight": "0.1 lb",
-							"quantity": 1,
-							"calc": {
-								"extended_value": 200,
-								"extended_weight": "0.1 lb"
-							}
-						},
-						{
-							"id": "e3ojE3XuhCtvji6XX",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Steel Chestplate",
-							"reference": "B283",
-							"tech_level": "3",
+							"tech_level": "8",
 							"legality_class": "3",
 							"tags": [
 								"Armor"
 							],
-							"value": 650,
-							"weight": "18 lb",
+							"value": 6000,
+							"weight": "16 lb",
 							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 2
+								},
 								{
 									"type": "dr_bonus",
 									"locations": [
@@ -442,14 +378,155 @@
 							],
 							"quantity": 1,
 							"calc": {
-								"extended_value": 650,
-								"extended_weight": "18 lb"
+								"extended_value": 6000,
+								"extended_weight": "16 lb"
+							}
+						},
+						{
+							"id": "eq7HBrh9zG0mnnRTC",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Combat Hardsuit",
+							"reference": "B283",
+							"tech_level": "9",
+							"legality_class": "2",
+							"tags": [
+								"Armor"
+							],
+							"value": 40000,
+							"weight": "30 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm",
+										"foot",
+										"groin",
+										"hand",
+										"leg",
+										"neck",
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 3
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm",
+										"foot",
+										"groin",
+										"hand",
+										"leg",
+										"neck",
+										"torso",
+										"vitals"
+									],
+									"amount": 7
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 40000,
+								"extended_weight": "30 lb"
+							}
+						},
+						{
+							"id": "eoUB4ezZbFws_vIS5",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Nycthira Vest",
+							"reference": "B283",
+							"notes": "Grants +1 to spell casting",
+							"tech_level": "9",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 48000,
+							"weight": "8 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 5
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"amount": 3
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 48000,
+								"extended_weight": "8 lb"
+							}
+						},
+						{
+							"id": "eVc66xNxjUUz_z02k",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Deathstare Vest",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "9",
+							"legality_class": "2",
+							"tags": [
+								"Armor"
+							],
+							"value": 36000,
+							"weight": "4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"specialization": "pi and cut",
+									"amount": 5
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin",
+										"torso",
+										"vitals"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 36000,
+								"extended_weight": "4 lb"
 							}
 						}
 					],
 					"calc": {
-						"extended_value": 86355,
-						"extended_weight": "97.3 lb"
+						"extended_value": 134855,
+						"extended_weight": "106.3 lb"
 					}
 				},
 				{
@@ -459,6 +536,39 @@
 					"quantity": 1,
 					"equipped": true,
 					"children": [
+						{
+							"id": "eS-QD4QzTszPTHmT-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Shoes",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "1",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 40,
+							"weight": "1 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"foot"
+									],
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 40,
+								"extended_weight": "1 lb"
+							}
+						},
 						{
 							"id": "eOqphupbtRc4pHGll",
 							"source": {
@@ -539,39 +649,6 @@
 							"quantity": 1,
 							"calc": {
 								"extended_value": 80,
-								"extended_weight": "1 lb"
-							}
-						},
-						{
-							"id": "eS-QD4QzTszPTHmT-",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Shoes",
-							"reference": "B283",
-							"notes": "Flexible, concealable",
-							"tech_level": "1",
-							"legality_class": "4",
-							"tags": [
-								"Armor",
-								"Clothing"
-							],
-							"value": 40,
-							"weight": "1 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"foot"
-									],
-									"amount": 1
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 40,
 								"extended_weight": "1 lb"
 							}
 						},
@@ -674,6 +751,39 @@
 							}
 						},
 						{
+							"id": "eORpwWrAxPfCiGeY0",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Manaflow Gloves",
+							"reference": "B283",
+							"notes": "Grants +1 to spell casting",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 300,
+							"weight": "1 lb",
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 300,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
 							"id": "el2zjaMtXNzR9axbW",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
@@ -714,8 +824,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": 150,
-						"extended_weight": "1.25 lb"
+						"extended_value": 450,
+						"extended_weight": "2.25 lb"
 					}
 				},
 				{
@@ -725,49 +835,6 @@
 					"quantity": 1,
 					"equipped": true,
 					"children": [
-						{
-							"id": "eudWeE-tBgzpyoMVi",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Ballistic Helmet",
-							"reference": "B283",
-							"tech_level": "8",
-							"legality_class": "2",
-							"tags": [
-								"Armor"
-							],
-							"value": 1800,
-							"weight": "4.4 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"eye",
-										"face",
-										"skull"
-									],
-									"specialization": "pi and cut",
-									"amount": 2
-								},
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"eye",
-										"face",
-										"skull"
-									],
-									"amount": 5
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 1800,
-								"extended_weight": "4.4 lb"
-							}
-						},
 						{
 							"id": "eGmqzSC8H9uCYvuJU",
 							"source": {
@@ -817,6 +884,97 @@
 							}
 						},
 						{
+							"id": "eqCSqkz0HiL5ibybu",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Top hat",
+							"reference": "B283",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 50,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 50,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
+							"id": "e4s3dtgjOvoNyNmyK",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Riot Helmet",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 500,
+							"weight": "3.5 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"skull"
+									],
+									"amount": 5
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 500,
+								"extended_weight": "3.5 lb"
+							}
+						},
+						{
+							"id": "eTJCSbqRbcJIK127I",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Riot Helmet with neck guard",
+							"reference": "B283",
+							"tech_level": "7",
+							"legality_class": "3",
+							"tags": [
+								"Armor"
+							],
+							"value": 550,
+							"weight": "4 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"neck",
+										"skull"
+									],
+									"amount": 5
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 550,
+								"extended_weight": "4 lb"
+							}
+						},
+						{
 							"id": "eXRrtwluys27eQ5_i",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
@@ -845,39 +1003,6 @@
 							"calc": {
 								"extended_value": 100,
 								"extended_weight": "1 lb"
-							}
-						},
-						{
-							"id": "edvs1q90-KiqnArE1",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Hardsuit Helmet",
-							"reference": "B283",
-							"tech_level": "9",
-							"legality_class": "2",
-							"tags": [
-								"Armor"
-							],
-							"value": 8000,
-							"weight": "4 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"eye",
-										"face",
-										"skull"
-									],
-									"amount": 7
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 8000,
-								"extended_weight": "4 lb"
 							}
 						},
 						{
@@ -965,22 +1090,32 @@
 							}
 						},
 						{
-							"id": "e4s3dtgjOvoNyNmyK",
+							"id": "eudWeE-tBgzpyoMVi",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
 								"id": "ehIxhuv_8_PA8EnPd"
 							},
-							"description": "Riot Helmet",
+							"description": "Ballistic Helmet",
 							"reference": "B283",
-							"tech_level": "7",
-							"legality_class": "3",
+							"tech_level": "8",
+							"legality_class": "2",
 							"tags": [
 								"Armor"
 							],
-							"value": 500,
-							"weight": "3.5 lb",
+							"value": 1800,
+							"weight": "4.4 lb",
 							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"face",
+										"skull"
+									],
+									"specialization": "pi and cut",
+									"amount": 2
+								},
 								{
 									"type": "dr_bonus",
 									"locations": [
@@ -993,25 +1128,25 @@
 							],
 							"quantity": 1,
 							"calc": {
-								"extended_value": 500,
-								"extended_weight": "3.5 lb"
+								"extended_value": 1800,
+								"extended_weight": "4.4 lb"
 							}
 						},
 						{
-							"id": "eTJCSbqRbcJIK127I",
+							"id": "edvs1q90-KiqnArE1",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
 								"id": "ehIxhuv_8_PA8EnPd"
 							},
-							"description": "Riot Helmet with neck guard",
+							"description": "Hardsuit Helmet",
 							"reference": "B283",
-							"tech_level": "7",
-							"legality_class": "3",
+							"tech_level": "9",
+							"legality_class": "2",
 							"tags": [
 								"Armor"
 							],
-							"value": 550,
+							"value": 8000,
 							"weight": "4 lb",
 							"features": [
 								{
@@ -1019,40 +1154,15 @@
 									"locations": [
 										"eye",
 										"face",
-										"neck",
 										"skull"
 									],
-									"amount": 5
+									"amount": 7
 								}
 							],
 							"quantity": 1,
 							"calc": {
-								"extended_value": 550,
+								"extended_value": 8000,
 								"extended_weight": "4 lb"
-							}
-						},
-						{
-							"id": "eqCSqkz0HiL5ibybu",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Top hat",
-							"reference": "B283",
-							"notes": "Flexible, concealable",
-							"tech_level": "6",
-							"legality_class": "4",
-							"tags": [
-								"Armor",
-								"Clothing"
-							],
-							"value": 50,
-							"weight": "0.1 lb",
-							"quantity": 1,
-							"calc": {
-								"extended_value": 50,
-								"extended_weight": "0.1 lb"
 							}
 						}
 					],
@@ -1068,37 +1178,6 @@
 					"quantity": 1,
 					"equipped": true,
 					"children": [
-						{
-							"id": "eeuDqvAjVyBWMnQC_",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Arm Guards",
-							"reference": "B283",
-							"tech_level": "6",
-							"legality_class": "4",
-							"tags": [
-								"Armor"
-							],
-							"value": 100,
-							"weight": "1 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"arm"
-									],
-									"amount": 2
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 100,
-								"extended_weight": "1 lb"
-							}
-						},
 						{
 							"id": "eoP-aA8ayRvVPpQMd",
 							"source": {
@@ -1130,37 +1209,6 @@
 							"quantity": 1,
 							"calc": {
 								"extended_value": 40,
-								"extended_weight": "2 lb"
-							}
-						},
-						{
-							"id": "ezKbNguv6R_7zrWo8",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ehIxhuv_8_PA8EnPd"
-							},
-							"description": "Leg Guards",
-							"reference": "B283",
-							"tech_level": "6",
-							"legality_class": "4",
-							"tags": [
-								"Armor"
-							],
-							"value": 125,
-							"weight": "2 lb",
-							"features": [
-								{
-									"type": "dr_bonus",
-									"locations": [
-										"leg"
-									],
-									"amount": 2
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 125,
 								"extended_weight": "2 lb"
 							}
 						},
@@ -1224,6 +1272,68 @@
 							"calc": {
 								"extended_value": 550,
 								"extended_weight": "15 lb"
+							}
+						},
+						{
+							"id": "eeuDqvAjVyBWMnQC_",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Arm Guards",
+							"reference": "B283",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 100,
+							"weight": "1 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 100,
+								"extended_weight": "1 lb"
+							}
+						},
+						{
+							"id": "ezKbNguv6R_7zrWo8",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Leg Guards",
+							"reference": "B283",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor"
+							],
+							"value": 125,
+							"weight": "2 lb",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"leg"
+									],
+									"amount": 2
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 125,
+								"extended_weight": "2 lb"
 							}
 						},
 						{
@@ -1318,75 +1428,6 @@
 					"equipped": true,
 					"children": [
 						{
-							"id": "edgNhVMVuoY6UqMhe",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "e8R7Aeyi-XLcBxRRR"
-							},
-							"description": "Ballistic Shield",
-							"reference": "B287",
-							"tech_level": "8",
-							"legality_class": "2",
-							"tags": [
-								"Shield"
-							],
-							"value": 5600,
-							"weight": "22 lb",
-							"weapons": [
-								{
-									"id": "wHGSYIlYQGtDpT9u7",
-									"damage": {
-										"type": "cr",
-										"st": "thr"
-									},
-									"reach": "1",
-									"block": "0",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Shield",
-											"specialization": "Shield",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Shield",
-											"specialization": "Force Shield",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Shield",
-											"specialization": "Buckler"
-										}
-									],
-									"calc": {
-										"level": 6,
-										"damage": "1d-2 cr",
-										"block": "6"
-									}
-								}
-							],
-							"features": [
-								{
-									"type": "conditional_modifier",
-									"situation": "to Dodge, Parry \u0026 Block against attacks from the front or shield side",
-									"amount": 3
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"extended_value": 5600,
-								"extended_weight": "22 lb"
-							}
-						},
-						{
 							"id": "e46bWtsFdvu9cYWGt",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
@@ -1435,9 +1476,7 @@
 										}
 									],
 									"calc": {
-										"level": 6,
-										"damage": "1d-2 cr",
-										"block": "6"
+										"damage": "thr cr"
 									}
 								}
 							],
@@ -1504,9 +1543,7 @@
 										}
 									],
 									"calc": {
-										"level": 6,
-										"damage": "1d-2 cr",
-										"block": "6"
+										"damage": "thr cr"
 									}
 								}
 							],
@@ -1523,6 +1560,73 @@
 								"extended_value": 120,
 								"extended_weight": "7.5 lb"
 							}
+						},
+						{
+							"id": "edgNhVMVuoY6UqMhe",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "e8R7Aeyi-XLcBxRRR"
+							},
+							"description": "Ballistic Shield",
+							"reference": "B287",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Shield"
+							],
+							"value": 5600,
+							"weight": "22 lb",
+							"weapons": [
+								{
+									"id": "wHGSYIlYQGtDpT9u7",
+									"damage": {
+										"type": "cr",
+										"st": "thr"
+									},
+									"reach": "1",
+									"block": "0",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Shield",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Force Shield",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Buckler"
+										}
+									],
+									"calc": {
+										"damage": "thr cr"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to Dodge, Parry \u0026 Block against attacks from the front or shield side",
+									"amount": 3
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 5600,
+								"extended_weight": "22 lb"
+							}
 						}
 					],
 					"calc": {
@@ -1532,8 +1636,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": 106275,
-				"extended_weight": "196.75 lb"
+				"extended_value": 155075,
+				"extended_weight": "206.75 lb"
 			}
 		},
 		{
@@ -1550,112 +1654,6 @@
 					"quantity": 1,
 					"equipped": true,
 					"children": [
-						{
-							"id": "ePQViRyYej2upcHuW",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "edNQJgpJJz1GYkdmy"
-							},
-							"description": "Gravehound 3BG",
-							"reference": "B281",
-							"notes": "SAW: SE-F-3BG",
-							"tech_level": "7",
-							"legality_class": "1",
-							"tags": [
-								"Firearm"
-							],
-							"value": 9600,
-							"weight": "24 lb",
-							"weapons": [
-								{
-									"id": "WZLAU1_aY3sSpSb7D",
-									"damage": {
-										"type": "pi",
-										"base": "3d+1"
-									},
-									"strength": "12B†",
-									"accuracy": "5",
-									"range": "35/70",
-									"rate_of_fire": "15!",
-									"shots": "200(5)",
-									"bulk": "-6",
-									"recoil": "2",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Pistol",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Rifle",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Shotgun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Machine Gun"
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Submachine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Musket",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Grenade Launcher",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Gyroc",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Anti-Armor Weapon",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Gun!"
-										}
-									],
-									"calc": {
-										"damage": "3d+1 pi"
-									}
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"extended_value": 9600,
-								"extended_weight": "24 lb"
-							}
-						},
 						{
 							"id": "enHD-_RtbdK-vA-MW",
 							"source": {
@@ -1760,6 +1758,112 @@
 							"calc": {
 								"extended_value": 6600,
 								"extended_weight": "30 lb"
+							}
+						},
+						{
+							"id": "ePQViRyYej2upcHuW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "edNQJgpJJz1GYkdmy"
+							},
+							"description": "Gravehound 3BG",
+							"reference": "B281",
+							"notes": "SAW: SE-F-3BG",
+							"tech_level": "7",
+							"legality_class": "1",
+							"tags": [
+								"Firearm"
+							],
+							"value": 9600,
+							"weight": "24 lb",
+							"weapons": [
+								{
+									"id": "WZLAU1_aY3sSpSb7D",
+									"damage": {
+										"type": "pi",
+										"base": "3d+1"
+									},
+									"strength": "12B†",
+									"accuracy": "5",
+									"range": "35/70",
+									"rate_of_fire": "15!",
+									"shots": "200(5)",
+									"bulk": "-6",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "3d+1 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 9600,
+								"extended_weight": "24 lb"
 							}
 						}
 					],
@@ -1882,6 +1986,112 @@
 							}
 						},
 						{
+							"id": "e64MOK0xFEmicbrPj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Radiant Mercy",
+							"reference": "B278",
+							"notes": "Revolver: Zachary-162",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Firearm"
+							],
+							"value": 400,
+							"weight": "2 lb",
+							"weapons": [
+								{
+									"id": "WLtOUMhzhqMuOZPhw",
+									"damage": {
+										"type": "pi",
+										"base": "2d-1"
+									},
+									"strength": "7",
+									"accuracy": "2",
+									"range": "8/16",
+									"rate_of_fire": "3",
+									"shots": "6(3i)",
+									"bulk": "-2",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "2d-1 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 400,
+								"extended_weight": "2 lb"
+							}
+						},
+						{
 							"id": "e07eNQcwclOJW5X0R",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
@@ -1985,6 +2195,112 @@
 							"calc": {
 								"extended_value": 1800,
 								"extended_weight": "3.25 lb"
+							}
+						},
+						{
+							"id": "ePv1vAbwmNRMCydRJ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Phantom 1P",
+							"reference": "B278",
+							"notes": "Handgun: SE-F-1P",
+							"tech_level": "7",
+							"legality_class": "4",
+							"tags": [
+								"Firearm"
+							],
+							"value": 600,
+							"weight": "1.3 lb",
+							"weapons": [
+								{
+									"id": "WRyHK67Kr0t_Tie3A",
+									"damage": {
+										"type": "pi",
+										"base": "2d-2"
+									},
+									"strength": "7",
+									"accuracy": "1",
+									"range": "8/16",
+									"rate_of_fire": "3",
+									"shots": "5+1(3)",
+									"bulk": "-1",
+									"recoil": "3",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "2d-2 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 600,
+								"extended_weight": "1.3 lb"
 							}
 						},
 						{
@@ -2198,218 +2514,6 @@
 								"extended_value": 3200,
 								"extended_weight": "2 lb"
 							}
-						},
-						{
-							"id": "ePv1vAbwmNRMCydRJ",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "enYweeQwtSBvAmkXg"
-							},
-							"description": "Phantom 1P",
-							"reference": "B278",
-							"notes": "Handgun: SE-F-1P",
-							"tech_level": "7",
-							"legality_class": "4",
-							"tags": [
-								"Firearm"
-							],
-							"value": 600,
-							"weight": "1.3 lb",
-							"weapons": [
-								{
-									"id": "WRyHK67Kr0t_Tie3A",
-									"damage": {
-										"type": "pi",
-										"base": "2d-2"
-									},
-									"strength": "7",
-									"accuracy": "1",
-									"range": "8/16",
-									"rate_of_fire": "3",
-									"shots": "5+1(3)",
-									"bulk": "-1",
-									"recoil": "3",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Pistol"
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Rifle",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Shotgun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Machine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Submachine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Musket",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Grenade Launcher",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Gyroc",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Anti-Armor Weapon",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Gun!"
-										}
-									],
-									"calc": {
-										"damage": "2d-2 pi"
-									}
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"extended_value": 600,
-								"extended_weight": "1.3 lb"
-							}
-						},
-						{
-							"id": "e64MOK0xFEmicbrPj",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "enYweeQwtSBvAmkXg"
-							},
-							"description": "Radiant Mercy",
-							"reference": "B278",
-							"notes": "Revolver: Zachary-162",
-							"tech_level": "6",
-							"legality_class": "4",
-							"tags": [
-								"Firearm"
-							],
-							"value": 400,
-							"weight": "2 lb",
-							"weapons": [
-								{
-									"id": "WLtOUMhzhqMuOZPhw",
-									"damage": {
-										"type": "pi",
-										"base": "2d-1"
-									},
-									"strength": "7",
-									"accuracy": "2",
-									"range": "8/16",
-									"rate_of_fire": "3",
-									"shots": "6(3i)",
-									"bulk": "-2",
-									"recoil": "2",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Pistol"
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Rifle",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Shotgun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Machine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Submachine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Musket",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Grenade Launcher",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Gyroc",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Anti-Armor Weapon",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Gun!"
-										}
-									],
-									"calc": {
-										"damage": "2d-1 pi"
-									}
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"extended_value": 400,
-								"extended_weight": "2 lb"
-							}
 						}
 					],
 					"calc": {
@@ -2424,111 +2528,6 @@
 					"quantity": 1,
 					"equipped": true,
 					"children": [
-						{
-							"id": "eZXkkgIqLlx2Y_vpm",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "ez3A4rmpoQF1oPUSS"
-							},
-							"description": "Divine Eye",
-							"reference": "B279",
-							"notes": "Sniper Rifle: Julius 954",
-							"tech_level": "8",
-							"legality_class": "2",
-							"tags": [
-								"Firearm"
-							],
-							"value": 18800,
-							"weight": "15 lb",
-							"weapons": [
-								{
-									"id": "WFColGkrJfGM6razr",
-									"damage": {
-										"type": "pi",
-										"base": "5d"
-									},
-									"strength": "11B†",
-									"accuracy": "6+3",
-									"range": "50/100",
-									"rate_of_fire": "1",
-									"shots": "5+1(3)",
-									"bulk": "-6",
-									"recoil": "3",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Pistol",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Rifle"
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Shotgun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Machine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Submachine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Musket",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Grenade Launcher",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Gyroc",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Anti-Armor Weapon",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Gun!"
-										}
-									],
-									"calc": {
-										"damage": "5d pi"
-									}
-								}
-							],
-							"quantity": 1,
-							"calc": {
-								"extended_value": 18800,
-								"extended_weight": "15 lb"
-							}
-						},
 						{
 							"id": "eO1IBgJrpdwotoe10",
 							"source": {
@@ -2635,36 +2634,36 @@
 							}
 						},
 						{
-							"id": "eCVcVa4iBzvNFHkC7",
+							"id": "eBY7AnVVCEuTXBFao",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
 								"id": "ez3A4rmpoQF1oPUSS"
 							},
-							"description": "Ironstorm 74",
+							"description": "Revenant 89",
 							"reference": "B279",
-							"notes": "Battle Rifle: R274",
-							"tech_level": "8",
-							"legality_class": "2",
+							"notes": "Bolt-Action Rifle: R189",
+							"tech_level": "6",
+							"legality_class": "4",
 							"tags": [
 								"Firearm"
 							],
-							"value": 3600,
-							"weight": "11 lb",
+							"value": 350,
+							"weight": "8.9 lb",
 							"weapons": [
 								{
-									"id": "W7N2VtOhdBZt0pcuR",
+									"id": "WwgfHlp06Qhxgz-Uu",
 									"damage": {
 										"type": "pi",
-										"base": "3d+1"
+										"base": "4d"
 									},
-									"strength": "11†",
+									"strength": "10†",
 									"accuracy": "5",
 									"range": "35/70",
-									"rate_of_fire": "8",
-									"shots": "20+1(3)",
+									"rate_of_fire": "1",
+									"shots": "5+1(3)",
 									"bulk": "-5",
-									"recoil": "3",
+									"recoil": "4",
 									"defaults": [
 										{
 											"type": "dx",
@@ -2729,14 +2728,14 @@
 										}
 									],
 									"calc": {
-										"damage": "3d+1 pi"
+										"damage": "4d pi"
 									}
 								}
 							],
 							"quantity": 1,
 							"calc": {
-								"extended_value": 3600,
-								"extended_weight": "11 lb"
+								"extended_value": 350,
+								"extended_weight": "8.9 lb"
 							}
 						},
 						{
@@ -2845,36 +2844,36 @@
 							}
 						},
 						{
-							"id": "eBY7AnVVCEuTXBFao",
+							"id": "eZXkkgIqLlx2Y_vpm",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
 								"id": "ez3A4rmpoQF1oPUSS"
 							},
-							"description": "Revenant 89",
+							"description": "Divine Eye",
 							"reference": "B279",
-							"notes": "Bolt-Action Rifle: R189",
-							"tech_level": "6",
-							"legality_class": "4",
+							"notes": "Sniper Rifle: Julius 954",
+							"tech_level": "8",
+							"legality_class": "2",
 							"tags": [
 								"Firearm"
 							],
-							"value": 350,
-							"weight": "8.9 lb",
+							"value": 18800,
+							"weight": "15 lb",
 							"weapons": [
 								{
-									"id": "WwgfHlp06Qhxgz-Uu",
+									"id": "WFColGkrJfGM6razr",
 									"damage": {
 										"type": "pi",
-										"base": "4d"
+										"base": "5d"
 									},
-									"strength": "10†",
-									"accuracy": "5",
-									"range": "35/70",
+									"strength": "11B†",
+									"accuracy": "6+3",
+									"range": "50/100",
 									"rate_of_fire": "1",
 									"shots": "5+1(3)",
-									"bulk": "-5",
-									"recoil": "4",
+									"bulk": "-6",
+									"recoil": "3",
 									"defaults": [
 										{
 											"type": "dx",
@@ -2939,14 +2938,119 @@
 										}
 									],
 									"calc": {
-										"damage": "4d pi"
+										"damage": "5d pi"
 									}
 								}
 							],
 							"quantity": 1,
 							"calc": {
-								"extended_value": 350,
-								"extended_weight": "8.9 lb"
+								"extended_value": 18800,
+								"extended_weight": "15 lb"
+							}
+						},
+						{
+							"id": "eCVcVa4iBzvNFHkC7",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ez3A4rmpoQF1oPUSS"
+							},
+							"description": "Ironstorm 74",
+							"reference": "B279",
+							"notes": "Battle Rifle: R274",
+							"tech_level": "8",
+							"legality_class": "2",
+							"tags": [
+								"Firearm"
+							],
+							"value": 3600,
+							"weight": "11 lb",
+							"weapons": [
+								{
+									"id": "W7N2VtOhdBZt0pcuR",
+									"damage": {
+										"type": "pi",
+										"base": "3d+1"
+									},
+									"strength": "11†",
+									"accuracy": "5",
+									"range": "35/70",
+									"rate_of_fire": "8",
+									"shots": "20+1(3)",
+									"bulk": "-5",
+									"recoil": "3",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "3d+1 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"calc": {
+								"extended_value": 3600,
+								"extended_weight": "11 lb"
 							}
 						},
 						{
@@ -3067,6 +3171,112 @@
 					"quantity": 1,
 					"equipped": true,
 					"children": [
+						{
+							"id": "e60PrlrdVvNxQKMzq",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "eYZW7qkvflXuL60CW"
+							},
+							"description": "Twin Havoc 3SG",
+							"reference": "B279",
+							"notes": "Double Barrel Shotgun: SE-F-3SG",
+							"tech_level": "5",
+							"legality_class": "4",
+							"tags": [
+								"Firearm"
+							],
+							"value": 225,
+							"weight": "10 lb",
+							"weapons": [
+								{
+									"id": "WU_ZbNdDhzT9lHRVs",
+									"damage": {
+										"type": "pi",
+										"base": "1d+2"
+									},
+									"strength": "11†",
+									"accuracy": "3",
+									"range": "6/12",
+									"rate_of_fire": "2x9",
+									"shots": "2(3i)",
+									"bulk": "-5",
+									"recoil": "1/5",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Shotgun"
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Gun!"
+										}
+									],
+									"calc": {
+										"damage": "1d+2 pi"
+									}
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 225,
+								"extended_weight": "10 lb"
+							}
+						},
 						{
 							"id": "eWp1wWJS2bshlu8QH",
 							"source": {
@@ -3278,38 +3488,51 @@
 								"extended_value": 1900,
 								"extended_weight": "8.4 lb"
 							}
-						},
+						}
+					],
+					"calc": {
+						"extended_value": 2365,
+						"extended_weight": "26.4 lb"
+					}
+				},
+				{
+					"id": "E0EuLOJGfr5GHQGou",
+					"description": "SMG",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
 						{
-							"id": "e60PrlrdVvNxQKMzq",
+							"id": "eD7lT0dZhiw8TbTws",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "eYZW7qkvflXuL60CW"
+								"id": "eqdZg32_b5Bs7EAza"
 							},
-							"description": "Twin Havoc 3SG",
-							"reference": "B279",
-							"notes": "Double Barrel Shotgun: SE-F-3SG",
-							"tech_level": "5",
-							"legality_class": "4",
+							"description": "Wildfire 2MP",
+							"reference": "B278",
+							"notes": "Machine Pistol: SE-F-2MP",
+							"tech_level": "7",
+							"legality_class": "2",
 							"tags": [
 								"Firearm"
 							],
-							"value": 225,
-							"weight": "10 lb",
+							"value": 1800,
+							"weight": "5.5 lb",
 							"weapons": [
 								{
-									"id": "WU_ZbNdDhzT9lHRVs",
+									"id": "WCVbUkfTz1-hUHo3g",
 									"damage": {
 										"type": "pi",
-										"base": "1d+2"
+										"base": "2d-1"
 									},
-									"strength": "11†",
-									"accuracy": "3",
-									"range": "6/12",
-									"rate_of_fire": "2x9",
-									"shots": "2(3i)",
-									"bulk": "-5",
-									"recoil": "1/5",
+									"strength": "12",
+									"accuracy": "2",
+									"range": "8/16",
+									"rate_of_fire": "20",
+									"shots": "25+1(3)",
+									"bulk": "-3",
+									"recoil": "4",
 									"defaults": [
 										{
 											"type": "dx",
@@ -3330,7 +3553,8 @@
 										{
 											"type": "skill",
 											"name": "Guns",
-											"specialization": "Shotgun"
+											"specialization": "Shotgun",
+											"modifier": -2
 										},
 										{
 											"type": "skill",
@@ -3341,8 +3565,7 @@
 										{
 											"type": "skill",
 											"name": "Guns",
-											"specialization": "Submachine Gun",
-											"modifier": -2
+											"specialization": "Submachine Gun"
 										},
 										{
 											"type": "skill",
@@ -3374,30 +3597,17 @@
 										}
 									],
 									"calc": {
-										"damage": "1d+2 pi"
+										"damage": "2d-1 pi"
 									}
 								}
 							],
 							"quantity": 1,
 							"equipped": true,
 							"calc": {
-								"extended_value": 225,
-								"extended_weight": "10 lb"
+								"extended_value": 1800,
+								"extended_weight": "5.5 lb"
 							}
-						}
-					],
-					"calc": {
-						"extended_value": 2365,
-						"extended_weight": "26.4 lb"
-					}
-				},
-				{
-					"id": "E0EuLOJGfr5GHQGou",
-					"description": "SMG",
-					"legality_class": "4",
-					"quantity": 1,
-					"equipped": true,
-					"children": [
+						},
 						{
 							"id": "ecB4x_bo761yBgPOZ",
 							"source": {
@@ -3715,112 +3925,6 @@
 								"extended_value": 3600,
 								"extended_weight": "6.5 lb"
 							}
-						},
-						{
-							"id": "eD7lT0dZhiw8TbTws",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "eqdZg32_b5Bs7EAza"
-							},
-							"description": "Wildfire 2MP",
-							"reference": "B278",
-							"notes": "Machine Pistol: SE-F-2MP",
-							"tech_level": "7",
-							"legality_class": "2",
-							"tags": [
-								"Firearm"
-							],
-							"value": 1800,
-							"weight": "5.5 lb",
-							"weapons": [
-								{
-									"id": "WCVbUkfTz1-hUHo3g",
-									"damage": {
-										"type": "pi",
-										"base": "2d-1"
-									},
-									"strength": "12",
-									"accuracy": "2",
-									"range": "8/16",
-									"rate_of_fire": "20",
-									"shots": "25+1(3)",
-									"bulk": "-3",
-									"recoil": "4",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Pistol",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Rifle",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Shotgun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Machine Gun",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Submachine Gun"
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Musket",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Grenade Launcher",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Gyroc",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Guns",
-											"specialization": "Light Anti-Armor Weapon",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Gun!"
-										}
-									],
-									"calc": {
-										"damage": "2d-1 pi"
-									}
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"extended_value": 1800,
-								"extended_weight": "5.5 lb"
-							}
 						}
 					],
 					"calc": {
@@ -3842,185 +3946,29 @@
 			"equipped": true,
 			"children": [
 				{
-					"id": "e66UICuuOB18AAutu",
+					"id": "eReKKhwETywFkITTZ",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "eDPR0RASqvFMb_ebC"
+						"id": "eBSrOJ5fHfcHZa-wv"
 					},
-					"description": "Brass Knuckles",
-					"reference": "B271",
-					"tech_level": "1",
+					"description": "Maul",
+					"reference": "B274",
+					"tech_level": "0",
 					"tags": [
 						"Melee Weapon"
 					],
-					"value": 10,
-					"weight": "0.25 lb",
+					"value": 80,
+					"weight": "12 lb",
 					"weapons": [
 						{
-							"id": "wMiploT94Y7iBeYum",
+							"id": "wVjmZr6g3NoLZMc6g",
 							"damage": {
 								"type": "cr",
-								"st": "thr"
-							},
-							"usage": "Punch",
-							"reach": "C",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "dx"
-								},
-								{
-									"type": "skill",
-									"name": "Boxing"
-								},
-								{
-									"type": "skill",
-									"name": "Brawling"
-								},
-								{
-									"type": "skill",
-									"name": "Karate"
-								}
-							],
-							"calc": {
-								"damage": "thr cr"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 10,
-						"extended_weight": "0.25 lb"
-					}
-				},
-				{
-					"id": "evaO7urhMleXh9wzV",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "eycuK4I2pXtxrRIiD"
-					},
-					"description": "Glaive",
-					"reference": "B272",
-					"tech_level": "1",
-					"tags": [
-						"Melee Weapon"
-					],
-					"value": 100,
-					"weight": "8 lb",
-					"weapons": [
-						{
-							"id": "wjK-YnqnQgfiioC-K",
-							"damage": {
-								"type": "cut",
 								"st": "sw",
-								"base": "3"
+								"base": "4"
 							},
-							"strength": "11‡",
-							"usage": "Swung",
-							"reach": "2-3*",
-							"parry": "0U",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Polearm"
-								},
-								{
-									"type": "skill",
-									"name": "Spear",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Staff",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Axe/Mace",
-									"modifier": -4
-								}
-							],
-							"calc": {
-								"damage": "sw+3 cut"
-							}
-						},
-						{
-							"id": "wFz9C8OvUC1AgCCne",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "3"
-							},
-							"strength": "11†",
-							"usage": "Thrust",
-							"reach": "1-3*",
-							"parry": "0U",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Polearm"
-								},
-								{
-									"type": "skill",
-									"name": "Spear",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Staff",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Axe/Mace",
-									"modifier": -4
-								}
-							],
-							"calc": {
-								"damage": "thr+3 imp"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 100,
-						"extended_weight": "8 lb"
-					}
-				},
-				{
-					"id": "eI_0zhTDN1PQVaQ7j",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "ebrSfrMcJyO0OROH1"
-					},
-					"description": "Great Axe",
-					"reference": "B274",
-					"tech_level": "1",
-					"tags": [
-						"Melee Weapon"
-					],
-					"value": 100,
-					"weight": "8 lb",
-					"weapons": [
-						{
-							"id": "wjbM77dfYpJoOhvfo",
-							"damage": {
-								"type": "cut",
-								"st": "sw",
-								"base": "3"
-							},
-							"strength": "12‡",
+							"strength": "13‡",
 							"usage": "Swung",
 							"reach": "1-2*",
 							"parry": "0U",
@@ -4050,83 +3998,483 @@
 								}
 							],
 							"calc": {
-								"damage": "sw+3 cut"
+								"damage": "sw+4 cr"
 							}
 						}
 					],
 					"quantity": 1,
 					"calc": {
-						"extended_value": 100,
-						"extended_weight": "8 lb"
+						"extended_value": 80,
+						"extended_weight": "12 lb"
 					}
 				},
 				{
-					"id": "ea6iX-QT17vQda2tB",
+					"id": "eqFvkhNPdWscOf8gR",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "e8f-mLHVfaqv5olcu"
+						"id": "ee46tSuR0cVzBl0fp"
 					},
-					"description": "Halberd",
-					"reference": "B272",
-					"tech_level": "3",
+					"description": "Baton",
+					"reference": "B273",
+					"tech_level": "0",
 					"tags": [
 						"Melee Weapon"
 					],
-					"value": 150,
-					"weight": "12 lb",
+					"value": 20,
+					"weight": "1 lb",
 					"weapons": [
 						{
-							"id": "wxXL-_kjT7L0e2N3b",
+							"id": "w0YIt1Dmo1JUB1Hx1",
+							"damage": {
+								"type": "cr",
+								"st": "sw"
+							},
+							"strength": "6",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "sw cr"
+							}
+						},
+						{
+							"id": "wyBK1GtFhY8KoWfT2",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"strength": "6",
+							"usage": "Thrust",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 20,
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eGx8ZzQ0_TXgpol7i",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ee46tSuR0cVzBl0fp"
+					},
+					"description": "Wand",
+					"reference": "B273",
+					"tech_level": "0",
+					"tags": [
+						"Melee Weapon",
+						"Magic Tool"
+					],
+					"value": 40,
+					"weight": "1 lb",
+					"weapons": [
+						{
+							"id": "wlPUrCHNb_qMDt3bt",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "-2"
+							},
+							"strength": "6",
+							"usage": "Swung",
+							"reach": "1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "sw-2 cr"
+							}
+						},
+						{
+							"id": "wHizs8BTcygbfpBcI",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "0"
+							},
+							"strength": "6",
+							"usage": "Thrust",
+							"reach": "1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 40,
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eqtHVzk1V5-Z8mHEm",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eeQgU7KaAJKcO9rBW"
+					},
+					"description": "Small Knife",
+					"reference": "B272",
+					"tech_level": "0",
+					"tags": [
+						"Melee Weapon",
+						"Missile Weapon"
+					],
+					"value": 30,
+					"weight": "0.5 lb",
+					"weapons": [
+						{
+							"id": "ww9WRqUB8kT2OwxQh",
 							"damage": {
 								"type": "cut",
 								"st": "sw",
-								"base": "5"
+								"base": "-3"
 							},
-							"strength": "13‡",
+							"strength": "5",
 							"usage": "Swung",
-							"reach": "2-3*",
-							"parry": "0U",
+							"reach": "C,1",
+							"parry": "-1",
 							"defaults": [
 								{
 									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Polearm"
-								},
-								{
-									"type": "skill",
-									"name": "Spear",
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Staff",
-									"modifier": -4
+									"name": "Knife"
 								},
 								{
 									"type": "skill",
-									"name": "Two-Handed Axe/Mace",
-									"modifier": -4
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
 								}
 							],
 							"calc": {
-								"damage": "sw+5 cut"
+								"damage": "sw-3 cut"
 							}
 						},
 						{
-							"id": "wdweXO5gMYL7A7GgK",
+							"id": "wcyVLMZkBhv5TBdAR",
 							"damage": {
-								"type": "imp (may stick)",
-								"st": "sw",
-								"base": "4"
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
 							},
-							"strength": "13‡",
-							"usage": "Swung Hook",
-							"reach": "2-3*",
-							"parry": "0U",
+							"strength": "5",
+							"usage": "Thrust",
+							"reach": "C",
+							"parry": "-1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Knife"
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 imp"
+							}
+						},
+						{
+							"id": "WDDHf9eeBOaPze02K",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"strength": "5",
+							"usage": "Thrown",
+							"range": "x0.5/x1",
+							"rate_of_fire": "1",
+							"shots": "T",
+							"bulk": "-1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Knife"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 imp"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 30,
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eooVLnb11TiQlBDR5",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "e6qjxZtOg7lCt_TE5"
+					},
+					"description": "Spear",
+					"reference": "B273",
+					"tech_level": "0",
+					"tags": [
+						"Melee Weapon",
+						"Missile Weapon"
+					],
+					"value": 40,
+					"weight": "4 lb",
+					"weapons": [
+						{
+							"id": "wAQlB0P868LS4dZ9W",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "2"
+							},
+							"strength": "9",
+							"usage": "Thrust",
+							"reach": "1*",
+							"parry": "0",
 							"defaults": [
 								{
 									"type": "dx",
@@ -4134,39 +4482,34 @@
 								},
 								{
 									"type": "skill",
-									"name": "Polearm"
+									"name": "Spear"
 								},
 								{
 									"type": "skill",
-									"name": "Spear",
+									"name": "Polearm",
 									"modifier": -4
 								},
 								{
 									"type": "skill",
 									"name": "Staff",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Axe/Mace",
-									"modifier": -4
+									"modifier": -2
 								}
 							],
 							"calc": {
-								"damage": "sw+4 imp (may stick)"
+								"damage": "thr+2 imp"
 							}
 						},
 						{
-							"id": "w4-yVvQolzJnVsuLZ",
+							"id": "wHVdPRYO89b6AyVUd",
 							"damage": {
 								"type": "imp",
 								"st": "thr",
 								"base": "3"
 							},
-							"strength": "12†",
+							"strength": "9†",
 							"usage": "Thrust",
-							"reach": "1-3*",
-							"parry": "0U",
+							"reach": "1-2*",
+							"parry": "0",
 							"defaults": [
 								{
 									"type": "dx",
@@ -4174,22 +4517,57 @@
 								},
 								{
 									"type": "skill",
-									"name": "Polearm"
+									"name": "Spear"
 								},
 								{
 									"type": "skill",
-									"name": "Spear",
+									"name": "Polearm",
 									"modifier": -4
 								},
 								{
 									"type": "skill",
 									"name": "Staff",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr+3 imp"
+							}
+						},
+						{
+							"id": "WuqsY3Eag9s3ZY0Ql",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "3"
+							},
+							"strength": "9",
+							"usage": "Thrown",
+							"accuracy": "2",
+							"range": "x1/x1.5",
+							"rate_of_fire": "1",
+							"shots": "T",
+							"bulk": "-6",
+							"defaults": [
+								{
+									"type": "dx",
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Two-Handed Axe/Mace",
+									"name": "Thrown Weapon",
+									"specialization": "Spear"
+								},
+								{
+									"type": "skill",
+									"name": "Spear Thrower",
 									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Harpoon",
+									"modifier": -2
 								}
 							],
 							"calc": {
@@ -4199,8 +4577,96 @@
 					],
 					"quantity": 1,
 					"calc": {
-						"extended_value": 150,
-						"extended_weight": "12 lb"
+						"extended_value": 40,
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "eowUxMsxH0K0jMlrW",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "elxxlZjgCDqN3NzeU"
+					},
+					"description": "Throwing Axe",
+					"reference": "B271",
+					"tech_level": "0",
+					"tags": [
+						"Melee Weapon",
+						"Missile Weapon"
+					],
+					"value": 60,
+					"weight": "4 lb",
+					"weapons": [
+						{
+							"id": "wuugRxHf7kZqOLdMu",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "11",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Axe/Mace"
+								},
+								{
+									"type": "skill",
+									"name": "Flail",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -3
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cut"
+							}
+						},
+						{
+							"id": "WZY4qrSA-YJxGmx12",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "11",
+							"usage": "Thrown",
+							"accuracy": "2",
+							"range": "x1/x1.5",
+							"rate_of_fire": "1",
+							"shots": "T",
+							"bulk": "-3",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Axe/Mace"
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cut"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 60,
+						"extended_weight": "4 lb"
 					}
 				},
 				{
@@ -4290,34 +4756,34 @@
 					}
 				},
 				{
-					"id": "e4DdVtO6VjSnih3qv",
+					"id": "eO0PUeL_APYfyX2Gj",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "eAJ0S-KHaVIJNmU_J"
+						"id": "eMz1aFy0Oh6s1urhz"
 					},
-					"description": "Javelin",
+					"description": "Magic Staff",
 					"reference": "B273",
-					"tech_level": "1",
+					"tech_level": "0",
 					"tags": [
-						"AmmoType:Javelin",
 						"Melee Weapon",
-						"Missile Weapon"
+						"Magic Tool"
 					],
-					"value": 30,
-					"weight": "2 lb",
+					"value": 50,
+					"weight": "4 lb",
 					"weapons": [
 						{
-							"id": "wN2bN2bHOB5iZ5fGa",
+							"id": "wJtcbpwpCxzutE6AN",
 							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "1"
+								"type": "cr",
+								"st": "sw",
+								"base": "2"
 							},
-							"strength": "6",
-							"usage": "Thrust",
-							"reach": "1",
-							"parry": "0",
+							"strength": "7†",
+							"usage": "Swung",
+							"usage_notes": "Staff",
+							"reach": "1-2",
+							"parry": "2",
 							"defaults": [
 								{
 									"type": "dx",
@@ -4325,7 +4791,7 @@
 								},
 								{
 									"type": "skill",
-									"name": "Spear"
+									"name": "Staff"
 								},
 								{
 									"type": "skill",
@@ -4334,144 +4800,26 @@
 								},
 								{
 									"type": "skill",
-									"name": "Staff",
+									"name": "Spear",
 									"modifier": -2
 								}
 							],
 							"calc": {
-								"damage": "thr+1 imp"
+								"damage": "sw+2 cr"
 							}
 						},
 						{
-							"id": "WsMq8ANSTDwCmkj5b",
+							"id": "wtzWh6GXKqf-qkVcV",
 							"damage": {
-								"type": "imp",
+								"type": "cr",
 								"st": "thr",
-								"base": "1"
+								"base": "2"
 							},
-							"strength": "6",
-							"usage": "Thrown",
-							"accuracy": "3",
-							"range": "x1.5/x2.5",
-							"rate_of_fire": "1",
-							"shots": "T",
-							"bulk": "-4",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Thrown Weapon",
-									"specialization": "Spear"
-								},
-								{
-									"type": "skill",
-									"name": "Spear Thrower",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Thrown Weapon",
-									"specialization": "Harpoon",
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"damage": "thr+1 imp"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 30,
-						"extended_weight": "2 lb"
-					}
-				},
-				{
-					"id": "e62tVL73Z0wSx6Ndf",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "efRs8e1U_kSxmljS_"
-					},
-					"description": "Katana",
-					"reference": "B271",
-					"tech_level": "3",
-					"tags": [
-						"Melee Weapon"
-					],
-					"value": 650,
-					"weight": "5 lb",
-					"weapons": [
-						{
-							"id": "wUHxEXLox3A2wgNaZ",
-							"damage": {
-								"type": "cut",
-								"st": "sw",
-								"base": "1"
-							},
-							"strength": "11",
-							"usage": "Swung",
-							"usage_notes": "1-handed",
-							"reach": "1-2",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Force Sword",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Broadsword"
-								},
-								{
-									"type": "skill",
-									"name": "Rapier",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Saber",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Shortsword",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Sword",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Sword!"
-								}
-							],
-							"calc": {
-								"damage": "sw+1 cut"
-							}
-						},
-						{
-							"id": "w7Lfu9KjtlBO0ZOG8",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "1"
-							},
-							"strength": "11",
+							"strength": "7†",
 							"usage": "Thrust",
-							"usage_notes": "1-handed",
-							"reach": "1",
-							"parry": "0",
+							"usage_notes": "Staff",
+							"reach": "1-2",
+							"parry": "2",
 							"defaults": [
 								{
 									"type": "dx",
@@ -4479,52 +4827,33 @@
 								},
 								{
 									"type": "skill",
-									"name": "Force Sword",
+									"name": "Staff"
+								},
+								{
+									"type": "skill",
+									"name": "Polearm",
 									"modifier": -4
 								},
 								{
 									"type": "skill",
-									"name": "Broadsword"
-								},
-								{
-									"type": "skill",
-									"name": "Rapier",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Saber",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Shortsword",
+									"name": "Spear",
 									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Sword",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Sword!"
 								}
 							],
 							"calc": {
-								"damage": "thr+1 imp"
+								"damage": "thr+2 cr"
 							}
 						},
 						{
-							"id": "wxncFvi5qJqRYwKdP",
+							"id": "wY3I6-0-eTgulH60u",
 							"damage": {
-								"type": "cut",
+								"type": "cr",
 								"st": "sw",
 								"base": "2"
 							},
-							"strength": "10†",
+							"strength": "9†",
 							"usage": "Swung",
-							"usage_notes": "2-handed",
+							"usage_notes": "Two-Handed Sword",
 							"reach": "1-2",
 							"parry": "0",
 							"defaults": [
@@ -4552,20 +4881,20 @@
 								}
 							],
 							"calc": {
-								"damage": "sw+2 cut"
+								"damage": "sw+2 cr"
 							}
 						},
 						{
-							"id": "wYc8Zq4CoQTfWaYhq",
+							"id": "wrTpszOCC5ats3BGu",
 							"damage": {
-								"type": "imp",
+								"type": "cr",
 								"st": "thr",
 								"base": "1"
 							},
-							"strength": "10†",
+							"strength": "9†",
 							"usage": "Thrust",
-							"usage_notes": "2-handed",
-							"reach": "1",
+							"usage_notes": "Two-Handed Sword",
+							"reach": "2",
 							"parry": "0",
 							"defaults": [
 								{
@@ -4592,14 +4921,189 @@
 								}
 							],
 							"calc": {
-								"damage": "thr+1 imp"
+								"damage": "thr+1 cr"
 							}
 						}
 					],
 					"quantity": 1,
 					"calc": {
-						"extended_value": 650,
-						"extended_weight": "5 lb"
+						"extended_value": 50,
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "ei-O4YXKwN7erTlKH",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eMz1aFy0Oh6s1urhz"
+					},
+					"description": "Quarterstaff",
+					"reference": "B273",
+					"tech_level": "0",
+					"tags": [
+						"Melee Weapon"
+					],
+					"value": 10,
+					"weight": "4 lb",
+					"weapons": [
+						{
+							"id": "w0_TCEeAsnnxSmiXH",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "7†",
+							"usage": "Swung",
+							"usage_notes": "Staff",
+							"reach": "1-2",
+							"parry": "2",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Staff"
+								},
+								{
+									"type": "skill",
+									"name": "Polearm",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Spear",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cr"
+							}
+						},
+						{
+							"id": "wFHAe_ArqLKPxpJzn",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "2"
+							},
+							"strength": "7†",
+							"usage": "Thrust",
+							"usage_notes": "Staff",
+							"reach": "1-2",
+							"parry": "2",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Staff"
+								},
+								{
+									"type": "skill",
+									"name": "Polearm",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Spear",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr+2 cr"
+							}
+						},
+						{
+							"id": "wIvGMXXofqnIYe7Gf",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "9†",
+							"usage": "Swung",
+							"usage_notes": "Two-Handed Sword",
+							"reach": "1-2",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cr"
+							}
+						},
+						{
+							"id": "w-s2qGU2CMtpGE7Up",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "9†",
+							"usage": "Thrust",
+							"usage_notes": "Two-Handed Sword",
+							"reach": "2",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr+1 cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 10,
+						"extended_weight": "4 lb"
 					}
 				},
 				{
@@ -4872,6 +5376,325 @@
 					}
 				},
 				{
+					"id": "eI_0zhTDN1PQVaQ7j",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ebrSfrMcJyO0OROH1"
+					},
+					"description": "Great Axe",
+					"reference": "B274",
+					"tech_level": "1",
+					"tags": [
+						"Melee Weapon"
+					],
+					"value": 100,
+					"weight": "8 lb",
+					"weapons": [
+						{
+							"id": "wjbM77dfYpJoOhvfo",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "3"
+							},
+							"strength": "12‡",
+							"usage": "Swung",
+							"reach": "1-2*",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace"
+								},
+								{
+									"type": "skill",
+									"name": "Axe/Mace",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Polearm",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Flail",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "sw+3 cut"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 100,
+						"extended_weight": "8 lb"
+					}
+				},
+				{
+					"id": "e4DdVtO6VjSnih3qv",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eAJ0S-KHaVIJNmU_J"
+					},
+					"description": "Javelin",
+					"reference": "B273",
+					"tech_level": "1",
+					"tags": [
+						"AmmoType:Javelin",
+						"Melee Weapon",
+						"Missile Weapon"
+					],
+					"value": 30,
+					"weight": "2 lb",
+					"weapons": [
+						{
+							"id": "wN2bN2bHOB5iZ5fGa",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "6",
+							"usage": "Thrust",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Spear"
+								},
+								{
+									"type": "skill",
+									"name": "Polearm",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Staff",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						},
+						{
+							"id": "WsMq8ANSTDwCmkj5b",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "6",
+							"usage": "Thrown",
+							"accuracy": "3",
+							"range": "x1.5/x2.5",
+							"rate_of_fire": "1",
+							"shots": "T",
+							"bulk": "-4",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Spear"
+								},
+								{
+									"type": "skill",
+									"name": "Spear Thrower",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Harpoon",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 30,
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e66UICuuOB18AAutu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eDPR0RASqvFMb_ebC"
+					},
+					"description": "Brass Knuckles",
+					"reference": "B271",
+					"tech_level": "1",
+					"tags": [
+						"Melee Weapon"
+					],
+					"value": 10,
+					"weight": "0.25 lb",
+					"weapons": [
+						{
+							"id": "wMiploT94Y7iBeYum",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 10,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "evaO7urhMleXh9wzV",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eycuK4I2pXtxrRIiD"
+					},
+					"description": "Glaive",
+					"reference": "B272",
+					"tech_level": "1",
+					"tags": [
+						"Melee Weapon"
+					],
+					"value": 100,
+					"weight": "8 lb",
+					"weapons": [
+						{
+							"id": "wjK-YnqnQgfiioC-K",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "3"
+							},
+							"strength": "11‡",
+							"usage": "Swung",
+							"reach": "2-3*",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Polearm"
+								},
+								{
+									"type": "skill",
+									"name": "Spear",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Staff",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "sw+3 cut"
+							}
+						},
+						{
+							"id": "wFz9C8OvUC1AgCCne",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "3"
+							},
+							"strength": "11†",
+							"usage": "Thrust",
+							"reach": "1-3*",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Polearm"
+								},
+								{
+									"type": "skill",
+									"name": "Spear",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Staff",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "thr+3 imp"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 100,
+						"extended_weight": "8 lb"
+					}
+				},
+				{
 					"id": "eXKdtTlCqb0tEyeM2",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -4956,766 +5779,6 @@
 					"calc": {
 						"extended_value": 50,
 						"extended_weight": "5 lb"
-					}
-				},
-				{
-					"id": "eReKKhwETywFkITTZ",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "eBSrOJ5fHfcHZa-wv"
-					},
-					"description": "Maul",
-					"reference": "B274",
-					"tech_level": "0",
-					"tags": [
-						"Melee Weapon"
-					],
-					"value": 80,
-					"weight": "12 lb",
-					"weapons": [
-						{
-							"id": "wVjmZr6g3NoLZMc6g",
-							"damage": {
-								"type": "cr",
-								"st": "sw",
-								"base": "4"
-							},
-							"strength": "13‡",
-							"usage": "Swung",
-							"reach": "1-2*",
-							"parry": "0U",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Axe/Mace"
-								},
-								{
-									"type": "skill",
-									"name": "Axe/Mace",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Polearm",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Flail",
-									"modifier": -4
-								}
-							],
-							"calc": {
-								"damage": "sw+4 cr"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 80,
-						"extended_weight": "12 lb"
-					}
-				},
-				{
-					"id": "ei-O4YXKwN7erTlKH",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "eMz1aFy0Oh6s1urhz"
-					},
-					"description": "Quarterstaff",
-					"reference": "B273",
-					"tech_level": "0",
-					"tags": [
-						"Melee Weapon"
-					],
-					"value": 10,
-					"weight": "4 lb",
-					"weapons": [
-						{
-							"id": "w0_TCEeAsnnxSmiXH",
-							"damage": {
-								"type": "cr",
-								"st": "sw",
-								"base": "2"
-							},
-							"strength": "7†",
-							"usage": "Swung",
-							"usage_notes": "Staff",
-							"reach": "1-2",
-							"parry": "2",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Staff"
-								},
-								{
-									"type": "skill",
-									"name": "Polearm",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Spear",
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"damage": "sw+2 cr"
-							}
-						},
-						{
-							"id": "wFHAe_ArqLKPxpJzn",
-							"damage": {
-								"type": "cr",
-								"st": "thr",
-								"base": "2"
-							},
-							"strength": "7†",
-							"usage": "Thrust",
-							"usage_notes": "Staff",
-							"reach": "1-2",
-							"parry": "2",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Staff"
-								},
-								{
-									"type": "skill",
-									"name": "Polearm",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Spear",
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"damage": "thr+2 cr"
-							}
-						},
-						{
-							"id": "wIvGMXXofqnIYe7Gf",
-							"damage": {
-								"type": "cr",
-								"st": "sw",
-								"base": "2"
-							},
-							"strength": "9†",
-							"usage": "Swung",
-							"usage_notes": "Two-Handed Sword",
-							"reach": "1-2",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Sword"
-								},
-								{
-									"type": "skill",
-									"name": "Broadsword",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Force Sword",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Sword!"
-								}
-							],
-							"calc": {
-								"damage": "sw+2 cr"
-							}
-						},
-						{
-							"id": "w-s2qGU2CMtpGE7Up",
-							"damage": {
-								"type": "cr",
-								"st": "thr",
-								"base": "1"
-							},
-							"strength": "9†",
-							"usage": "Thrust",
-							"usage_notes": "Two-Handed Sword",
-							"reach": "2",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Sword"
-								},
-								{
-									"type": "skill",
-									"name": "Broadsword",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Force Sword",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Sword!"
-								}
-							],
-							"calc": {
-								"damage": "thr+1 cr"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 10,
-						"extended_weight": "4 lb"
-					}
-				},
-				{
-					"id": "eN2LY29pQAiWB4p8m",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "ewTaOhPlZ-pkHKGqg"
-					},
-					"description": "Rapier",
-					"reference": "B273",
-					"tech_level": "4",
-					"tags": [
-						"Melee Weapon"
-					],
-					"value": 500,
-					"weight": "2.75 lb",
-					"weapons": [
-						{
-							"id": "wC5jGuu9Y_PqOrgIR",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "1"
-							},
-							"strength": "9",
-							"usage": "Thrust",
-							"reach": "1-2",
-							"parry": "0F",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Rapier"
-								},
-								{
-									"type": "skill",
-									"name": "Broadsword",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Main-Gauche",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Saber",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Smallsword",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Sword!"
-								}
-							],
-							"calc": {
-								"damage": "thr+1 imp"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 500,
-						"extended_weight": "2.75 lb"
-					}
-				},
-				{
-					"id": "eqtHVzk1V5-Z8mHEm",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "eeQgU7KaAJKcO9rBW"
-					},
-					"description": "Small Knife",
-					"reference": "B272",
-					"tech_level": "0",
-					"tags": [
-						"Melee Weapon",
-						"Missile Weapon"
-					],
-					"value": 30,
-					"weight": "0.5 lb",
-					"weapons": [
-						{
-							"id": "ww9WRqUB8kT2OwxQh",
-							"damage": {
-								"type": "cut",
-								"st": "sw",
-								"base": "-3"
-							},
-							"strength": "5",
-							"usage": "Swung",
-							"reach": "C,1",
-							"parry": "-1",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Knife"
-								},
-								{
-									"type": "skill",
-									"name": "Force Sword",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Main-Gauche",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Shortsword",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Sword!"
-								}
-							],
-							"calc": {
-								"damage": "sw-3 cut"
-							}
-						},
-						{
-							"id": "wcyVLMZkBhv5TBdAR",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "-1"
-							},
-							"strength": "5",
-							"usage": "Thrust",
-							"reach": "C",
-							"parry": "-1",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Knife"
-								},
-								{
-									"type": "skill",
-									"name": "Force Sword",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Main-Gauche",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Shortsword",
-									"modifier": -3
-								},
-								{
-									"type": "skill",
-									"name": "Sword!"
-								}
-							],
-							"calc": {
-								"damage": "thr-1 imp"
-							}
-						},
-						{
-							"id": "WDDHf9eeBOaPze02K",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "-1"
-							},
-							"strength": "5",
-							"usage": "Thrown",
-							"range": "x0.5/x1",
-							"rate_of_fire": "1",
-							"shots": "T",
-							"bulk": "-1",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Thrown Weapon",
-									"specialization": "Knife"
-								}
-							],
-							"calc": {
-								"damage": "thr-1 imp"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 30,
-						"extended_weight": "0.5 lb"
-					}
-				},
-				{
-					"id": "e4YfjvqH9MxNoV93B",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "eIZKsTGXeXjsAVMmo"
-					},
-					"description": "Small Mace",
-					"reference": "B271",
-					"tech_level": "2",
-					"tags": [
-						"Melee Weapon",
-						"Missile Weapon"
-					],
-					"value": 35,
-					"weight": "3 lb",
-					"weapons": [
-						{
-							"id": "wSBpa1FfWHepDFyCS",
-							"damage": {
-								"type": "cr",
-								"st": "sw",
-								"base": "2"
-							},
-							"strength": "10",
-							"usage": "Swung",
-							"reach": "1",
-							"parry": "0U",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Axe/Mace"
-								},
-								{
-									"type": "skill",
-									"name": "Flail",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Axe/Mace",
-									"modifier": -3
-								}
-							],
-							"calc": {
-								"damage": "sw+2 cr"
-							}
-						},
-						{
-							"id": "WSH5DFG0n74uuuj4G",
-							"damage": {
-								"type": "cr",
-								"st": "sw",
-								"base": "2"
-							},
-							"strength": "10",
-							"usage": "Thrown",
-							"accuracy": "1",
-							"range": "x1/x1.5",
-							"rate_of_fire": "1",
-							"shots": "T",
-							"bulk": "-3",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Thrown Weapon",
-									"specialization": "Axe/Mace"
-								}
-							],
-							"calc": {
-								"damage": "sw+2 cr"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 35,
-						"extended_weight": "3 lb"
-					}
-				},
-				{
-					"id": "eooVLnb11TiQlBDR5",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "e6qjxZtOg7lCt_TE5"
-					},
-					"description": "Spear",
-					"reference": "B273",
-					"tech_level": "0",
-					"tags": [
-						"Melee Weapon",
-						"Missile Weapon"
-					],
-					"value": 40,
-					"weight": "4 lb",
-					"weapons": [
-						{
-							"id": "wAQlB0P868LS4dZ9W",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "2"
-							},
-							"strength": "9",
-							"usage": "Thrust",
-							"reach": "1*",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Spear"
-								},
-								{
-									"type": "skill",
-									"name": "Polearm",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Staff",
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"damage": "thr+2 imp"
-							}
-						},
-						{
-							"id": "wHVdPRYO89b6AyVUd",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "3"
-							},
-							"strength": "9†",
-							"usage": "Thrust",
-							"reach": "1-2*",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Spear"
-								},
-								{
-									"type": "skill",
-									"name": "Polearm",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Staff",
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"damage": "thr+3 imp"
-							}
-						},
-						{
-							"id": "WuqsY3Eag9s3ZY0Ql",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "3"
-							},
-							"strength": "9",
-							"usage": "Thrown",
-							"accuracy": "2",
-							"range": "x1/x1.5",
-							"rate_of_fire": "1",
-							"shots": "T",
-							"bulk": "-6",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Thrown Weapon",
-									"specialization": "Spear"
-								},
-								{
-									"type": "skill",
-									"name": "Spear Thrower",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Thrown Weapon",
-									"specialization": "Harpoon",
-									"modifier": -2
-								}
-							],
-							"calc": {
-								"damage": "thr+3 imp"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 40,
-						"extended_weight": "4 lb"
-					}
-				},
-				{
-					"id": "eowUxMsxH0K0jMlrW",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "elxxlZjgCDqN3NzeU"
-					},
-					"description": "Throwing Axe",
-					"reference": "B271",
-					"tech_level": "0",
-					"tags": [
-						"Melee Weapon",
-						"Missile Weapon"
-					],
-					"value": 60,
-					"weight": "4 lb",
-					"weapons": [
-						{
-							"id": "wuugRxHf7kZqOLdMu",
-							"damage": {
-								"type": "cut",
-								"st": "sw",
-								"base": "2"
-							},
-							"strength": "11",
-							"usage": "Swung",
-							"reach": "1",
-							"parry": "0U",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Axe/Mace"
-								},
-								{
-									"type": "skill",
-									"name": "Flail",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Two-Handed Axe/Mace",
-									"modifier": -3
-								}
-							],
-							"calc": {
-								"damage": "sw+2 cut"
-							}
-						},
-						{
-							"id": "WZY4qrSA-YJxGmx12",
-							"damage": {
-								"type": "cut",
-								"st": "sw",
-								"base": "2"
-							},
-							"strength": "11",
-							"usage": "Thrown",
-							"accuracy": "2",
-							"range": "x1/x1.5",
-							"rate_of_fire": "1",
-							"shots": "T",
-							"bulk": "-3",
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Thrown Weapon",
-									"specialization": "Axe/Mace"
-								}
-							],
-							"calc": {
-								"damage": "sw+2 cut"
-							}
-						}
-					],
-					"quantity": 1,
-					"calc": {
-						"extended_value": 60,
-						"extended_weight": "4 lb"
 					}
 				},
 				{
@@ -5850,6 +5913,450 @@
 					}
 				},
 				{
+					"id": "e4YfjvqH9MxNoV93B",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eIZKsTGXeXjsAVMmo"
+					},
+					"description": "Small Mace",
+					"reference": "B271",
+					"tech_level": "2",
+					"tags": [
+						"Melee Weapon",
+						"Missile Weapon"
+					],
+					"value": 35,
+					"weight": "3 lb",
+					"weapons": [
+						{
+							"id": "wSBpa1FfWHepDFyCS",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "10",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Axe/Mace"
+								},
+								{
+									"type": "skill",
+									"name": "Flail",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -3
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cr"
+							}
+						},
+						{
+							"id": "WSH5DFG0n74uuuj4G",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "10",
+							"usage": "Thrown",
+							"accuracy": "1",
+							"range": "x1/x1.5",
+							"rate_of_fire": "1",
+							"shots": "T",
+							"bulk": "-3",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Axe/Mace"
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cr"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 35,
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "ea6iX-QT17vQda2tB",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "e8f-mLHVfaqv5olcu"
+					},
+					"description": "Halberd",
+					"reference": "B272",
+					"tech_level": "3",
+					"tags": [
+						"Melee Weapon"
+					],
+					"value": 150,
+					"weight": "12 lb",
+					"weapons": [
+						{
+							"id": "wxXL-_kjT7L0e2N3b",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "5"
+							},
+							"strength": "13‡",
+							"usage": "Swung",
+							"reach": "2-3*",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Polearm"
+								},
+								{
+									"type": "skill",
+									"name": "Spear",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Staff",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "sw+5 cut"
+							}
+						},
+						{
+							"id": "wdweXO5gMYL7A7GgK",
+							"damage": {
+								"type": "imp (may stick)",
+								"st": "sw",
+								"base": "4"
+							},
+							"strength": "13‡",
+							"usage": "Swung Hook",
+							"reach": "2-3*",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Polearm"
+								},
+								{
+									"type": "skill",
+									"name": "Spear",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Staff",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "sw+4 imp (may stick)"
+							}
+						},
+						{
+							"id": "w4-yVvQolzJnVsuLZ",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "3"
+							},
+							"strength": "12†",
+							"usage": "Thrust",
+							"reach": "1-3*",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Polearm"
+								},
+								{
+									"type": "skill",
+									"name": "Spear",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Staff",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "thr+3 imp"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 150,
+						"extended_weight": "12 lb"
+					}
+				},
+				{
+					"id": "e62tVL73Z0wSx6Ndf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "efRs8e1U_kSxmljS_"
+					},
+					"description": "Katana",
+					"reference": "B271",
+					"tech_level": "3",
+					"tags": [
+						"Melee Weapon"
+					],
+					"value": 650,
+					"weight": "5 lb",
+					"weapons": [
+						{
+							"id": "wUHxEXLox3A2wgNaZ",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "1"
+							},
+							"strength": "11",
+							"usage": "Swung",
+							"usage_notes": "1-handed",
+							"reach": "1-2",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword"
+								},
+								{
+									"type": "skill",
+									"name": "Rapier",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "sw+1 cut"
+							}
+						},
+						{
+							"id": "w7Lfu9KjtlBO0ZOG8",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "11",
+							"usage": "Thrust",
+							"usage_notes": "1-handed",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword"
+								},
+								{
+									"type": "skill",
+									"name": "Rapier",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						},
+						{
+							"id": "wxncFvi5qJqRYwKdP",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "10†",
+							"usage": "Swung",
+							"usage_notes": "2-handed",
+							"reach": "1-2",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cut"
+							}
+						},
+						{
+							"id": "wYc8Zq4CoQTfWaYhq",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "10†",
+							"usage": "Thrust",
+							"usage_notes": "2-handed",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 650,
+						"extended_weight": "5 lb"
+					}
+				},
+				{
 					"id": "e_-1RzCecRaUH0Hp2",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -5949,11 +6456,83 @@
 						"extended_value": 900,
 						"extended_weight": "7 lb"
 					}
+				},
+				{
+					"id": "eN2LY29pQAiWB4p8m",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ewTaOhPlZ-pkHKGqg"
+					},
+					"description": "Rapier",
+					"reference": "B273",
+					"tech_level": "4",
+					"tags": [
+						"Melee Weapon"
+					],
+					"value": 500,
+					"weight": "2.75 lb",
+					"weapons": [
+						{
+							"id": "wC5jGuu9Y_PqOrgIR",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "9",
+							"usage": "Thrust",
+							"reach": "1-2",
+							"parry": "0F",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Rapier"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 500,
+						"extended_weight": "2.75 lb"
+					}
 				}
 			],
 			"calc": {
-				"extended_value": 3430,
-				"extended_weight": "86.5 lb"
+				"extended_value": 3540,
+				"extended_weight": "92.5 lb"
 			}
 		},
 		{
@@ -6034,24 +6613,6 @@
 					}
 				},
 				{
-					"id": "E5W9WjBrwiQVrFt6I",
-					"description": "Gun Case",
-					"notes": "4' long, large enough to hold a sniper rifle or two SMGs + 20 ammo, DR 2, waterproof",
-					"tech_level": "8",
-					"legality_class": "4",
-					"tags": [
-						"Storage"
-					],
-					"value": 1000,
-					"weight": "25 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 1000,
-						"extended_weight": "25 lb"
-					}
-				},
-				{
 					"id": "E7rfW2gaTwEOk9QCd",
 					"description": "Instrument Case",
 					"notes": "Guitar size, large enough to hold a rifle or two SMGs + 10 ammo",
@@ -6085,6 +6646,24 @@
 					"calc": {
 						"extended_value": 50,
 						"extended_weight": "2.5 lb"
+					}
+				},
+				{
+					"id": "E5W9WjBrwiQVrFt6I",
+					"description": "Gun Case",
+					"notes": "4' long, large enough to hold a sniper rifle or two SMGs + 20 ammo, DR 2, waterproof",
+					"tech_level": "8",
+					"legality_class": "4",
+					"tags": [
+						"Storage"
+					],
+					"value": 1000,
+					"weight": "25 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 1000,
+						"extended_weight": "25 lb"
 					}
 				}
 			],
@@ -6500,36 +7079,6 @@
 					"equipped": true,
 					"children": [
 						{
-							"id": "enhYjpGdLhmrGYZTY",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set\\Basic Set Equipment.eqp",
-								"id": "enYweeQwtSBvAmkXg"
-							},
-							"description": "Bipod",
-							"reference": "B278",
-							"tech_level": "8",
-							"legality_class": "3",
-							"tags": [
-								"Attachment"
-							],
-							"value": 400,
-							"weight": "0.5 lb",
-							"modifiers": [
-								{
-									"id": "fwN82ZdNM2DbVr41E",
-									"name": "Bipod",
-									"notes": "Considered braced if prone and bipod out"
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"extended_value": 400,
-								"extended_weight": "0.5 lb"
-							}
-						},
-						{
 							"id": "er4dpZL4RUiO9eXjD",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
@@ -6634,6 +7183,36 @@
 								"extended_value": 150,
 								"extended_weight": "1 lb"
 							}
+						},
+						{
+							"id": "enhYjpGdLhmrGYZTY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "enYweeQwtSBvAmkXg"
+							},
+							"description": "Bipod",
+							"reference": "B278",
+							"tech_level": "8",
+							"legality_class": "3",
+							"tags": [
+								"Attachment"
+							],
+							"value": 400,
+							"weight": "0.5 lb",
+							"modifiers": [
+								{
+									"id": "fwN82ZdNM2DbVr41E",
+									"name": "Bipod",
+									"notes": "Considered braced if prone and bipod out"
+								}
+							],
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 400,
+								"extended_weight": "0.5 lb"
+							}
 						}
 					],
 					"calc": {
@@ -6676,6 +7255,60 @@
 			"calc": {
 				"extended_value": 1,
 				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eoLzhLdjfOU5GPanZ",
+			"description": "Keystone",
+			"notes": "1 port",
+			"tech_level": "6",
+			"legality_class": "4",
+			"tags": [
+				"Magic Tool"
+			],
+			"value": 3000,
+			"weight": "0.5 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 3000,
+				"extended_weight": "0.5 lb"
+			}
+		},
+		{
+			"id": "e_C_dPR2L8uGFPzkr",
+			"description": "Keystone",
+			"notes": "2 ports",
+			"tech_level": "7",
+			"legality_class": "4",
+			"tags": [
+				"Magic Tool"
+			],
+			"value": 9000,
+			"weight": "0.7 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 9000,
+				"extended_weight": "0.7 lb"
+			}
+		},
+		{
+			"id": "eA89VRMmr0kb84oVz",
+			"description": "Keystone",
+			"notes": "3 ports",
+			"tech_level": "8",
+			"legality_class": "4",
+			"tags": [
+				"Magic Tool"
+			],
+			"value": 24000,
+			"weight": "1 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 24000,
+				"extended_weight": "1 lb"
 			}
 		}
 	]

@@ -305,7 +305,7 @@
 				{
 					"id": "T2-gyVjXs1U4MOih3",
 					"name": "Micro",
-					"notes": "Falcon size. Max mana 3",
+					"notes": "Falcon size",
 					"children": [
 						{
 							"id": "tY52gf4lRSgU3zxC6",
@@ -369,7 +369,7 @@
 				{
 					"id": "T9KHjwkbShuMTYJNd",
 					"name": "Portable",
-					"notes": "Medium dog size. Max mana 5",
+					"notes": "Medium dog size",
 					"children": [
 						{
 							"id": "tYIIMET3-bZrnJRMZ",
@@ -420,28 +420,83 @@
 								}
 							],
 							"can_level": true,
-							"levels": 7,
+							"levels": 3,
 							"calc": {
-								"points": -70
+								"points": -30
 							}
 						}
 					],
 					"calc": {
-						"points": -70
+						"points": -30
 					}
 				},
 				{
 					"id": "T3BzVPQFJyA-k2VHI",
 					"name": "Large",
-					"notes": "Comparable to people size. Max mana 10",
+					"notes": "Comparable to people size",
+					"children": [
+						{
+							"id": "ttfabv8YvlZkp_lj-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tqha9GlDBU9P-Wg-6"
+							},
+							"name": "Increased Strength",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mtVCZ0DiLdj3D4EAa",
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mvB9svHiybsdtgzbh",
+									"name": "Size",
+									"reference": "B15",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "m6fd4n7PwJCq5AbLu",
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost": 300,
+									"disabled": true
+								}
+							],
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 20
+							}
+						}
+					],
 					"calc": {
-						"points": 0
+						"points": 20
 					}
 				},
 				{
 					"id": "TcdxzGuoBIwD2flGc",
 					"name": "Extra Large",
-					"notes": "Roughly 15 ft. Max mana 15",
+					"notes": "Roughly 15 ft",
 					"children": [
 						{
 							"id": "tuIDUno3xCKBuow0S",
@@ -466,6 +521,59 @@
 							],
 							"calc": {
 								"points": 0
+							}
+						},
+						{
+							"id": "tlsTkxmylbSBEOAJ-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tqha9GlDBU9P-Wg-6"
+							},
+							"name": "Increased Strength",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m2621tTJZAGj3tCam",
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "m0I_ye9k9s2vkgTno",
+									"name": "Size",
+									"reference": "B15",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "msLUE6FcaeO40m5l6",
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost": 300,
+									"disabled": true
+								}
+							],
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 10,
+							"calc": {
+								"points": 100
 							}
 						},
 						{
@@ -499,12 +607,12 @@
 						}
 					],
 					"calc": {
-						"points": -60
+						"points": 40
 					}
 				}
 			],
 			"calc": {
-				"points": -200
+				"points": -40
 			}
 		},
 		{
@@ -513,7 +621,7 @@
 			"children": [
 				{
 					"id": "TRbbEq3_BFiJTaMo2",
-					"name": "Flying",
+					"name": "Quadcopter",
 					"children": [
 						{
 							"id": "tVKKR3_UL_ofAKXrl",
@@ -532,49 +640,49 @@
 							],
 							"modifiers": [
 								{
-									"id": "mvnZgqNF474IAQrPm",
+									"id": "mtaFbmDISAm9bf_Er",
 									"name": "Newtonian Space Flight",
 									"reference": "B56",
 									"cost": 25,
 									"disabled": true
 								},
 								{
-									"id": "mOZKf73Mjtk-tbkPP",
+									"id": "mE1MpxsMDLjJmBS2E",
 									"name": "Space Flight",
 									"reference": "B56",
 									"cost": 50,
 									"disabled": true
 								},
 								{
-									"id": "mlY-KUX-5W9iMKieR",
+									"id": "m6h9NmHTUkiYOeG6u",
 									"name": "Cannot Hover",
 									"reference": "B56",
 									"cost": -15,
 									"disabled": true
 								},
 								{
-									"id": "mgSs6u_3yl3NwxxFi",
+									"id": "mmaG_QSMKuF9_rG2E",
 									"name": "Controlled Gliding",
 									"reference": "B56",
 									"cost": -45,
 									"disabled": true
 								},
 								{
-									"id": "m9YNV_Eb0OfaZZDIx",
+									"id": "mkPMXMjZPY3GoJ_IF",
 									"name": "Gliding",
 									"reference": "B56",
 									"cost": -50,
 									"disabled": true
 								},
 								{
-									"id": "mScrea-U0gUh77jk8",
+									"id": "mKLOlJJzUNKGOLnBu",
 									"name": "Lighter Than Air",
 									"reference": "B56",
 									"cost": -10,
 									"disabled": true
 								},
 								{
-									"id": "m4JMdVSsBB71pyacY",
+									"id": "mPlUp23zfqE9pnEzk",
 									"name": "Low Ceiling",
 									"reference": "B56",
 									"notes": "30'",
@@ -582,7 +690,7 @@
 									"disabled": true
 								},
 								{
-									"id": "ml634DWWvII_p3BiY",
+									"id": "mGijQEwotHZXYlCkT",
 									"name": "Low Ceiling",
 									"reference": "B56",
 									"notes": "10'",
@@ -590,7 +698,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mFZZ4kNjdto_Pxkfo",
+									"id": "mPXDUg-ZZt8YAL3-i",
 									"name": "Low Ceiling",
 									"reference": "B56",
 									"notes": "5'",
@@ -598,42 +706,42 @@
 									"disabled": true
 								},
 								{
-									"id": "mHJvV6K0Tmv9Dn2gK",
+									"id": "mTirN1XtpKwYeBtUe",
 									"name": "Small Wings",
 									"reference": "B56",
 									"cost": -10,
 									"disabled": true
 								},
 								{
-									"id": "mmgPLf0Nv-qaah6XN",
+									"id": "mIx9VmlqWZx-7LHuw",
 									"name": "Space Flight Only",
 									"reference": "B56",
 									"cost": -75,
 									"disabled": true
 								},
 								{
-									"id": "maYj39E8tarAhQ1_d",
+									"id": "mcR7aSgbFqVfraaBK",
 									"name": "Winged",
 									"reference": "B56",
 									"cost": -25,
 									"disabled": true
 								},
 								{
-									"id": "m1Ugu2D0N4KOa6SOh",
+									"id": "mUMtWTblYsESAfc6s",
 									"name": "Planetary",
 									"reference": "P50",
 									"cost": -5,
 									"disabled": true
 								},
 								{
-									"id": "mHdk9w8OiNObqnwlc",
+									"id": "mW4SxGk8s5jlchL-p",
 									"name": "Requires Surface",
 									"reference": "P50",
 									"cost": -20,
 									"disabled": true
 								},
 								{
-									"id": "mfPHrLOkHeNKZLEl_",
+									"id": "m7R53tKD8Nfij79HX",
 									"name": "Slow",
 									"reference": "PSI14",
 									"notes": "Basic Speed",
@@ -641,14 +749,14 @@
 									"disabled": true
 								},
 								{
-									"id": "mmCngvIIrKujGQDZW",
+									"id": "mRXQ-Z4PZ4mLuNuoz",
 									"name": "Slow, Move 1",
 									"reference": "PSI14",
 									"cost": -45,
 									"disabled": true
 								},
 								{
-									"id": "mvjxVs2Q2q85OIIGY",
+									"id": "mYea7m9So-MOh0xSj",
 									"name": "Encumbrance-Limited (No encumbrance)",
 									"reference": "FFWF12",
 									"reference_highlight": "Encumbrance-Limited",
@@ -657,7 +765,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mel1z_1pMJaMPVrsG",
+									"id": "mAkKfpRotPmZWuPRW",
 									"name": "Encumbrance-Limited (Light encumbrance)",
 									"reference": "FFWF12",
 									"reference_highlight": "Encumbrance-Limited",
@@ -666,7 +774,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mTkCedvFlyyb-u-Nj",
+									"id": "mls8v5NZcAaCz3ghb",
 									"name": "Encumbrance-Limited (Medium encumbrance)",
 									"reference": "FFWF12",
 									"reference_highlight": "Encumbrance-Limited",
@@ -749,10 +857,49 @@
 				},
 				{
 					"id": "TO6B5SE9m5eIOATjD",
-					"name": "Legs",
+					"name": "2 Legs",
 					"children": [
 						{
-							"id": "tB2i5qDuRihaxAdmK",
+							"id": "tCwdvdaYfCMg2BbMw",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tpGiLpDpY0JDjAIxw"
+							},
+							"name": "No Manipulators",
+							"reference": "B145",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -50,
+							"features": [
+								{
+									"type": "cost_reduction",
+									"attribute": "st",
+									"percentage": 40
+								},
+								{
+									"type": "cost_reduction",
+									"attribute": "dx",
+									"percentage": 40
+								}
+							],
+							"calc": {
+								"points": -50
+							}
+						}
+					],
+					"calc": {
+						"points": -50
+					}
+				},
+				{
+					"id": "Tm3cfEdBGlbypG9p2",
+					"name": "4 Legs",
+					"children": [
+						{
+							"id": "tYAGlHEVkXaqJtBAo",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Traits.adq",
@@ -767,14 +914,14 @@
 							],
 							"modifiers": [
 								{
-									"id": "mPbP2437_Br39mxEb",
+									"id": "mg_sj6JsbHCU9aEqp",
 									"name": "4",
 									"reference": "B54",
 									"cost": 5,
 									"cost_type": "points"
 								},
 								{
-									"id": "mRTgOBzwvbf4qwnZd",
+									"id": "mIZuT5ynRNpeUkfC-",
 									"name": "@5 or 6@",
 									"reference": "B55",
 									"cost": 10,
@@ -782,7 +929,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mqygGE2XfedYYQAOO",
+									"id": "mfdK7_2nAkKpPLVeM",
 									"name": "@7+@",
 									"reference": "B55",
 									"cost": 15,
@@ -790,7 +937,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mmpiK0xBRV8e3LxCP",
+									"id": "m-J54j6a9XaOG6p2j",
 									"name": "Long",
 									"reference": "B55",
 									"cost": 100,
@@ -798,21 +945,21 @@
 									"disabled": true
 								},
 								{
-									"id": "m7LYBISnfILZ5GYLf",
+									"id": "mM9JHXAuJelRt5JPX",
 									"name": "Cannot Kick",
 									"reference": "B55",
 									"cost": -50,
 									"disabled": true
 								},
 								{
-									"id": "mE5pC4uNYU5lmbjOp",
+									"id": "m77zhRxtfGR8JjYY8",
 									"name": "Extra Flexible",
 									"reference": "MATG27",
 									"cost": 50,
 									"disabled": true
 								},
 								{
-									"id": "mdN8B3dmX6xgLTRvK",
+									"id": "maLouzGoCRRsYA_DP",
 									"name": "Prehensile Feet",
 									"reference": "MATG28",
 									"cost": 20,
@@ -824,7 +971,7 @@
 							}
 						},
 						{
-							"id": "tzf2zOlA4p0PAAQ0S",
+							"id": "tiei_KY0tCPEv1mE3",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set\\Basic Set Traits.adq",
@@ -919,7 +1066,7 @@
 				}
 			],
 			"calc": {
-				"points": -125
+				"points": -175
 			}
 		},
 		{
@@ -931,9 +1078,9 @@
 					"name": "Security Level",
 					"points_per_level": 5,
 					"can_level": true,
-					"levels": 1,
+					"levels": 10,
 					"calc": {
-						"points": 5
+						"points": 50
 					}
 				},
 				{
@@ -948,7 +1095,7 @@
 				}
 			],
 			"calc": {
-				"points": 15
+				"points": 60
 			}
 		},
 		{
@@ -1278,27 +1425,60 @@
 					}
 				},
 				{
-					"id": "t-vBBjJvRWMzCLvPi",
+					"id": "tYMRTekVmehZWnim8",
+					"name": "Improved Aim Module",
+					"base_points": 40,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "Guns"
+							},
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "tof6eYlCy06m35Upr",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Traits.adq",
-						"id": "tRew_hxLFtYOx0922"
+						"id": "t7a13kFVl53ZfbkrK"
 					},
-					"name": "Horizontal",
-					"reference": "B139",
+					"name": "Payload (@Load@)",
+					"reference": "B74",
 					"tags": [
-						"Disadvantage",
+						"Advantage",
 						"Exotic",
 						"Physical"
 					],
-					"base_points": -10,
+					"replacements": {
+						"Load": "Pilot"
+					},
+					"modifiers": [
+						{
+							"id": "mxLBarfaETgx_VQDI",
+							"name": "Exposed",
+							"reference": "B74",
+							"cost": -50,
+							"disabled": true
+						}
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 20,
 					"calc": {
-						"points": -10
+						"points": 20
 					}
 				}
 			],
 			"calc": {
-				"points": 21
+				"points": 91
 			}
 		}
 	],
@@ -1333,381 +1513,813 @@
 			"points": 1
 		},
 		{
-			"id": "sA1ezPCor9bHIGRYB",
+			"id": "S9zN-TrDBn1hIddwy",
+			"name": "Fire Control Module",
+			"children": [
+				{
+					"id": "sA1ezPCor9bHIGRYB",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Skills.skl",
+						"id": "sLnNphhHfVNqLyAsb"
+					},
+					"name": "Guns",
+					"reference": "B198",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Light Machine Gun",
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"tech_level": "",
+					"points": 4
+				},
+				{
+					"id": "skrxyeYUBSZg15iSl",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Skills.skl",
+						"id": "sfWUh9TJBpQuwZBVo"
+					},
+					"name": "Guns",
+					"reference": "B198",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Pistol",
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Beam Weapons",
+							"specialization": "Pistol",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"tech_level": "",
+					"points": 4
+				},
+				{
+					"id": "sa1-ItCsmp8XRHhXn",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Skills.skl",
+						"id": "s3hbw6Ngz9_5OFNcR"
+					},
+					"name": "Guns",
+					"reference": "B198",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Rifle",
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Beam Weapons",
+							"specialization": "Rifle",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"tech_level": "",
+					"points": 4
+				},
+				{
+					"id": "smE66q6tGjRanupgv",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Skills.skl",
+						"id": "sFv-HqFH4QW3yQGAF"
+					},
+					"name": "Guns",
+					"reference": "B198",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Shotgun",
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"tech_level": "",
+					"points": 4
+				},
+				{
+					"id": "sl2ElRv4m0CzV2_uK",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Skills.skl",
+						"id": "sLe79aP8mpSWAoCLO"
+					},
+					"name": "Guns",
+					"reference": "B198",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Submachine Gun",
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						}
+					],
+					"tech_level": "",
+					"points": 4
+				}
+			]
+		}
+	],
+	"equipment": [
+		{
+			"id": "eAvaiYWW7VeEcAeuy",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
-				"id": "sLnNphhHfVNqLyAsb"
+				"path": "Basic Set\\Basic Set Equipment.eqp",
+				"id": "enYweeQwtSBvAmkXg"
 			},
-			"name": "Guns",
-			"reference": "B198",
+			"description": "Blessed Thorn",
+			"reference": "B278",
+			"notes": "Derringer: Lucius-124",
+			"tech_level": "5",
+			"legality_class": "4",
 			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
+				"Firearm"
 			],
-			"specialization": "Light Machine Gun",
-			"difficulty": "dx/e",
-			"defaults": [
+			"value": 50,
+			"weight": "0.5 lb",
+			"weapons": [
 				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Grenade Launcher",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Gyroc",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Anti-Armor Weapon",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Musket",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Pistol",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Rifle",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Shotgun",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Submachine Gun",
-					"modifier": -2
+					"id": "WQ0lHQG7Iwdpg9dSq",
+					"damage": {
+						"type": "pi+",
+						"base": "1d"
+					},
+					"strength": "8",
+					"accuracy": "1",
+					"range": "6/12",
+					"rate_of_fire": "1",
+					"shots": "2(3i)",
+					"bulk": "-1",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						}
+					],
+					"calc": {
+						"damage": "1d pi+"
+					}
 				}
 			],
-			"tech_level": "",
-			"points": 1
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 50,
+				"extended_weight": "0.5 lb"
+			}
 		},
 		{
-			"id": "skrxyeYUBSZg15iSl",
+			"id": "e0L1cJ7YKq0LrNWcz",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
-				"id": "sfWUh9TJBpQuwZBVo"
+				"path": "Basic Set\\Basic Set Equipment.eqp",
+				"id": "ez3A4rmpoQF1oPUSS"
 			},
-			"name": "Guns",
-			"reference": "B198",
+			"description": "Pioneer 2R",
+			"reference": "B279",
+			"notes": "Semi-Auto Rifle: SE-F-2R",
+			"tech_level": "7",
+			"legality_class": "3",
 			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
+				"Firearm"
 			],
-			"specialization": "Pistol",
-			"difficulty": "dx/e",
-			"defaults": [
+			"value": 1600,
+			"weight": "9 lb",
+			"weapons": [
 				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Grenade Launcher",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Gyroc",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Anti-Armor Weapon",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Machine Gun",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Musket",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Beam Weapons",
-					"specialization": "Pistol",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Rifle",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Shotgun",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Submachine Gun",
-					"modifier": -2
+					"id": "WHbrLlJ7C0JXp5dYQ",
+					"damage": {
+						"type": "pi",
+						"base": "3d"
+					},
+					"strength": "9†",
+					"accuracy": "5",
+					"range": "20/40",
+					"rate_of_fire": "3",
+					"shots": "30+1(3)",
+					"bulk": "-4",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						}
+					],
+					"calc": {
+						"damage": "3d pi"
+					}
 				}
 			],
-			"tech_level": "",
-			"points": 1
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 1600,
+				"extended_weight": "9 lb"
+			}
 		},
 		{
-			"id": "sa1-ItCsmp8XRHhXn",
+			"id": "evZuOWwZxOoYJLg32",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
-				"id": "s3hbw6Ngz9_5OFNcR"
+				"path": "Basic Set\\Basic Set Equipment.eqp",
+				"id": "eYZW7qkvflXuL60CW"
 			},
-			"name": "Guns",
-			"reference": "B198",
+			"description": "Purge",
+			"reference": "B279",
+			"notes": "Semi-Auto Shotgun: Nicholas 327",
+			"tech_level": "7",
+			"legality_class": "3",
 			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
+				"Firearm"
 			],
-			"specialization": "Rifle",
-			"difficulty": "dx/e",
-			"defaults": [
+			"value": 1900,
+			"weight": "8.4 lb",
+			"weapons": [
 				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Grenade Launcher",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Gyroc",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Anti-Armor Weapon",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Machine Gun",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Musket",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Pistol",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Beam Weapons",
-					"specialization": "Rifle",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Shotgun",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Submachine Gun",
-					"modifier": -2
+					"id": "W69TCDgdX6b6vSc_y",
+					"damage": {
+						"type": "pi",
+						"base": "1d"
+					},
+					"strength": "10†",
+					"accuracy": "3",
+					"range": "6/12",
+					"rate_of_fire": "3x9",
+					"shots": "6+1(3i)",
+					"bulk": "-5",
+					"recoil": "1/4",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						}
+					],
+					"calc": {
+						"damage": "1d pi"
+					}
 				}
 			],
-			"tech_level": "",
-			"points": 1
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 1900,
+				"extended_weight": "8.4 lb"
+			}
 		},
 		{
-			"id": "smE66q6tGjRanupgv",
+			"id": "eGXurcsiRhtsPdz2A",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
-				"id": "sFv-HqFH4QW3yQGAF"
+				"path": "Basic Set\\Basic Set Equipment.eqp",
+				"id": "edNQJgpJJz1GYkdmy"
 			},
-			"name": "Guns",
-			"reference": "B198",
+			"description": "Gravehound 3BG",
+			"reference": "B281",
+			"notes": "SAW: SE-F-3BG",
+			"tech_level": "7",
+			"legality_class": "1",
 			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
+				"Firearm"
 			],
-			"specialization": "Shotgun",
-			"difficulty": "dx/e",
-			"defaults": [
+			"value": 9600,
+			"weight": "24 lb",
+			"weapons": [
 				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Grenade Launcher",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Gyroc",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Anti-Armor Weapon",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Machine Gun",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Musket",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Pistol",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Rifle",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Submachine Gun",
-					"modifier": -2
+					"id": "WdWgHaTmkDqO7RVdD",
+					"damage": {
+						"type": "pi",
+						"base": "3d+1"
+					},
+					"strength": "12B†",
+					"accuracy": "5",
+					"range": "35/70",
+					"rate_of_fire": "15!",
+					"shots": "200(5)",
+					"bulk": "-6",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						}
+					],
+					"calc": {
+						"damage": "3d+1 pi"
+					}
 				}
 			],
-			"tech_level": "",
-			"points": 1
-		},
-		{
-			"id": "sl2ElRv4m0CzV2_uK",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
-				"id": "sLe79aP8mpSWAoCLO"
-			},
-			"name": "Guns",
-			"reference": "B198",
-			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
-			],
-			"specialization": "Submachine Gun",
-			"difficulty": "dx/e",
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Grenade Launcher",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Gyroc",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Anti-Armor Weapon",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Light Machine Gun",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Musket",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Pistol",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Rifle",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Guns",
-					"specialization": "Shotgun",
-					"modifier": -2
-				}
-			],
-			"tech_level": "",
-			"points": 1
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 9600,
+				"extended_weight": "24 lb"
+			}
 		}
 	]
 }
