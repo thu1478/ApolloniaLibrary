@@ -2,6 +2,27 @@
 	"version": 5,
 	"rows": [
 		{
+			"id": "qrel__WCkLcxQpv9w",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Martial Arts\\Martial Arts Skills.skl",
+				"id": "qU8qAxzftMtqQAx-t"
+			},
+			"name": "Acrobatic Stand",
+			"reference": "MA65",
+			"tags": [
+				"Technique"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Acrobatics",
+				"modifier": -6
+			},
+			"limit": 0,
+			"points": 1
+		},
+		{
 			"id": "sX8y2AmeL5DLlQl17",
 			"name": "Acrobatics",
 			"reference": "B174,MA54",
@@ -164,98 +185,6 @@
 			"points": 1
 		},
 		{
-			"id": "sTXDrqXH0sT2NSD_b",
-			"name": "Area Knowledge",
-			"reference": "B176",
-			"notes": "Location of the capitals of interplanetary states and the homeworlds of major races; general awareness of all major races; knowledge of individuals of Status 8; general understanding of relations between interplanetary states",
-			"tags": [
-				"Everyman",
-				"Knowledge"
-			],
-			"specialization": "@Galaxy@",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Geography",
-					"specialization": "@Specialty@",
-					"modifier": -3
-				}
-			],
-			"points": 1
-		},
-		{
-			"id": "sd4bE8RsuJt-ZU8YZ",
-			"name": "Area Knowledge",
-			"reference": "B176",
-			"notes": "Location of the capitals of interplanetary states and the homeworlds of major races; general awareness of all major races; knowledge of individuals of Status 8; general understanding of relations between interplanetary states",
-			"tags": [
-				"Everyman",
-				"Knowledge"
-			],
-			"specialization": "@Galaxy@; Lived there",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Geography",
-					"specialization": "@Specialty@",
-					"modifier": -3
-				}
-			],
-			"points": 1
-		},
-		{
-			"id": "s-Ckyxw5PmHIvbZab",
-			"name": "Area Knowledge",
-			"reference": "B176",
-			"notes": "Location of major planets; familiarity with all known races (but not necessarily expertise); knowledge of people of Status 7+; general understanding of the economic and political situation",
-			"tags": [
-				"Everyman",
-				"Knowledge"
-			],
-			"specialization": "@Interplanetary State@",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Geography",
-					"specialization": "@Specialty@",
-					"modifier": -3
-				}
-			],
-			"points": 1
-		},
-		{
-			"id": "sL0lqw_0WhF4JMpsg",
-			"name": "Area Knowledge",
-			"reference": "B176",
-			"notes": "Location of major planets; familiarity with all known races (but not necessarily expertise); knowledge of people of Status 7+; general understanding of the economic and political situation",
-			"tags": [
-				"Everyman",
-				"Knowledge"
-			],
-			"specialization": "@Interplanetary State@; Lived there",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Geography",
-					"specialization": "@Specialty@",
-					"modifier": -3
-				}
-			],
-			"points": 1
-		},
-		{
 			"id": "sl4przyjEyVwBXGxS",
 			"name": "Area Knowledge",
 			"reference": "B176",
@@ -286,52 +215,6 @@
 				"Knowledge"
 			],
 			"specialization": "@Large Nation@; Lived there",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Geography",
-					"specialization": "@Specialty@",
-					"modifier": -3
-				}
-			],
-			"points": 1
-		},
-		{
-			"id": "strhX4LEdd46xgmIS",
-			"name": "Area Knowledge",
-			"reference": "B176",
-			"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 7+; and a general understanding of the economic and political situation",
-			"tags": [
-				"Everyman",
-				"Knowledge"
-			],
-			"specialization": "@Planet@",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Geography",
-					"specialization": "@Specialty@",
-					"modifier": -3
-				}
-			],
-			"points": 1
-		},
-		{
-			"id": "s3bpod4WniDn1A0Sf",
-			"name": "Area Knowledge",
-			"reference": "B176",
-			"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 7+; and a general understanding of the economic and political situation",
-			"tags": [
-				"Everyman",
-				"Knowledge"
-			],
-			"specialization": "@Planet@; Lived there",
 			"difficulty": "iq/e",
 			"defaults": [
 				{
@@ -483,6 +366,52 @@
 					"modifier": -3
 				}
 			],
+			"points": 1
+		},
+		{
+			"id": "qUueFR4jt8Vd9qKfJ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qejpSeVSRZK4yn5A5"
+			},
+			"name": "Arm Lock",
+			"reference": "B230,MA65",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Judo"
+			},
+			"limit": 4,
+			"points": 1
+		},
+		{
+			"id": "qFQ_P9vTJXz_cBRuO",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qRZuJ6wqoDy5Xp0D1"
+			},
+			"name": "Arm Lock",
+			"reference": "B230,MA65",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Wrestling"
+			},
+			"limit": 4,
 			"points": 1
 		},
 		{
@@ -708,6 +637,44 @@
 				}
 			],
 			"points": 1
+		},
+		{
+			"id": "q6ON4fXtLikS8w5Vy",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "q32eC2BYmXj_-57Pa"
+			},
+			"name": "Back Kick",
+			"reference": "B230,MA67",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Karate",
+				"modifier": -4
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Karate"
+						}
+					}
+				]
+			},
+			"points": 2
 		},
 		{
 			"id": "sgDVif7IKSPE3JdMR",
@@ -943,6 +910,82 @@
 			],
 			"tech_level": "",
 			"points": 1
+		},
+		{
+			"id": "qwdtQ5SlekLjhVXiw",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qVZntC-x_8ebfCxIW"
+			},
+			"name": "Choke Hold",
+			"reference": "B230,MA69",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Judo",
+				"modifier": -2
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qRRreFGf4MpJ3q_4P",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qDBtoIcLaLcjxjVN8"
+			},
+			"name": "Choke Hold",
+			"reference": "B230,MA69",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Wrestling",
+				"modifier": -3
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Wrestling"
+						}
+					}
+				]
+			},
+			"points": 2
 		},
 		{
 			"id": "sENfGTCKokQN0N4PF",
@@ -1183,6 +1226,155 @@
 				}
 			],
 			"tech_level": "",
+			"points": 1
+		},
+		{
+			"id": "qajjQV6oqJCcBAOqI",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qZlo1-lmL3rN3S4vz"
+			},
+			"name": "Dual-Weapon Attack",
+			"reference": "B230,MA83",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Broadsword",
+				"modifier": -4
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qfMKFXJo4PsKvcq9G",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qRHBTUDrtY8nukqri"
+			},
+			"name": "Dual-Weapon Attack",
+			"reference": "B230,MA83",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Pistol",
+				"modifier": -4
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qplX6hWmkCDQlYgDZ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qASXj-CUsbu5SV7Ww"
+			},
+			"name": "Dual-Weapon Attack",
+			"reference": "B230,MA83",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Knife",
+				"modifier": -4
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "q8N1EE_SeH8S2okje",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qdV2t7kqSGzVQouic"
+			},
+			"name": "Elbow Strike",
+			"reference": "B230,MA71",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Brawling",
+				"modifier": -2
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Brawling"
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "qo292VtTsQ0mGdsST",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qJJkAOfGC0eHr0Wlj"
+			},
+			"name": "Elbow Strike",
+			"reference": "B230,MA71",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Karate",
+				"modifier": -2
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Karate"
+						}
+					}
+				]
+			},
 			"points": 1
 		},
 		{
@@ -1500,6 +1692,102 @@
 			],
 			"tech_level": "",
 			"points": 1
+		},
+		{
+			"id": "qUHtRd7obRDWIE5g3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qnWtbcr9fBR2uHW-U"
+			},
+			"name": "Ground Fighting",
+			"reference": "B231,MA73",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Brawling",
+				"modifier": -4
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qzFQqpPgztjzewLdk",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qyqHZb7WRsRQ7R_5M"
+			},
+			"name": "Ground Fighting",
+			"reference": "B231,MA73",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Broadsword",
+				"modifier": -4
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qqfepn1oIRrwi8bHh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qT8kD6V0un5JZRwU4"
+			},
+			"name": "Ground Fighting",
+			"reference": "B231,MA73",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Karate",
+				"modifier": -4
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qGydoSsrNApeBxMGM",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qb2keOQL-42_oggVX"
+			},
+			"name": "Ground Fighting",
+			"reference": "B231,MA73",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Knife",
+				"modifier": -4
+			},
+			"limit": 0,
+			"points": 2
 		},
 		{
 			"id": "sLnNphhHfVNqLyAsb",
@@ -1893,6 +2181,35 @@
 			"points": 1
 		},
 		{
+			"id": "sHhgeIkr4wUEKmP3u",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "sOyWJEm6hrSyj4al_"
+			},
+			"name": "Innate Attack",
+			"reference": "B201",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Beam",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Innate Attack",
+					"modifier": -2
+				}
+			],
+			"points": 1
+		},
+		{
 			"id": "sJvwPKtI422-KNEiv",
 			"name": "Innate Attack",
 			"reference": "B201",
@@ -1955,6 +2272,29 @@
 			"points": 1
 		},
 		{
+			"id": "qJC506Yb5Sje5WjCu",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Martial Arts\\Martial Arts Skills.skl",
+				"id": "qjQu-vE1ZRsmiA6gH"
+			},
+			"name": "Judo Throw",
+			"reference": "MA75",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Judo"
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
 			"id": "sU4bjpp9TsvnRavPN",
 			"name": "Karate",
 			"reference": "B203,MA57",
@@ -1994,6 +2334,102 @@
 					"per_die": true
 				}
 			],
+			"points": 1
+		},
+		{
+			"id": "qgEpTX1B8dNUakWQP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qFbhmeFMf02fJu7DY"
+			},
+			"name": "Kicking",
+			"reference": "B231,MA75",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Brawling",
+				"modifier": -2
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qXHElL3fpU3ZEtT3I",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qXTByqKnuWLOC3_10"
+			},
+			"name": "Kicking",
+			"reference": "B231,MA75",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Karate",
+				"modifier": -2
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qaqIwv4P-MwxzBTOp",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qn6d1PZL7zjq-BkyC"
+			},
+			"name": "Knee Strike",
+			"reference": "B232,MA76",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Brawling",
+				"modifier": -1
+			},
+			"limit": 0,
+			"points": 1
+		},
+		{
+			"id": "qsA0CaLctxA0myj7h",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qDNr2oliZ5yOymrmZ"
+			},
+			"name": "Knee Strike",
+			"reference": "B232,MA76",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Karate",
+				"modifier": -1
+			},
+			"limit": 0,
 			"points": 1
 		},
 		{
@@ -2684,6 +3120,270 @@
 				}
 			],
 			"points": 1
+		},
+		{
+			"id": "qy4nMTIq-oYwVR_Sn",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Block",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "block",
+				"name": "Shield",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qUhLswCVZn8b0K1Rh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Axe/Mace",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qjotXww3lY1hL2Gi7",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Broadsword",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qJnx6xnLZEUOCTfEO",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Knife",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qsHJohnQs27u4ena_",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Polearm",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qDfZyRHqUC3e4BlL1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Rapier",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qCbvI4vjM9z5pd8zg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Shortsword",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qYcDEfWHGHGZROeWd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Spear",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qpMZs2iI44-_TxH5b",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Staff",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qe6QqciUN93FoMBU9",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Two-handed Axe/Mace",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qQIikdzzJTjxPrg86",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sacrificial Parry",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Two-handed Sword",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
 		},
 		{
 			"id": "s7nXHa7mrKbU2X3wz",
@@ -3496,6 +4196,126 @@
 			"points": 1
 		},
 		{
+			"id": "qZTLzrLHs6ZskD9Nv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qW-8PPxgTh4eOLJPP"
+			},
+			"name": "Sweep",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Polearm",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qGmlCZnkhSaddGx3E",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Sweep",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Spear",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qIGpJ-CYwDjBNTjcP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qtiDpERi-CcumZQsD"
+			},
+			"name": "Sweep",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Staff",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "q5Ru5m_Ti_3mjrg2S",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qBgFxhKRyO0vadTY8"
+			},
+			"name": "Sweeping Kick",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Judo",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qJc1EdNZQZcq2yiMH",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "q4PnQ7hozhSfkbNPO"
+			},
+			"name": "Sweeping Kick",
+			"reference": "B232,MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Karate",
+				"modifier": -3
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
 			"id": "sYEI9Qk3NtuKsXkTQ",
 			"name": "Swimming",
 			"reference": "B224",
@@ -3721,6 +4541,198 @@
 				}
 			],
 			"points": 1
+		},
+		{
+			"id": "q72RxExXzGmY2_45N",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Martial Arts\\Martial Arts Skills.skl",
+				"id": "qAwkbZTJNzd05wNb7"
+			},
+			"name": "Uppercut",
+			"reference": "MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Boxing",
+				"modifier": -1
+			},
+			"limit": 0,
+			"points": 1
+		},
+		{
+			"id": "q0Q3tUGVFa9QRzoxT",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Martial Arts\\Martial Arts Skills.skl",
+				"id": "q-UHneuPyU3TcPAtP"
+			},
+			"name": "Uppercut",
+			"reference": "MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Brawling",
+				"modifier": -1
+			},
+			"limit": 0,
+			"points": 1
+		},
+		{
+			"id": "qrbwaPI_zxJxqgg6q",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Martial Arts\\Martial Arts Skills.skl",
+				"id": "qIaRtjvPvQdu2ElLN"
+			},
+			"name": "Uppercut",
+			"reference": "MA81",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "a",
+			"default": {
+				"type": "skill",
+				"name": "Karate",
+				"modifier": -1
+			},
+			"limit": 0,
+			"points": 1
+		},
+		{
+			"id": "q8HBfGfPuTH9gFX8L",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qiB9Uxmi8sbHxJ4Ux"
+			},
+			"name": "Whirlwind Attack",
+			"reference": "B232,MA89",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Boxing",
+				"modifier": -5
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "q-Q43mj_ytF3lRC0K",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qROt3fOIYQXpzMmxd"
+			},
+			"name": "Whirlwind Attack",
+			"reference": "B232,MA89",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Broadsword",
+				"modifier": -5
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qfRkQqwcOWriku_OZ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "q38FV07OE2eEzsExJ"
+			},
+			"name": "Whirlwind Attack",
+			"reference": "B232,MA89",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Karate",
+				"modifier": -5
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "quFfNcNDJiF_sDLtW",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qxrsfny1uoGtPvO_y"
+			},
+			"name": "Whirlwind Attack",
+			"reference": "B232,MA89",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Staff",
+				"modifier": -5
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qlhaq4TPabQXrVY-U",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qaGjjZQ44CkkSldej"
+			},
+			"name": "Whirlwind Attack",
+			"reference": "B232,MA89",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Two-Handed Sword",
+				"modifier": -5
+			},
+			"limit": 0,
+			"points": 2
 		},
 		{
 			"id": "s8parl7zgbXys0OF2",

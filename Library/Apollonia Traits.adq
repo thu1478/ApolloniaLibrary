@@ -2,13 +2,147 @@
 	"version": 5,
 	"rows": [
 		{
-			"id": "t0qrwtNdy3DX5Y9En",
-			"name": "Mana",
-			"points_per_level": 2,
+			"id": "taracLwFC0g9Cs8Q9",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Traits.adq",
+				"id": "tpnv8EEpAS6Er2pwK"
+			},
+			"name": "Mana Circle",
+			"reference": "B66",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Supernatural"
+			],
+			"modifiers": [
+				{
+					"id": "mot8g_a8DuBx49t0r",
+					"name": "Dance",
+					"cost": -40,
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "mxEnLKdQ4BTkEbfjT",
+					"name": "Dark-Aspected",
+					"cost": -50,
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "mWRLb5_dIrbN0LUvi",
+					"name": "Day-Aspected",
+					"cost": -40,
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "m8S5xlunM6RHWUJ-7",
+					"name": "Musical",
+					"cost": -50,
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "mAiI_lS9C8gpUaAns",
+					"name": "Night-Aspected",
+					"cost": -40,
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "mcd5-bKvpxJ_Kbq0R",
+					"name": "One College",
+					"notes": "@College@",
+					"cost": -40,
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "mW-QudiU4wrW6gtz4",
+					"name": "Solitary",
+					"cost": -40,
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "m5KHRs6qX_M6uS4TB",
+					"name": "Song",
+					"cost": -40,
+					"affects": "levels_only",
+					"disabled": true
+				}
+			],
+			"base_points": 5,
+			"points_per_level": 8,
+			"features": [
+				{
+					"type": "spell_bonus",
+					"match": "all_colleges",
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "thaumatology"
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "tr3rFOC4ZUz1djbi8",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Apollonia\\Library\\Apollonia Traits.adq",
+				"id": "trfVxE7DYokJPmw3O"
+			},
+			"name": "Energy Lockout (Mana)",
+			"points_per_level": -3,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "mana",
+					"amount": -1,
+					"per_level": true
+				}
+			],
 			"can_level": true,
 			"levels": 1,
 			"calc": {
-				"points": 2
+				"points": -3
+			}
+		},
+		{
+			"id": "tvhCnhsWAt6JBR4Ve",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Apollonia\\Library\\Apollonia Traits.adq",
+				"id": "trfVxE7DYokJPmw3O"
+			},
+			"name": "Energy Lockout (FP)",
+			"points_per_level": -3,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "fp",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": -3
 			}
 		},
 		{
@@ -1044,6 +1178,718 @@
 			],
 			"calc": {
 				"points": 54
+			}
+		},
+		{
+			"id": "TBuO5ceqqn4MkIR2X",
+			"name": "Forte Specialties",
+			"children": [
+				{
+					"id": "TqbNbWgT9eaFymk1y",
+					"name": "Sigil Specialty",
+					"children": [
+						{
+							"id": "t17IYHulhsTJDT-ly",
+							"name": "Machine Link",
+							"reference": "AP48",
+							"notes": "Always know location of your Opus. You can see through it's camera as a free action",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Electrician"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "t0F7vaj8oFAixShtH",
+							"name": "Overcharged Arrays",
+							"reference": "AP48",
+							"notes": "Double the bonuses and damage granted by your Arrays",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Electrician"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tZSCWmq5eB1AKF0t3",
+							"name": "Tech Savvy",
+							"reference": "AP48",
+							"notes": "You can use a laptop or smartphone instead of a wand or staff to cast your spells. The spell recoil for laptop and phone is the same as staff and wand respectively",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Electrician"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 11
+					}
+				},
+				{
+					"id": "T2WYTra8_kepfmG0W",
+					"name": "Trace Specialty",
+					"children": [
+						{
+							"id": "twCUgF2cQPXay-Vdb",
+							"name": "Mind of the Tool",
+							"reference": "AP48",
+							"notes": "All weapon bulk penalty reduced by -1 and ST requirement reduced by 2",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armoury"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"features": [
+								{
+									"type": "weapon_min_st_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"amount": -1
+								},
+								{
+									"type": "weapon_bulk_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tX9bc3Y3BCLfvZvXE",
+							"name": "Weapon Loyalty",
+							"reference": "AP48",
+							"notes": "Choose one of your weapons. It becomes loyal to you and always returns to your hand at the start of your turn, avoiding obstacles.",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armoury"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tpQ2IsFj34oZLgLXS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tBmSJ3pNE53c4IRUU"
+							},
+							"name": "Blacksmith's Specialty",
+							"reference": "AP48,B47,P45,MA43,PSI14",
+							"notes": "You craft a unique piece of armor of your own design that can be layered with any other pieces of armor. It grants +2 DR to a location of your choice",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armoury"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "mZQJG3iFXx9loCZ1v",
+									"name": "Force Field",
+									"reference": "B47",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "madyc3ulos9nSlIME",
+									"name": "Hardened",
+									"reference": "B47",
+									"cost": 20,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "mlUsSCW517GkueXR7",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Enhances @Trait@",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "m-m0RTHge10tTWNqe",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Healing only",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "mgOwd8O1Kucp4eTPF",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Enhances any trait",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mhsMt3aAyu3FEE42D",
+									"name": "Reflection",
+									"reference": "B47",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mMmjiPdKDKPFq5_YP",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Rare@",
+									"cost": -1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mmx3TXKK-WA1srjer",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Occasional@",
+									"cost": -5,
+									"disabled": true
+								},
+								{
+									"id": "mKyZcuNZBlbf5fhYo",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Common@",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mks2ikn1MuvNUPLXI",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Very Common@",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "mR4fFSLJGINatz0v_",
+									"name": "Directional",
+									"reference": "B47",
+									"notes": "Front",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mm9Rrkk8n0vb2On_K",
+									"name": "Flexible",
+									"reference": "B47",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mwXhQIONWTbVuQsa5",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Very Common Attack Form@",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mTXXYE1yyM1E5-0xf",
+									"name": "Semi-Ablative",
+									"reference": "B47",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "m3czna8Q3EZg2Flz0",
+									"name": "Can't wear armor",
+									"reference": "B47",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mIXMTMqSyQigucI4w",
+									"name": "Directional",
+									"reference": "B47",
+									"notes": "@Direction: Back, Right, Left, Top or Underside@",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mJutJejxTfBxRCgNX",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Common Attack Form@",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mQQFhwdfwNKaSZo9-",
+									"name": "Tough Skin",
+									"notes": "Effects that just require skin contact or a scratch ignore this DR",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mjmcmHi4rYV2GTqfa",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Occasional Attack Form@",
+									"cost": -60,
+									"disabled": true
+								},
+								{
+									"id": "mBNfEtWqXVii04U8o",
+									"name": "Ablative",
+									"reference": "B47",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "m1GyNatGd7pElhjXg",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Rare Attack Form@",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "mzsjFYDP2RH3Xmqgf",
+									"name": "Laminate",
+									"reference": "RSWL18",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mPw9fqH8eePK_SU66",
+									"name": "Malediction-Proof",
+									"reference": "PSI14",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mx0dFFcHtsRxbZoc3",
+									"name": "Maledictions Only",
+									"reference": "PSI14",
+									"disabled": true
+								},
+								{
+									"id": "mAVMD4EHvTQUYfbbz",
+									"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+									"reference": "B47",
+									"cost": -10
+								}
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"all"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye"
+									],
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 9
+							}
+						}
+					],
+					"calc": {
+						"points": 19
+					}
+				},
+				{
+					"id": "TiLST8cTtOxlmAuPB",
+					"name": "Spark Specialty",
+					"children": [
+						{
+							"id": "tKqrdPm6yVw-rANXZ",
+							"name": "Safe Casting",
+							"reference": "AP49",
+							"notes": "If you fail Will roll for being damaged while holding a Missile spell it doesn't detonate/affect you",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Chemistry"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tCSMWbNw4avKw8KNw",
+							"name": "Reactive Alchemy",
+							"reference": "AP49",
+							"notes": "You can craft potions during combat with the casting time converted from hours to seconds. However you roll at -4 and pay 10 times the material cost.",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Chemistry"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tdp4Fdus37J76BM-X",
+							"name": "Channeling Destruction (Area)",
+							"reference": "AP49",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Chemistry"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"usage": {
+										"compare": "is",
+										"qualifier": "Area"
+									},
+									"tags": {
+										"compare": "is",
+										"qualifier": "Spark"
+									},
+									"amount": 3
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tnUzBI2kVAWf_qmK8",
+							"name": "Channeling Destruction (Beam)",
+							"reference": "AP49",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Chemistry"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"usage": {
+										"compare": "is",
+										"qualifier": "Beam"
+									},
+									"tags": {
+										"compare": "is",
+										"qualifier": "Spark"
+									},
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tw9FqS4ke89MHBfbf",
+							"name": "Channeling Destruction (Projectile)",
+							"reference": "AP49",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Chemistry"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"usage": {
+										"compare": "is",
+										"qualifier": "Projectile"
+									},
+									"tags": {
+										"compare": "is",
+										"qualifier": "Spark"
+									},
+									"amount": 3
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 25
+					}
+				},
+				{
+					"id": "TEBju65F4fCRtByN7",
+					"name": "Force Specialty",
+					"children": [
+						{
+							"id": "tsenpegAXGe5OGFxH",
+							"name": "Curveball",
+							"reference": "AP49",
+							"notes": "The effects of the Redirection spell are always active and you",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Physics"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tXEwkBEQx_LtXyAsd",
+							"name": "Bounce Vectors",
+							"reference": "AP49",
+							"notes": "Whenever you collide with an object due to knockback you may convert half of the remaining knockback damage (round down) into a bounce. This bounce reduces the knockback damage you would have taken by the same amount and allows you to automatically move in a straight line the same number of hexes as you have \"bounced\". Your max bounce is 3.",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Physics"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 14
+										}
+									}
+								]
+							},
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "trda_RNy33KrggctD",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "twGsZPV8OE0NLFaXl"
+							},
+							"name": "Deflective Aura",
+							"reference": "AP49,B51,MA43",
+							"notes": "Your body emits a subtle but sufficiently strong force that slightly repulses objects. The force is just strong enough that it grants you +1 Dodge",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"points_per_level": 15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dodge",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 15
+							}
+						}
+					],
+					"calc": {
+						"points": 30
+					}
+				}
+			],
+			"calc": {
+				"points": 85
 			}
 		}
 	]

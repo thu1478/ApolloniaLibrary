@@ -1,0 +1,9522 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "pBSvJJ7tBZT6MWvNL",
+			"name": "Test Regular Attack",
+			"tags": [
+				"test"
+			],
+			"difficulty": "iq/h",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"weapons": [
+				{
+					"id": "W7mA50jj_dlv_ezYs",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Beam",
+					"range": "5/10",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pkVU9eEdqjtR71Icc",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pTbRYYb42lMkJTZZ9"
+			},
+			"name": "Melee Spell Test",
+			"reference": "M76",
+			"tags": [
+				"test"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Fire"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Melee",
+			"casting_cost": "1-3",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (fire)"
+								}
+							}
+						]
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "college",
+						"has": true,
+						"qualifier": {
+							"compare": "contains",
+							"qualifier": "Fire"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 5
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "heat"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "wz_XVmbzLa7uQR_gy",
+					"damage": {
+						"type": "+1d burn",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"damage": "thr-1 +1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pd6aqQTGS3b2VzC2S",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Meridian Strike",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Melee",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Chi Strike"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p8f2c9NTKhw-Ve90Z",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Thermoregulation",
+			"reference": "AP89",
+			"notes": "Circle: 0",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"casting_cost": "1",
+			"casting_time": "3 sec",
+			"duration": "8 hours",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pbqAJ0QNhQjvcwgp9",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Alternate Frequencies",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "prP1sBbGS3hoK-Vvv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Iron Skin",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Rock Solid"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pp3SmsC8Sn57gVHm7",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Antitoxin",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "3 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pHHgOt8daztY4SclG",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Hidden Strength",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "3 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "prsTB5CUySSZYEa72",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Apotheosis",
+			"reference": "AP89",
+			"notes": "Circle: 3",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "1 sec",
+			"duration": "3 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Crystallization"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Piercing Strikes"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pYy3QB4VV6pF-SKvr",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Hemorrhage",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Mending"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WDywtXyoBLoNLOeJ1",
+					"damage": {
+						"type": "",
+						"base": "0"
+					},
+					"usage": "Beam",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					]
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pdZrQCxr5b5bvblbk",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Awaken",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "3 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p47_g0IWZ8eoACXy8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Hardened Fists",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Hidden Strength"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Swiftness"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p1Zg8z_0fvbP-97QA",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Liberty",
+			"reference": "AP89",
+			"notes": "Circle: 3",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Stop"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p3q8xRcYEXOMB2pnQ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Freeze",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Melee",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pXE1CLm8JaSXzrUTk",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Manasight",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Charming Gaze"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p_U0bkBrLqRb5XZP3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Sleep",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Awaken"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "ptILTSqNrIzkK9cGm",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Adrenaline Rush",
+			"reference": "AP89",
+			"notes": "Circle: 3",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "5 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Crystallization"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pWjKdMoqebOtjyg3v",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Cellular Hyperflux",
+			"reference": "AP89",
+			"notes": "Circle: 3",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "5 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Rapid Regeneration"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p-Xdpmzk0mtai9osV",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Cerebral Amp",
+			"reference": "AP89",
+			"notes": "Circle: 3",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "5 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Cognitive Lock"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pjvXd71pJK66oYnlt",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Mending",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "1 minute",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sterilize"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pH61J9u8EFDOZ_uhN",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "All the Colors",
+			"reference": "AP89",
+			"notes": "Circle: 0",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "3 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p6ehM8nWCSbNhtxf1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Charming Gaze",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "1 sec",
+			"duration": "10 minutes",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "On Me"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pKVBdi9WkY04XrE-y",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Chi Strike",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Melee",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p1fTVvMJXP2w5AGNU",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Cleanliness",
+			"reference": "AP89",
+			"notes": "Circle: 0",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pP_LB6x0-V1kv3Xrt",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Cognitive Lock",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sleep"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "phxpRgSbFeZNxQ9C2",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Swiftness",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pITdHoFLUAgFQ2-Ec",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Crystallization",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Blocking",
+			"casting_cost": "3",
+			"casting_time": "0 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Iron Skin"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pPEAB31yLnzCOOKfl",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Immortal Function",
+			"reference": "AP89",
+			"notes": "Circle: 3",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "5 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Hemorrhage"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Vengeful Blood"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pkhBcBMxgh70UVEUd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Darkvision",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "2 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Charming Gaze"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pIyJ6ISKL_Tg4_NHV",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Stop",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Freeze"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pOTuBkmokZ15SEMq1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Sterilize",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pz6EJMcCPhYv9bvpP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "On Me",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pU-1oPeqwu-1bFMGK",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Piercing Strikes",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Hardened Fists"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pOeBkWW4wLheCJ2ho",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Poison Immunity",
+			"reference": "AP89",
+			"notes": "Circle: 3",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Antitoxin"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pdBaFYjsw6_4fa7-C",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Vengeful Blood",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Mending"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pMDShVXlGuZ17VXwb",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Rapid Regeneration",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "3 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Mending"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p-JnZxO_qjWtJq3l0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "All the Faces",
+			"reference": "AP89",
+			"notes": "Circle: 2",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "3",
+			"casting_time": "5 sec",
+			"duration": "4 hours",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "All the Colors"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pdqQ1gCfevFmdUzzv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Rock Solid",
+			"reference": "AP89",
+			"notes": "Circle: 1",
+			"tags": [
+				"Focus"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Focus"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pkgzUT0MeOEACGn71",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Kinetic Blast",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Propulsive Orb"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sudden Impact"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "Wc7IuxVGSRkW_R4Hl",
+					"damage": {
+						"type": "kb",
+						"base": "3d"
+					},
+					"usage": "Beam",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "3d kb"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "p6noCjFZxk5leUVhb",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Sudden Impact",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shove"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Thundercrack"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WXskBOFpxuyHxktNj",
+					"damage": {
+						"type": "2 cr damage and the target",
+						"base": "1d"
+					},
+					"usage": "Beam",
+					"range": "5/10",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "1d 2 cr damage and the target"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pAUyspuKxtPV_o_s1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Shove",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Throw"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pkcKeiGHyCCpsDQAM",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Redirection",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Speed Control"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pfxy2QwnX_kpojYr8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Thundercrack",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Blocking",
+			"casting_cost": "3",
+			"casting_time": "0 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Throw"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p8WRcQJnaLyQy4E2w",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Throw",
+			"reference": "AP83",
+			"notes": "Circle: 0",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pwdHi_CqtSZ42Wf2L",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Propulsive Orb",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shove"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Thundercrack"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "W_-0Kgtz3-V7LaEFo",
+					"damage": {
+						"type": "cr damage and does double knockback damage. If you hit a target whose move has been reduced to 0 but is not stunned, then this spell deals",
+						"base": "2d"
+					},
+					"usage": "Projectile",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total.",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "2d cr damage and does double knockback damage. If you hit a target whose move has been reduced to 0 but is not stunned, then this spell deals"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pjKYSi9ni_MWot0ry",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Stasis",
+			"reference": "AP83",
+			"notes": "Circle: 3",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "5",
+			"maintenance_cost": "3",
+			"casting_time": "3 sec",
+			"duration": "3 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shelter"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pn-FdrdLjffQRIRop",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Feather Fall",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Water Walk"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p_oiKyqWmxuwEXUfj",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Pocket Space",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pnkJHWhCEjcI-496J",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Planewarp",
+			"reference": "AP83",
+			"notes": "Circle: 3",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "5",
+			"maintenance_cost": "3",
+			"casting_time": "5 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Door"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Transport Gate"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Demiplane"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pPvxHf287kSBvZFuu",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Demiplane",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "5 sec",
+			"duration": "1 day",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Pocket Space"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pICdml5nqzHTbrSSx",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Deflection",
+			"reference": "AP83",
+			"notes": "Circle: 3",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "5",
+			"maintenance_cost": "3",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Redirection"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "W95JbsOAAMs08kYf7",
+					"damage": {
+						"type": "crushing damage with dropoff. Any who takes at least 1",
+						"base": "3d"
+					},
+					"usage": "Beam",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "3d crushing damage with dropoff. Any who takes at least 1"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pgaKN_S3O_Z_FDxfS",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Inertial Damping Zone",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Speed Control"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "py24XQkTlSwtMBG7V",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Silence",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pJ8rSfsAxDC3K-Uud",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Shelter",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Blocking",
+			"casting_cost": "4",
+			"casting_time": "0 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shove"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Thundercrack"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Speed Control"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pR7lzGGJKLFp6cL1Y",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Transport Gate",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "1 hour",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Pocket Space"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pAAscWB-m3_GgdciJ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Vector Tunnel",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Lift"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pzmE6VWotueR5WTk6",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Lift",
+			"reference": "AP83",
+			"notes": "Circle: 0",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pzp_hcabgYIht4BAi",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Gravity Well",
+			"reference": "AP83",
+			"notes": "Circle: 3",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "5 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Speed Control"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pESYbhZBwBSZgn1hI",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Vector Zone",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "0.5",
+			"maintenance_cost": "0.5",
+			"casting_time": " sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Vector Tunnel"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pMDMXtq7lVBut5ex-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Kinetic Wall",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Kinetic Pillar"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "phjiczou2ia2_M4Aa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Barrier Shield",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "2 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pX9DikzyJX9YO_g5g",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Speed Control",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Lift"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pHr365vAGAYZGtc4A",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Warp",
+			"reference": "AP83",
+			"notes": "Circle: 3",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "2 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Kinetic Blast"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pRqTi5vyR9iDbFL6m",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Kinetic Pillar",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p1dFoTBGprHOuyz9h",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Kinetic Dome",
+			"reference": "AP83",
+			"notes": "Circle: 3",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "5 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Kinetic Wall"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pmqbz4fF2ccOqx4eU",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Door",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "3",
+			"casting_time": "1 hour",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Pocket Space"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p3LRKJFdRagKxOHaN",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Water Walk",
+			"reference": "AP83",
+			"notes": "Circle: 1",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Lift"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pXVYwHZ7NFAqiL4t0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Pull",
+			"reference": "AP83",
+			"notes": "Circle: 2",
+			"tags": [
+				"Force"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Force"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shove"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Thundercrack"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pSKXWBk-EC50SlnD-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Self-Destruct",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Overload"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "Wou_ggPzKjO6Tn2jM",
+					"damage": {
+						"type": "burn damage in an explosion centered on itself with",
+						"base": "2d"
+					},
+					"usage": "Beam",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "2d burn damage in an explosion centered on itself with"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "p-eiQX9lMtOKjPka0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Outsourced Processing",
+			"reference": "AP68",
+			"notes": "Circle: 3",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Programming"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Drone Sense"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pC80ESkNKZLD7KmGc",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Amplifier Array",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sigil Array"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "prYSFhT5qSgukwSlU",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Intrusion Countermeasures",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Hacking"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Breach"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pOTH_VRde7symyv8g",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Trojan Horse",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "2 sec",
+			"duration": "3 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Hacking"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Intrusion Countermeasures"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "psWZbomWp6qOKFxE-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Breach",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Hacking"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Drone Sense"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Overload"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pdDuIglPmAMEEczWY",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Chain Virus",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "2 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Hacking"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Intrusion Countermeasures"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pgBAgEmSJCcWRYjm_",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Hijack",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Hacking"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Intrusion Countermeasures"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pklyWnmzPlhqOW7Ps",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Cybercloak",
+			"reference": "AP68",
+			"notes": "Circle: 1",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Hacking"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Drone Sense"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p0e-D5L_qzP7yFhl2",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Greater Sigil",
+			"reference": "AP68",
+			"notes": "Circle: 1",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sigil"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "prHIRQ5I0Jjxw_RUJ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Defense Array",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sigil Array"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pnztHM0vw1YiPs_CM",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Destructive Array",
+			"reference": "AP68",
+			"notes": "Circle: 3",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Defense Array"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "Wih_TY8PMWv84CTEl",
+					"damage": {
+						"type": "burn damage to any target",
+						"base": "1d"
+					},
+					"usage": "Area",
+					"calc": {
+						"damage": "1d burn damage to any target"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pySP51vUf6BiWEmoO",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Distribution Array",
+			"reference": "AP68",
+			"notes": "Circle: 3",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Amplifier Array"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Energy Drain"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pgO0XzBbO3dDRdDR3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Drone Sense",
+			"reference": "AP68",
+			"notes": "Circle: 1",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pVpCdG7FtCoppj2oU",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Sigil Array",
+			"reference": "AP68",
+			"notes": "Circle: 1",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Greater Sigil"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pUMtJd1ChBu1Awnq2",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Magnum Opus",
+			"reference": "AP68",
+			"notes": "Circle: 3",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "5 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Programming"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Opus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p89vCc32ZrgW5vdEO",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Mana Transfer",
+			"reference": "AP68",
+			"notes": "Circle: 0",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p40mFpObxwGWxPg8L",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Flick",
+			"reference": "AP68",
+			"notes": "Circle: 0",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pduHCuo4MufBGS6pf",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Mastery Sigil",
+			"reference": "AP68",
+			"notes": "Circle: 1",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Blocking",
+			"casting_cost": "2",
+			"casting_time": "0 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sigil Array"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pC9sz1qF1Fy70KJ7z",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Sigil",
+			"reference": "AP68",
+			"notes": "Circle: 0",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "prXMCj6j6JsiIJIdi",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Energy Drain",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "0",
+			"casting_time": "1 sec",
+			"duration": "1 second",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Mana Transfer"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p6YTZgbA1u1Ovj2Ij",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Query",
+			"reference": "AP68",
+			"notes": "Circle: 0",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pWiIkLmzI8Em7zaKx",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Overload",
+			"reference": "AP68",
+			"notes": "Circle: 1",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pJInakmxUp7WweExF",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Overclock",
+			"reference": "AP68",
+			"notes": "Circle: 2",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "2 sec",
+			"duration": "3 seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Computer Programming"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Self-Destruct"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pHG0ABfd4mw7DKnj3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Opus",
+			"reference": "AP68",
+			"notes": "Circle: 1",
+			"tags": [
+				"Sigil"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Sigil"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "1 hour",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrician"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pFWzep9GBzKx1hxtk",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Energy Deflection",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Blocking",
+			"casting_cost": "3",
+			"casting_time": "0 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flashbang"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pBP-nFSiqQt_GP13A",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Light Beam",
+			"reference": "AP76",
+			"notes": "Circle: 3",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flashbang"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WLhQsG27Bj-UtOIft",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Beam",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the range by 10/20 each, maxing out at 30/60 total.",
+					"range": "10/20",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pxhSu9XbtN_7wWvg8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Insulation Potion",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 hour",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pharmacy (Synthetic)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reagents"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p_0wZxJepQomUJCsk",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Flame Cyclone",
+			"reference": "AP76",
+			"notes": "Circle: 3",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "5 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Wall of Fire"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light Beam"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "W_V07r9BO4lyR-CYt",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Area",
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pze8xB6RGpPQ-Q6GE",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Flame Burst",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Ignite"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "W0hi_edKTyIHEFD1u",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Area",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional +2 each, maxing out at 1d+4 total.",
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pdBp6eV_6AEbqSlke",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Fire Jet",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Ignite"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "Wqfd-JHmWe0sIfFxi",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Beam",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional +2 each, maxing out at 1d+4 total.",
+					"range": "5/10",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pqHTXTGNQ-pUEnb4r",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Antitoxin Vial",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "3 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Poisons"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Poison Vial"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p1Y9xpCjdxw1fqSR7",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Poison Vial",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "2 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Poisons"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reagents"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WwnuEcwlLhCrgV2iw",
+					"damage": {
+						"type": "2 toxic damage when ingested. This will expire after",
+						"base": "1d"
+					},
+					"usage": "Beam",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "1d 2 toxic damage when ingested. This will expire after"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pFOlCN6NzX0T9IdHc",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Wall of Fire",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fire Jet"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flame Burst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flashbang"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "W4fa3ztWnY9gV-r-J",
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"usage": "Area",
+					"calc": {
+						"damage": "2d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pDjEScQl3qPftKOWS",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Arc Wave",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reagents"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Explosive Flame Orb"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flashbang"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WA_J4j9LzCDEsWLr3",
+					"damage": {
+						"type": "1 burn",
+						"base": "1d"
+					},
+					"usage": "Area",
+					"calc": {
+						"damage": "1d 1 burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "puR9ii22h7H1BSbXp",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Explosive Flask",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "3 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pharmacy (Synthetic)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WTDwDu6bq8aF4lc3y",
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"usage": "Beam",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "2d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "p7KPoGZds6mEOOjEN",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Explosive Flame Orb",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flame Orb"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flashbang"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WGwg5BpP-42uQRpfp",
+					"damage": {
+						"type": "burn damage with",
+						"base": "2d"
+					},
+					"usage": "Projectile",
+					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 2d each, maxing out at 6d total. You can continue casting the spell on subsequent turns for 2 more turns, but you will only gain +1 per base cost of mana invested instead of 1d. ",
+					"range": "10/20",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "2d burn damage with"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "prUI90BcniIAaCplM",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Nauseous Potion",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"casting_cost": "5",
+			"casting_time": "4 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Poisons"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pEvZ__I1bZoLFfRai",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Molotov Flask",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "2 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pharmacy (Synthetic)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reagents"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WehG29SZypOmLF5b6",
+					"damage": {
+						"type": "2 burn",
+						"base": "1d"
+					},
+					"usage": "Beam",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "1d 2 burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pcfMmDMjToZsdM9nc",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Flame Orb",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Ignite"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WFKLXSSuz9mmIS3IR",
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"usage": "Projectile",
+					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total. You can continue casting the spell on subsequent turns for 2 more turns, but you will only gain +1 per base cost of mana invested instead of 1d. ",
+					"range": "10/20",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "2d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pCgIvIiCCIT7CMelb",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Reagents",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pHwRj9CIXVxKehPhi",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Immolation",
+			"reference": "AP76",
+			"notes": "Circle: 3",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "0.5",
+			"casting_time": "3 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Explosive Flame Orb"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light Beam"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WA_VoYoXf1i934JHH",
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"usage": "Area",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total.",
+					"calc": {
+						"damage": "2d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "p4CZe-2b2x2K3Why0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Energy Absorption",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Blocking",
+			"casting_cost": "3",
+			"casting_time": "0 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flashbang"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pxz3FODbYkU-QivJB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Ignite",
+			"reference": "AP76",
+			"notes": "Circle: 0",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pg_kCN1m9jID6bsN4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Acid Splash",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Poisons"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reagents"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WugEQlb0aP1xrzIZW",
+					"damage": {
+						"type": "2 cor damage. It reduces DR by 1 if it deals at least 5",
+						"base": "1d"
+					},
+					"usage": "Beam",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional +2 each, maxing out at 1d+4 total.",
+					"range": "5/10",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "1d 2 cor damage. It reduces DR by 1 if it deals at least 5"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pD7P-Q9uuT-uzhvEk",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Ice Dagger",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WkzmzEQSv9CsIOr8b",
+					"damage": {
+						"type": "imp",
+						"base": "1d"
+					},
+					"usage": "Projectile",
+					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 3d total. You can continue casting the spell on subsequent turns for 2 more turns, but you will only gain +1 per base cost of mana invested instead of 1d. ",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "1d imp"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pqprI56rsQsUXJ-mF",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Toxic Cloud Flask",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "3 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Poisons"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Poison Vial"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p1LBmCuMRKi31R-Ig",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Electric Discharge",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Melee",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WMQaTpTcVAO7gKbTg",
+					"damage": {
+						"type": "+1d burn",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 3d total.",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"damage": "thr-1 +1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pS28oubCbAs47oJYh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Toxic Breath",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Poisons"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reagents"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "W8o2caHnayh6WP-yg",
+					"damage": {
+						"type": "3 toxic damage at the start of their next turn. If the breath is ignited then the HT roll is ignored, the damage type becomes burn, and the damage instead becomes 1d and is",
+						"base": "1d"
+					},
+					"usage": "Area",
+					"usage_notes": "You may multiply the base cost by an amount up to your Circle to deal an additional +2 damage",
+					"calc": {
+						"damage": "1d 3 toxic damage at the start of their next turn. If the breath is ignited then the HT roll is ignored, the damage type becomes burn, and the damage instead becomes 1d and is"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "ptVOoIKcwMwU3qdB2",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Drowsy Potion",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"casting_cost": "5",
+			"casting_time": "4 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pharmacy (Synthetic)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Stimulant Potion"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pPPodlZ4QVIP8ubHs",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Catalyst",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reagents"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pvj7LfmtD5uBb64_b",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Flashbang",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "3",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "W4Uwv8OMIsVkTKJsP",
+					"damage": {
+						"type": "",
+						"base": "0"
+					},
+					"usage": "Projectile",
+					"range": "10/20",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					]
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "paUMBNQ5iLZ0tDFsM",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Chain Lightning",
+			"reference": "AP76",
+			"notes": "Circle: 3",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "5",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Lightning"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light Beam"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "W_ezGwg7UxAy4-wKV",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Projectile",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 3d total. This also applies a -1 or -2 penalty to the HT check respectively.",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pY9Zklw1xqsy_XQ0E",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Lightning",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Electric Discharge"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flashbang"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "Wn3O8TliFdwTNZwwQ",
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"usage": "Projectile",
+					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total. You can continue casting the spell on subsequent turns for 2 more turns, but you will only gain +1 per base cost of mana invested instead of 1d. ",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "2d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "psSWnk3lnGG7e0PUI",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Flame Orb",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Ignite"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WXtygb4Vddpdmngkn",
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"usage": "Projectile",
+					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total. You can continue casting the spell on subsequent turns for 2 more turns, but you will only gain +1 per base cost of mana invested instead of 1d. ",
+					"range": "10/20",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "2d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pVodZRwW0fdCb51Lb",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Test Regular Utility",
+			"reference": "M24",
+			"tags": [
+				"test"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "3",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pJ4bsIF3_qvtjZvwi",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Light",
+			"reference": "AP76",
+			"notes": "Circle: 0",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "3",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pA895RQNGSFWNDuNF",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Freezing Flask",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "3 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pharmacy (Synthetic)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pwfaYRSt3zMDWExA3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Sterilizing Flask",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "5",
+			"casting_time": "1 hour",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pharmacy (Synthetic)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pm-FTGUzb6zGEunHy",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Stimulant Potion",
+			"reference": "AP76",
+			"notes": "Circle: 1",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 hour",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pharmacy (Synthetic)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reagents"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pBjg_8K-2MazLDPrB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Deadly Poison Vial",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"casting_time": "3 hours",
+			"duration": "1 week",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Poisons"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Poison Vial"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WCZVNyTm3_gKL-pmH",
+					"damage": {
+						"type": "toxic damage 1 minute after ingested. This will expire after",
+						"base": "3d"
+					},
+					"usage": "Beam",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "3d toxic damage 1 minute after ingested. This will expire after"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "plNbuoJWf0RmRzqIf",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Ice Blast",
+			"reference": "AP76",
+			"notes": "Circle: 3",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "4",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Ice Dagger"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light Beam"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "Wsv_9Cv1HZuHlCIGs",
+					"damage": {
+						"type": "imp damage with",
+						"base": "2d"
+					},
+					"usage": "Projectile",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total.",
+					"range": "10/20",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "2d imp damage with"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pKtPoLcbyl7BBFKU3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Test Missile Attack",
+			"reference": "M24",
+			"tags": [
+				"test"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "2-2xCircle#",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "contains",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WaU9do6k9sesCj6Ns",
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"usage": "Projectile",
+					"range": "10/20",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "2d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pWoPxpg_GHQwZfVvL",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Creeping Ice",
+			"reference": "AP76",
+			"notes": "Circle: 2",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Catalyst"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "ps1NlqJ6Semegl6ZL",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Test Area Attack",
+			"reference": "M75",
+			"notes": "notes go here",
+			"tags": [
+				"test"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "5 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Wall of Fire"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light Beam"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "wfUehJhOBL3KtO3yX",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Area",
+					"usage_notes": "energy notes go here",
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pQsrPuxd9x0cttNBr",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Traceless",
+			"reference": "AP73",
+			"notes": "Circle: 2",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pUxYBE5Xh1hlo8ydh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Disrupt",
+			"reference": "AP73",
+			"notes": "Circle: 1",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sheathbound"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pMfqRGR6Timrf9-6j",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Severing Enchantment",
+			"reference": "AP73",
+			"notes": "Circle: 1",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p5XP-OthWFMrQepEZ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Seeking Enchantment",
+			"reference": "AP73",
+			"notes": "Circle: 2",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p_imK7ogjvwr1rvb9",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Flaming Weapon",
+			"reference": "AP73",
+			"notes": "Circle: 2",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pbOnvHcJ4BhFh0MZ3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Burst Form",
+			"reference": "AP73",
+			"notes": "Circle: 3",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Wave Form"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pjK9XKHNCqmhP9c7d",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Shocking Weapon",
+			"reference": "AP73",
+			"notes": "Circle: 2",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "2 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p_bEaxOXhyOAtzxWu",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Sheathbound",
+			"reference": "AP73",
+			"notes": "Circle: 0",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "p9x9HqL31yqzq0ZHm",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Wave Form",
+			"reference": "AP73",
+			"notes": "Circle: 2",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pfT55LZoZkqnUWa0B",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Harden",
+			"reference": "AP73",
+			"notes": "Circle: 1",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Body armor)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pBHF0gFKDzKKY13nG",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Luminescence",
+			"reference": "AP73",
+			"notes": "Circle: 0",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pyK6NRKBc1MeDvD_p",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Blade Turn",
+			"reference": "AP73",
+			"notes": "Circle: 2",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Blocking",
+			"casting_cost": "3",
+			"casting_time": "0 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Disrupt"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pzAy-bFyHWx6e4G0L",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Beam Form",
+			"reference": "AP73",
+			"notes": "Circle: 3",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Wave Form"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pyIbnu53UHAsnyVZy",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Power Enchantment",
+			"reference": "AP73",
+			"notes": "Circle: 1",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pziGSPEcqQk1ZzoUJ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Polish",
+			"reference": "AP73",
+			"notes": "Circle: 0",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "potprQ0Ea25saJUK9",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Extending Enchantment",
+			"reference": "AP73",
+			"notes": "Circle: 1",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "peEFdQ4MgyJjyTQnO",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Nova Form",
+			"reference": "AP73",
+			"notes": "Circle: 3",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Any weapon)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Wave Form"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
+			"id": "pzK9g7xtpVu5Pn9bv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Sunder",
+			"reference": "AP73",
+			"notes": "Circle: 2",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Trace"
+			],
+			"power_source": "Mana",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"casting_time": "3 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury (Body armor)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Harden"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"points": 1
+		}
+	]
+}

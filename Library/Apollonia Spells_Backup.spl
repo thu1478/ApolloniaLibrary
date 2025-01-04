@@ -1,0 +1,462 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "p9Ws43Tx7fSDOV3A-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pMuBa-2JN88sERUZI"
+			},
+			"name": "Flame Cyclone",
+			"reference": "M75",
+			"notes": "notes go here",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/vh",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "5 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Wall of Fire"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light Beam"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "wbN55rbRVq98itUrJ",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Area",
+					"usage_notes": "energy notes go here",
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "p8qXgYfeT6IRiXEDH",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Apollonia\\Library\\Apollonia Spells.spl",
+				"id": "piGszayfPJAWEI1i_"
+			},
+			"name": "Flame Burst",
+			"difficulty": "iq/h",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"weapons": [
+				{
+					"id": "WlQ5ihfG5P3MhxdEi",
+					"damage": {
+						"type": "cr",
+						"base": "1d"
+					},
+					"usage": "test",
+					"rate_of_fire": "1",
+					"calc": {
+						"damage": "1d cr"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pb5e1yoG6AiUWFSNj",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Apollonia\\Library\\Apollonia Spells.spl",
+				"id": "pXivxqxqh--ZzrhPy"
+			},
+			"name": "Electric Discharge",
+			"difficulty": "iq/h",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"weapons": [
+				{
+					"id": "WIt3c2U_G49uFHV40",
+					"damage": {
+						"type": "cr",
+						"base": "1d"
+					},
+					"usage": "test",
+					"rate_of_fire": "1",
+					"calc": {
+						"damage": "1d cr"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pIkUaaAhisxs7YUT6",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Apollonia\\Library\\Apollonia Spells.spl",
+				"id": "pHDQl2mpGFWh2tnSG"
+			},
+			"name": "Light Beam",
+			"difficulty": "iq/h",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"weapons": [
+				{
+					"id": "WvUmZHwQBahLpIsUh",
+					"damage": {
+						"type": "cr",
+						"base": "1d"
+					},
+					"usage": "test",
+					"rate_of_fire": "1",
+					"calc": {
+						"damage": "1d cr"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pOXh90re7TG5O7ZO7",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Flame Orb",
+			"reference": "M24",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "2-2xCircle#",
+			"casting_time": "1 sec",
+			"duration": "1 minute",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Light"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "contains",
+							"qualifier": "Chemistry"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "Wxrn1WbE1LcCkW2as",
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"usage": "Projectile",
+					"range": "10/20",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						}
+					],
+					"calc": {
+						"damage": "2d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "p7QAS6sgs1V_D83cc",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "p2pr-NTv1xNJ4pcXC"
+			},
+			"name": "Light",
+			"reference": "M24",
+			"tags": [
+				"Spark"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Spark"
+			],
+			"power_source": "Mana",
+			"spell_class": "Missile",
+			"casting_cost": "3",
+			"maintenance_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Permanent",
+			"points": 1
+		},
+		{
+			"id": "pscc7QCyeSSh6IIL-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic\\Magic Spells.spl",
+				"id": "pTbRYYb42lMkJTZZ9"
+			},
+			"name": "Melee Spell Test",
+			"reference": "M76",
+			"tags": [
+				"Fire"
+			],
+			"difficulty": "iq/h",
+			"college": [
+				"Fire"
+			],
+			"power_source": "Arcane",
+			"spell_class": "Melee",
+			"casting_cost": "1-3",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (fire)"
+								}
+							}
+						]
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "college",
+						"has": true,
+						"qualifier": {
+							"compare": "contains",
+							"qualifier": "Fire"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 5
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"sub_type": "name",
+						"has": true,
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "heat"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "w4erT7ygHF53D-vwu",
+					"damage": {
+						"type": "+1d burn",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"damage": "thr-1 +1d burn"
+					}
+				}
+			],
+			"points": 1
+		},
+		{
+			"id": "pAuYqo3HvPfUHxm0G",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Apollonia\\Library\\Apollonia Spells.spl",
+				"id": "pBSvJJ7tBZT6MWvNL"
+			},
+			"name": "Test Regular Attack",
+			"difficulty": "iq/h",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"weapons": [
+				{
+					"id": "WybI9LPBi_v7Fn8a3",
+					"damage": {
+						"type": "burn",
+						"base": "1d"
+					},
+					"usage": "Beam",
+					"range": "5/10",
+					"rate_of_fire": "1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Innate Attack",
+							"specialization": "Beam"
+						}
+					],
+					"calc": {
+						"damage": "1d burn"
+					}
+				}
+			],
+			"points": 1
+		}
+	]
+}
