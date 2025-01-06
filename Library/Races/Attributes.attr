@@ -250,6 +250,30 @@
 					"explanation": "We are full on mana"
 				}
 			]
+		},
+		{
+			"id": "tally",
+			"type": "pool",
+			"name": "tally",
+			"full_name": "Remaining Tally",
+			"attribute_base": "0",
+			"thresholds": [
+				{
+					"state": "Dark",
+					"expression": "0",
+					"explanation": "Threshold reached"
+				},
+				{
+					"state": "Opaque",
+					"expression": "$tally-1",
+					"explanation": "Some tally accumulated"
+				},
+				{
+					"state": "Clear",
+					"expression": "30",
+					"explanation": "No tally accumulated"
+				}
+			]
 		}
 	]
 }

@@ -1891,6 +1891,13 @@
 			"calc": {
 				"points": 85
 			}
+		},
+		{
+			"id": "TtBuvzCsEQctFGbeo",
+			"name": "Star Catalogue",
+			"calc": {
+				"points": 0
+			}
 		}
 	]
 }
