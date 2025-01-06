@@ -7797,103 +7797,6 @@
 			"points": 1
 		},
 		{
-			"id": "psSWnk3lnGG7e0PUI",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "pMuBa-2JN88sERUZI"
-			},
-			"name": "Flame Orb",
-			"reference": "AP76",
-			"notes": "Circle: 1",
-			"tags": [
-				"Spark"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Spark"
-			],
-			"power_source": "Mana",
-			"spell_class": "Missile",
-			"casting_cost": "2",
-			"casting_time": "1 sec",
-			"duration": "1 minute",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Chemistry"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is",
-							"qualifier": "Light"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is",
-							"qualifier": "Ignite"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					}
-				]
-			},
-			"weapons": [
-				{
-					"id": "WC_fKtNowep4FgjHu",
-					"damage": {
-						"type": "burn",
-						"base": "2d"
-					},
-					"usage": "Projectile",
-					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total. You can continue casting the spell on subsequent turns for 2 more turns, but you will only gain +1 per base cost of mana invested instead of 1d. ",
-					"accuracy": "3",
-					"range": "10/20",
-					"rate_of_fire": "1",
-					"recoil": "1",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Innate Attack",
-							"specialization": "Projectile"
-						}
-					],
-					"calc": {
-						"damage": "2d burn"
-					}
-				}
-			],
-			"points": 1
-		},
-		{
 			"id": "p_0wZxJepQomUJCsk",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -11216,7 +11119,7 @@
 			"duration": "1 minute",
 			"weapons": [
 				{
-					"id": "WZg2xgdX6AsBJiZvr",
+					"id": "WSZcQWJphdT3Dwshc",
 					"damage": {
 						"type": "imp",
 						"base": "1d",
@@ -11224,7 +11127,10 @@
 					},
 					"usage": "Projectile",
 					"usage_notes": "You may multiple the base cost by some amount to multiply the maximum number of credits spendable. Every $100 credits spent total creates a bolt. The RoF is equal to the number of bolts created. ",
+					"accuracy": "3",
 					"range": "10/20",
+					"rate_of_fire": "1",
+					"recoil": "1",
 					"defaults": [
 						{
 							"type": "dx",
