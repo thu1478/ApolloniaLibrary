@@ -4002,6 +4002,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "ffqBjnaDmKYb1Dfrv",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 80,
@@ -4151,6 +4170,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fRZrXM0wywqhdUINv",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 20,
@@ -4168,14 +4206,14 @@
 					"reference": "B273",
 					"tech_level": "0",
 					"tags": [
-						"Melee Weapon",
-						"Magic Tool"
+						"Magic Tool",
+						"Melee Weapon"
 					],
 					"value": 40,
 					"weight": "1 lb",
 					"weapons": [
 						{
-							"id": "wlPUrCHNb_qMDt3bt",
+							"id": "wECeWmzEGsoUkXHnl",
 							"damage": {
 								"type": "cr",
 								"st": "sw",
@@ -4238,11 +4276,11 @@
 							}
 						},
 						{
-							"id": "wHizs8BTcygbfpBcI",
+							"id": "wqx9xaTlzhMTALvja",
 							"damage": {
 								"type": "cr",
 								"st": "thr",
-								"base": "0"
+								"base": "-2"
 							},
 							"strength": "6",
 							"usage": "Thrust",
@@ -4297,7 +4335,7 @@
 								}
 							],
 							"calc": {
-								"damage": "thr cr"
+								"damage": "thr-2 cr"
 							}
 						}
 					],
@@ -4441,6 +4479,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fvQLkGFveZ7m3_Oqz",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 30,
@@ -4575,6 +4632,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fRDWLUJQf0FL8ZTQA",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 40,
@@ -4663,6 +4739,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fy-YMoW6UczdGskJG",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 60,
@@ -4749,6 +4844,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "frcJshQwpPThGZDsq",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 40,
@@ -4766,18 +4880,18 @@
 					"reference": "B273",
 					"tech_level": "0",
 					"tags": [
-						"Melee Weapon",
-						"Magic Tool"
+						"Magic Tool",
+						"Melee Weapon"
 					],
 					"value": 50,
 					"weight": "4 lb",
 					"weapons": [
 						{
-							"id": "wJtcbpwpCxzutE6AN",
+							"id": "wNN0jFkaIv6jCQji-",
 							"damage": {
 								"type": "cr",
 								"st": "sw",
-								"base": "2"
+								"base": "1"
 							},
 							"strength": "7†",
 							"usage": "Swung",
@@ -4805,15 +4919,15 @@
 								}
 							],
 							"calc": {
-								"damage": "sw+2 cr"
+								"damage": "sw+1 cr"
 							}
 						},
 						{
-							"id": "wtzWh6GXKqf-qkVcV",
+							"id": "wIPIGtOu3W_debBfN",
 							"damage": {
 								"type": "cr",
 								"st": "thr",
-								"base": "2"
+								"base": "1"
 							},
 							"strength": "7†",
 							"usage": "Thrust",
@@ -4841,15 +4955,15 @@
 								}
 							],
 							"calc": {
-								"damage": "thr+2 cr"
+								"damage": "thr+1 cr"
 							}
 						},
 						{
-							"id": "wY3I6-0-eTgulH60u",
+							"id": "wZBqlr9fD7vv5Diay",
 							"damage": {
 								"type": "cr",
 								"st": "sw",
-								"base": "2"
+								"base": "1"
 							},
 							"strength": "9†",
 							"usage": "Swung",
@@ -4881,15 +4995,15 @@
 								}
 							],
 							"calc": {
-								"damage": "sw+2 cr"
+								"damage": "sw+1 cr"
 							}
 						},
 						{
-							"id": "wrTpszOCC5ats3BGu",
+							"id": "wza7piSwritmDiuft",
 							"damage": {
 								"type": "cr",
 								"st": "thr",
-								"base": "1"
+								"base": "0"
 							},
 							"strength": "9†",
 							"usage": "Thrust",
@@ -4921,7 +5035,7 @@
 								}
 							],
 							"calc": {
-								"damage": "thr+1 cr"
+								"damage": "thr cr"
 							}
 						}
 					],
@@ -5100,6 +5214,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fjN1qYlM8DX79Aelq",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 10,
@@ -5238,6 +5371,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fi5TXFYENenoV8pG-",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 40,
@@ -5369,6 +5521,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "f5dZ5JfiAK2WRdrZp",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 5,
@@ -5430,6 +5601,25 @@
 							"calc": {
 								"damage": "sw+3 cut"
 							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fLJsyqMPrX3fm8Cl1",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
 						}
 					],
 					"quantity": 1,
@@ -5532,6 +5722,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fuJ7G5zucTV65qn4W",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 30,
@@ -5583,6 +5792,25 @@
 							"calc": {
 								"damage": "thr cr"
 							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "ftS69VJdSI4h7w1eu",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
 						}
 					],
 					"quantity": 1,
@@ -5688,6 +5916,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fi0CKDNSKDCqpe0Yw",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 100,
@@ -5773,6 +6020,25 @@
 							"calc": {
 								"damage": "sw+3 cr"
 							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fbIr9i4KPvMgi-L9M",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
 						}
 					],
 					"quantity": 1,
@@ -5906,6 +6172,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fhmCQJsVfiJwBLfJp",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 600,
@@ -5992,6 +6277,25 @@
 							"calc": {
 								"damage": "sw+2 cr"
 							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fTn-5WqbOWcHrekcN",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
 						}
 					],
 					"quantity": 1,
@@ -6135,6 +6439,25 @@
 							"calc": {
 								"damage": "thr+3 imp"
 							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fxPQFChXBxqbIw831",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
 						}
 					],
 					"quantity": 1,
@@ -6350,6 +6673,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fC0MM1HjQWc_rgBc2",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 650,
@@ -6451,6 +6793,25 @@
 							}
 						}
 					],
+					"modifiers": [
+						{
+							"id": "fbe4fE2UqPc01ee9y",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
 					"quantity": 1,
 					"calc": {
 						"extended_value": 900,
@@ -6521,6 +6882,25 @@
 							"calc": {
 								"damage": "thr+1 imp"
 							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fCNqFn4zsXZtHS79z",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
 						}
 					],
 					"quantity": 1,

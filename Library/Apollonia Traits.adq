@@ -1325,7 +1325,7 @@
 							"id": "tX9bc3Y3BCLfvZvXE",
 							"name": "Weapon Loyalty",
 							"reference": "AP48",
-							"notes": "Choose one of your weapons. It becomes loyal to you and always returns to your hand at the start of your turn, avoiding obstacles.",
+							"notes": "Choose one of your weapons. It becomes loyal to you and always returns to your hand at the start of your turn, avoiding obstacles. You may choose to have it instead not return to your hand and you can spend a Ready maneuver to swap places with your weapon.",
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,

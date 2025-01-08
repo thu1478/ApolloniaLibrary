@@ -1474,6 +1474,19 @@
 			"points": 1
 		},
 		{
+			"id": "spdUP_VQ1WFDBlGW0",
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"specialization": "One-Handed Melee Weapon",
+			"difficulty": "dx/e",
+			"points": 1
+		},
+		{
 			"id": "slFkOhWAAPF7DTJRe",
 			"name": "Fast-Draw",
 			"reference": "B194,MA56",
@@ -1487,19 +1500,6 @@
 			"points": 1
 		},
 		{
-			"id": "spdUP_VQ1WFDBlGW0",
-			"name": "Fast-Draw",
-			"reference": "B194,MA56",
-			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Weapon"
-			],
-			"specialization": "Sword",
-			"difficulty": "dx/e",
-			"points": 1
-		},
-		{
 			"id": "sEMKLr_IOimbwGaDI",
 			"name": "Fast-Draw",
 			"reference": "B194,MA56",
@@ -1508,7 +1508,7 @@
 				"Melee Combat",
 				"Weapon"
 			],
-			"specialization": "Two-Handed Sword",
+			"specialization": "Two-Handed Melee Weapon",
 			"difficulty": "dx/e",
 			"points": 1
 		},
@@ -3122,6 +3122,49 @@
 			"points": 1
 		},
 		{
+			"id": "qy9zSJzc0SstLKxmH",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Riposte",
+			"reference": "B232,MA81",
+			"notes": "Perform a complex parry to cause your attacker to have -1 to any defense rolls against your attacks for 1 turn. The attacker's penalty can stack.",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "parry",
+				"name": "Rapier",
+				"modifier": -3
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
 			"id": "qy4nMTIq-oYwVR_Sn",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3634,6 +3677,92 @@
 				}
 			],
 			"points": 1
+		},
+		{
+			"id": "qegCaqQ-H6ZDXVf0e",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Smash",
+			"reference": "B232,MA81",
+			"notes": "Costs 2 FP. Increase armor divisor by one level.",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Axe/Mace",
+				"modifier": -4
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qnopHw2jZOWx8a1qe",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Smash",
+			"reference": "B232,MA81",
+			"notes": "Costs 2 FP. Increase armor divisor by one level.",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Two-handed Axe/Mace",
+				"modifier": -4
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
 		},
 		{
 			"id": "sGZIS74r72pQZ7Ayv",
@@ -4217,6 +4346,24 @@
 				"modifier": -3
 			},
 			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
 			"points": 2
 		},
 		{
@@ -4241,6 +4388,24 @@
 				"modifier": -3
 			},
 			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
 			"points": 2
 		},
 		{
@@ -4265,6 +4430,24 @@
 				"modifier": -3
 			},
 			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
 			"points": 2
 		},
 		{
@@ -4313,6 +4496,92 @@
 				"modifier": -3
 			},
 			"limit": 0,
+			"points": 2
+		},
+		{
+			"id": "qb2sDV2bdhSCYIj-Y",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Swift Strike",
+			"reference": "B232,MA81",
+			"notes": "You may use this technique instead of Fast-Draw. Quickly draw your weapon and strike immediately, imposing a -1 penalty to your targets defense roll",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Knife",
+				"modifier": -3
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "quY-BpK7_1ngZ9qlU",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Swift Strike",
+			"reference": "B232,MA81",
+			"notes": "You may use this technique instead of Fast-Draw. Quickly draw your weapon and strike immediately, imposing a -1 penalty to your targets defense roll",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Smallsword",
+				"modifier": -3
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
 			"points": 2
 		},
 		{
@@ -4615,6 +4884,44 @@
 			"points": 1
 		},
 		{
+			"id": "shBnrO68X6i_yxb2b",
+			"name": "Weapon Artes",
+			"reference": "AP74",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "sz9InzQH7W3HZg2lr",
+			"name": "Advanced Artes",
+			"reference": "AP75",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/vh",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
 			"id": "q8HBfGfPuTH9gFX8L",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4660,6 +4967,24 @@
 				"modifier": -5
 			},
 			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
 			"points": 2
 		},
 		{
@@ -4708,6 +5033,24 @@
 				"modifier": -5
 			},
 			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
 			"points": 2
 		},
 		{
@@ -4732,6 +5075,110 @@
 				"modifier": -5
 			},
 			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qa0uBq4og0sp0eH52",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Wide Cut",
+			"reference": "B232,MA81",
+			"notes": "Costs 2 FP. Your attack hits an additional adjacent target in reach. Until the start of your next turn your defense rolls have a -1 penalty",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Broadsword",
+				"modifier": -5
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qv4p8YWrpKmoPPZED",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Wide Cut",
+			"reference": "B232,MA81",
+			"notes": "Costs 2 FP. Your attack hits an additional adjacent target in reach. Until the start of your next turn your defense rolls have a -1 penalty",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Two-handed Sword",
+				"modifier": -5
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
 			"points": 2
 		},
 		{
