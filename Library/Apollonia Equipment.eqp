@@ -3962,7 +3962,7 @@
 					"weight": "12 lb",
 					"weapons": [
 						{
-							"id": "wVjmZr6g3NoLZMc6g",
+							"id": "wtlHihR8eaYuKAule",
 							"damage": {
 								"type": "cr",
 								"st": "sw",
@@ -4004,7 +4004,7 @@
 					],
 					"modifiers": [
 						{
-							"id": "ffqBjnaDmKYb1Dfrv",
+							"id": "f7h8L2RL4hqwLG7EP",
 							"name": "Armor Divisor 2",
 							"features": [
 								{
@@ -6958,6 +6958,41 @@
 					}
 				},
 				{
+					"id": "EFoOFpTa4U2TuCbER",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "EwSOT_Sl-CS9v-TgB"
+					},
+					"description": "Purse",
+					"reference": "B288",
+					"tech_level": "1",
+					"tags": [
+						"Storage"
+					],
+					"value": 30,
+					"weight": "6 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "15 lb"
+								}
+							}
+						]
+					},
+					"quantity": 1,
+					"calc": {
+						"extended_value": 30,
+						"extended_weight": "6 lb"
+					}
+				},
+				{
 					"id": "Ej1ou9iQCWB1I49AU",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -7048,8 +7083,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": 1310,
-				"extended_weight": "50.5 lb"
+				"extended_value": 1340,
+				"extended_weight": "56.5 lb"
 			}
 		},
 		{
@@ -7608,7 +7643,7 @@
 		},
 		{
 			"id": "evO-SoTYZ3-wjVHed",
-			"description": "Ammo",
+			"description": "Filled Magazine",
 			"legality_class": "4",
 			"tags": [
 				"Resource"
@@ -7620,6 +7655,339 @@
 			"calc": {
 				"extended_value": 20,
 				"extended_weight": "1 lb"
+			}
+		},
+		{
+			"id": "Ekq6NIoLptQif352v",
+			"description": "Vehicles",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eIPK2Uc3yOmTN5YoM",
+					"description": "BS Wrench",
+					"notes": "Bicycle",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 250,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 250,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eyxmotEx2p6RxT13w",
+					"description": "Imperial Dart",
+					"notes": "Bicycle",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 150,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 150,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eJ2KWE9-rUPsBX6Vc",
+					"description": "BS Anvil",
+					"notes": "Moped",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 1000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 1000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e1ARqz2NoxnZriog8",
+					"description": "Imperial Falcon",
+					"notes": "Moped",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 1400,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 1400,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eL6E2m0B4wXaKg1cr",
+					"description": "BS Grinder",
+					"notes": "Motorcycle",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 3000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 3000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eXt3R2jGvB5w5CWWU",
+					"description": "Imperial Cutlass",
+					"notes": "Motorcycle",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 5000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 5000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "esZEjU5KTYPD6PTpV",
+					"description": "BS Forge",
+					"notes": "Sedan",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 28000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 28000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eIthUj-Q_tR3x0Y5i",
+					"description": "Imperial Racer",
+					"notes": "Sedan",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 20000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 20000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eKDrUPX6Fd91y6hon",
+					"description": "BS Crowbar",
+					"notes": "SUV",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 42000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 42000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ez85NwRG92yd1ARWT",
+					"description": "Imperial Pike",
+					"notes": "SUV",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 48000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 48000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ezeehlls0nlyUJdin",
+					"description": "BS Welder",
+					"notes": "Jeep",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 30000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 30000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eIwsq-6J2_NdkNFod",
+					"description": "Imperial Juggernaut",
+					"notes": "Jeep",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 36000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 36000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "epTqGM58JT4Y2g5yk",
+					"description": "BS Crank",
+					"notes": "Pickup Truck",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 45000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 45000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eN6mtnGP9p7EGPkXp",
+					"description": "Imperial Catapult",
+					"notes": "Pickup Truck",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 38000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 38000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eWEjs8T0_HygGM0FB",
+					"description": "BS Drill",
+					"notes": "Sports Car",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 72000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 72000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eUx5orzlaRHwYDJeT",
+					"description": "Imperial Sabre",
+					"notes": "Sports Car",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 68000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 68000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eeBKJmIrn5mUvAE2t",
+					"description": "BS Whetstone",
+					"notes": "Luxury Car",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 141000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 141000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eghnBRmXDpEuAlc1N",
+					"description": "Imperial Scythe",
+					"notes": "Luxury Car",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 139000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 139000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ekCvHHkSYzmo0CP1m",
+					"description": "BS Lance",
+					"notes": "APC",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 150000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 150000,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ee9jU2W9OvSFwSu7_",
+					"description": "Imperial Lance",
+					"notes": "HMV/APC",
+					"legality_class": "4",
+					"tags": [
+						"Vehicle"
+					],
+					"value": 120000,
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 120000,
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"extended_value": 987800,
+				"extended_weight": "0 lb"
 			}
 		},
 		{

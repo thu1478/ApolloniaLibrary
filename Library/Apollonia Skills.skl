@@ -76,6 +76,34 @@
 			"points": 1
 		},
 		{
+			"id": "sz9InzQH7W3HZg2lr",
+			"name": "Advanced Artes",
+			"reference": "AP75",
+			"tags": [
+				"Trace"
+			],
+			"difficulty": "iq/vh",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 1
+		},
+		{
 			"id": "sQ9Hv-SvAISrf1vW8",
 			"name": "Animal Handling",
 			"reference": "B175",
@@ -2920,40 +2948,6 @@
 			"points": 1
 		},
 		{
-			"id": "sPfyz7_V73fxlVXOS",
-			"name": "Physiology",
-			"reference": "B213",
-			"tags": [
-				"Medical",
-				"Natural Science"
-			],
-			"specialization": "@Specialty@",
-			"difficulty": "iq/h",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Diagnosis",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Physician",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Surgery",
-					"modifier": -5
-				}
-			],
-			"tech_level": "",
-			"points": 1
-		},
-		{
 			"id": "ss81pfyKeFBFEpPw2",
 			"name": "Pickpocket",
 			"reference": "B213",
@@ -4891,34 +4885,6 @@
 				"Trace"
 			],
 			"difficulty": "iq/h",
-			"points": 1
-		},
-		{
-			"id": "sz9InzQH7W3HZg2lr",
-			"name": "Advanced Artes",
-			"reference": "AP75",
-			"tags": [
-				"Trace"
-			],
-			"difficulty": "iq/vh",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Weapon Artes"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 12
-						}
-					}
-				]
-			},
 			"points": 1
 		},
 		{

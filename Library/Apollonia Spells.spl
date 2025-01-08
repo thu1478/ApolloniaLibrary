@@ -594,18 +594,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -702,18 +690,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -935,18 +911,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -1212,18 +1176,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -1501,18 +1453,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -1665,18 +1605,6 @@
 							"compare": "at_least",
 							"qualifier": 10
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -1755,7 +1683,7 @@
 				"Focus"
 			],
 			"power_source": "Mana",
-			"spell_class": "Regular",
+			"spell_class": "Melee",
 			"casting_cost": "2",
 			"casting_time": "1 sec",
 			"duration": "Instant",
@@ -1792,24 +1720,17 @@
 			},
 			"weapons": [
 				{
-					"id": "WDywtXyoBLoNLOeJ1",
+					"id": "wZdGBe1j08AXFtQUs",
 					"damage": {
-						"type": "",
-						"base": "0"
+						"type": "pi+",
+						"base": "1d"
 					},
-					"usage": "Beam",
-					"rate_of_fire": "1",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Innate Attack",
-							"specialization": "Beam"
-						}
-					]
+					"usage": "Thrust",
+					"usage_notes": "Touch a creature's bare skin. They must succeed a HT-2 roll or take 1d pi+ damage as blood inside their body near the surface crystallizes and expands.",
+					"reach": "C",
+					"calc": {
+						"damage": "1d pi+"
+					}
 				}
 			],
 			"points": 1
@@ -2032,18 +1953,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -2086,18 +1995,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -2138,18 +2035,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 10
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -2248,18 +2133,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -2300,18 +2173,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 10
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -2410,18 +2271,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -2838,18 +2687,6 @@
 							"compare": "at_least",
 							"qualifier": 14
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -3168,18 +3005,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -3221,18 +3046,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -3276,18 +3089,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 10
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -3580,18 +3381,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -3633,18 +3422,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 10
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -4558,18 +4335,6 @@
 							"compare": "at_least",
 							"qualifier": 10
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -4861,18 +4626,6 @@
 							"compare": "at_least",
 							"qualifier": 10
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -4994,18 +4747,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 10
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -5215,18 +4956,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -5323,18 +5052,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 10
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -5722,18 +5439,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -6414,18 +6119,6 @@
 							"compare": "at_least",
 							"qualifier": 10
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -6848,18 +6541,6 @@
 							"compare": "at_least",
 							"qualifier": 10
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -7081,18 +6762,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -8888,18 +8557,6 @@
 							"compare": "at_least",
 							"qualifier": 10
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -8943,18 +8600,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -8997,18 +8642,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 14
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -9108,18 +8741,6 @@
 							"compare": "at_least",
 							"qualifier": 14
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -9162,18 +8783,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -9218,18 +8827,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -9273,18 +8870,6 @@
 							"compare": "at_least",
 							"qualifier": 14
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -9327,18 +8912,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 14
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -9437,18 +9010,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -9657,18 +9218,6 @@
 							"compare": "at_least",
 							"qualifier": 10
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -9710,18 +9259,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 10
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
@@ -9819,18 +9356,6 @@
 						"level": {
 							"compare": "at_least",
 							"qualifier": 14
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
 						}
 					}
 				]
