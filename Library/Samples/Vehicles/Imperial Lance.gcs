@@ -297,7 +297,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 4
+							"all": 8
 						}
 					}
 				},
@@ -311,7 +311,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -325,7 +325,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -339,7 +339,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -351,7 +351,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -365,7 +365,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -379,7 +379,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -393,7 +393,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -407,7 +407,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -421,7 +421,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -435,7 +435,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -448,7 +448,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				}
@@ -467,10 +467,10 @@
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": -1,
+			"adj": 64,
 			"calc": {
-				"value": 9,
-				"points": -10
+				"value": 74,
+				"points": 640
 			}
 		},
 		{
@@ -582,24 +582,449 @@
 			"attr_id": "hp",
 			"adj": 0,
 			"calc": {
-				"value": 9,
-				"current": 9,
+				"value": 74,
+				"current": 74,
 				"points": 0
 			}
 		}
 	],
-	"traits": [{"id": "TAvo2DZsoshhEOFEa", "name": "Vehicle Stats", "children": [{"id": "tjmVtWaa_5ca7xd_5", "name": "ST/HP 74", "calc": {"points": 0}}, {"id": "ty5XovV23YqgGWGWK", "name": "Hnd/SR 0/5", "calc": {"points": 0}}, {"id": "thv4b5xkPxD9zNLeS", "name": "HT 11", "calc": {"points": 0}}, {"id": "tZHdz0sTKMsmdW5Tv", "name": "Move 3/39", "calc": {"points": 0}}, {"id": "tSAFIYVykrpgWR-Ky", "name": "Lwt. 5.8", "calc": {"points": 0}}, {"id": "tPJCeL0NxYrTlrdOy", "name": "Load 3", "calc": {"points": 0}}, {"id": "tRHJhub9NLdHGpvGk", "name": "SM +3", "calc": {"points": 0}}, {"id": "tzvVHflyfpbqtDuKm", "name": "Occ 3", "calc": {"points": 0}}, {"id": "t3u834lM_PSYWSMxj", "source": {"library": "richardwilkes/gcs_master_library", "path": "Basic Set\\Basic Set Traits.adq", "id": "tBmSJ3pNE53c4IRUU"}, "name": "Damage Resistance", "reference": "B47,P45,MA43,PSI14", "tags": ["Advantage", "Exotic", "Physical"], "modifiers": [{"id": "mI2Lndr7eD5uMN6W7", "name": "Force Field", "reference": "B47", "cost": 20, "disabled": true}, {"id": "mqzAU2K7RY-D8tNpK", "name": "Hardened", "reference": "B47", "cost": 20, "levels": 1, "disabled": true}, {"id": "mDAEDkMvUcB7gv5mW", "name": "Absorption", "reference": "B46", "notes": "Enhances @Trait@", "cost": 80, "disabled": true}, {"id": "m_YE5cKq80dV3jEtN", "name": "Absorption", "reference": "B46", "notes": "Healing only", "cost": 80, "disabled": true}, {"id": "mtLA7ybaiV49dLw74", "name": "Absorption", "reference": "B46", "notes": "Enhances any trait", "cost": 100, "disabled": true}, {"id": "mIa0AUPHVPm1VqX0l", "name": "Reflection", "reference": "B47", "cost": 100, "disabled": true}, {"id": "mqhsllwCSV7wvLZgb", "name": "Bane", "reference": "H14", "notes": "@Rare@", "cost": -1, "cost_type": "points", "disabled": true}, {"id": "mKGnFGcmrE5enyUEB", "name": "Bane", "reference": "H14", "notes": "@Occasional@", "cost": -5, "disabled": true}, {"id": "mnq2uzQuSc-Ltghp4", "name": "Bane", "reference": "H14", "notes": "@Common@", "cost": -10, "disabled": true}, {"id": "mW8dchWdwhdq0GNhV", "name": "Bane", "reference": "H14", "notes": "@Very Common@", "cost": -15, "disabled": true}, {"id": "mVp9sfDbFuT4Dtjjw", "name": "Directional", "reference": "B47", "notes": "Front", "cost": -20, "disabled": true}, {"id": "moOemyWcIfgonEnlf", "name": "Flexible", "reference": "B47", "cost": -20, "disabled": true}, {"id": "mGI4cWefXtrwb738F", "name": "Limited", "reference": "B46", "notes": "@Very Common Attack Form@", "cost": -20, "disabled": true}, {"id": "m-VDZgwuX2NiL-h13", "name": "Semi-Ablative", "reference": "B47", "cost": -20, "disabled": true}, {"id": "mWtijTKYtIB9SEiCo", "name": "Can't wear armor", "reference": "B47", "cost": -40, "disabled": true}, {"id": "mRY0ifLgfV4KAyXMQ", "name": "Directional", "reference": "B47", "notes": "@Direction: Back, Right, Left, Top or Underside@", "cost": -40, "disabled": true}, {"id": "mapiCgnmqFyI4FxmF", "name": "Limited", "reference": "B46", "notes": "@Common Attack Form@", "cost": -40, "disabled": true}, {"id": "mKsip0U6dgO3vuVnY", "name": "Tough Skin", "notes": "Effects that just require skin contact or a scratch ignore this DR", "cost": -40, "disabled": true}, {"id": "msh5fa89BixQsBCDo", "name": "Limited", "reference": "B46", "notes": "@Occasional Attack Form@", "cost": -60, "disabled": true}, {"id": "m9DhBeg2UZmyvOT09", "name": "Ablative", "reference": "B47", "cost": -80, "disabled": true}, {"id": "mY6YQrv-r_PVbokhz", "name": "Limited", "reference": "B46", "notes": "@Rare Attack Form@", "cost": -80, "disabled": true}, {"id": "mP0GpdAyXLUvlAsRL", "name": "Laminate", "reference": "RSWL18", "cost": 10, "disabled": true}, {"id": "mDYjpBJGalj88aGC_", "name": "Malediction-Proof", "reference": "PSI14", "cost": 50, "disabled": true}, {"id": "mPO-4_Er4v_u7dNec", "name": "Maledictions Only", "reference": "PSI14", "disabled": true}, {"id": "mqQZzJHl5gJ-35-7T", "name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)", "reference": "B47", "cost": -10, "disabled": true}], "points_per_level": 5, "features": [{"type": "dr_bonus", "locations": ["all"], "amount": 1, "per_level": true}, {"type": "dr_bonus", "locations": ["eye"], "amount": -1, "per_level": true}], "can_level": true, "levels": "6", "calc": {"points": "66666"}}, {"id": "tVUxq4jH0_rwvi_H9", "name": "Range 275", "calc": {"points": 0}}], "calc": {"points": 10}}],
-
-	"equipment": [{"id": "e2xF8jIzHgnAX14Xs", "description": "Cost", "legality_class": "4", "value": 120000, "quantity": 1, "equipped": true, "calc": {"extended_value": 150, "extended_weight": "0 lb"}}],
-
-	"notes": [{"id": "nGlMARWltuVLwZrnd", "text": "Locations: O4WX\n\nOpen Cabin\n4 Wheels\nExposed Weapon Mount\n\nTurret is a roof mounted SAW with a gunshield"}],
-
+	"traits": [
+		{
+			"id": "TAvo2DZsoshhEOFEa",
+			"name": "Vehicle Stats",
+			"children": [
+				{
+					"id": "tjmVtWaa_5ca7xd_5",
+					"name": "ST/HP 74",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "ty5XovV23YqgGWGWK",
+					"name": "Hnd/SR 0/5",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "thv4b5xkPxD9zNLeS",
+					"name": "HT 11",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tZHdz0sTKMsmdW5Tv",
+					"name": "Move 3/39",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tSAFIYVykrpgWR-Ky",
+					"name": "Lwt. 5.8",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tPJCeL0NxYrTlrdOy",
+					"name": "Load 3",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tRHJhub9NLdHGpvGk",
+					"name": "SM +3",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tzvVHflyfpbqtDuKm",
+					"name": "Occ 3",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t3u834lM_PSYWSMxj",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tBmSJ3pNE53c4IRUU"
+					},
+					"name": "Damage Resistance",
+					"reference": "B47,P45,MA43,PSI14",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mI2Lndr7eD5uMN6W7",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mqzAU2K7RY-D8tNpK",
+							"name": "Hardened",
+							"reference": "B47",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mDAEDkMvUcB7gv5mW",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "m_YE5cKq80dV3jEtN",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mtLA7ybaiV49dLw74",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mIa0AUPHVPm1VqX0l",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mqhsllwCSV7wvLZgb",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mKGnFGcmrE5enyUEB",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "mnq2uzQuSc-Ltghp4",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "mW8dchWdwhdq0GNhV",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "mVp9sfDbFuT4Dtjjw",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "moOemyWcIfgonEnlf",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mGI4cWefXtrwb738F",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "m-VDZgwuX2NiL-h13",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mWtijTKYtIB9SEiCo",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mRY0ifLgfV4KAyXMQ",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mapiCgnmqFyI4FxmF",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Common Attack Form@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mKsip0U6dgO3vuVnY",
+							"name": "Tough Skin",
+							"notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "msh5fa89BixQsBCDo",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "m9DhBeg2UZmyvOT09",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mY6YQrv-r_PVbokhz",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mP0GpdAyXLUvlAsRL",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mDYjpBJGalj88aGC_",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mPO-4_Er4v_u7dNec",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mqQZzJHl5gJ-35-7T",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"all"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 6,
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "tVUxq4jH0_rwvi_H9",
+					"name": "Range 275",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 30
+			}
+		}
+	],
+	"equipment": [
+		{
+			"id": "e2xF8jIzHgnAX14Xs",
+			"description": "Cost",
+			"legality_class": "4",
+			"value": 120000,
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 120000,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eQFH5yI5de_nKKVEs",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Equipment.eqp",
+				"id": "edNQJgpJJz1GYkdmy"
+			},
+			"description": "Gravehound 3BG",
+			"reference": "B281",
+			"notes": "SAW: SE-F-3BG",
+			"tech_level": "7",
+			"legality_class": "1",
+			"tags": [
+				"Firearm"
+			],
+			"value": 9600,
+			"weight": "24 lb",
+			"weapons": [
+				{
+					"id": "WgZ_g3mDFeKvINr9Q",
+					"damage": {
+						"type": "pi",
+						"base": "3d+1"
+					},
+					"strength": "12B†",
+					"accuracy": "5",
+					"range": "35/70",
+					"rate_of_fire": "15!",
+					"shots": "200(5)",
+					"bulk": "-6",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						}
+					],
+					"calc": {
+						"level": 6,
+						"damage": "3d+1 pi"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 9600,
+				"extended_weight": "24 lb"
+			}
+		}
+	],
+	"notes": [
+		{
+			"id": "nGlMARWltuVLwZrnd",
+			"text": "Locations: O4WX\n\nOpen Cabin\n4 Wheels\nExposed Weapon Mount\n\nTurret is a roof mounted SAW with a gunshield"
+		}
+	],
 	"created_date": "2025-01-08T00:56:53-06:00",
-	"modified_date": "2025-01-08T02:08:10-06:00",
+	"modified_date": "2025-01-08T12:34:37-06:00",
 	"calc": {
-		"swing": "1d-1",
-		"thrust": "1d-2",
-		"basic_lift": "16 lb",
+		"swing": "10d+2",
+		"thrust": "8d+2",
+		"basic_lift": "1,095 lb",
 		"move": [
 			5,
 			4,

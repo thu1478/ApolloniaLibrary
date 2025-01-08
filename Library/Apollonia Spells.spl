@@ -4226,18 +4226,6 @@
 							"compare": "at_least",
 							"qualifier": 12
 						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
 					}
 				]
 			},
@@ -8551,7 +8539,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -8594,11 +8582,15 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Body armor)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
 							"qualifier": 12
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Body Armor"
 						}
 					}
 				]
@@ -8637,11 +8629,15 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
 							"qualifier": 14
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Melee Weapons"
 						}
 					}
 				]
@@ -8679,7 +8675,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -8735,7 +8731,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -8778,7 +8774,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -8821,7 +8817,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -8864,7 +8860,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -8907,7 +8903,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -8949,7 +8945,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -9005,7 +9001,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -9047,7 +9043,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -9102,7 +9098,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -9157,7 +9153,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -9212,7 +9208,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -9254,7 +9250,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
@@ -9296,11 +9292,15 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Body armor)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",
 							"qualifier": 14
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Body armor"
 						}
 					},
 					{
@@ -9351,7 +9351,7 @@
 						"has": true,
 						"name": {
 							"compare": "is",
-							"qualifier": "Armoury (Any weapon)"
+							"qualifier": "Armoury"
 						},
 						"level": {
 							"compare": "at_least",

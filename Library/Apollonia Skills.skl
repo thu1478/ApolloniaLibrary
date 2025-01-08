@@ -4554,7 +4554,7 @@
 			"difficulty": "h",
 			"default": {
 				"type": "skill",
-				"name": "Smallsword",
+				"name": "Shortsword",
 				"modifier": -3
 			},
 			"limit": 0,
@@ -4827,6 +4827,27 @@
 				"modifier": -1
 			},
 			"limit": 0,
+			"weapons": [
+				{
+					"id": "wx69xrA2JlX_M2iMl",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Uppercut",
+					"reach": "1",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Boxing",
+							"modifier": -1
+						}
+					],
+					"calc": {
+						"damage": "thr cr"
+					}
+				}
+			],
 			"points": 1
 		},
 		{
@@ -4851,6 +4872,27 @@
 				"modifier": -1
 			},
 			"limit": 0,
+			"weapons": [
+				{
+					"id": "wkWly66_15rLmkV0U",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Uppercut",
+					"reach": "1",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -1
+						}
+					],
+					"calc": {
+						"damage": "thr cr"
+					}
+				}
+			],
 			"points": 1
 		},
 		{
@@ -4875,6 +4917,27 @@
 				"modifier": -1
 			},
 			"limit": 0,
+			"weapons": [
+				{
+					"id": "w2BW4swC8Qpa245aw",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Uppercut",
+					"reach": "1",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -1
+						}
+					],
+					"calc": {
+						"damage": "thr cr"
+					}
+				}
+			],
 			"points": 1
 		},
 		{

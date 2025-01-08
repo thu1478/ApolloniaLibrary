@@ -1750,6 +1750,1033 @@
 		},
 		{
 			"id": "TtBuvzCsEQctFGbeo",
+			"name": "Devotions",
+			"children": [
+				{
+					"id": "Tzj5bmRouz6q8ptWv",
+					"name": "Astesia",
+					"children": [
+						{
+							"id": "tIvZixCKom0s_sE9I",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tHya0RG2_BqeqLArf"
+							},
+							"name": "Code of Honor (Astesia)",
+							"reference": "B127",
+							"notes": "Must quickly become drunk every time there’s a social gathering with alcohol.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "t-vjuHDvKGUo5ZG3l",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tBWKFUwcRQBpqauQt"
+							},
+							"name": "Trademark (Astesia)",
+							"reference": "B159",
+							"notes": "Symbol of Astesia",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tFqaW6jfywWcr1j2r",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t04cLZ44QvEYdsP3F"
+							},
+							"name": "Sense of Duty",
+							"reference": "B153",
+							"notes": "Astesia Followers",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mw9cg3nAVbrVeTjIN",
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mLitVh1nYzphkihzy",
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m73GxOLuspGg9pGyl",
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost": -2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m0UquKac-7uKuJHI3",
+									"name": "@Large Group@",
+									"reference": "B153",
+									"cost": -10,
+									"cost_type": "points"
+								},
+								{
+									"id": "mV1A0qMloArnXZRTs",
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mmqcvJaVC0YlocaUY",
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tE7-9YcoEl2HfsLur",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tIwv4VeJHsrnAQG0T"
+							},
+							"name": "Frightens Animals",
+							"reference": "B137",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Supernatural"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tLXT1nzxrVOBcbc3P",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tSiOKuvTJkqJhuRrI"
+							},
+							"name": "Lecherousness",
+							"reference": "B142",
+							"notes": "Make a self-control roll whenever you have more than the briefest contact with an appealing member of the sex you find attractive, at -5 if this person is Handsome/Beautiful, or at -10 if Very Handsome/Very Beautiful. If you fail, you must make a “pass” using whatever wiles and skills you can bring to bear.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tdn14vze0Kt-FRRbR",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tunEojd-PNzEzVNaU"
+							},
+							"name": "Bad Sight (Direct Sunlight)",
+							"reference": "B123",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mMQx1F4QvYLOjKXia",
+									"name": "Mitigator",
+									"notes": "Glasses",
+									"cost": -60,
+									"disabled": true
+								}
+							],
+							"base_points": -20,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to DX for any tasks in direct sunlight",
+									"amount": -3
+								}
+							],
+							"calc": {
+								"points": -20
+							}
+						}
+					],
+					"calc": {
+						"points": -65
+					}
+				},
+				{
+					"id": "TBW3oO3aBRZb4rohg",
+					"name": "Melantha",
+					"children": [
+						{
+							"id": "tun4NqluRX5c7QwAz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tHya0RG2_BqeqLArf"
+							},
+							"name": "Code of Honor (Melantha)",
+							"reference": "B127",
+							"notes": "You may only kill animals for survival and must do so as quickly and ethically as possible to reduce unnecessary suffering. Ex: No poisons or \"slow-bleeding\". No traps.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tuBuNhzna7xZ2bJhH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tBWKFUwcRQBpqauQt"
+							},
+							"name": "Trademark (Melantha)",
+							"reference": "B159",
+							"notes": "Symbol of Melantha",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tjkUeaYYdWVMzvPdH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t04cLZ44QvEYdsP3F"
+							},
+							"name": "Sense of Duty",
+							"reference": "B153",
+							"notes": "Melantha Followers",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "m4AX1mMe2Mx24Rl2F",
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mKrOoWiztRUPQfFNG",
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m-jobmFqxZXImTssC",
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost": -2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mBZp-n1eGMlkKJhwR",
+									"name": "@Large Group@",
+									"reference": "B153",
+									"cost": -10,
+									"cost_type": "points"
+								},
+								{
+									"id": "mkix09IgZQvvQQZes",
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mq1jwtUtUB8E_J0xR",
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tonCmYAOV0x4VxlO1",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tzVv8jJIuoUiVT_80"
+							},
+							"name": "Easy to Read",
+							"reference": "B134",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to others on all Empathy, Body Language, and Psychology rolls to discern your intentions or the truth of your words",
+									"amount": 4
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to others on IQ, Detect Lies, and Gambling rolls in any Quick Contest with your Acting, Fast-Talk, or Gambling skill when you try to lie or bluff",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tvLSKGKfLd2wm5m4I",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t8duh7FJvBdSs4NOb"
+							},
+							"name": "Restricted Diet (Raw)",
+							"reference": "B151",
+							"notes": "Can no longer eat cooked food and must gain sustenance by eating food raw",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mDQlrnC2EOd85sz4i",
+									"name": "Substitution",
+									"reference": "B151",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "muUzQZ15TSe84cF0W",
+									"name": "Very Common",
+									"reference": "B151",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mRzvup7_K75xUslgE",
+									"name": "Common",
+									"reference": "B151",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "me_JGiYO0Y37R_MGn",
+									"name": "Occasional",
+									"reference": "B151",
+									"cost": -30,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mAMZDK0xPN_Q2oRJU",
+									"name": "Rare",
+									"reference": "B151",
+									"cost": -40,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tCOAs-IClOTlQhr8E",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tDK9FvKn-O3nj-U0j"
+							},
+							"name": "Dyslexia",
+							"reference": "B134",
+							"notes": "You have a written comprehension level of \"None\" for all languages, which cannot be improved",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -45
+					}
+				},
+				{
+					"id": "TJEHTF0eGZaXr0uFX",
+					"name": "Thalric",
+					"children": [
+						{
+							"id": "tSO9FocXloH_CNAVw",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tHya0RG2_BqeqLArf"
+							},
+							"name": "Code of Honor (Thalric)",
+							"reference": "B127",
+							"notes": "You must hide the secrets of Thalric from outsiders to the best of your ability. Revealing any secrets means you have to cut your tongue off and you are obligated to do the same to anyone else who reveals Thalric’s secrets. Ex: Certain shrine locations",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "t6-63gNJGaoQCQuta",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tijmxMEy4B1uAVMr9"
+							},
+							"name": "Extra Sleep",
+							"reference": "B136",
+							"notes": "Require 1 hour/level more sleep for a full night's rest (max 4)",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -2,
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": -4
+							}
+						},
+						{
+							"id": "tLT239eXXdO-hGgT6",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tRJveiSBWJIO33TKw"
+							},
+							"name": "Bad Grip",
+							"reference": "B123",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "no fine manipulators"
+										}
+									}
+								]
+							},
+							"points_per_level": -5,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to tasks that require a firm grip (max 3 levels)",
+									"amount": -2,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tyn9h9JpF7od1cst-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t04cLZ44QvEYdsP3F"
+							},
+							"name": "Sense of Duty",
+							"reference": "B153",
+							"notes": "Thalric Followers",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "m9vf2c5RKZH-42zn2",
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mCtfRwBZ-WQLoP4uK",
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mcLvzHoStPAYw-18q",
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost": -2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m2yCvOm4w5hw4HUMp",
+									"name": "@Large Group@",
+									"reference": "B153",
+									"cost": -10,
+									"cost_type": "points"
+								},
+								{
+									"id": "mQwzdg8_vCBA_h4qf",
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mG0hOmV4Ehm8fQMCe",
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tVO-01JlYsLNNQA5w",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "trdRnHewvO9QjUZDJ"
+							},
+							"name": "Combat Paralysis",
+							"reference": "B127",
+							"notes": "In any situation in which personal harm seems imminent, make a HT roll. Do not roll until the instant you need to fight, run, pull the trigger, or whatever. Any roll over 13 is a failure, even if you have HT 14+. On a success, you can act normally. On a failure, you are mentally stunned. ",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Combat Reflexes"
+										}
+									}
+								]
+							},
+							"base_points": -15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "fright_check",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "t9nI5I2HBtNOwB8XC",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tIwv4VeJHsrnAQG0T"
+							},
+							"name": "Frightens Animals",
+							"reference": "B137",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Supernatural"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -59
+					}
+				},
+				{
+					"id": "T1BMWOn6vVud2_n8_",
+					"name": "Lucerna",
+					"children": [
+						{
+							"id": "tmd8RJJSFj-c3iDNq",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t04cLZ44QvEYdsP3F"
+							},
+							"name": "Sense of Duty",
+							"reference": "B153",
+							"notes": "Lucerna Followers",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mTJDYKNcg7UgXhdm3",
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mWplTUeanTsZdsEuW",
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "miOZgUMUHQPdjmtXv",
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost": -2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m3-cledn9omDaIBPk",
+									"name": "@Large Group@",
+									"reference": "B153",
+									"cost": -10,
+									"cost_type": "points"
+								},
+								{
+									"id": "mYDnORnNewOoQdhrk",
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m3Arji-0cVBbglTru",
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "t28OXXu1CE423QqeW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tqyAIJKZUTPhxkhbU"
+							},
+							"name": "Truthfulness",
+							"reference": "B159",
+							"notes": "Make a self-control roll whenever you must keep silent about an uncomfortable truth (lying by omission). Roll at -5 if you actually have to tell a falsehood! If you fail, you blurt out the truth, or stumble so much that your lie is obvious.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fast-talk"
+									},
+									"amount": -5
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "t2RVg4VmbyoQBx63S",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "th9TK1Jmqg8uKe6SC"
+							},
+							"name": "Pacifism: Cannot Harm Innocents",
+							"reference": "B148",
+							"notes": "You may fight – you may even start fights – but you may only use deadly force on a foe that is attempting to do you serious harm. Capture is not “serious harm” unless you are already under penalty of death or have a Code of Honor that would require suicide if captured. You never intentionally do anything that causes, or even threatens to cause, injury to the uninvolved – particularly if they are “ordinary folks.”",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mycvrEXe7dUkGnFjV",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tRu_SwwwVKIjmn1re",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t7pCgXTVkswkTjOZO"
+							},
+							"name": "Honesty",
+							"reference": "B138",
+							"notes": "Make a self-control roll when faced with the “need” to break unreasonable laws; if you fail, you must obey the law, whatever the consequences. If you manage to resist your urges and break the law, make a second self-control roll afterward. If you fail, you must turn yourself in to the authorities!",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tTN1tClx9x7c-ddUq",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t5R0c_iujWXeXusIu"
+							},
+							"name": "Vow",
+							"reference": "B161",
+							"notes": "Destroy all followers of Asmodeus promptly wherever they may appear and in whatever form",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mmeU_gLcyrynPDGly",
+									"name": "Minor",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mRMhfXVODwb117lBJ",
+									"name": "Major",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m6650KSLwnSCi2amd",
+									"name": "Great",
+									"reference": "B161",
+									"cost": -15,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tCfhWGMFIiIKLR-eH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t5R0c_iujWXeXusIu"
+							},
+							"name": "Vow",
+							"reference": "B161",
+							"notes": "Always keep at least one of your guns loaded and within 2 arms reach at all times, including when you’re sleeping or taking a shower.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mKel5Wwt4kmb4-G45",
+									"name": "Minor",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "m8Ea-tywJmCNQWX8o",
+									"name": "Major",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points"
+								},
+								{
+									"id": "mfdOgdzOozDNaOZyZ",
+									"name": "Great",
+									"reference": "B161",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -60
+					}
+				},
+				{
+					"id": "Tkgl1bg4hI44lgwfN",
+					"name": "Morgath",
+					"children": [
+						{
+							"id": "tf-fynv69P7oBtjpT",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tYHaB3nA17KP6h1DZ"
+							},
+							"name": "Gluttony",
+							"reference": "B137",
+							"notes": "Make a self-control roll when presented with a tempting morsel or good wine that, for some reason, you should resist. If you fail, you partake – regardless of the consequences.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tiuJKLXwO_p0qwlyZ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tV06LED8bg9xJGF3c"
+							},
+							"name": "Impulsiveness",
+							"reference": "B139",
+							"notes": "Make a self-control roll whenever it would be wise to wait and ponder. If you fail, you must act",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tCtJyH8fIYWkEloxl",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tEPlPRVY1z8clGFZ1"
+							},
+							"name": "Code of Honor (Gentleman's)",
+							"reference": "B127",
+							"notes": "At any feast or social gathering you must partake in the best food and drink available. You may make a self-control roll (CR 12) to avoid this. This may lead you to overspend or do something illegal or otherwise immoral.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tQCczeuoCMPPvXmU5",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tvF5dIQf3Jrwb_KXv"
+							},
+							"name": "Greed",
+							"reference": "B137",
+							"notes": "Make a self-control roll any time riches are offered – as payment for fair work, gains from adventure, spoils of crime, or just bait. If you fail, you do whatever it takes to get the payoff.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tRg2JUS-0UlTLSp4X",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t5R0c_iujWXeXusIu"
+							},
+							"name": "Vow",
+							"reference": "B161",
+							"notes": "Ever year during the Red Lantern Rite you must go to the Spiral Tower and gamble away at least 25% of your net worth against a Dragon Bishop. You may choose the Dragon Bishop if you can find multiple as well as the exact wager, but they may choose the game. If your net worth is deemed too low you don’t have to do this.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mcmGNFBreXbrprWEB",
+									"name": "Minor",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mHYtNXOJrXQauQq0F",
+									"name": "Major",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "myZzVvzUXdjVjiW42",
+									"name": "Great",
+									"reference": "B161",
+									"cost": -15,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tDcN029OpsfZIUJFd",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tmRX0o0iO20zWIVyo"
+							},
+							"name": "Bloodlust",
+							"reference": "B125",
+							"notes": "You must make a self-control roll whenever you need to accept a surrender, evade a sentry, take a prisoner, etc.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -70
+					}
+				}
+			],
+			"calc": {
+				"points": -299
+			}
+		},
+		{
+			"id": "TY-vp6EWZ4r144VBW",
 			"name": "Star Catalogue",
 			"calc": {
 				"points": 0
@@ -8525,13 +9552,14 @@
 			},
 			"name": "Weapon Master (@Specialty@)",
 			"reference": "B99,MA48",
+			"notes": "Rapid Strike and Parrying penalty halved for Weapon Master specialty",
 			"tags": [
 				"Advantage",
 				"Mental"
 			],
 			"modifiers": [
 				{
-					"id": "mbP5Y16PsqnXzJuQK",
+					"id": "msjzMEKJcP_DO7tsY",
 					"name": "One weapon",
 					"reference": "B99",
 					"cost": 20,
@@ -8539,7 +9567,7 @@
 					"disabled": true
 				},
 				{
-					"id": "m1gqxMx0-ab1Rb6Pv",
+					"id": "mviHRe5ulHMhOStSu",
 					"name": "Two weapons",
 					"reference": "B99",
 					"cost": 25,
@@ -8547,7 +9575,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mqilwEdErZbk4NSJm",
+					"id": "mYjgQPjufP7E1aC10",
 					"name": "Small class",
 					"reference": "B99",
 					"cost": 30,
@@ -8555,7 +9583,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mjQqMmV9zIUdvTP9U",
+					"id": "mGfou2hIgvUvy0jMS",
 					"name": "Medium class",
 					"reference": "B99",
 					"cost": 35,
@@ -8563,12 +9591,19 @@
 					"disabled": true
 				},
 				{
-					"id": "m_O2ozT0Q2Dq6AQOB",
+					"id": "mkG1UHWnlMbXyneEQ",
 					"name": "Large class",
 					"reference": "B99",
 					"cost": 40,
 					"cost_type": "points",
 					"disabled": true
+				}
+			],
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to Weapon Master weapon if you know the skill at DX+1. You get +2 instead if you know the skill at DX+2",
+					"amount": 1
 				}
 			],
 			"calc": {

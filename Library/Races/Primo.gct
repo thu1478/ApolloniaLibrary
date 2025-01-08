@@ -932,13 +932,6 @@
 			}
 		},
 		{
-			"id": "TAUyG20at8oBOQivz",
-			"name": "Bielik Citizen",
-			"calc": {
-				"points": 0
-			}
-		},
-		{
 			"id": "T3Ogn18v6YumKGEGz",
 			"name": "Optional",
 			"children": [

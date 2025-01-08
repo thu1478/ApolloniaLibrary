@@ -616,7 +616,7 @@
 				},
 				{
 					"id": "tZHdz0sTKMsmdW5Tv",
-					"name": "Move 8/60*",
+					"name": "Move 8/60",
 					"calc": {
 						"points": 0
 					}
@@ -897,11 +897,11 @@
 			"id": "e2xF8jIzHgnAX14Xs",
 			"description": "Cost",
 			"legality_class": "4",
-			"value": 3000,
+			"value": 4000,
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"extended_value": 3000,
+				"extended_value": 4000,
 				"extended_weight": "0 lb"
 			}
 		}

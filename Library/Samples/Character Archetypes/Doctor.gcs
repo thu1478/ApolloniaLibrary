@@ -638,11 +638,11 @@
 		},
 		{
 			"attr_id": "mana",
-			"adj": 0,
+			"adj": 5,
 			"calc": {
-				"value": 0,
-				"current": 0,
-				"points": 0
+				"value": 5,
+				"current": 5,
+				"points": 15
 			}
 		},
 		{
@@ -753,6 +753,24 @@
 			],
 			"calc": {
 				"points": 0
+			}
+		},
+		{
+			"id": "tDXxkZYsaM_1eAZ2D",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Traits.adq",
+				"id": "t-HJW7ResgvheHfbL"
+			},
+			"name": "Amnesia (Total)",
+			"reference": "B123",
+			"tags": [
+				"Disadvantage",
+				"Physical"
+			],
+			"base_points": -25,
+			"calc": {
+				"points": -25
 			}
 		},
 		{
@@ -867,26 +885,6 @@
 			],
 			"calc": {
 				"points": 6
-			}
-		},
-		{
-			"id": "tpzEJQ7uLyhqj7J66",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Traits.adq",
-				"id": "tdEOEbc8ltxyQNFJj"
-			},
-			"name": "Comfortable Wealth",
-			"reference": "B25",
-			"notes": "Starting wealth is twice normal",
-			"tags": [
-				"Advantage",
-				"Social",
-				"Wealth"
-			],
-			"base_points": 10,
-			"calc": {
-				"points": 10
 			}
 		},
 		{
@@ -1162,6 +1160,26 @@
 			}
 		},
 		{
+			"id": "t793OKRixo3pN39kE",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Traits.adq",
+				"id": "t55UZnC4Hxsvl7-ri"
+			},
+			"name": "Wealthy",
+			"reference": "B25",
+			"notes": "Starting wealth is 5x normal",
+			"tags": [
+				"Advantage",
+				"Social",
+				"Wealth"
+			],
+			"base_points": 20,
+			"calc": {
+				"points": 20
+			}
+		},
+		{
 			"id": "thU40RbS1Tg3fcIsE",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -1179,42 +1197,462 @@
 			"calc": {
 				"points": -10
 			}
+		},
+		{
+			"id": "TDfd8SochQXVPuBli",
+			"name": "Demergi",
+			"children": [
+				{
+					"id": "tl-nqjaaztZhYG2Nz",
+					"name": "Amphibious",
+					"reference": "B40,P42",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "twJQQadGARu5EB3Dw",
+					"name": "Night Vision",
+					"reference": "B71,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 3
+					}
+				},
+				{
+					"id": "TX_d1oKZoJweWI8_i",
+					"name": "Verta",
+					"children": [
+						{
+							"id": "tglYdBn-8DxxzbUZS",
+							"name": "Verta Blood",
+							"reference": "B35,P39,PSI13",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "Mzbw_COa3gNey8yXA",
+									"name": "Attribute Penalties",
+									"children": [
+										{
+											"id": "mIePWc86cwPTvecLw",
+											"name": "DX Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to DX per level",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mnyWd5BWEk8lE_Cwe",
+											"name": "HT Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to HT per level",
+											"cost": 5,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "m1oUPXVeQNjry0uzH",
+											"name": "IQ Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to IQ per level",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mWSVEIMzgQzxMfrbn",
+											"name": "ST Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to ST per level",
+											"cost": 5,
+											"levels": 1,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "mDKUkCOapUOVeUg50",
+									"name": "Cancellation",
+									"reference": "PSI13",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mw0Kn_P-kiHWE-B2O",
+									"name": "Cumulative",
+									"reference": "B36",
+									"cost": 400,
+									"disabled": true
+								},
+								{
+									"id": "MLJXaNksuDhnRn-Ax",
+									"name": "Incapacitation",
+									"reference": "B36",
+									"children": [
+										{
+											"id": "mJk6bVdZvX1dEd6fo",
+											"name": "Agony",
+											"reference": "B428",
+											"notes": "Lose 1 FP per minute",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mX9p4l_sNJfjmPWup",
+											"name": "Choking",
+											"reference": "B428",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mG_sSX8M8z4my8GKg",
+											"name": "Daze",
+											"reference": "B428",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "m9K-2WidlBwfLZGig",
+											"name": "Ecstasy",
+											"reference": "B428",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mTqP9HVJXNoVHo3b9",
+											"name": "Hallucination",
+											"reference": "B429",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "m-eJZcFBSRg-6YNV4",
+											"name": "Paralysis",
+											"reference": "B429",
+											"cost": 150,
+											"disabled": true
+										},
+										{
+											"id": "mbeMaY6NOiCqRdVgY",
+											"name": "Retching",
+											"reference": "B429",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "mUS5YNcpAE55DhbLc",
+											"name": "Seizure",
+											"reference": "B429",
+											"notes": "Lose 1d FP at the end of the seizure",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "miiJmydNYMmoWjiyp",
+											"name": "Sleep",
+											"cost": 150,
+											"disabled": true
+										},
+										{
+											"id": "m5BC0KLe-dTKtfmL4",
+											"name": "Unconsciousness",
+											"reference": "B429",
+											"cost": 200,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "MM0OAnFjUhHWSqHE4",
+									"name": "Irritations",
+									"reference": "B36",
+									"children": [
+										{
+											"id": "miX0T-1qqx78VgBlO",
+											"name": "Coughing",
+											"reference": "B428",
+											"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "mBWySW8CmQUuGE1Lx",
+											"name": "Drunk",
+											"reference": "B428",
+											"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "m4mom_39M4bmSukUj",
+											"name": "Euphoria",
+											"reference": "B428",
+											"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+											"cost": 30,
+											"disabled": true
+										},
+										{
+											"id": "maCPa-bM75VefW6gw",
+											"name": "Moderate Pain",
+											"reference": "B428",
+											"notes": "-2 to all DX, IQ, skill and self-control rolls",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "mPA28E5DYCdYAijqc",
+											"name": "Nauseated",
+											"reference": "B428",
+											"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+											"cost": 30,
+											"disabled": true
+										},
+										{
+											"id": "mIYfo6TqgeMA5_RgI",
+											"name": "Severe Pain",
+											"reference": "B428",
+											"notes": "-4 to all DX, IQ, skill and self-control rolls",
+											"cost": 40,
+											"disabled": true
+										},
+										{
+											"id": "mjQHRKSYbUeXkrv__",
+											"name": "Terrible Pain",
+											"reference": "B428",
+											"notes": "-6 to all DX, IQ, skill and self-control rolls",
+											"cost": 60,
+											"disabled": true
+										},
+										{
+											"id": "m1-Wcq-ZiWw9kEfVV",
+											"name": "Tipsy",
+											"reference": "B428",
+											"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+											"cost": 10,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "MSXZzhyikMvki0l0w",
+									"name": "Mortal Conditions",
+									"children": [
+										{
+											"id": "mxbFkYfamOYFAEnUl",
+											"name": "Coma",
+											"reference": "B429",
+											"cost": 250,
+											"disabled": true
+										},
+										{
+											"id": "mGC6mvIr-poV6-aeq",
+											"name": "Heart Attack",
+											"reference": "B429",
+											"cost": 300,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "mbM0GtJ2hi1YGInF-",
+									"name": "Stunning",
+									"reference": "B36",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "MEFR_Yyg_VLdjjdle",
+									"name": "Traits",
+									"children": [
+										{
+											"id": "mYd19bL1l8IuEE4hf",
+											"name": "Gives @Advantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mQjWt2m-zTBIDYi9N",
+											"name": "Gives @Disadvantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "mAcnUCXZMeZ6FJ0BW",
+											"name": "Negates @Advantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"cost": 1,
+											"levels": 1,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "mLBzEEYzw-azAfvdJ",
+									"name": "Blood Agent",
+									"reference": "B110,P100",
+									"cost": -40
+								},
+								{
+									"id": "mAz1Rofuof-cCeJS9",
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"cost": -5,
+									"levels": 1
+								},
+								{
+									"id": "mz3VodnbNsytBuSe8",
+									"name": "Costs Hit Points",
+									"reference": "PU8:12",
+									"notes": "Per use",
+									"cost": -10,
+									"levels": 1
+								},
+								{
+									"id": "mI9i2avbnelvJ4x7S",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "muEHnnBcFvKfMCDHp"
+									},
+									"name": "Reduced Range",
+									"reference": "B115,P105",
+									"notes": "2 Range Divisor",
+									"cost": -10
+								}
+							],
+							"points_per_level": 10,
+							"weapons": [
+								{
+									"id": "WnXzO6YsN3FdUvxyY",
+									"damage": {
+										"type": "aff"
+									},
+									"accuracy": "3",
+									"range": "1/5",
+									"rate_of_fire": "1",
+									"recoil": "1",
+									"calc": {
+										"damage": "aff"
+									}
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "taeP2UZj8GgpBFOSR",
+							"name": "Breath-Holding",
+							"reference": "B41",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 6
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 23
+			}
+		},
+		{
+			"id": "toF7fMtIf4EuKpAPs",
+			"name": "Slam",
+			"weapons": [
+				{
+					"id": "wC1NyYfHSoT1Aq5rH",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-2"
+					},
+					"usage": "Slam",
+					"reach": "1",
+					"calc": {
+						"damage": "1d-4 cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
 		}
 	],
 	"skills": [
 		{
-			"id": "saFr7-17IyUBuiTEj",
+			"id": "sFrEDTrCX5AEs0Ebl",
 			"source": {
 				"library": "/gcs_user_library",
 				"path": "Apollonia\\Library\\Apollonia Skills.skl",
-				"id": "sgDVif7IKSPE3JdMR"
+				"id": "sT0agdf4emYBo8cUe"
 			},
-			"name": "Bicycling",
-			"reference": "B180",
+			"name": "Driving",
+			"reference": "B188",
 			"tags": [
-				"Athletic",
 				"Vehicle"
 			],
-			"difficulty": "dx/e",
+			"specialization": "Motorcycle",
+			"difficulty": "dx/a",
 			"defaults": [
 				{
 					"type": "dx",
-					"modifier": -4
+					"modifier": -5
+				},
+				{
+					"type": "iq",
+					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Driving",
-					"specialization": "Motorcycle",
+					"name": "Bicycling",
 					"modifier": -4
 				}
 			],
-			"points": 1,
+			"tech_level": "8",
+			"points": 2,
 			"defaulted_from": {
-				"type": "dx",
-				"modifier": -4,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"type": "iq",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
 				"level": 10,
@@ -1222,7 +1660,7 @@
 			}
 		},
 		{
-			"id": "s3LLTxZeC183uswB0",
+			"id": "sHFTWi6OfjfeEeYoh",
 			"source": {
 				"library": "/gcs_user_library",
 				"path": "Apollonia\\Library\\Apollonia Skills.skl",
@@ -1257,7 +1695,6 @@
 				}
 			],
 			"tech_level": "8",
-			"points": 2,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
@@ -1266,8 +1703,8 @@
 				"points": -8
 			},
 			"calc": {
-				"level": 10,
-				"rsl": "DX+0"
+				"level": 8,
+				"rsl": "DX-2"
 			}
 		},
 		{
@@ -1304,7 +1741,6 @@
 				}
 			],
 			"tech_level": "8",
-			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Physician",
@@ -1350,7 +1786,6 @@
 				}
 			],
 			"tech_level": "8",
-			"points": 2,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Physician",
@@ -1360,8 +1795,8 @@
 				"points": 1
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "IQ-1"
+				"level": 11,
+				"rsl": "IQ-2"
 			}
 		},
 		{
@@ -1445,7 +1880,6 @@
 				}
 			],
 			"tech_level": "8",
-			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Physician",
@@ -1479,7 +1913,7 @@
 					"modifier": -5
 				}
 			],
-			"points": 8,
+			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
@@ -1488,567 +1922,522 @@
 				"points": -5
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "DX+2"
+				"level": 10,
+				"rsl": "DX+0"
 			}
 		}
 	],
 	"spells": [
 		{
-			"id": "pPZEp4eb38sbaL1B2",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "p2pr-NTv1xNJ4pcXC"
-			},
-			"name": "Antitoxin",
-			"reference": "AP89",
-			"notes": "Circle: 1",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Regular",
-			"casting_cost": "2",
-			"casting_time": "3 sec",
-			"duration": "Instant",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 12
-						}
-					}
-				]
-			},
-			"points": 8,
-			"calc": {
-				"level": 14,
-				"rsl": "IQ+1"
-			}
+			"id": "PbtH2d2r_fDJ0V_pY",
+			"name": "Ready Miracles"
 		},
 		{
-			"id": "pvZPG148kCtxqST31",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "p2pr-NTv1xNJ4pcXC"
-			},
-			"name": "Awaken",
-			"reference": "AP89",
-			"notes": "Circle: 1",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Regular",
-			"casting_cost": "2",
-			"casting_time": "3 sec",
-			"duration": "Instant",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 12
-						}
-					}
-				]
-			},
-			"points": 1,
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
-			}
+			"id": "PDSOe2aneqi8tmpQA",
+			"name": "Used Miracles"
 		},
 		{
-			"id": "pNWYJ4iHR09PFQ_R3",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "p2pr-NTv1xNJ4pcXC"
-			},
-			"name": "Freeze",
-			"reference": "AP89",
-			"notes": "Circle: 1",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Melee",
-			"casting_cost": "2",
-			"casting_time": "1 sec",
-			"duration": "Instant",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 12
-						}
-					}
-				]
-			},
-			"points": 8,
-			"calc": {
-				"level": 14,
-				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "psrK1_4DLd9JrBUGR",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "pMuBa-2JN88sERUZI"
-			},
-			"name": "Hemorrhage",
-			"reference": "AP89",
-			"notes": "Circle: 2",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Melee",
-			"casting_cost": "2",
-			"casting_time": "1 sec",
-			"duration": "Instant",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 14
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is",
-							"qualifier": "Mending"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					}
-				]
-			},
-			"weapons": [
+			"id": "P-dnEt4gh9U3rH7Ul",
+			"name": "Forte Spells",
+			"children": [
 				{
-					"id": "wdDhMuxjTu5Rp0EvR",
-					"damage": {
-						"type": "pi+",
-						"base": "1d"
+					"id": "pPZEp4eb38sbaL1B2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "p2pr-NTv1xNJ4pcXC"
 					},
-					"usage": "Thrust",
-					"usage_notes": "Touch a creature's bare skin. They must succeed a HT-2 roll or take 1d pi+ damage as blood inside their body near the surface crystallizes and expands.",
-					"reach": "C",
+					"name": "Antitoxin",
+					"reference": "AP89",
+					"notes": "Circle: 1",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"casting_time": "3 sec",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 12
+								}
+							}
+						]
+					},
+					"points": 8,
 					"calc": {
-						"damage": "1d pi+"
+						"level": 14,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pvZPG148kCtxqST31",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "p2pr-NTv1xNJ4pcXC"
+					},
+					"name": "Awaken",
+					"reference": "AP89",
+					"notes": "Circle: 1",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"casting_time": "3 sec",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 12
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-2"
+					}
+				},
+				{
+					"id": "pNWYJ4iHR09PFQ_R3",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "p2pr-NTv1xNJ4pcXC"
+					},
+					"name": "Freeze",
+					"reference": "AP89",
+					"notes": "Circle: 1",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Melee",
+					"casting_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 12
+								}
+							}
+						]
+					},
+					"points": 8,
+					"calc": {
+						"level": 14,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "psrK1_4DLd9JrBUGR",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "pMuBa-2JN88sERUZI"
+					},
+					"name": "Hemorrhage",
+					"reference": "AP89",
+					"notes": "Circle: 2",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Melee",
+					"casting_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 14
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "Mending"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"weapons": [
+						{
+							"id": "wdDhMuxjTu5Rp0EvR",
+							"damage": {
+								"type": "pi+",
+								"base": "1d"
+							},
+							"usage": "Thrust",
+							"usage_notes": "Touch a creature's bare skin. They must succeed a HT-2 roll or take 1d pi+ damage as blood inside their body near the surface crystallizes and expands.",
+							"reach": "C",
+							"calc": {
+								"damage": "1d pi+"
+							}
+						}
+					],
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-2"
+					}
+				},
+				{
+					"id": "pA-FY3mMi1CUaB3cA",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "p2pr-NTv1xNJ4pcXC"
+					},
+					"name": "Mending",
+					"reference": "AP89",
+					"notes": "Circle: 2",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"casting_time": "1 minute",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 14
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "Sterilize"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 8,
+					"calc": {
+						"level": 14,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "pUDHt1KWZJhjIf22Y",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "p2pr-NTv1xNJ4pcXC"
+					},
+					"name": "Rapid Regeneration",
+					"reference": "AP89",
+					"notes": "Circle: 2",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"casting_time": "3 sec",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 14
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "Mending"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-2"
+					}
+				},
+				{
+					"id": "pENRB18sQc_izlnFD",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "p2pr-NTv1xNJ4pcXC"
+					},
+					"name": "Sleep",
+					"reference": "AP89",
+					"notes": "Circle: 2",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "1 hour",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 14
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "Awaken"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-2"
+					}
+				},
+				{
+					"id": "pZoqqKevtgl11K5Ai",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "p2pr-NTv1xNJ4pcXC"
+					},
+					"name": "Sterilize",
+					"reference": "AP89",
+					"notes": "Circle: 1",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"casting_time": "2 sec",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 12
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-2"
+					}
+				},
+				{
+					"id": "pAx3p7Hfe61cukdK3",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "p2pr-NTv1xNJ4pcXC"
+					},
+					"name": "Stop",
+					"reference": "AP89",
+					"notes": "Circle: 2",
+					"tags": [
+						"Focus"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Focus"
+					],
+					"power_source": "Mana",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"casting_time": "3 sec",
+					"duration": "1 minute",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Physician"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 14
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "Freeze"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "IQ-2"
 					}
 				}
-			],
-			"points": 1,
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
-			}
-		},
-		{
-			"id": "pA-FY3mMi1CUaB3cA",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "p2pr-NTv1xNJ4pcXC"
-			},
-			"name": "Mending",
-			"reference": "AP89",
-			"notes": "Circle: 2",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Regular",
-			"casting_cost": "3",
-			"casting_time": "1 minute",
-			"duration": "Instant",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 14
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is",
-							"qualifier": "Sterilize"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					}
-				]
-			},
-			"points": 8,
-			"calc": {
-				"level": 14,
-				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "pUDHt1KWZJhjIf22Y",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "p2pr-NTv1xNJ4pcXC"
-			},
-			"name": "Rapid Regeneration",
-			"reference": "AP89",
-			"notes": "Circle: 2",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Regular",
-			"casting_cost": "4",
-			"casting_time": "3 sec",
-			"duration": "Instant",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 14
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is",
-							"qualifier": "Mending"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					}
-				]
-			},
-			"points": 1,
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
-			}
-		},
-		{
-			"id": "pENRB18sQc_izlnFD",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "p2pr-NTv1xNJ4pcXC"
-			},
-			"name": "Sleep",
-			"reference": "AP89",
-			"notes": "Circle: 2",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Regular",
-			"casting_cost": "2",
-			"casting_time": "1 sec",
-			"duration": "1 hour",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 14
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is",
-							"qualifier": "Awaken"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					}
-				]
-			},
-			"points": 1,
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
-			}
-		},
-		{
-			"id": "pZoqqKevtgl11K5Ai",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "p2pr-NTv1xNJ4pcXC"
-			},
-			"name": "Sterilize",
-			"reference": "AP89",
-			"notes": "Circle: 1",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Regular",
-			"casting_cost": "2",
-			"casting_time": "2 sec",
-			"duration": "Instant",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 12
-						}
-					}
-				]
-			},
-			"points": 8,
-			"calc": {
-				"level": 14,
-				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "pAx3p7Hfe61cukdK3",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Magic\\Magic Spells.spl",
-				"id": "p2pr-NTv1xNJ4pcXC"
-			},
-			"name": "Stop",
-			"reference": "AP89",
-			"notes": "Circle: 2",
-			"tags": [
-				"Focus"
-			],
-			"difficulty": "iq/h",
-			"college": [
-				"Focus"
-			],
-			"power_source": "Mana",
-			"spell_class": "Regular",
-			"casting_cost": "3",
-			"casting_time": "3 sec",
-			"duration": "1 minute",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Physician"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 14
-						}
-					},
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is",
-							"qualifier": "Freeze"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					}
-				]
-			},
-			"points": 1,
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
-			}
+			]
 		}
 	],
 	"equipment": [
-		{
-			"id": "eLn5indpALHVRCgrV",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Equipment.eqp",
-				"id": "ehIxhuv_8_PA8EnPd"
-			},
-			"description": "Ordinary Outfit",
-			"reference": "B283",
-			"notes": "Flexible, concealable",
-			"tech_level": "1",
-			"legality_class": "4",
-			"tags": [
-				"Armor",
-				"Clothing"
-			],
-			"value": 50,
-			"weight": "0.1 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"extended_value": 50,
-				"extended_weight": "0.1 lb"
-			}
-		},
-		{
-			"id": "epf45QWQOSFzEj90A",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Equipment.eqp",
-				"id": "ehIxhuv_8_PA8EnPd"
-			},
-			"description": "Shoes",
-			"reference": "B283",
-			"notes": "Flexible, concealable",
-			"tech_level": "1",
-			"legality_class": "4",
-			"tags": [
-				"Armor",
-				"Clothing"
-			],
-			"value": 40,
-			"weight": "1 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"locations": [
-						"foot"
-					],
-					"amount": 1
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"extended_value": 40,
-				"extended_weight": "1 lb"
-			}
-		},
 		{
 			"id": "Ev0S_y5unLSy4AwQu",
 			"source": {
@@ -2082,7 +2471,7 @@
 			"equipped": true,
 			"children": [
 				{
-					"id": "eIBEXLgfC1uf_u-nc",
+					"id": "eOfppqZ1ksmClVLqj",
 					"source": {
 						"library": "/gcs_user_library",
 						"path": "Apollonia\\Library\\Apollonia Equipment.eqp",
@@ -2094,10 +2483,10 @@
 						"Resource"
 					],
 					"value": 1,
-					"quantity": 200,
+					"quantity": 90,
 					"equipped": true,
 					"calc": {
-						"extended_value": 200,
+						"extended_value": 90,
 						"extended_weight": "0 lb"
 					}
 				},
@@ -2253,33 +2642,151 @@
 						"extended_value": 40,
 						"extended_weight": "1 lb"
 					}
+				},
+				{
+					"id": "eGS-AlL-PvUpt-Lbr",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Equipment.eqp",
+						"id": "e1zXj4i8QsBV1ly0u"
+					},
+					"description": "20 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"value": 7350,
+					"weight": "0.008 lb",
+					"max_uses": 20,
+					"quantity": 1,
+					"uses": 20,
+					"equipped": true,
+					"calc": {
+						"extended_value": 7350,
+						"extended_weight": "0.008 lb"
+					}
+				},
+				{
+					"id": "efFzOsK45IlPHRdEc",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eCQX_NEhHao-HXw1l"
+					},
+					"description": "Cell Phone",
+					"reference": "B288",
+					"notes": "Only works in some areas; $20/month fee., 10 hrs.",
+					"tech_level": "8",
+					"tags": [
+						"Communications and Information Gear"
+					],
+					"value": 250,
+					"weight": "0.25 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 250,
+						"extended_weight": "0.25 lb"
+					}
 				}
 			],
 			"calc": {
-				"extended_value": 270,
-				"extended_weight": "7 lb"
+				"extended_value": 7760,
+				"extended_weight": "7.258 lb"
+			}
+		},
+		{
+			"id": "Ehy4SA4AlnpdHo8n9",
+			"description": "Clothing",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eLn5indpALHVRCgrV",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ehIxhuv_8_PA8EnPd"
+					},
+					"description": "Ordinary Outfit",
+					"reference": "B283",
+					"notes": "Flexible, concealable",
+					"tech_level": "1",
+					"legality_class": "4",
+					"tags": [
+						"Armor",
+						"Clothing"
+					],
+					"value": 50,
+					"weight": "0.1 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "0.1 lb"
+					}
+				},
+				{
+					"id": "epf45QWQOSFzEj90A",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ehIxhuv_8_PA8EnPd"
+					},
+					"description": "Shoes",
+					"reference": "B283",
+					"notes": "Flexible, concealable",
+					"tech_level": "1",
+					"legality_class": "4",
+					"tags": [
+						"Armor",
+						"Clothing"
+					],
+					"value": 40,
+					"weight": "1 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 1
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 40,
+						"extended_weight": "1 lb"
+					}
+				}
+			],
+			"calc": {
+				"extended_value": 90,
+				"extended_weight": "1.1 lb"
 			}
 		}
 	],
 	"other_equipment": [
 		{
-			"id": "eJG9tRoszh2dTtByj",
+			"id": "EffYV6Ks_28zfLXwT",
 			"source": {
 				"library": "/gcs_user_library",
 				"path": "Apollonia\\Library\\Apollonia Equipment.eqp",
-				"id": "eL6E2m0B4wXaKg1cr"
+				"id": "E1ARqz2NoxnZriog8"
 			},
-			"description": "BS Grinder",
-			"notes": "Motorcycle",
+			"description": "Imperial Falcon",
+			"notes": "Moped",
 			"legality_class": "4",
 			"tags": [
 				"Vehicle"
 			],
-			"value": 3000,
+			"value": 1400,
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"extended_value": 3000,
+				"extended_value": 1400,
 				"extended_weight": "0 lb"
 			}
 		},
@@ -2291,7 +2798,7 @@
 			"equipped": true,
 			"children": [
 				{
-					"id": "eOfppqZ1ksmClVLqj",
+					"id": "eIBEXLgfC1uf_u-nc",
 					"source": {
 						"library": "/gcs_user_library",
 						"path": "Apollonia\\Library\\Apollonia Equipment.eqp",
@@ -2303,16 +2810,16 @@
 						"Resource"
 					],
 					"value": 1,
-					"quantity": 5990,
+					"quantity": 200,
 					"equipped": true,
 					"calc": {
-						"extended_value": 5990,
+						"extended_value": 200,
 						"extended_weight": "0 lb"
 					}
 				}
 			],
 			"calc": {
-				"extended_value": 5990,
+				"extended_value": 200,
 				"extended_weight": "0 lb"
 			}
 		},
@@ -2323,6 +2830,30 @@
 			"quantity": 1,
 			"equipped": true,
 			"children": [
+				{
+					"id": "eMOUPAJGPChsh6l-_",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ehIxhuv_8_PA8EnPd"
+					},
+					"description": "Ordinary Outfit",
+					"reference": "B283",
+					"notes": "Flexible, concealable",
+					"tech_level": "1",
+					"legality_class": "4",
+					"tags": [
+						"Armor",
+						"Clothing"
+					],
+					"value": 50,
+					"weight": "0.1 lb",
+					"quantity": 2,
+					"calc": {
+						"extended_value": 100,
+						"extended_weight": "0.2 lb"
+					}
+				},
 				{
 					"id": "er5pbx3YA-6ac5uFH",
 					"source": {
@@ -2347,47 +2878,11 @@
 						"extended_value": 450,
 						"extended_weight": "0.1 lb"
 					}
-				},
-				{
-					"id": "eHXUB_EueZnmYWGWR",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "ehIxhuv_8_PA8EnPd"
-					},
-					"description": "Seductive Outfit",
-					"reference": "B283",
-					"notes": "Flexible, concealable",
-					"tech_level": "1",
-					"legality_class": "4",
-					"tags": [
-						"Armor",
-						"Clothing"
-					],
-					"value": 200,
-					"weight": "0.1 lb",
-					"quantity": 1,
-					"calc": {
-						"extended_value": 200,
-						"extended_weight": "0.1 lb"
-					}
-				},
-				{
-					"id": "eHjKmxcJtfvlQM0IG",
-					"description": "50% of Starting wealth is in Settled Goods like a house",
-					"legality_class": "4",
-					"value": 10000,
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"extended_value": 10000,
-						"extended_weight": "0 lb"
-					}
 				}
 			],
 			"calc": {
-				"extended_value": 10650,
-				"extended_weight": "0.2 lb"
+				"extended_value": 550,
+				"extended_weight": "0.3 lb"
 			}
 		}
 	],
@@ -2398,7 +2893,7 @@
 		}
 	],
 	"created_date": "2025-01-07T18:29:24-06:00",
-	"modified_date": "2025-01-08T03:04:29-06:00",
+	"modified_date": "2025-01-08T17:20:41-06:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",

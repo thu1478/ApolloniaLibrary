@@ -117,6 +117,28 @@
 			}
 		},
 		{
+			"id": "thcgaDcJ62vwS_mCR",
+			"name": "Slam",
+			"weapons": [
+				{
+					"id": "w2Nmud-n-fxthuvq6",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-2"
+					},
+					"usage": "Slam",
+					"reach": "1",
+					"calc": {
+						"damage": "thr-2 cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
 			"id": "teiZ_TVfq11UhRmQh",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -133,9 +155,41 @@
 			"calc": {
 				"points": -25
 			}
+		},
+		{
+			"id": "TDfzN78sYEdFRx0VF",
+			"name": "Devotions",
+			"calc": {
+				"points": 0
+			}
+		}
+	],
+	"spells": [
+		{
+			"id": "PzQ_EX4gPGkY8TkI5",
+			"name": "Ready Miracles"
+		},
+		{
+			"id": "PuUhZBvf0HmBM7vyN",
+			"name": "Used Miracles"
+		},
+		{
+			"id": "PSziT0iCimFLfjQ08",
+			"name": "Forte Spells"
 		}
 	],
 	"equipment": [
+		{
+			"id": "E3sOTMhdOXdXsIfrM",
+			"description": "Clothing",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
 		{
 			"id": "Eu-cwKZP6y5K7GIpM",
 			"description": "Bank",
@@ -155,6 +209,26 @@
 			"equipped": true,
 			"calc": {
 				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eJktORWHMXmZWLS8x",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Apollonia\\Library\\Apollonia Equipment.eqp",
+				"id": "ekHoRE-XZpwZqh0ZM"
+			},
+			"description": "Maskoydan Credit",
+			"legality_class": "4",
+			"tags": [
+				"Resource"
+			],
+			"value": 1,
+			"quantity": 5000,
+			"equipped": true,
+			"calc": {
+				"extended_value": 5000,
 				"extended_weight": "0 lb"
 			}
 		}
