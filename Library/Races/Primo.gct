@@ -932,15 +932,8 @@
 			}
 		},
 		{
-			"id": "TAUyG20at8oBOQivz",
-			"name": "Bielik Citizen",
-			"calc": {
-				"points": 0
-			}
-		},
-		{
 			"id": "T3Ogn18v6YumKGEGz",
-			"name": "Optional",
+			"name": "Genetic Expansion",
 			"children": [
 				{
 					"id": "tL3TCAV63JKAp72Ub",
