@@ -1750,7 +1750,7 @@
 		},
 		{
 			"id": "TtBuvzCsEQctFGbeo",
-			"name": "Devotions",
+			"name": "Divine Traits",
 			"children": [
 				{
 					"id": "Tzj5bmRouz6q8ptWv",
@@ -1933,6 +1933,21 @@
 							"calc": {
 								"points": -20
 							}
+						},
+						{
+							"id": "t7adZa_sVL77dE-cm",
+							"name": "Blessing of Astesia",
+							"notes": "You do not take spell penalties at night unless it is a new moon",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "mana and Tally cost, minimum 1, to spells and Miracles during a full moon.",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": 0
+							}
 						}
 					],
 					"calc": {
@@ -1943,6 +1958,21 @@
 					"id": "TBW3oO3aBRZb4rohg",
 					"name": "Melantha",
 					"children": [
+						{
+							"id": "tFIHa3RDP1JBb_r_2",
+							"name": "Blessing of Melantha",
+							"notes": "Creatures that have died near you leave a slight presence that follows you for a while. Followers of Melantha can feel this. Sometimes these can be used to create Eidolons.",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "reaction rolls from animals",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
 						{
 							"id": "tun4NqluRX5c7QwAz",
 							"source": {
@@ -2166,6 +2196,14 @@
 					"name": "Thalric",
 					"children": [
 						{
+							"id": "tAnsg6Zo5AURCPgfM",
+							"name": "Blessing of Thalric",
+							"notes": "Your miracles are no longer once a day, but each miracle can only affect each person once per day.\nOnce per day you may roll 3d and keep track of the result. You may replace a single 3d roll with this result instead, but you must decide before you roll.",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
 							"id": "tSO9FocXloH_CNAVw",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
@@ -2382,6 +2420,21 @@
 					"id": "T1BMWOn6vVud2_n8_",
 					"name": "Lucerna",
 					"children": [
+						{
+							"id": "tfzXYBA3Ywof77d-B",
+							"name": "Blessing of Lucerna",
+							"notes": "You can use this blessing twice per day while in direct sunlight. You must declare this before making the roll.",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to a DX-related skill when invoking this blessing",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
 						{
 							"id": "tmd8RJJSFj-c3iDNq",
 							"source": {
@@ -2624,6 +2677,21 @@
 					"name": "Morgath",
 					"children": [
 						{
+							"id": "t6yN-EvKVSFTE9qnj",
+							"name": "Blessing of Morgath",
+							"notes": "Once per day after you make a roll you may begin rerolling it. Each time you reroll you get a stacking -2 penalty. You can reroll up to 3 times on this roll and you must use the new result.",
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to a DX-related skill when invoking this blessing",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
 							"id": "tf-fynv69P7oBtjpT",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
@@ -2768,6 +2836,14 @@
 					],
 					"calc": {
 						"points": -70
+					}
+				},
+				{
+					"id": "t1Ol8Nl53ELkZ8-l_",
+					"name": "Devotion",
+					"can_level": true,
+					"calc": {
+						"points": 0
 					}
 				}
 			],

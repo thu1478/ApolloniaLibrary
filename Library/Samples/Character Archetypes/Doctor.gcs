@@ -1749,8 +1749,8 @@
 				"points": 8
 			},
 			"calc": {
-				"level": 16,
-				"rsl": "IQ+3"
+				"level": 17,
+				"rsl": "IQ+4"
 			}
 		},
 		{
@@ -2471,26 +2471,6 @@
 			"equipped": true,
 			"children": [
 				{
-					"id": "eOfppqZ1ksmClVLqj",
-					"source": {
-						"library": "/gcs_user_library",
-						"path": "Apollonia\\Library\\Apollonia Equipment.eqp",
-						"id": "ekHoRE-XZpwZqh0ZM"
-					},
-					"description": "Maskoydan Credit",
-					"legality_class": "4",
-					"tags": [
-						"Resource"
-					],
-					"value": 1,
-					"quantity": 90,
-					"equipped": true,
-					"calc": {
-						"extended_value": 90,
-						"extended_weight": "0 lb"
-					}
-				},
-				{
 					"id": "eI1FVrk1w7k1crQKF",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -2688,11 +2668,238 @@
 						"extended_value": 250,
 						"extended_weight": "0.25 lb"
 					}
+				},
+				{
+					"id": "e6j58LnF5YIUvfrJw",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eLt7ZoaK-NfuPNE_R"
+					},
+					"description": "Bandages",
+					"reference": "B289",
+					"notes": "Bandages for a  half-dozen wounds. Might be clean cloth, adhesive dressings, or spray-on \"Plastiskin\", depending on TL. Basic equipment for First Aid skill.",
+					"tech_level": "0",
+					"tags": [
+						"Medical Gear"
+					],
+					"value": 10,
+					"weight": "2 lb",
+					"max_uses": 6,
+					"quantity": 1,
+					"uses": 6,
+					"equipped": true,
+					"calc": {
+						"extended_value": 10,
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e8Va4XdMHPgpidWdC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eHoOTNeBiFqTk598H"
+					},
+					"description": "First Aid Kit",
+					"reference": "B289",
+					"notes": "A complete kit for treating wounds, with bandages, ointments, etc.",
+					"tech_level": "0",
+					"tags": [
+						"Medical Gear"
+					],
+					"value": 50,
+					"weight": "2 lb",
+					"max_uses": 6,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "First Aid"
+							},
+							"amount": 1
+						}
+					],
+					"quantity": 1,
+					"uses": 6,
+					"equipped": true,
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e4zX8pvPrS4Ecocb3",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eeQgU7KaAJKcO9rBW"
+					},
+					"description": "Small Knife",
+					"reference": "B272",
+					"tech_level": "0",
+					"tags": [
+						"Melee Weapon",
+						"Missile Weapon"
+					],
+					"value": 30,
+					"weight": "0.5 lb",
+					"weapons": [
+						{
+							"id": "wyPcoHO8RUdkpiJyp",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "-3"
+							},
+							"strength": "5",
+							"usage": "Swung",
+							"reach": "C,1",
+							"parry": "-1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Knife"
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"level": 6,
+								"damage": "1d-4(2) cut",
+								"parry": "5"
+							}
+						},
+						{
+							"id": "w2JgB-NLCawOXy9ZD",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"strength": "5",
+							"usage": "Thrust",
+							"reach": "C",
+							"parry": "-1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Knife"
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"level": 6,
+								"damage": "1d-3(2) imp",
+								"parry": "5"
+							}
+						},
+						{
+							"id": "Wy0ODXEYD7f5yk5XO",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"strength": "5",
+							"usage": "Thrown",
+							"range": "x0.5/x1",
+							"rate_of_fire": "1",
+							"shots": "T",
+							"bulk": "-1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Knife"
+								}
+							],
+							"calc": {
+								"level": 6,
+								"damage": "1d-3(2) imp",
+								"range": "4/9"
+							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "ftQkUAgApI0fo-pBk",
+							"name": "Armor Divisor 2",
+							"features": [
+								{
+									"type": "weapon_dr_divisor_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 1
+								}
+							]
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 30,
+						"extended_weight": "0.5 lb"
+					}
 				}
 			],
 			"calc": {
 				"extended_value": 7760,
-				"extended_weight": "7.258 lb"
+				"extended_weight": "11.758 lb"
 			}
 		},
 		{
@@ -2893,7 +3100,7 @@
 		}
 	],
 	"created_date": "2025-01-07T18:29:24-06:00",
-	"modified_date": "2025-01-08T17:20:41-06:00",
+	"modified_date": "2025-01-10T17:29:30-06:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",

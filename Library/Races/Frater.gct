@@ -90,160 +90,8 @@
 			}
 		},
 		{
-			"id": "Tt300y5lIswMjOsT1",
-			"name": "Subraces",
-			"children": [
-				{
-					"id": "TzE7LHMT1uujnRmiY",
-					"name": "Shamac",
-					"children": [
-						{
-							"id": "trYDY83jaJSq5uJOl",
-							"name": "Acute Hearing",
-							"reference": "B35",
-							"tags": [
-								"Advantage",
-								"Physical"
-							],
-							"points_per_level": 2,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "hearing",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"levels": 1,
-							"calc": {
-								"points": 2
-							}
-						},
-						{
-							"id": "tv0sUOsKIW5-FR8NY",
-							"name": "Enhanced Dodge",
-							"reference": "B51,MA43",
-							"tags": [
-								"Advantage",
-								"Mental"
-							],
-							"points_per_level": 15,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "dodge",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"levels": 1,
-							"calc": {
-								"points": 15
-							}
-						}
-					],
-					"calc": {
-						"points": 17
-					}
-				},
-				{
-					"id": "T_HtnELG6lg__-g5f",
-					"name": "Ori",
-					"children": [
-						{
-							"id": "tp_wxBZnADhdD19Wz",
-							"name": "Acute Hearing",
-							"reference": "B35",
-							"tags": [
-								"Advantage",
-								"Physical"
-							],
-							"points_per_level": 2,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "hearing",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"levels": 2,
-							"calc": {
-								"points": 4
-							}
-						},
-						{
-							"id": "tVpYswhuWDgoQtxoP",
-							"name": "Luck",
-							"reference": "B66,P59",
-							"tags": [
-								"Advantage",
-								"Mental"
-							],
-							"modifiers": [
-								{
-									"id": "mnyL9csIm-QLOcgAu",
-									"name": "Active",
-									"reference": "B66",
-									"cost": -40,
-									"disabled": true
-								},
-								{
-									"id": "murk-pQjiFuMj6Pol",
-									"name": "Aspected",
-									"reference": "B66",
-									"notes": "@Aspect@",
-									"cost": -20,
-									"disabled": true
-								},
-								{
-									"id": "m1uxSv2i_7_QfVjsF",
-									"name": "Defensive",
-									"reference": "B66",
-									"cost": -20,
-									"disabled": true
-								},
-								{
-									"id": "m97zY_vwYtSTi0P-g",
-									"name": "Wishing",
-									"reference": "P59",
-									"cost": 100,
-									"disabled": true
-								},
-								{
-									"id": "mCXVI-jQPgeD788Nw",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
-										"id": "mSAFsJswgoMiiLLNm"
-									},
-									"name": "Limited Use",
-									"reference": "B112,P103",
-									"notes": "2 uses per day",
-									"cost": -30
-								}
-							],
-							"base_points": 15,
-							"calc": {
-								"points": 11
-							}
-						}
-					],
-					"calc": {
-						"points": 15
-					}
-				}
-			],
-			"calc": {
-				"points": 32
-			}
-		},
-		{
 			"id": "TCi9oWal9rFOetcYW",
-			"name": "Optional",
+			"name": "Genetic Expansion",
 			"children": [
 				{
 					"id": "t__EMiWrdYjfHIxHr",
@@ -523,6 +371,158 @@
 			],
 			"calc": {
 				"points": 48
+			}
+		},
+		{
+			"id": "Tt300y5lIswMjOsT1",
+			"name": "Subraces",
+			"children": [
+				{
+					"id": "TzE7LHMT1uujnRmiY",
+					"name": "Shamac",
+					"children": [
+						{
+							"id": "trYDY83jaJSq5uJOl",
+							"name": "Acute Hearing",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "hearing",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 2
+							}
+						},
+						{
+							"id": "tv0sUOsKIW5-FR8NY",
+							"name": "Enhanced Dodge",
+							"reference": "B51,MA43",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"points_per_level": 15,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dodge",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 15
+							}
+						}
+					],
+					"calc": {
+						"points": 17
+					}
+				},
+				{
+					"id": "T_HtnELG6lg__-g5f",
+					"name": "Ori",
+					"children": [
+						{
+							"id": "tp_wxBZnADhdD19Wz",
+							"name": "Acute Hearing",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "hearing",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "tVpYswhuWDgoQtxoP",
+							"name": "Luck",
+							"reference": "B66,P59",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mnyL9csIm-QLOcgAu",
+									"name": "Active",
+									"reference": "B66",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "murk-pQjiFuMj6Pol",
+									"name": "Aspected",
+									"reference": "B66",
+									"notes": "@Aspect@",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "m1uxSv2i_7_QfVjsF",
+									"name": "Defensive",
+									"reference": "B66",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "m97zY_vwYtSTi0P-g",
+									"name": "Wishing",
+									"reference": "P59",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mCXVI-jQPgeD788Nw",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "mSAFsJswgoMiiLLNm"
+									},
+									"name": "Limited Use",
+									"reference": "B112,P103",
+									"notes": "2 uses per day",
+									"cost": -30
+								}
+							],
+							"base_points": 15,
+							"calc": {
+								"points": 11
+							}
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				}
+			],
+			"calc": {
+				"points": 32
 			}
 		}
 	]
