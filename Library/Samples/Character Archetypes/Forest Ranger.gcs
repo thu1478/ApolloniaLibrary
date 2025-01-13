@@ -874,13 +874,14 @@
 			"name": "Slam",
 			"weapons": [
 				{
-					"id": "wtp39Xf_FgfUMpLin",
+					"id": "wqwIqvkBhYb69nxcI",
 					"damage": {
 						"type": "cr",
 						"st": "thr",
 						"base": "-2"
 					},
 					"usage": "Slam",
+					"usage_notes": "Add SM modifier to damage",
 					"reach": "1",
 					"calc": {
 						"damage": "1d-3 cr"
@@ -1502,6 +1503,28 @@
 			],
 			"calc": {
 				"points": -20
+			}
+		},
+		{
+			"id": "tqXqXTVL8o3em7VSp",
+			"source": {
+				"library": "/gcs_user_library",
+				"path": "Apollonia\\Library\\Apollonia Traits.adq",
+				"id": "trfVxE7DYokJPmw3O"
+			},
+			"name": "Energy Lockout (FP)",
+			"points_per_level": -3,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "fp",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 0
 			}
 		}
 	],
@@ -2632,7 +2655,7 @@
 		}
 	],
 	"created_date": "2025-01-08T14:29:09-06:00",
-	"modified_date": "2025-01-10T17:27:14-06:00",
+	"modified_date": "2025-01-12T19:09:38-06:00",
 	"calc": {
 		"swing": "1d+1",
 		"thrust": "1d-1",
