@@ -18,6 +18,18 @@
 						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
 						"id": "fy12DVPocaO9j8VCQ"
 					},
+					"name": "Cheap Quality",
+					"notes": "A critical fail when attacking breaks the weapon",
+					"cost_type": "to_base_cost",
+					"cost": "x0.5"
+				},
+				{
+					"id": "fhM_40vdoMLymAhB3",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+						"id": "fy12DVPocaO9j8VCQ"
+					},
 					"name": "Fine Quality",
 					"reference": "B280",
 					"notes": "+1 to Acc",
