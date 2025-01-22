@@ -6677,52 +6677,6 @@
 			}
 		},
 		{
-			"id": "tvhCnhsWAt6JBR4Ve",
-			"source": {
-				"library": "/gcs_user_library",
-				"path": "Apollonia\\Library\\Apollonia Traits.adq",
-				"id": "trfVxE7DYokJPmw3O"
-			},
-			"name": "Energy Lockout (FP)",
-			"points_per_level": -3,
-			"features": [
-				{
-					"type": "attribute_bonus",
-					"attribute": "fp",
-					"amount": -1,
-					"per_level": true
-				}
-			],
-			"can_level": true,
-			"levels": 1,
-			"calc": {
-				"points": -3
-			}
-		},
-		{
-			"id": "tr3rFOC4ZUz1djbi8",
-			"source": {
-				"library": "/gcs_user_library",
-				"path": "Apollonia\\Library\\Apollonia Traits.adq",
-				"id": "trfVxE7DYokJPmw3O"
-			},
-			"name": "Energy Lockout (Mana)",
-			"points_per_level": -3,
-			"features": [
-				{
-					"type": "attribute_bonus",
-					"attribute": "mana",
-					"amount": -1,
-					"per_level": true
-				}
-			],
-			"can_level": true,
-			"levels": 1,
-			"calc": {
-				"points": -3
-			}
-		},
-		{
 			"id": "tO1ZLESc8Yx3fNmsv",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -8477,7 +8431,8 @@
 		{
 			"id": "tK-kLJCE7Kb0scWAn",
 			"name": "Run and Hit",
-			"notes": "Buys off -4 penalty for Move and Attack with melee",
+			"reference_highlight": "AP63",
+			"notes": "Buys off skill limit for Move and Attack",
 			"tags": [
 				"Combat"
 			],

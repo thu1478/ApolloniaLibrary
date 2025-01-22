@@ -267,6 +267,55 @@
 						"expression": "$hp"
 					}
 				]
+			},
+			{
+				"id": "mana",
+				"type": "pool",
+				"name": "Mana",
+				"full_name": "Mana",
+				"attribute_base": "0",
+				"cost_per_point": 3,
+				"thresholds": [
+					{
+						"state": "No Energy",
+						"expression": "0",
+						"explanation": "No energy"
+					},
+					{
+						"state": "Not full",
+						"expression": "$mana-1",
+						"explanation": "We are not full on energy"
+					},
+					{
+						"state": "Full Mana",
+						"expression": "$mana",
+						"explanation": "We are full on mana"
+					}
+				]
+			},
+			{
+				"id": "tally",
+				"type": "pool",
+				"name": "tally",
+				"full_name": "Remaining Tally",
+				"attribute_base": "0",
+				"thresholds": [
+					{
+						"state": "Dark",
+						"expression": "0",
+						"explanation": "Threshold reached"
+					},
+					{
+						"state": "Opaque",
+						"expression": "$tally-1",
+						"explanation": "Some tally accumulated"
+					},
+					{
+						"state": "Clear",
+						"expression": "30",
+						"explanation": "No tally accumulated"
+					}
+				]
 			}
 		],
 		"body_type": {
@@ -283,7 +332,8 @@
 						"roll_range": "-",
 						"dr": {
 							"all": 2,
-							"pi and cut": 1
+							"cut": 1,
+							"pi": 1
 						}
 					}
 				},
@@ -299,7 +349,8 @@
 						"roll_range": "3-4",
 						"dr": {
 							"all": 4,
-							"pi and cut": 1
+							"cut": 1,
+							"pi": 1
 						}
 					}
 				},
@@ -314,7 +365,8 @@
 						"roll_range": "5",
 						"dr": {
 							"all": 2,
-							"pi and cut": 1
+							"cut": 1,
+							"pi": 1
 						}
 					}
 				},
@@ -354,8 +406,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 4,
-							"pi and cut": 2
+							"all": 4
 						}
 					}
 				},
@@ -411,7 +462,9 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 1
+							"all": 1,
+							"cut": 2,
+							"pi": 2
 						}
 					}
 				},
@@ -588,6 +641,24 @@
 			"calc": {
 				"value": 10,
 				"current": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "mana",
+			"adj": 0,
+			"calc": {
+				"value": 0,
+				"current": 0,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "tally",
+			"adj": 0,
+			"calc": {
+				"value": 0,
+				"current": 0,
 				"points": 0
 			}
 		}
@@ -811,13 +882,14 @@
 			"name": "Slam",
 			"weapons": [
 				{
-					"id": "wraC5KgESlz0_rS5q",
+					"id": "wFnvGS0Lk0BtnQ2lT",
 					"damage": {
 						"type": "cr",
 						"st": "thr",
 						"base": "-2"
 					},
 					"usage": "Slam",
+					"usage_notes": "Add SM modifier to damage",
 					"reach": "1",
 					"calc": {
 						"damage": "1d-4 cr"
@@ -3530,14 +3602,14 @@
 					}
 				},
 				{
-					"id": "eOvgUKa9fOVkhiPt6",
+					"id": "eupaveGUT-lgh_3Bt",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Equipment.eqp",
 						"id": "ehIxhuv_8_PA8EnPd"
 					},
 					"description": "Work Gloves",
-					"reference": "B283",
+					"reference": "AP113",
 					"tech_level": "8",
 					"legality_class": "4",
 					"tags": [
@@ -3549,9 +3621,17 @@
 						{
 							"type": "dr_bonus",
 							"locations": [
-								"torso"
+								"hand"
 							],
-							"specialization": "pi and cut",
+							"specialization": "cut",
+							"amount": 2
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"hand"
+							],
+							"specialization": "pi",
 							"amount": 2
 						},
 						{
@@ -3570,14 +3650,14 @@
 					}
 				},
 				{
-					"id": "ee6l5fZJd8wkVEQQb",
+					"id": "ebDGTMJg1fJgD3s95",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Equipment.eqp",
 						"id": "ehIxhuv_8_PA8EnPd"
 					},
 					"description": "Arm Guards",
-					"reference": "B283",
+					"reference": "AP112",
 					"tech_level": "6",
 					"legality_class": "4",
 					"tags": [
@@ -3602,14 +3682,14 @@
 					}
 				},
 				{
-					"id": "ek5G4XSnoZ7B93BKG",
+					"id": "eV1NZqnW1vRx8ADDP",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Equipment.eqp",
 						"id": "ehIxhuv_8_PA8EnPd"
 					},
 					"description": "Leg Guards",
-					"reference": "B283",
+					"reference": "AP112",
 					"tech_level": "6",
 					"legality_class": "4",
 					"tags": [
@@ -3634,14 +3714,14 @@
 					}
 				},
 				{
-					"id": "eDnfE1SWcB7eGdDQm",
+					"id": "eIvL15wK86vImZbQa",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set\\Basic Set Equipment.eqp",
 						"id": "ehIxhuv_8_PA8EnPd"
 					},
 					"description": "Motorcycle Helmet with visor",
-					"reference": "B283",
+					"reference": "AP112",
 					"tech_level": "7",
 					"legality_class": "4",
 					"tags": [
@@ -3657,7 +3737,17 @@
 								"face",
 								"skull"
 							],
-							"specialization": "pi and cut",
+							"specialization": "pi",
+							"amount": 1
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye",
+								"face",
+								"skull"
+							],
+							"specialization": "cut",
 							"amount": 1
 						},
 						{
@@ -4021,7 +4111,7 @@
 		}
 	],
 	"created_date": "2025-01-08T16:53:21-06:00",
-	"modified_date": "2025-01-08T17:26:48-06:00",
+	"modified_date": "2025-01-12T18:33:41-06:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",

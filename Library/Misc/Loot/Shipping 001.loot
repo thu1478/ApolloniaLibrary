@@ -1,0 +1,201 @@
+{
+	"version": 5,
+	"id": "LoBJ1hDZAQMdL7Or8",
+	"name": "Academy Outfit",
+	"location": "Home",
+	"modified_date": "2025-01-13T14:32:05-06:00",
+	"equipment": [
+		{
+			"id": "EIDYWPL2HaO8lTskd",
+			"description": "Choose one",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eDH6mde1jhOmg11Qy",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ehIxhuv_8_PA8EnPd"
+					},
+					"description": "Stilton Academy Uniform (Skirt)",
+					"reference": "AP112",
+					"notes": "Flexible, concealable\nA violet buttoned waistcoat with gold trimming, white dress shirt, black tie. This version also features a red skirt, grey tights, and black socks.",
+					"tech_level": "1",
+					"legality_class": "4",
+					"tags": [
+						"Armor",
+						"Clothing"
+					],
+					"value": 450,
+					"weight": "0.1 lb",
+					"quantity": 1,
+					"calc": {
+						"extended_value": 450,
+						"extended_weight": "0.1 lb"
+					}
+				},
+				{
+					"id": "e8GhoHJ_CDISDzcUx",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ehIxhuv_8_PA8EnPd"
+					},
+					"description": "Stilton Academy Uniform (Pants)",
+					"reference": "AP112",
+					"notes": "Flexible, concealable\nA violet buttoned waistcoat with gold trimming, white dress shirt, black tie. This version also features black trousers and black socks.",
+					"tech_level": "1",
+					"legality_class": "4",
+					"tags": [
+						"Armor",
+						"Clothing"
+					],
+					"value": 450,
+					"weight": "0.1 lb",
+					"quantity": 1,
+					"calc": {
+						"extended_value": 450,
+						"extended_weight": "0.1 lb"
+					}
+				}
+			],
+			"calc": {
+				"extended_value": 900,
+				"extended_weight": "0.2 lb"
+			}
+		},
+		{
+			"id": "eakoZtiU8QAr0LGXd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Equipment.eqp",
+				"id": "ehIxhuv_8_PA8EnPd"
+			},
+			"description": "Stilton Academy Jacket",
+			"reference": "AP112",
+			"notes": "Flexible, concealable\nA charcoal and crimson red blazer with a gold trim",
+			"tech_level": "1",
+			"legality_class": "4",
+			"tags": [
+				"Armor",
+				"Clothing"
+			],
+			"value": 85,
+			"weight": "4 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm",
+						"torso",
+						"vitals"
+					],
+					"amount": 1
+				}
+			],
+			"quantity": 1,
+			"calc": {
+				"extended_value": 85,
+				"extended_weight": "4 lb"
+			}
+		},
+		{
+			"id": "E8orZAnbvVldHXyOs",
+			"description": "Choose one",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ekYGmddVv_gCVrC6m",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ehIxhuv_8_PA8EnPd"
+					},
+					"description": "Stilton Academy Boots",
+					"reference": "AP113",
+					"notes": "Flexible, concealable\nBrown laced shoes",
+					"tech_level": "2",
+					"legality_class": "4",
+					"tags": [
+						"Armor",
+						"Clothing"
+					],
+					"value": 80,
+					"weight": "2 lb",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_name",
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Kick"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 2
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 80,
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eUs75iha51K3ezwI4",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "ehIxhuv_8_PA8EnPd"
+					},
+					"description": "Stilton Academy Heels",
+					"reference": "AP113",
+					"notes": "Flexible, concealable\nBlack high heeled shoes",
+					"tech_level": "6",
+					"legality_class": "4",
+					"tags": [
+						"Armor",
+						"Clothing"
+					],
+					"value": 80,
+					"weight": "1 lb",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_name",
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Kick"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					],
+					"quantity": 1,
+					"calc": {
+						"extended_value": 80,
+						"extended_weight": "1 lb"
+					}
+				}
+			],
+			"calc": {
+				"extended_value": 160,
+				"extended_weight": "3 lb"
+			}
+		}
+	]
+}

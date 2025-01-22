@@ -121,13 +121,14 @@
 			"name": "Slam",
 			"weapons": [
 				{
-					"id": "w2Nmud-n-fxthuvq6",
+					"id": "wtIY00rrsSml_5qvW",
 					"damage": {
 						"type": "cr",
 						"st": "thr",
 						"base": "-2"
 					},
 					"usage": "Slam",
+					"usage_notes": "Add SM modifier to damage",
 					"reach": "1",
 					"calc": {
 						"damage": "thr-2 cr"

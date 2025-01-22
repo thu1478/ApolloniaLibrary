@@ -1,0 +1,166 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "FhrbqaBZ2EZwaBuSM",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+				"id": "F64lcfBX5c5BAuS84"
+			},
+			"name": "Firearm Weapon Quality",
+			"reference": "B280",
+			"children": [
+				{
+					"id": "f6mXebUlzgPHc_Yf-",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+						"id": "fy12DVPocaO9j8VCQ"
+					},
+					"name": "Fine Quality",
+					"reference": "B280",
+					"notes": "+1 to Acc",
+					"cost_type": "to_base_cost",
+					"cost": "x2",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "this_weapon",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1
+						}
+					]
+				},
+				{
+					"id": "fXZ7-WnLTynWSMqJi",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+						"id": "fIrwGb3phQHID5ir-"
+					},
+					"name": "Very Fine Quality",
+					"reference": "B280",
+					"notes": "+2 to Acc",
+					"cost_type": "to_base_cost",
+					"cost": "x5",
+					"features": [
+						{
+							"type": "weapon_acc_bonus",
+							"selection_type": "this_weapon",
+							"name": {
+								"compare": "is"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "FLNlS443loDOwVfDd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+				"id": "FsiJCkeYNFO6KSpcZ"
+			},
+			"name": "Melee \u0026 Thrown Weapon Quality",
+			"children": [
+				{
+					"id": "fHti9ON9ofyE9HHut",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+						"id": "fH1TN1i0Rnzrt8yeo"
+					},
+					"name": "Cheap Quality",
+					"reference": "B274",
+					"notes": "-2 to resist disarm, -1 Acc if thrown",
+					"cost_type": "to_base_cost",
+					"cost": "x0.4"
+				},
+				{
+					"id": "fTI5OivWdpCl5oh6M",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+						"id": "fStqlBfYwip8AZThw"
+					},
+					"name": "Fine Quality",
+					"reference": "B274",
+					"notes": "+1 to resist disarm; blades only",
+					"cost_type": "to_base_cost",
+					"cost": "x2",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "this_weapon",
+							"amount": 1
+						}
+					]
+				},
+				{
+					"id": "fzYprYECB-kLjEQGu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+						"id": "fTQyYUlc683X9JmxD"
+					},
+					"name": "Fine Quality",
+					"reference": "B274",
+					"notes": "+1 to resist disarm; for non-blades that do only crushing or impaling damage",
+					"cost_type": "to_base_cost",
+					"cost": "x1.5"
+				},
+				{
+					"id": "fWhDTGb_mF_mtFW4q",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+						"id": "fBmwYlw111r8Kt1yB"
+					},
+					"name": "Fine Quality",
+					"reference": "B274",
+					"notes": "+1 to resist disarm; for non-blades that do cutting damage",
+					"cost_type": "to_base_cost",
+					"cost": "x3",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "this_weapon",
+							"amount": 1
+						}
+					]
+				},
+				{
+					"id": "fD0orRuDzYWIkV0lZ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment Modifiers.eqm",
+						"id": "fD97FnrNlHwikQwgy"
+					},
+					"name": "Very Fine Quality",
+					"reference": "B274",
+					"notes": "+2 to resist disarm; for fencing weapons and swords only",
+					"cost_type": "to_base_cost",
+					"cost": "x4",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "this_weapon",
+							"amount": 2
+						}
+					]
+				}
+			]
+		}
+	]
+}

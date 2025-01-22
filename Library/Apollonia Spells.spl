@@ -8162,12 +8162,12 @@
 			},
 			"weapons": [
 				{
-					"id": "Wou_ggPzKjO6Tn2jM",
+					"id": "WakMj2batzloeESFK",
 					"damage": {
 						"type": "burn damage in an explosion centered on itself with",
 						"base": "2d"
 					},
-					"usage": "Beam",
+					"usage": "Area",
 					"rate_of_fire": "1",
 					"defaults": [
 						{
