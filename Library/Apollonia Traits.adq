@@ -2925,55 +2925,56 @@
 			}
 		},
 		{
-			"id": "tt7PhznkeTDbAqkee",
+			"id": "ta0unwqXurFQWdnIn",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set\\Basic Set Traits.adq",
 				"id": "tC7vHppsCtZue1RiC"
 			},
-			"name": "Addiction (@Substance@)",
+			"name": "Addiction (Smokeleaf)",
 			"reference": "B122",
 			"tags": [
 				"Disadvantage",
 				"Mental",
 				"Physical"
 			],
+			"replacements": {
+				"Substance": "Substance"
+			},
 			"modifiers": [
 				{
-					"id": "MGNAZR59K6nnkWSDK",
+					"id": "MkcsPt8LvQhQbrKuS",
 					"name": "Legality Modifiers",
 					"children": [
 						{
-							"id": "mwUdPXl6g4dA5y0HP",
+							"id": "mAaV_zBQbL2EgxfKp",
 							"name": "Illegal",
 							"reference": "B122",
 							"cost_type": "points",
 							"disabled": true
 						},
 						{
-							"id": "mrND-LxqQJeebK-T2",
+							"id": "mTqHReTkt1ZdFR0b0",
 							"name": "Legal",
 							"reference": "B122",
 							"cost": 5,
-							"cost_type": "points",
-							"disabled": true
+							"cost_type": "points"
 						}
 					]
 				},
 				{
-					"id": "MIbNl2g5S9nBf-TVT",
+					"id": "MtnOtnZLR3AYGKITp",
 					"name": "Cost Modifiers",
 					"children": [
 						{
-							"id": "mSpdDimqli_0SI7L7",
+							"id": "m8VgHzLNAxfqno6Xt",
 							"name": "Cheap",
 							"reference": "B122",
 							"cost": -5,
-							"cost_type": "points",
-							"disabled": true
+							"cost_type": "points"
 						},
 						{
-							"id": "mj12ppplDojzPnnQ8",
+							"id": "m-EyUH1R8Zil1XTP2",
 							"name": "Expensive",
 							"reference": "B122",
 							"cost": -10,
@@ -2981,7 +2982,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mNaP-EnGjv2Q_xZgl",
+							"id": "mM9_bzV2-lUDzljFy",
 							"name": "Very Expensive",
 							"reference": "B122",
 							"cost": -20,
@@ -2991,11 +2992,11 @@
 					]
 				},
 				{
-					"id": "MTr8SQElN_0YYyx7t",
+					"id": "MBHLo0EIbafbz4Xhl",
 					"name": "Effect Modifiers",
 					"children": [
 						{
-							"id": "mJSYnSAmAy4ouW-2_",
+							"id": "m7xmEmunmaGT2orgK",
 							"name": "Highly Addictive (-5 on withdrawal roll)",
 							"reference": "B122",
 							"cost": -5,
@@ -3003,7 +3004,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mGkuW2QLRfzjAkHtR",
+							"id": "mTiWYkalLkzzsWnqV",
 							"name": "Totally Addictive (-10 on withdrawal roll)",
 							"reference": "B122",
 							"cost": -10,
@@ -3011,7 +3012,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mKCZgQhhu0--cuSlR",
+							"id": "mDsUzhQaLpr9fS7OQ",
 							"name": "Hallucinogenic",
 							"reference": "B122",
 							"cost": -10,
@@ -3019,7 +3020,7 @@
 							"disabled": true
 						},
 						{
-							"id": "msrPO7eyktlJAQ3m9",
+							"id": "max7ejTn2quOiOVkP",
 							"name": "Incapacitating",
 							"reference": "B122",
 							"cost": -10,
@@ -3031,6 +3032,444 @@
 			],
 			"calc": {
 				"points": 0
+			}
+		},
+		{
+			"id": "tGzclH8pG3G7w2_Ux",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Traits.adq",
+				"id": "tC7vHppsCtZue1RiC"
+			},
+			"name": "Addiction (Yayo)",
+			"reference": "B122",
+			"tags": [
+				"Disadvantage",
+				"Mental",
+				"Physical"
+			],
+			"replacements": {
+				"Substance": "Substance"
+			},
+			"modifiers": [
+				{
+					"id": "MpiS_wG732LiMqFx5",
+					"name": "Legality Modifiers",
+					"children": [
+						{
+							"id": "mZMDsSj8LLfNU0Sow",
+							"name": "Illegal",
+							"reference": "B122",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mrSSCBoB5pq4bY1xe",
+							"name": "Legal",
+							"reference": "B122",
+							"cost": 5,
+							"cost_type": "points"
+						}
+					]
+				},
+				{
+					"id": "Mc-RVuOP6kLUqQaEN",
+					"name": "Cost Modifiers",
+					"children": [
+						{
+							"id": "mYUl9bXSMIr0Qr4Kn",
+							"name": "Cheap",
+							"reference": "B122",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "mKWyr1LB_H1pmPvY3",
+							"name": "Expensive",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mTHg2Tj7W8EWSL8Ey",
+							"name": "Very Expensive",
+							"reference": "B122",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MX7m_KcPafgRdu-gW",
+					"name": "Effect Modifiers",
+					"children": [
+						{
+							"id": "m7tna9jg5EiNeoUI7",
+							"name": "Highly Addictive (-5 on withdrawal roll)",
+							"reference": "B122",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mhoJoG1bhOlx8M7qH",
+							"name": "Totally Addictive (-10 on withdrawal roll)",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mMrntj9Eb-vOZ_VxV",
+							"name": "Hallucinogenic",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mKIVsWYX8m0RxHrM6",
+							"name": "Incapacitating",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tiS_6uIO4dwrdllWC",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Traits.adq",
+				"id": "tC7vHppsCtZue1RiC"
+			},
+			"name": "Addiction (Wake-Up)",
+			"reference": "B122",
+			"tags": [
+				"Disadvantage",
+				"Mental",
+				"Physical"
+			],
+			"replacements": {
+				"Substance": "Substance"
+			},
+			"modifiers": [
+				{
+					"id": "MRTOjM1XGgau2JQfQ",
+					"name": "Legality Modifiers",
+					"children": [
+						{
+							"id": "mWSNBiVAprd6b_jOC",
+							"name": "Illegal",
+							"reference": "B122",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mbqn564rI56dNsJBA",
+							"name": "Legal",
+							"reference": "B122",
+							"cost": 5,
+							"cost_type": "points"
+						}
+					]
+				},
+				{
+					"id": "MZIAPUqCAqqw9ASoA",
+					"name": "Cost Modifiers",
+					"children": [
+						{
+							"id": "mznUYL1Rp0XXMhh9A",
+							"name": "Cheap",
+							"reference": "B122",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m3mzIAVhXxgPna5fg",
+							"name": "Expensive",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points"
+						},
+						{
+							"id": "mfpGORCrNkkH4ZCGy",
+							"name": "Very Expensive",
+							"reference": "B122",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "MsZI8iYCcaDNsNysj",
+					"name": "Effect Modifiers",
+					"children": [
+						{
+							"id": "mILbhpj6zwxi6d8a1",
+							"name": "Highly Addictive (-5 on withdrawal roll)",
+							"reference": "B122",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mgf4VqFflVOHzD-Oe",
+							"name": "Totally Addictive (-10 on withdrawal roll)",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mNlDb3SKG2C204l3v",
+							"name": "Hallucinogenic",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mt9rNx1koQP5GzAfV",
+							"name": "Incapacitating",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "tkYkAA7w6mmLDSSPQ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Traits.adq",
+				"id": "tC7vHppsCtZue1RiC"
+			},
+			"name": "Addiction (Go-Juice)",
+			"reference": "B122",
+			"tags": [
+				"Disadvantage",
+				"Mental",
+				"Physical"
+			],
+			"replacements": {
+				"Substance": "Substance"
+			},
+			"modifiers": [
+				{
+					"id": "Mi1rAk9EO7nU4n1m0",
+					"name": "Legality Modifiers",
+					"children": [
+						{
+							"id": "mHnnx0fNC0E1MrQ3d",
+							"name": "Illegal",
+							"reference": "B122",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mroveFn_Tzc3hNjDV",
+							"name": "Legal",
+							"reference": "B122",
+							"cost": 5,
+							"cost_type": "points"
+						}
+					]
+				},
+				{
+					"id": "MNWpNdFeSdhSLUL8F",
+					"name": "Cost Modifiers",
+					"children": [
+						{
+							"id": "mef0D5aoFJapFrfPA",
+							"name": "Cheap",
+							"reference": "B122",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mRn1javjGstQUsNfe",
+							"name": "Expensive",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points"
+						},
+						{
+							"id": "mcmNmufEOwXa9yc17",
+							"name": "Very Expensive",
+							"reference": "B122",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						}
+					]
+				},
+				{
+					"id": "Miyhtb2irfP49q6zl",
+					"name": "Effect Modifiers",
+					"children": [
+						{
+							"id": "mopq0Ml7GeLu4hUIR",
+							"name": "Highly Addictive (-5 on withdrawal roll)",
+							"reference": "B122",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "mIe1-f62FZC_OODlC",
+							"name": "Totally Addictive (-10 on withdrawal roll)",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "msanZ9DCvsYfFsR_C",
+							"name": "Hallucinogenic",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mOk8IOCrNhdisdk93",
+							"name": "Incapacitating",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "tI9IzLvGRUw94IhS1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Traits.adq",
+				"id": "tC7vHppsCtZue1RiC"
+			},
+			"name": "Addiction (Starlight)",
+			"reference": "B122",
+			"tags": [
+				"Disadvantage",
+				"Mental",
+				"Physical"
+			],
+			"replacements": {
+				"Substance": "Substance"
+			},
+			"modifiers": [
+				{
+					"id": "MloG0rzFqH22xZVr_",
+					"name": "Legality Modifiers",
+					"children": [
+						{
+							"id": "m42eD6BV9qmzVyaVk",
+							"name": "Illegal",
+							"reference": "B122",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mEiXSF2dn1Ub4Np7y",
+							"name": "Legal",
+							"reference": "B122",
+							"cost": 5,
+							"cost_type": "points"
+						}
+					]
+				},
+				{
+					"id": "MZFY2mxgRbpsPbKD9",
+					"name": "Cost Modifiers",
+					"children": [
+						{
+							"id": "m3nUhGKgf81Mj97Qo",
+							"name": "Cheap",
+							"reference": "B122",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mtNL4qGZjyW-0G-hp",
+							"name": "Expensive",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m4SA7C1dxz11hh0Ld",
+							"name": "Very Expensive",
+							"reference": "B122",
+							"cost": -20,
+							"cost_type": "points"
+						}
+					]
+				},
+				{
+					"id": "MB-oieF4sxzKqIHU-",
+					"name": "Effect Modifiers",
+					"children": [
+						{
+							"id": "m_AuA19rNLJO8xvkl",
+							"name": "Highly Addictive (-5 on withdrawal roll)",
+							"reference": "B122",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m045JQWdv4Xo59kcC",
+							"name": "Totally Addictive (-10 on withdrawal roll)",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points"
+						},
+						{
+							"id": "mR_oWJGnym1DBv6y7",
+							"name": "Hallucinogenic",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mG8hN91swCLPBSHmy",
+							"name": "Incapacitating",
+							"reference": "B122",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": -25
 			}
 		},
 		{

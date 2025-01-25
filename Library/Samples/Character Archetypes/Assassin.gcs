@@ -2311,15 +2311,17 @@
 			"tech_level": "8",
 			"points": 1,
 			"defaulted_from": {
-				"type": "dx",
-				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Rifle",
+				"modifier": -2,
+				"level": 14,
+				"adjusted_level": 14,
+				"points": 1
 			},
 			"calc": {
-				"level": 14,
-				"rsl": "DX+0"
+				"level": 15,
+				"rsl": "DX+1"
 			}
 		},
 		{
@@ -2401,13 +2403,11 @@
 			"tech_level": "8",
 			"points": 4,
 			"defaulted_from": {
-				"type": "skill",
-				"name": "Guns",
-				"specialization": "Pistol",
-				"modifier": -2,
-				"level": 12,
-				"adjusted_level": 12,
-				"points": -12
+				"type": "dx",
+				"modifier": -4,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
 				"level": 16,
@@ -2921,7 +2921,7 @@
 						}
 					],
 					"calc": {
-						"level": 14,
+						"level": 15,
 						"damage": "2d-2 pi"
 					}
 				}
@@ -3435,7 +3435,7 @@
 								}
 							],
 							"calc": {
-								"level": 14,
+								"level": 15,
 								"damage": "2d-1 pi"
 							}
 						}
@@ -4111,7 +4111,7 @@
 		}
 	],
 	"created_date": "2025-01-08T16:53:21-06:00",
-	"modified_date": "2025-01-12T18:33:41-06:00",
+	"modified_date": "2025-01-25T16:50:20-06:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",

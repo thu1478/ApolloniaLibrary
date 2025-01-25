@@ -76,6 +76,503 @@
 			"points": 1
 		},
 		{
+			"id": "qXluJUEdJ7RoVVxAz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Adhesive Mines",
+			"reference": "AP67",
+			"notes": "Fires marble size mines instead that detonate on subsequent hits to add a 1d-2 burn damage follow-up attack if the attack penetrates. They fall off at the start of your next turn and are removed automatically after detonating once.",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Pistol",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"weapons": [
+				{
+					"id": "WssjDuLC4350K-YZA",
+					"damage": {
+						"type": "burn",
+						"base": "1d-2"
+					},
+					"rate_of_fire": "1",
+					"calc": {
+						"damage": "1d-2 burn"
+					}
+				}
+			],
+			"points": 2
+		},
+		{
+			"id": "qpo5rkFqM9bYc6-ex",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Barrier Buster",
+			"reference": "AP67",
+			"notes": "Deal -2 damage but automatically remove 4 Barrier from the target before damage calculations",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Pistol",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qHMemUuurrg1hx9-U",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Barrier Buster",
+			"reference": "AP67",
+			"notes": "Deal -2 damage but automatically remove 4 Barrier from the target before damage calculations",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Submachine Gun",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "q7LYr0hmuyQmG47k9",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Airburst Mode",
+			"reference": "AP67",
+			"notes": "Bullets detonate in mid-air, granting +2 to hit aerial targets",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Submachine Gun",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qgcj8GmtCmVGKDaK-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Airburst Mode",
+			"reference": "AP67",
+			"notes": "Bullets detonate in mid-air, granting +2 to hit aerial targets",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Rifle",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qgU1BZtff26rJASuf",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Auto-Snap",
+			"reference": "AP67",
+			"notes": "When the attack is triggered by the Wait maneuver you gain +1 to hit",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Rifle",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "q8qRjgrgLppzgqg9M",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Slug",
+			"reference": "AP67",
+			"notes": "Fire a single large bullet. You don't benefit from Kill Zone but you deal double damage and have armor divisor 2",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Shotgun",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qOUXrD2J1bdwJnHF0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Concussive Rounds",
+			"reference": "AP67",
+			"notes": "The damage changes to cr and deals double knockback damage. It also deal -2 damage.",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Shotgun",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qjWiPD5xzjwxxQVtS",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Dragon Rounds",
+			"reference": "AP67",
+			"notes": "Changes damage type to burn",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Shotgun",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "q9v4v7bS_X-JwfID4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Beam",
+			"reference": "AP67",
+			"notes": "Spend one Aim maneuver to charge this. On the next turn you fire a laser beam. The damage type changes to burn and gains armor divisor 2. Consumes 50 rounds.",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Light Machine Gun",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
+			"id": "qhjM2Zju3U8R8hVJh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Holographic Targeting",
+			"reference": "AP67",
+			"notes": "During suppression grant +1 to hit on all targets in area",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Light Machine Gun",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Weapon Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
+		},
+		{
 			"id": "sz9InzQH7W3HZg2lr",
 			"name": "Advanced Artes",
 			"reference": "AP75",
@@ -1720,6 +2217,50 @@
 			],
 			"tech_level": "",
 			"points": 1
+		},
+		{
+			"id": "qhqn5tXAhylU8Wnta",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qEcF5gsU3w7cElA-H"
+			},
+			"name": "Graviton Marker",
+			"reference": "AP67",
+			"notes": "Fires penny size adhesive tags that draws attacks toward it, granting +1 to attacks against the same target. They fall off at the start of your next turn.",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Guns",
+				"specialization": "Pistol",
+				"modifier": -1
+			},
+			"limit": 0,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Advanced Artes"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"points": 2
 		},
 		{
 			"id": "qUHtRd7obRDWIE5g3",

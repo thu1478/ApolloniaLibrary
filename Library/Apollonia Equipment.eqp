@@ -9025,12 +9025,12 @@
 								{
 									"type": "conditional_modifier",
 									"situation": "to all IQ based rolls while on withdrawal from smokeleaf",
-									"amount": -1
+									"amount": -2
 								},
 								{
 									"type": "conditional_modifier",
 									"situation": "to all IQ based rolls while high on smokeleaf",
-									"amount": -2
+									"amount": -1
 								}
 							],
 							"quantity": 1,
