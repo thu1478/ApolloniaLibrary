@@ -3322,9 +3322,9 @@
 			},
 			"weapons": [
 				{
-					"id": "WYxVXfz7gp3PWjOUZ",
+					"id": "WvvRZ-_GED4GX4wRX",
 					"damage": {
-						"type": "cr damage and does double knockback damage. If you hit a target whose move has been reduced to 0 but is not stunned, then this spell deals",
+						"type": "cr",
 						"base": "2d"
 					},
 					"usage": "Projectile",
@@ -3344,7 +3344,7 @@
 						}
 					],
 					"calc": {
-						"damage": "2d cr damage and does double knockback damage. If you hit a target whose move has been reduced to 0 but is not stunned, then this spell deals"
+						"damage": "2d cr"
 					}
 				}
 			],
@@ -3996,12 +3996,11 @@
 			},
 			"weapons": [
 				{
-					"id": "W95JbsOAAMs08kYf7",
+					"id": "Wd_1j0422spForrGp",
 					"damage": {
-						"type": "crushing damage with dropoff. Any who takes at least 1",
+						"type": "cr",
 						"base": "3d"
 					},
-					"usage": "Beam",
 					"rate_of_fire": "1",
 					"defaults": [
 						{
@@ -4015,7 +4014,7 @@
 						}
 					],
 					"calc": {
-						"damage": "3d crushing damage with dropoff. Any who takes at least 1"
+						"damage": "3d cr"
 					}
 				}
 			],
@@ -4410,9 +4409,9 @@
 			},
 			"weapons": [
 				{
-					"id": "WXskBOFpxuyHxktNj",
+					"id": "WxL2Ec1UCC4XoNhpq",
 					"damage": {
-						"type": "2 cr damage and the target",
+						"type": "cr",
 						"base": "1d"
 					},
 					"usage": "Beam",
@@ -4430,7 +4429,7 @@
 						}
 					],
 					"calc": {
-						"damage": "1d 2 cr damage and the target"
+						"damage": "1d cr"
 					}
 				}
 			],
@@ -6413,14 +6412,14 @@
 			},
 			"weapons": [
 				{
-					"id": "Wih_TY8PMWv84CTEl",
+					"id": "WSwef9C-FOiLQdGeR",
 					"damage": {
-						"type": "burn damage to any target",
+						"type": "burn",
 						"base": "1d"
 					},
 					"usage": "Area",
 					"calc": {
-						"damage": "1d burn damage to any target"
+						"damage": "1d burn"
 					}
 				}
 			],
@@ -6802,9 +6801,9 @@
 			},
 			"weapons": [
 				{
-					"id": "WakMj2batzloeESFK",
+					"id": "WYJuwDxEEfwSgrN2T",
 					"damage": {
-						"type": "burn damage in an explosion centered on itself with",
+						"type": "burn",
 						"base": "2d"
 					},
 					"usage": "Area",
@@ -6821,7 +6820,7 @@
 						}
 					],
 					"calc": {
-						"damage": "2d burn damage in an explosion centered on itself with"
+						"damage": "2d burn"
 					}
 				}
 			],
@@ -7715,14 +7714,14 @@
 			},
 			"weapons": [
 				{
-					"id": "WA_J4j9LzCDEsWLr3",
+					"id": "W41MK1dH1lM1qak5l",
 					"damage": {
-						"type": "1 burn",
+						"type": "burn",
 						"base": "1d"
 					},
 					"usage": "Area",
 					"calc": {
-						"damage": "1d 1 burn"
+						"damage": "1d burn"
 					}
 				}
 			],
@@ -7783,9 +7782,9 @@
 			},
 			"weapons": [
 				{
-					"id": "WugEQlb0aP1xrzIZW",
+					"id": "WQA9hyoiYKnaiqEDJ",
 					"damage": {
-						"type": "2 cor damage. It reduces DR by 1 if it deals at least 5",
+						"type": "cor",
 						"base": "1d"
 					},
 					"usage": "Beam",
@@ -7804,7 +7803,7 @@
 						}
 					],
 					"calc": {
-						"damage": "1d 2 cor damage. It reduces DR by 1 if it deals at least 5"
+						"damage": "1d cor"
 					}
 				}
 			],
@@ -8494,9 +8493,9 @@
 			},
 			"weapons": [
 				{
-					"id": "WwnuEcwlLhCrgV2iw",
+					"id": "W1p465h9ZTPvOc6Hu",
 					"damage": {
-						"type": "2 toxic damage when ingested. This will expire after",
+						"type": "tox",
 						"base": "1d"
 					},
 					"usage": "Beam",
@@ -8513,7 +8512,7 @@
 						}
 					],
 					"calc": {
-						"damage": "1d 2 toxic damage when ingested. This will expire after"
+						"damage": "1d tox"
 					}
 				}
 			],
@@ -8752,15 +8751,15 @@
 			},
 			"weapons": [
 				{
-					"id": "W8o2caHnayh6WP-yg",
+					"id": "WCgazdvYeCDA41SaM",
 					"damage": {
-						"type": "3 toxic damage at the start of their next turn. If the breath is ignited then the HT roll is ignored, the damage type becomes burn, and the damage instead becomes 1d and is",
+						"type": "tox",
 						"base": "1d"
 					},
 					"usage": "Area",
 					"usage_notes": "You may multiply the base cost by an amount up to your Circle to deal an additional +2 damage",
 					"calc": {
-						"damage": "1d 3 toxic damage at the start of their next turn. If the breath is ignited then the HT roll is ignored, the damage type becomes burn, and the damage instead becomes 1d and is"
+						"damage": "1d tox"
 					}
 				}
 			],
@@ -8927,9 +8926,9 @@
 			},
 			"weapons": [
 				{
-					"id": "W4cyhrHNAG5ej0g9p",
+					"id": "WmKK2U90cokQ0p4mK",
 					"damage": {
-						"type": "burn damage with",
+						"type": "burn",
 						"base": "2d"
 					},
 					"usage": "Projectile",
@@ -8950,7 +8949,7 @@
 						}
 					],
 					"calc": {
-						"damage": "2d burn damage with"
+						"damage": "2d burn"
 					}
 				}
 			],
@@ -9642,9 +9641,9 @@
 			},
 			"weapons": [
 				{
-					"id": "WCZVNyTm3_gKL-pmH",
+					"id": "Wpv3wrtm7tbwA9cTy",
 					"damage": {
-						"type": "toxic damage 1 minute after ingested. This will expire after",
+						"type": "toxic",
 						"base": "3d"
 					},
 					"usage": "Beam",
@@ -9661,7 +9660,7 @@
 						}
 					],
 					"calc": {
-						"damage": "3d toxic damage 1 minute after ingested. This will expire after"
+						"damage": "3d toxic"
 					}
 				}
 			],
@@ -9900,9 +9899,9 @@
 			},
 			"weapons": [
 				{
-					"id": "WtQa6GzfL-pjQrHk6",
+					"id": "WprRauvJ0nJ0wGf-U",
 					"damage": {
-						"type": "imp damage with",
+						"type": "imp",
 						"base": "2d"
 					},
 					"usage": "Projectile",
@@ -9923,7 +9922,7 @@
 						}
 					],
 					"calc": {
-						"damage": "2d imp damage with"
+						"damage": "2d imp"
 					}
 				}
 			],

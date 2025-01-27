@@ -41,7 +41,7 @@
 							"id": "tsenpegAXGe5OGFxH",
 							"name": "Curveball",
 							"reference": "AP49",
-							"notes": "The effects of the Redirection spell are always active and you",
+							"notes": "The effects of the Redirection spell are always active and you are not limited to a single target",
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,

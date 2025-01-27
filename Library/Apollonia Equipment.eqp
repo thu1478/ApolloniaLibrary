@@ -2625,18 +2625,6 @@
 					"equipped": true,
 					"children": [
 						{
-							"id": "el0ks5x8DJkTIJaIm",
-							"description": "Extra Large Drone",
-							"legality_class": "4",
-							"weight": "3,000 lb",
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"extended_value": 0,
-								"extended_weight": "3,000 lb"
-							}
-						},
-						{
 							"id": "e_I8Wl32OO5dzWGvq",
 							"description": "Large Drone",
 							"legality_class": "4",
@@ -2646,6 +2634,18 @@
 							"calc": {
 								"extended_value": 0,
 								"extended_weight": "150 lb"
+							}
+						},
+						{
+							"id": "el0ks5x8DJkTIJaIm",
+							"description": "Extra Large Drone",
+							"legality_class": "4",
+							"weight": "3,000 lb",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"extended_value": 0,
+								"extended_weight": "3,000 lb"
 							}
 						},
 						{
@@ -2701,6 +2701,28 @@
 					}
 				},
 				{
+					"id": "eEZFHv7xcQnTMFxLs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Equipment.eqp",
+						"id": "eCQX_NEhHao-HXw1l"
+					},
+					"description": "Smart Phone",
+					"reference": "B288",
+					"notes": "Only works in some areas; $20/month fee., 10 hrs.",
+					"tech_level": "8",
+					"tags": [
+						"Communications and Information Gear"
+					],
+					"value": 750,
+					"weight": "0.25 lb",
+					"quantity": 1,
+					"calc": {
+						"extended_value": 750,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
 					"id": "eVpkcfCMkHz6zuvU8",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -2714,33 +2736,11 @@
 					"tags": [
 						"Communications and Information Gear"
 					],
-					"value": 1500,
+					"value": 1000,
 					"weight": "3 lb",
 					"quantity": 1,
 					"calc": {
-						"extended_value": 1500,
-						"extended_weight": "3 lb"
-					}
-				},
-				{
-					"id": "eEh5rXyVePP8uxD0P",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Equipment.eqp",
-						"id": "eReOCZMujr5hTRhK8"
-					},
-					"description": "Satellite Phone",
-					"reference": "B288",
-					"notes": "Global range, satellite relay. 1 hr.",
-					"tech_level": "8",
-					"tags": [
-						"Communications and Information Gear"
-					],
-					"value": 3000,
-					"weight": "3 lb",
-					"quantity": 1,
-					"calc": {
-						"extended_value": 3000,
+						"extended_value": 1000,
 						"extended_weight": "3 lb"
 					}
 				},
@@ -2758,8 +2758,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": 4850,
-				"extended_weight": "3,189.75 lb"
+				"extended_value": 2100,
+				"extended_weight": "3,187 lb"
 			}
 		},
 		{
