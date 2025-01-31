@@ -10090,6 +10090,30 @@
 							}
 						},
 						{
+							"id": "esKeAIn7r71S4c06t",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Equipment.eqp",
+								"id": "ehIxhuv_8_PA8EnPd"
+							},
+							"description": "Other hats",
+							"reference": "AP112",
+							"notes": "Flexible, concealable",
+							"tech_level": "6",
+							"legality_class": "4",
+							"tags": [
+								"Armor",
+								"Clothing"
+							],
+							"value": 30,
+							"weight": "0.1 lb",
+							"quantity": 1,
+							"calc": {
+								"extended_value": 30,
+								"extended_weight": "0.1 lb"
+							}
+						},
+						{
 							"id": "eaS5opar-qrRh_6pO",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
@@ -10439,8 +10463,8 @@
 						}
 					],
 					"calc": {
-						"extended_value": 11525,
-						"extended_weight": "24.2 lb"
+						"extended_value": 11555,
+						"extended_weight": "24.3 lb"
 					}
 				},
 				{
@@ -10924,8 +10948,8 @@
 				}
 			],
 			"calc": {
-				"extended_value": 155125,
-				"extended_weight": "198.325 lb"
+				"extended_value": 155155,
+				"extended_weight": "198.425 lb"
 			}
 		},
 		{
