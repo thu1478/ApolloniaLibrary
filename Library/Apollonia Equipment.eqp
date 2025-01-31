@@ -11112,6 +11112,86 @@
 				"extended_value": 50,
 				"extended_weight": "10 lb"
 			}
+		},
+		{
+			"id": "EOoVKlWj3FnP3lf1F",
+			"description": "Tools",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eqoeamdvXBTQyV2Mo",
+					"description": "Cosmetics Kit",
+					"legality_class": "4",
+					"value": 30,
+					"weight": "0.1 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 30,
+						"extended_weight": "0.1 lb"
+					}
+				},
+				{
+					"id": "e89QXV1-XsDqci5S5",
+					"description": "Repair Toolkit",
+					"notes": "Hammers, Screwdrivers, etc",
+					"legality_class": "4",
+					"value": 50,
+					"weight": "6 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "eOof6BD8ZAXYRgz13",
+					"description": "Sewing Kit",
+					"notes": "Thread, needles, buttons, etc.",
+					"legality_class": "4",
+					"value": 12,
+					"weight": "0.1 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 12,
+						"extended_weight": "0.1 lb"
+					}
+				},
+				{
+					"id": "edfUIWyNmf6N1Zlhm",
+					"description": "Paperback Book",
+					"legality_class": "4",
+					"value": 15,
+					"weight": "1 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 15,
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eqRhC1vtimGtwHs0Q",
+					"description": "Hardcover Book",
+					"legality_class": "4",
+					"value": 25,
+					"weight": "2 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 25,
+						"extended_weight": "2 lb"
+					}
+				}
+			],
+			"calc": {
+				"extended_value": 132,
+				"extended_weight": "9.2 lb"
+			}
 		}
 	]
 }
