@@ -3053,38 +3053,38 @@
 			},
 			"modifiers": [
 				{
-					"id": "MpiS_wG732LiMqFx5",
+					"id": "MStprW1pY44xZY0gs",
 					"name": "Legality Modifiers",
 					"children": [
 						{
-							"id": "mZMDsSj8LLfNU0Sow",
+							"id": "mSca3tFtCmVLCgz7_",
 							"name": "Illegal",
 							"reference": "B122",
-							"cost_type": "points",
-							"disabled": true
+							"cost_type": "points"
 						},
 						{
-							"id": "mrSSCBoB5pq4bY1xe",
+							"id": "mtC5S848HhFhCPB8h",
 							"name": "Legal",
 							"reference": "B122",
 							"cost": 5,
-							"cost_type": "points"
+							"cost_type": "points",
+							"disabled": true
 						}
 					]
 				},
 				{
-					"id": "Mc-RVuOP6kLUqQaEN",
+					"id": "M-Kt61AZCS_0NWIfA",
 					"name": "Cost Modifiers",
 					"children": [
 						{
-							"id": "mYUl9bXSMIr0Qr4Kn",
+							"id": "mz6HnmjJbSpoXAAJD",
 							"name": "Cheap",
 							"reference": "B122",
 							"cost": -5,
 							"cost_type": "points"
 						},
 						{
-							"id": "mKWyr1LB_H1pmPvY3",
+							"id": "mxlGC1o0kmWeSxm3Z",
 							"name": "Expensive",
 							"reference": "B122",
 							"cost": -10,
@@ -3092,7 +3092,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mTHg2Tj7W8EWSL8Ey",
+							"id": "m8ObSaHbGlwLsEzQh",
 							"name": "Very Expensive",
 							"reference": "B122",
 							"cost": -20,
@@ -3102,11 +3102,11 @@
 					]
 				},
 				{
-					"id": "MX7m_KcPafgRdu-gW",
+					"id": "MCPeV29T7FV7e02-p",
 					"name": "Effect Modifiers",
 					"children": [
 						{
-							"id": "m7tna9jg5EiNeoUI7",
+							"id": "mh5qbw34sAg-d9jhb",
 							"name": "Highly Addictive (-5 on withdrawal roll)",
 							"reference": "B122",
 							"cost": -5,
@@ -3114,7 +3114,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mhoJoG1bhOlx8M7qH",
+							"id": "mRSUXR1EznHZTPSg1",
 							"name": "Totally Addictive (-10 on withdrawal roll)",
 							"reference": "B122",
 							"cost": -10,
@@ -3122,7 +3122,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mMrntj9Eb-vOZ_VxV",
+							"id": "mQWlcBJREZzRhrGvz",
 							"name": "Hallucinogenic",
 							"reference": "B122",
 							"cost": -10,
@@ -3130,7 +3130,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mKIVsWYX8m0RxHrM6",
+							"id": "mhTZSl3RSiAIOJg1_",
 							"name": "Incapacitating",
 							"reference": "B122",
 							"cost": -10,
@@ -3141,7 +3141,7 @@
 				}
 			],
 			"calc": {
-				"points": 0
+				"points": -5
 			}
 		},
 		{
@@ -3382,31 +3382,32 @@
 			},
 			"modifiers": [
 				{
-					"id": "MloG0rzFqH22xZVr_",
+					"id": "M5AnWCoyuRUk2H8ce",
 					"name": "Legality Modifiers",
 					"children": [
 						{
-							"id": "m42eD6BV9qmzVyaVk",
+							"id": "mj5Ktxi4hYU042ITH",
 							"name": "Illegal",
 							"reference": "B122",
 							"cost_type": "points",
 							"disabled": true
 						},
 						{
-							"id": "mEiXSF2dn1Ub4Np7y",
+							"id": "mhB3SCPDsQoaVEYIo",
 							"name": "Legal",
 							"reference": "B122",
 							"cost": 5,
-							"cost_type": "points"
+							"cost_type": "points",
+							"disabled": true
 						}
 					]
 				},
 				{
-					"id": "MZFY2mxgRbpsPbKD9",
+					"id": "MPJd5Nf01_Qd8VIgN",
 					"name": "Cost Modifiers",
 					"children": [
 						{
-							"id": "m3nUhGKgf81Mj97Qo",
+							"id": "mxroiboy8IdVb8t78",
 							"name": "Cheap",
 							"reference": "B122",
 							"cost": -5,
@@ -3414,7 +3415,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mtNL4qGZjyW-0G-hp",
+							"id": "mmnsmTxl2VRypRRlo",
 							"name": "Expensive",
 							"reference": "B122",
 							"cost": -10,
@@ -3422,7 +3423,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m4SA7C1dxz11hh0Ld",
+							"id": "mDx1SdXB76y_1re6S",
 							"name": "Very Expensive",
 							"reference": "B122",
 							"cost": -20,
@@ -3431,11 +3432,11 @@
 					]
 				},
 				{
-					"id": "MB-oieF4sxzKqIHU-",
+					"id": "MMUvqJtA41uO_d8s-",
 					"name": "Effect Modifiers",
 					"children": [
 						{
-							"id": "m_AuA19rNLJO8xvkl",
+							"id": "m_byZBGGUUmTYH1x9",
 							"name": "Highly Addictive (-5 on withdrawal roll)",
 							"reference": "B122",
 							"cost": -5,
@@ -3443,14 +3444,14 @@
 							"disabled": true
 						},
 						{
-							"id": "m045JQWdv4Xo59kcC",
+							"id": "mzfLX8w_RT7lV5ym_",
 							"name": "Totally Addictive (-10 on withdrawal roll)",
 							"reference": "B122",
 							"cost": -10,
 							"cost_type": "points"
 						},
 						{
-							"id": "mR_oWJGnym1DBv6y7",
+							"id": "mE32FNvrV4R3PNngF",
 							"name": "Hallucinogenic",
 							"reference": "B122",
 							"cost": -10,
@@ -3458,7 +3459,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mG8hN91swCLPBSHmy",
+							"id": "myTmzZYTzq3W2hL6z",
 							"name": "Incapacitating",
 							"reference": "B122",
 							"cost": -10,
@@ -3469,7 +3470,7 @@
 				}
 			],
 			"calc": {
-				"points": -25
+				"points": -30
 			}
 		},
 		{
@@ -8875,8 +8876,9 @@
 			"tags": [
 				"Combat"
 			],
+			"base_points": 5,
 			"calc": {
-				"points": 0
+				"points": 5
 			}
 		},
 		{
