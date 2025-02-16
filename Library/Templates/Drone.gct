@@ -1904,7 +1904,7 @@
 				"path": "Basic Set\\Basic Set Equipment.eqp",
 				"id": "enYweeQwtSBvAmkXg"
 			},
-			"description": "Blessed Thorn",
+			"description": "Blessed Thorn (Drone)",
 			"reference": "B278",
 			"notes": "Derringer: Lucius-124",
 			"tech_level": "5",
@@ -1916,12 +1916,12 @@
 			"weight": "0.5 lb",
 			"weapons": [
 				{
-					"id": "WQ0lHQG7Iwdpg9dSq",
+					"id": "WWG7PZrrz8hIA_0S9",
 					"damage": {
 						"type": "pi+",
 						"base": "1d"
 					},
-					"strength": "8",
+					"strength": "3",
 					"accuracy": "1",
 					"range": "6/12",
 					"rate_of_fire": "1",
@@ -2010,7 +2010,7 @@
 				"path": "Basic Set\\Basic Set Equipment.eqp",
 				"id": "ez3A4rmpoQF1oPUSS"
 			},
-			"description": "Pioneer 2R",
+			"description": "Pioneer 2R (Drone)",
 			"reference": "B279",
 			"notes": "Semi-Auto Rifle: SE-F-2R",
 			"tech_level": "7",
@@ -2022,7 +2022,7 @@
 			"weight": "9 lb",
 			"weapons": [
 				{
-					"id": "WHbrLlJ7C0JXp5dYQ",
+					"id": "WWJwkDJthYXYT-yVX",
 					"damage": {
 						"type": "pi",
 						"base": "3d"
@@ -2116,7 +2116,7 @@
 				"path": "Basic Set\\Basic Set Equipment.eqp",
 				"id": "eYZW7qkvflXuL60CW"
 			},
-			"description": "Purge",
+			"description": "Purge (Drone)",
 			"reference": "B279",
 			"notes": "Semi-Auto Shotgun: Nicholas 327",
 			"tech_level": "7",
@@ -2128,7 +2128,7 @@
 			"weight": "8.4 lb",
 			"weapons": [
 				{
-					"id": "W69TCDgdX6b6vSc_y",
+					"id": "WE85zH44PnzDxWvly",
 					"damage": {
 						"type": "pi",
 						"base": "1d"
@@ -2222,7 +2222,7 @@
 				"path": "Basic Set\\Basic Set Equipment.eqp",
 				"id": "edNQJgpJJz1GYkdmy"
 			},
-			"description": "Gravehound 3BG",
+			"description": "Gravehound 3BG (Drone)",
 			"reference": "B281",
 			"notes": "SAW: SE-F-3BG",
 			"tech_level": "7",
@@ -2234,7 +2234,7 @@
 			"weight": "24 lb",
 			"weapons": [
 				{
-					"id": "WdWgHaTmkDqO7RVdD",
+					"id": "W_5nHFl4QhUVp64f9",
 					"damage": {
 						"type": "pi",
 						"base": "3d+1"

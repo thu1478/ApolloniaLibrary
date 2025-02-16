@@ -1778,6 +1778,30 @@
 			"points": 2
 		},
 		{
+			"id": "q5SeLA65gHsAcT_vJ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "qZlo1-lmL3rN3S4vz"
+			},
+			"name": "Dual-Weapon Attack",
+			"reference": "B230,MA83",
+			"tags": [
+				"Cinematic Techniques",
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": "Axe/Mace",
+				"modifier": -4
+			},
+			"limit": 0,
+			"points": 2
+		},
+		{
 			"id": "qfMKFXJo4PsKvcq9G",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
