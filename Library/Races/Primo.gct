@@ -337,13 +337,13 @@
 					"base_points": 3,
 					"weapons": [
 						{
-							"id": "weSTkXQuB-NOdny3C",
+							"id": "w8Z2k_849Xc7XEc8y",
 							"damage": {
 								"type": "cr",
 								"st": "thr",
 								"modifier_per_die": 1
 							},
-							"usage": "Trample",
+							"usage": "Kick",
 							"reach": "C,1",
 							"defaults": [
 								{
