@@ -2845,10 +2845,917 @@
 					"calc": {
 						"points": 0
 					}
+				},
+				{
+					"id": "T_45jlncFSQJifDot",
+					"name": "Specialties",
+					"children": [
+						{
+							"id": "T94TYUcoQqCxUHaXk",
+							"name": "Morgath",
+							"children": [
+								{
+									"id": "tp4WEKONORNBo4WUS",
+									"name": "Keep Rolling",
+									"reference": "AP61",
+									"notes": "Your blessing only has a stacking -1 penalty",
+									"base_points": 5,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "t72L8T7KqicevEuLR",
+									"name": "Loan on Life",
+									"reference": "AP61",
+									"notes": "Once per day you may negate one instance of damage you take. However the next instance of damage you take deals double damage.",
+									"base_points": 15,
+									"calc": {
+										"points": 15
+									}
+								},
+								{
+									"id": "t1mgxhN3_hH3QRLmV",
+									"name": "Paid in Blood",
+									"reference": "AP61",
+									"notes": "For every 10 minutes you rest you may convert 1 HP to 3 Barrier. You do not receive benefits from bandaging.",
+									"base_points": 12,
+									"calc": {
+										"points": 12
+									}
+								}
+							],
+							"calc": {
+								"points": 32
+							}
+						},
+						{
+							"id": "TlxnBvmFIkaruAEXR",
+							"name": "Lucerna",
+							"children": [
+								{
+									"id": "tV947zCGSGgkH1qC3",
+									"name": "Stay in the Light",
+									"reference": "AP59",
+									"notes": "You gain +1 to all attack rolls with firearms when in direct sunlight, but suffer a -1 penalty at night",
+									"base_points": 3,
+									"calc": {
+										"points": 3
+									}
+								},
+								{
+									"id": "t1i2uY0URVm66gNV6",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Traits.adq",
+										"id": "tBmSJ3pNE53c4IRUU"
+									},
+									"name": "Almighty Defense",
+									"reference": "B47,P45,MA43,PSI14",
+									"notes": "Once per day you temporarily gain 5 DR when suffering a back attack that deals damage. The bonus DR expires after the attack damage is resolved.",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "mtwqtodIqy5GtkEsl",
+											"name": "Force Field",
+											"reference": "B47",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "mGcNW6UXadeab22b6",
+											"name": "Hardened",
+											"reference": "B47",
+											"cost": 20,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "malxeS1PHp9mhhsF5",
+											"name": "Absorption",
+											"reference": "B46",
+											"notes": "Enhances @Trait@",
+											"cost": 80,
+											"disabled": true
+										},
+										{
+											"id": "mT-dPdUW0-c15fZj6",
+											"name": "Absorption",
+											"reference": "B46",
+											"notes": "Healing only",
+											"cost": 80,
+											"disabled": true
+										},
+										{
+											"id": "m-q3vc5dSyBsep4Kw",
+											"name": "Absorption",
+											"reference": "B46",
+											"notes": "Enhances any trait",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mlqzoK_cswFboYl5q",
+											"name": "Reflection",
+											"reference": "B47",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mhcLTC72ymzXmag5Y",
+											"name": "Bane",
+											"reference": "H14",
+											"notes": "@Rare@",
+											"cost": -1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "m9ItnqN4LUShrkCLf",
+											"name": "Bane",
+											"reference": "H14",
+											"notes": "@Occasional@",
+											"cost": -5,
+											"disabled": true
+										},
+										{
+											"id": "mPGVR86dCYpSTuxJh",
+											"name": "Bane",
+											"reference": "H14",
+											"notes": "@Common@",
+											"cost": -10,
+											"disabled": true
+										},
+										{
+											"id": "mDs6KTRkxMO3W0fA3",
+											"name": "Bane",
+											"reference": "H14",
+											"notes": "@Very Common@",
+											"cost": -15,
+											"disabled": true
+										},
+										{
+											"id": "mzlQdCQHO2PhEXh1R",
+											"name": "Directional",
+											"reference": "B47",
+											"notes": "Front",
+											"cost": -20,
+											"disabled": true
+										},
+										{
+											"id": "mnX-D2jhvzEhz8At7",
+											"name": "Flexible",
+											"reference": "B47",
+											"cost": -20,
+											"disabled": true
+										},
+										{
+											"id": "mH9F8uo9WMCovac_f",
+											"name": "Limited",
+											"reference": "B46",
+											"notes": "@Very Common Attack Form@",
+											"cost": -20,
+											"disabled": true
+										},
+										{
+											"id": "muHSBilSTDJueUxeT",
+											"name": "Semi-Ablative",
+											"reference": "B47",
+											"cost": -20,
+											"disabled": true
+										},
+										{
+											"id": "m6_SJAqbgE3JCvpqV",
+											"name": "Can't wear armor",
+											"reference": "B47",
+											"cost": -40,
+											"disabled": true
+										},
+										{
+											"id": "mPU-EPdoS_iUqvbYO",
+											"name": "Directional",
+											"reference": "B47",
+											"notes": "@Direction: Back, Right, Left, Top or Underside@",
+											"cost": -40
+										},
+										{
+											"id": "mK3O8Aqdanj5tGk_E",
+											"name": "Limited",
+											"reference": "B46",
+											"notes": "@Common Attack Form@",
+											"cost": -40,
+											"disabled": true
+										},
+										{
+											"id": "mwx4r2bjfVHFO7lTk",
+											"name": "Tough Skin",
+											"notes": "Effects that just require skin contact or a scratch ignore this DR",
+											"cost": -40,
+											"disabled": true
+										},
+										{
+											"id": "mdm5vB_WzNHjbjbEU",
+											"name": "Limited",
+											"reference": "B46",
+											"notes": "@Occasional Attack Form@",
+											"cost": -60,
+											"disabled": true
+										},
+										{
+											"id": "mnU7g9RMqOsnC2J4_",
+											"name": "Ablative",
+											"reference": "B47",
+											"cost": -80,
+											"disabled": true
+										},
+										{
+											"id": "mMjS6vIREy-t0vV0F",
+											"name": "Limited",
+											"reference": "B46",
+											"notes": "@Rare Attack Form@",
+											"cost": -80,
+											"disabled": true
+										},
+										{
+											"id": "mE9bKsCdS1_Zh9PHR",
+											"name": "Laminate",
+											"reference": "RSWL18",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "mq84uLOSHvtqEu6do",
+											"name": "Malediction-Proof",
+											"reference": "PSI14",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "mwkmCyqF54jjx7tFJ",
+											"name": "Maledictions Only",
+											"reference": "PSI14",
+											"disabled": true
+										},
+										{
+											"id": "m8fT9LmA9Mal3cFSm",
+											"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+											"reference": "B47",
+											"cost": -10,
+											"disabled": true
+										},
+										{
+											"id": "moC5Pc_JLe-AirBY0",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m8LxjxHIi55QbM1I0"
+											},
+											"name": "Limited Use",
+											"reference": "B112,P103",
+											"notes": "Once per day",
+											"cost": -40
+										}
+									],
+									"points_per_level": 5,
+									"can_level": true,
+									"levels": 5,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "ti6y4FnTL5oUdSRq-",
+									"name": "Photosynthesis",
+									"reference": "AP59",
+									"notes": "You may use your blessing three times per day instead of 2",
+									"base_points": 10,
+									"calc": {
+										"points": 10
+									}
+								}
+							],
+							"calc": {
+								"points": 18
+							}
+						},
+						{
+							"id": "Tg-FsEiGQOeft6zIS",
+							"name": "Thalric",
+							"children": [
+								{
+									"id": "tSXwNpvEVcm4agSGh",
+									"name": "Divination",
+									"reference": "AP57",
+									"notes": "When rolling 3d for your blessing you may roll an additional 3d and choose which one you want to keep",
+									"base_points": 5,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "tUEkNbbnLflWujxxR",
+									"name": "Bad Juju",
+									"reference": "AP57",
+									"notes": "You may use your blessing to change another creature's roll instead. You must choose to do this before the other creature rolls and the creature must be at most Elite class",
+									"base_points": 15,
+									"calc": {
+										"points": 15
+									}
+								},
+								{
+									"id": "tKYeCW7MdjGC7wuKy",
+									"name": "Changed Destiny",
+									"reference": "AP57",
+									"notes": "Whenever you roll a Critical Miss you may roll twice on the critical failure table and choose the result from your rolls",
+									"base_points": 16,
+									"calc": {
+										"points": 16
+									}
+								}
+							],
+							"calc": {
+								"points": 36
+							}
+						},
+						{
+							"id": "TTTNsEVKS2-ft7v-z",
+							"name": "Melantha",
+							"children": [
+								{
+									"id": "tS7QkNZ-eQr5SKlgM",
+									"name": "Bond of Blood",
+									"reference": "AP55",
+									"notes": "Choose one of your Eidolons. You must always store them within yourself. You may summon them multiple times per day, but each time after the first you must pay HP equal to their max HP. You cannot dip below 1 HP this way.",
+									"base_points": 30,
+									"calc": {
+										"points": 30
+									}
+								},
+								{
+									"id": "TCJGP13swiKh58WLL",
+									"name": "Spirit Unification",
+									"reference": "AP55",
+									"notes": "Choose one",
+									"children": [
+										{
+											"id": "T-a7reg6bzL0Oxv6s",
+											"name": "Aspect of the Sloth",
+											"children": [
+												{
+													"id": "twJRzdt_PnluRZDc0",
+													"source": {
+														"library": "richardwilkes/gcs_master_library",
+														"path": "Basic Set\\Basic Set Traits.adq",
+														"id": "t6krAE1uo6M0oDJFL"
+													},
+													"name": "Lifting ST",
+													"reference": "B65,P58",
+													"tags": [
+														"Advantage",
+														"Exotic",
+														"Physical"
+													],
+													"modifiers": [
+														{
+															"id": "m2C3uA7m12yVBa4Pq",
+															"name": "No Fine Manipulators",
+															"reference": "B15",
+															"cost": -40,
+															"disabled": true
+														},
+														{
+															"id": "m5CLvTlzdqQMtzINR",
+															"name": "Size",
+															"reference": "B15",
+															"cost": -10,
+															"levels": 1,
+															"disabled": true
+														},
+														{
+															"id": "mBSa1FZReaWIF_idV",
+															"name": "Super-Effort",
+															"reference": "P58",
+															"cost": 400,
+															"disabled": true
+														},
+														{
+															"id": "m15-3173LQBmN581l",
+															"name": "Know Your Own Strength Variant Price",
+															"reference": "PY83:18",
+															"cost": 4,
+															"cost_type": "points",
+															"affects": "levels_only",
+															"disabled": true
+														},
+														{
+															"id": "m5QsBcEs3XV2TyxH1",
+															"name": "@Limb@ Grip ST",
+															"reference": "MATG28",
+															"cost": -70,
+															"disabled": true
+														},
+														{
+															"id": "mXYFjv22mQyaIwyQk",
+															"name": "Bite ST",
+															"reference": "MATG28",
+															"cost": -70,
+															"disabled": true
+														}
+													],
+													"points_per_level": 3,
+													"features": [
+														{
+															"type": "attribute_bonus",
+															"limitation": "lifting_only",
+															"attribute": "st",
+															"amount": 1,
+															"per_level": true
+														}
+													],
+													"can_level": true,
+													"levels": 2,
+													"calc": {
+														"points": 6
+													}
+												},
+												{
+													"id": "t1NrNfuSFsDoCGzM8",
+													"source": {
+														"library": "richardwilkes/gcs_master_library",
+														"path": "Basic Set\\Basic Set Traits.adq",
+														"id": "tBmSJ3pNE53c4IRUU"
+													},
+													"name": "Damage Resistance",
+													"reference": "B47,P45,MA43,PSI14",
+													"tags": [
+														"Advantage",
+														"Exotic",
+														"Physical"
+													],
+													"modifiers": [
+														{
+															"id": "m9At4rf6l_JR09mYp",
+															"name": "Force Field",
+															"reference": "B47",
+															"cost": 20,
+															"disabled": true
+														},
+														{
+															"id": "m0eKrxOapm8HEc12m",
+															"name": "Hardened",
+															"reference": "B47",
+															"cost": 20,
+															"levels": 1,
+															"disabled": true
+														},
+														{
+															"id": "m607w2xe_QkXtBCPB",
+															"name": "Absorption",
+															"reference": "B46",
+															"notes": "Enhances @Trait@",
+															"cost": 80,
+															"disabled": true
+														},
+														{
+															"id": "m1Xb9hQ-w55gCBZ_N",
+															"name": "Absorption",
+															"reference": "B46",
+															"notes": "Healing only",
+															"cost": 80,
+															"disabled": true
+														},
+														{
+															"id": "mXuCT8XzVI3oo4hh-",
+															"name": "Absorption",
+															"reference": "B46",
+															"notes": "Enhances any trait",
+															"cost": 100,
+															"disabled": true
+														},
+														{
+															"id": "mtayCnU73acT66Yze",
+															"name": "Reflection",
+															"reference": "B47",
+															"cost": 100,
+															"disabled": true
+														},
+														{
+															"id": "m0NomO-YL2l1M21MM",
+															"name": "Bane",
+															"reference": "H14",
+															"notes": "@Rare@",
+															"cost": -1,
+															"cost_type": "points",
+															"disabled": true
+														},
+														{
+															"id": "m42X0UDPWlmRiGjV1",
+															"name": "Bane",
+															"reference": "H14",
+															"notes": "@Occasional@",
+															"cost": -5,
+															"disabled": true
+														},
+														{
+															"id": "mtwtkn95xBTiyPy38",
+															"name": "Bane",
+															"reference": "H14",
+															"notes": "@Common@",
+															"cost": -10,
+															"disabled": true
+														},
+														{
+															"id": "mD-2LU8ifEdUcLSIz",
+															"name": "Bane",
+															"reference": "H14",
+															"notes": "@Very Common@",
+															"cost": -15,
+															"disabled": true
+														},
+														{
+															"id": "mvWe4bzZ0N_xhuNWy",
+															"name": "Directional",
+															"reference": "B47",
+															"notes": "Front",
+															"cost": -20,
+															"disabled": true
+														},
+														{
+															"id": "m5Hr5oGHDO8JjeMUg",
+															"name": "Flexible",
+															"reference": "B47",
+															"cost": -20,
+															"disabled": true
+														},
+														{
+															"id": "mcM3zyryddrQ7FoBr",
+															"name": "Limited",
+															"reference": "B46",
+															"notes": "@Very Common Attack Form@",
+															"cost": -20,
+															"disabled": true
+														},
+														{
+															"id": "mFPnGjANnldYCLkrn",
+															"name": "Semi-Ablative",
+															"reference": "B47",
+															"cost": -20,
+															"disabled": true
+														},
+														{
+															"id": "mLhNMJtxwrazQvZRM",
+															"name": "Can't wear armor",
+															"reference": "B47",
+															"cost": -40,
+															"disabled": true
+														},
+														{
+															"id": "mZOe5flgqCzbtza2V",
+															"name": "Directional",
+															"reference": "B47",
+															"notes": "@Direction: Back, Right, Left, Top or Underside@",
+															"cost": -40,
+															"disabled": true
+														},
+														{
+															"id": "m7xsYZ2SkODDk1aFZ",
+															"name": "Limited",
+															"reference": "B46",
+															"notes": "@Common Attack Form@",
+															"cost": -40,
+															"disabled": true
+														},
+														{
+															"id": "mufE8IM8SZKHzOr_O",
+															"name": "Tough Skin",
+															"notes": "Effects that just require skin contact or a scratch ignore this DR",
+															"cost": -40
+														},
+														{
+															"id": "mxfNtpKUO1l7Ysoe3",
+															"name": "Limited",
+															"reference": "B46",
+															"notes": "@Occasional Attack Form@",
+															"cost": -60,
+															"disabled": true
+														},
+														{
+															"id": "m7GuaZYnwGE2OC6PG",
+															"name": "Ablative",
+															"reference": "B47",
+															"cost": -80,
+															"disabled": true
+														},
+														{
+															"id": "m6wghYsQ2hHh8G6oO",
+															"name": "Limited",
+															"reference": "B46",
+															"notes": "@Rare Attack Form@",
+															"cost": -80,
+															"disabled": true
+														},
+														{
+															"id": "m3teg6yaINWRymeQK",
+															"name": "Laminate",
+															"reference": "RSWL18",
+															"cost": 10,
+															"disabled": true
+														},
+														{
+															"id": "mc9Vnbnq9aHyM7pGj",
+															"name": "Malediction-Proof",
+															"reference": "PSI14",
+															"cost": 50,
+															"disabled": true
+														},
+														{
+															"id": "mOSj0B8OVecFTMJYB",
+															"name": "Maledictions Only",
+															"reference": "PSI14",
+															"disabled": true
+														},
+														{
+															"id": "mWd1TVAHY50_IWdQ4",
+															"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+															"reference": "B47",
+															"cost": -10,
+															"disabled": true
+														}
+													],
+													"points_per_level": 5,
+													"features": [
+														{
+															"type": "dr_bonus",
+															"locations": [
+																"all"
+															],
+															"amount": 1,
+															"per_level": true
+														},
+														{
+															"type": "dr_bonus",
+															"locations": [
+																"eye"
+															],
+															"amount": -1,
+															"per_level": true
+														}
+													],
+													"can_level": true,
+													"levels": 2,
+													"calc": {
+														"points": 6
+													}
+												}
+											],
+											"calc": {
+												"points": 12
+											}
+										},
+										{
+											"id": "Tn09Uik3wQP759pkH",
+											"name": "Aspect of the Hawk",
+											"children": [
+												{
+													"id": "thsanUQAenRYt9mdL",
+													"source": {
+														"library": "richardwilkes/gcs_master_library",
+														"path": "Basic Set\\Basic Set Traits.adq",
+														"id": "twGsZPV8OE0NLFaXl"
+													},
+													"name": "Enhanced Dodge",
+													"reference": "B51,MA43",
+													"tags": [
+														"Advantage",
+														"Mental"
+													],
+													"points_per_level": 15,
+													"features": [
+														{
+															"type": "attribute_bonus",
+															"attribute": "dodge",
+															"amount": 1,
+															"per_level": true
+														}
+													],
+													"can_level": true,
+													"levels": 1,
+													"calc": {
+														"points": 15
+													}
+												}
+											],
+											"calc": {
+												"points": 15
+											}
+										},
+										{
+											"id": "Tjx86aQDi5iFeQDMw",
+											"name": "Aspect of the Tiger",
+											"children": [
+												{
+													"id": "tdiN5t070bZuUq6Fj",
+													"source": {
+														"library": "richardwilkes/gcs_master_library",
+														"path": "Basic Set\\Basic Set Traits.adq",
+														"id": "t8HajX_K4BDKPuUop"
+													},
+													"name": "Striking ST",
+													"reference": "B88,P78",
+													"tags": [
+														"Advantage",
+														"Exotic",
+														"Physical"
+													],
+													"modifiers": [
+														{
+															"id": "mLRBdGlv7P0Lt-fR9",
+															"name": "No Fine Manipulators",
+															"cost": -40,
+															"disabled": true
+														},
+														{
+															"id": "mmr_if4KWGzXxEsVp",
+															"name": "Size",
+															"cost": -10,
+															"levels": 1,
+															"disabled": true
+														},
+														{
+															"id": "mgFm2oHTNidr-0CTz",
+															"name": "Super Effort",
+															"reference": "SU24",
+															"cost": 400,
+															"disabled": true
+														},
+														{
+															"id": "mRtQMPDbQdYmdNEc9",
+															"name": "One Attack Only",
+															"reference": "P79",
+															"notes": "@Attack@",
+															"cost": -60,
+															"disabled": true
+														},
+														{
+															"id": "mNGBGHdOxyoq4I1qU",
+															"name": "Know Your Own Strength Pricing Variant",
+															"reference": "PY83:18",
+															"cost": -4,
+															"cost_type": "points",
+															"affects": "levels_only",
+															"disabled": true
+														}
+													],
+													"points_per_level": 5,
+													"features": [
+														{
+															"type": "attribute_bonus",
+															"limitation": "striking_only",
+															"attribute": "st",
+															"amount": 1,
+															"per_level": true
+														}
+													],
+													"can_level": true,
+													"levels": 2,
+													"calc": {
+														"points": 10
+													}
+												}
+											],
+											"calc": {
+												"points": 10
+											}
+										}
+									],
+									"calc": {
+										"points": 37
+									}
+								},
+								{
+									"id": "tcqvJiSJYGCu6q66q",
+									"name": "Keeper's Embrace",
+									"reference": "AP55",
+									"notes": "Restore 1 additional HP whenever healing an ally other than yourself",
+									"base_points": 10,
+									"calc": {
+										"points": 10
+									}
+								}
+							],
+							"calc": {
+								"points": 77
+							}
+						},
+						{
+							"id": "TFRKzM1a7QtcwMG24",
+							"name": "Astesia",
+							"children": [
+								{
+									"id": "tHpM4e7MUJLh3zfHo",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Traits.adq",
+										"id": "tz-USDL9B_KrrVqDi"
+									},
+									"name": "Misdirection",
+									"reference": "AP53",
+									"notes": "Can reroll one Fast-Talk, Acting, Stealth, or Sleight of Hand roll per day",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "m_peM9-ZYY5jgRDVf",
+											"name": "Active",
+											"reference": "B66",
+											"cost": -40
+										},
+										{
+											"id": "mgHN2IMnMEUsEPpj0",
+											"name": "Aspected",
+											"reference": "B66",
+											"notes": "@Aspect@",
+											"cost": -20,
+											"disabled": true
+										},
+										{
+											"id": "mEhsT1sAq9_P9vRGm",
+											"name": "Defensive",
+											"reference": "B66",
+											"cost": -20,
+											"disabled": true
+										},
+										{
+											"id": "miOnDk6-_E3OLHhpZ",
+											"name": "Wishing",
+											"reference": "P59",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mqtODFYaGxYkRVeve",
+											"name": "Game Time",
+											"reference": "P108",
+											"notes": "Uses per game day equal to its maximum possible uses per real hour",
+											"disabled": true
+										},
+										{
+											"id": "mgB4kABTxLXT6H2UE",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m2IwCpU9KwYmjiSSA"
+											},
+											"name": "Accessibility",
+											"reference": "B110,P99",
+											"notes": "Must enter cost manually",
+											"cost": -30
+										}
+									],
+									"base_points": 15,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "tZV-Ryr3PYu-IKuav",
+									"name": "Beguiling Arts",
+									"reference": "AP53",
+									"notes": "Once per day you may play music or unveil art that you have drawn that day to attempt to charm all Normal-class or weaker targets that see it. They must succeed a Will roll to resist.",
+									"base_points": 10,
+									"calc": {
+										"points": 10
+									}
+								},
+								{
+									"id": "tWBScmVg4QLqhJYzP",
+									"name": "Silver Tongue",
+									"reference": "AP53",
+									"notes": "Once per day you may sing, affecting all creatures within 10 yds that can hear you. You must make a Singing roll and all the affected creature gain FP equal to your margin of success, up to 4. On failure they lose only 1 FP.",
+									"base_points": 10,
+									"calc": {
+										"points": 10
+									}
+								}
+							],
+							"calc": {
+								"points": 25
+							}
+						}
+					],
+					"calc": {
+						"points": 188
+					}
 				}
 			],
 			"calc": {
-				"points": -299
+				"points": -111
 			}
 		},
 		{
@@ -7114,6 +8021,43 @@
 			],
 			"calc": {
 				"points": 0
+			}
+		},
+		{
+			"id": "tEtHnTDFLFHlbo6ql",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Traits.adq",
+				"id": "tnoTxbCUvvok5k1Ep"
+			},
+			"name": "Extra Attack",
+			"reference": "B53,P49,MA44",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "m_L3WOnXLEVEPF0SA",
+					"name": "Multi-Strike",
+					"reference": "P49",
+					"cost": 20,
+					"disabled": true
+				},
+				{
+					"id": "m0f_BojyU75sni8GP",
+					"name": "Single Skill",
+					"reference": "P49",
+					"notes": "@Skill@",
+					"cost": -20,
+					"disabled": true
+				}
+			],
+			"points_per_level": 25,
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 25
 			}
 		},
 		{
