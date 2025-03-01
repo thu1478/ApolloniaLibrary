@@ -664,7 +664,7 @@
 			],
 			"power_source": "Mana",
 			"spell_class": "Area",
-			"casting_cost": "1",
+			"casting_cost": "0.5",
 			"casting_time": "1 sec",
 			"duration": "Instant",
 			"prereqs": {
@@ -738,7 +738,7 @@
 			},
 			"weapons": [
 				{
-					"id": "WHe4W6Kz4c051pD-g",
+					"id": "WbopcHYslLXwOlEtM",
 					"damage": {
 						"type": "burn",
 						"base": "1d"
@@ -1585,10 +1585,10 @@
 			},
 			"weapons": [
 				{
-					"id": "We9Z4uL0N1Yc_NuPw",
+					"id": "W-K4IwYjd7ipCu28u",
 					"damage": {
 						"type": "burn",
-						"base": "1d"
+						"base": "2d"
 					},
 					"usage": "Projectile",
 					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 3d total. This also applies a -1 or -2 penalty to the HT check respectively.",
@@ -1607,7 +1607,7 @@
 						}
 					],
 					"calc": {
-						"damage": "1d burn"
+						"damage": "2d burn"
 					}
 				}
 			],
@@ -4008,13 +4008,13 @@
 			},
 			"weapons": [
 				{
-					"id": "WAtbKwBZyKZKe4K-6",
+					"id": "WBslGSpo6VJNLtb1T",
 					"damage": {
 						"type": "burn",
-						"base": "1d"
+						"base": "2d"
 					},
 					"usage": "Beam",
-					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional +2 each, maxing out at 1d+4 total.",
+					"usage_notes": "You may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional +2 each, maxing out at 2d+4 total.",
 					"range": "5/10",
 					"rate_of_fire": "1",
 					"defaults": [
@@ -4029,7 +4029,7 @@
 						}
 					],
 					"calc": {
-						"damage": "1d burn"
+						"damage": "2d burn"
 					}
 				}
 			],
@@ -4054,7 +4054,7 @@
 			],
 			"power_source": "Mana",
 			"spell_class": "Area",
-			"casting_cost": "2",
+			"casting_cost": "1",
 			"casting_time": "1 sec",
 			"duration": "Instant",
 			"prereqs": {
@@ -4115,7 +4115,7 @@
 			},
 			"weapons": [
 				{
-					"id": "WhyaWbh5o1_t4yxmk",
+					"id": "W7fU8GzNK-11X4KM0",
 					"damage": {
 						"type": "burn",
 						"base": "1d"
@@ -4210,14 +4210,14 @@
 			},
 			"weapons": [
 				{
-					"id": "WK4e3pMdtFTFvbr2z",
+					"id": "WZjQU5zl2hKpuTroB",
 					"damage": {
 						"type": "burn",
-						"base": "1d"
+						"base": "2d"
 					},
 					"usage": "Area",
 					"calc": {
-						"damage": "1d burn"
+						"damage": "2d burn"
 					}
 				}
 			],
@@ -4303,13 +4303,13 @@
 			},
 			"weapons": [
 				{
-					"id": "WJbB9Rz_Mc1wxvK3M",
+					"id": "WvIrr_xlvFwNFe7F5",
 					"damage": {
 						"type": "burn",
 						"base": "2d"
 					},
 					"usage": "Projectile",
-					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total. You can continue casting the spell on subsequent turns for 2 more turns, but you will only gain +1 per base cost of mana invested instead of 1d. ",
+					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total. You can continue casting the spell on subsequent turns for up to 2 more turns, gaining 1d  per turn maxing out at 6d.",
 					"accuracy": "3",
 					"range": "10/20",
 					"rate_of_fire": "1",
@@ -5136,16 +5136,16 @@
 			},
 			"weapons": [
 				{
-					"id": "w43-XpcdsV-XrlAdJ",
+					"id": "wf22WqjYjT4IsfBmM",
 					"damage": {
 						"type": "pi+",
-						"base": "1d"
+						"base": "2d"
 					},
 					"usage": "Thrust",
 					"usage_notes": "Touch a creature's bare skin. They must succeed a HT-2 roll or take 1d pi+ damage as blood inside their body near the surface crystallizes and expands.",
 					"reach": "C",
 					"calc": {
-						"damage": "1d pi+"
+						"damage": "2d pi+"
 					}
 				}
 			],
@@ -5521,13 +5521,13 @@
 			},
 			"weapons": [
 				{
-					"id": "WQyK-f6Gp-yALXv-p",
+					"id": "W_06LjDcjGY7s5UUt",
 					"damage": {
 						"type": "imp",
-						"base": "1d"
+						"base": "2d"
 					},
 					"usage": "Projectile",
-					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 3d total. You can continue casting the spell on subsequent turns for 2 more turns, but you will only gain +1 per base cost of mana invested instead of 1d. ",
+					"usage_notes": "On your first turn casting this spell you may multiple the base cost by an amount up to your Circle to increase the damage dealt by an additional 1d each, maxing out at 4d total. You can continue casting the spell on subsequent turns for up to 2 more turns, gaining 1d  per turn maxing out at 6d.",
 					"accuracy": "3",
 					"rate_of_fire": "1",
 					"recoil": "1",
@@ -5543,7 +5543,7 @@
 						}
 					],
 					"calc": {
-						"damage": "1d imp"
+						"damage": "2d imp"
 					}
 				}
 			],
