@@ -589,6 +589,18 @@
 						"has": true,
 						"name": {
 							"compare": "is",
+							"qualifier": "Armoury"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
 							"qualifier": "Weapon Artes"
 						},
 						"level": {
@@ -5513,6 +5525,24 @@
 				"Trace"
 			],
 			"difficulty": "iq/h",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Armoury"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 10
+						}
+					}
+				]
+			},
 			"points": 1
 		},
 		{
