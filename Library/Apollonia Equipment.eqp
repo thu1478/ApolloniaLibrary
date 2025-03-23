@@ -10824,7 +10824,7 @@
 							"weight": "7.5 lb",
 							"weapons": [
 								{
-									"id": "w8D2TQLckJhkIp58_",
+									"id": "wB-PGqCA5kPf1gDJH",
 									"damage": {
 										"type": "cr",
 										"st": "thr"
@@ -10839,19 +10839,13 @@
 										{
 											"type": "skill",
 											"name": "Shield",
-											"specialization": "Shield",
-											"modifier": -2
+											"specialization": "Shield"
 										},
 										{
 											"type": "skill",
 											"name": "Shield",
-											"specialization": "Force Shield",
+											"specialization": "Buckler",
 											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Shield",
-											"specialization": "Buckler"
 										}
 									],
 									"calc": {
@@ -10891,7 +10885,7 @@
 							"weight": "22 lb",
 							"weapons": [
 								{
-									"id": "wm_CidllrROSq-N49",
+									"id": "wSwWrHZ3gAzQzW7lq",
 									"damage": {
 										"type": "cr",
 										"st": "thr"
@@ -10906,19 +10900,13 @@
 										{
 											"type": "skill",
 											"name": "Shield",
-											"specialization": "Shield",
-											"modifier": -2
+											"specialization": "Shield"
 										},
 										{
 											"type": "skill",
 											"name": "Shield",
-											"specialization": "Force Shield",
+											"specialization": "Buckler",
 											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Shield",
-											"specialization": "Buckler"
 										}
 									],
 									"calc": {
